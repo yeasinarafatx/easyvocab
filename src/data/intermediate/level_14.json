@@ -1,0 +1,462 @@
+[
+  {
+    "id": 461,
+    "word": "credible",
+    "pos": "adjective",
+    "phonetic": "/ˈkredɪbl/",
+    "bangla": "বিশ্বাসযোগ্য",
+    "definition": "Able to be believed; convincing and trustworthy",
+    "example": "The witness provided a _______ account of the events she had directly witnessed.",
+    "synonyms": [
+      "believable",
+      "trustworthy",
+      "convincing"
+    ],
+    "antonyms": [
+      "incredible",
+      "untrustworthy",
+      "unconvincing"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 462,
+    "word": "cumulative",
+    "pos": "adjective",
+    "phonetic": "/ˈkjuːmjulətɪv/",
+    "bangla": "ক্রমবর্ধমান",
+    "definition": "Increasing or increased by successive additions over time",
+    "example": "The _______ effect of years of air pollution has severely damaged the ecosystem.",
+    "synonyms": [
+      "growing",
+      "progressive",
+      "accumulating"
+    ],
+    "antonyms": [
+      "decreasing",
+      "diminishing",
+      "isolated"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 463,
+    "word": "decisive",
+    "pos": "adjective",
+    "phonetic": "/dɪˈsaɪsɪv/",
+    "bangla": "নির্ণায়ক",
+    "definition": "Settling an issue conclusively; having the ability to decide quickly",
+    "example": "A _______ leader must be able to act quickly and firmly in times of crisis.",
+    "synonyms": [
+      "determined",
+      "firm",
+      "conclusive"
+    ],
+    "antonyms": [
+      "indecisive",
+      "hesitant",
+      "uncertain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 464,
+    "word": "deliberate",
+    "pos": "adjective",
+    "phonetic": "/dɪˈlɪbərɪt/",
+    "bangla": "ইচ্ছাকৃত",
+    "definition": "Done consciously and intentionally; fully considered",
+    "example": "The choice of words in the speech appeared to be _______ and politically calculated.",
+    "synonyms": [
+      "intentional",
+      "planned",
+      "calculated"
+    ],
+    "antonyms": [
+      "accidental",
+      "unintentional",
+      "spontaneous"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 465,
+    "word": "discrepancy",
+    "pos": "noun",
+    "phonetic": "/dɪˈskrepənsi/",
+    "bangla": "অসঙ্গতি",
+    "definition": "A lack of compatibility between facts, figures, or claims",
+    "example": "There was a significant _______ between the official figures and the actual results.",
+    "synonyms": [
+      "inconsistency",
+      "difference",
+      "gap"
+    ],
+    "antonyms": [
+      "consistency",
+      "agreement",
+      "similarity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 466,
+    "word": "disparity",
+    "pos": "noun",
+    "phonetic": "/dɪˈspærɪti/",
+    "bangla": "বৈষম্য",
+    "definition": "A great difference between things, especially an unfair one",
+    "example": "The growing _______ between rich and poor is a major concern in many countries.",
+    "synonyms": [
+      "inequality",
+      "difference",
+      "gap"
+    ],
+    "antonyms": [
+      "equality",
+      "similarity",
+      "uniformity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 467,
+    "word": "distinction",
+    "pos": "noun",
+    "phonetic": "/dɪˈstɪŋkʃn/",
+    "bangla": "পার্থক্য",
+    "definition": "A difference or contrast between similar things",
+    "example": "There is an important _______ between correlation and causation in scientific research.",
+    "synonyms": [
+      "difference",
+      "contrast",
+      "separation"
+    ],
+    "antonyms": [
+      "similarity",
+      "sameness",
+      "identity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 468,
+    "word": "dynamic",
+    "pos": "adjective",
+    "phonetic": "/daɪˈnæmɪk/",
+    "bangla": "গতিশীল",
+    "definition": "Constantly changing and progressing; characterized by energy",
+    "example": "A _______ economy creates new jobs and opportunities for people at all income levels.",
+    "synonyms": [
+      "energetic",
+      "active",
+      "vigorous"
+    ],
+    "antonyms": [
+      "static",
+      "passive",
+      "stagnant"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 469,
+    "word": "ecosystem",
+    "pos": "noun",
+    "phonetic": "/ˈiːkəʊsɪstəm/",
+    "bangla": "বাস্তুতন্ত্র",
+    "definition": "A biological community of interacting organisms and their environment",
+    "example": "Deforestation threatens the entire _______ that depends on the rainforest.",
+    "synonyms": [
+      "environment",
+      "habitat",
+      "community"
+    ],
+    "antonyms": [
+      "isolation",
+      "separation",
+      "void"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 470,
+    "word": "empiricism",
+    "pos": "noun",
+    "phonetic": "/ɪmˈpɪrɪsɪzəm/",
+    "bangla": "পর্যবেক্ষণবাদ",
+    "definition": "The theory that knowledge comes from sensory experience",
+    "example": "Scientific _______ requires that all claims be tested against observable evidence.",
+    "synonyms": [
+      "observation",
+      "experience",
+      "evidence"
+    ],
+    "antonyms": [
+      "theory",
+      "speculation",
+      "assumption"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 471,
+    "word": "exponential",
+    "pos": "adjective",
+    "phonetic": "/ˌekspəˈnenʃl/",
+    "bangla": "দ্রুতবর্ধনশীল",
+    "definition": "Becoming more rapid as the quantity grows larger",
+    "example": "The _______ growth of social media has transformed how people access information.",
+    "synonyms": [
+      "rapid",
+      "dramatic",
+      "accelerating"
+    ],
+    "antonyms": [
+      "slow",
+      "gradual",
+      "steady"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 472,
+    "word": "fragmentation",
+    "pos": "noun",
+    "phonetic": "/ˌfræɡmenˈteɪʃn/",
+    "bangla": "বিভক্তি",
+    "definition": "The process of breaking or being broken into parts",
+    "example": "The _______ of political parties has made it difficult to form a stable government.",
+    "synonyms": [
+      "division",
+      "breakup",
+      "splitting"
+    ],
+    "antonyms": [
+      "unity",
+      "cohesion",
+      "integration"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 473,
+    "word": "groundbreaking",
+    "pos": "adjective",
+    "phonetic": "/ˈɡraʊndbreɪkɪŋ/",
+    "bangla": "যুগান্তকারী",
+    "definition": "Innovative and pioneering; introducing new methods",
+    "example": "The scientist's _______ research led to a completely new approach to cancer treatment.",
+    "synonyms": [
+      "pioneering",
+      "revolutionary",
+      "innovative"
+    ],
+    "antonyms": [
+      "conventional",
+      "traditional",
+      "ordinary"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 474,
+    "word": "harmonize",
+    "pos": "verb",
+    "phonetic": "/ˈhɑːmənaɪz/",
+    "bangla": "সামঞ্জস্যপূর্ণ করা",
+    "definition": "To make consistent or compatible; to bring into harmony",
+    "example": "Countries must work together to _______ their environmental standards to combat pollution.",
+    "synonyms": [
+      "align",
+      "reconcile",
+      "coordinate"
+    ],
+    "antonyms": [
+      "clash",
+      "conflict",
+      "contradict"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 475,
+    "word": "inception",
+    "pos": "noun",
+    "phonetic": "/ɪnˈsepʃn/",
+    "bangla": "শুরু",
+    "definition": "The establishment or starting point of an institution or activity",
+    "example": "Since its _______, the organization has helped over a million people worldwide.",
+    "synonyms": [
+      "beginning",
+      "start",
+      "origin"
+    ],
+    "antonyms": [
+      "end",
+      "conclusion",
+      "termination"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 476,
+    "word": "indispensable",
+    "pos": "adjective",
+    "phonetic": "/ˌɪndɪˈspensəbl/",
+    "bangla": "অপরিহার্য",
+    "definition": "Absolutely necessary; impossible to do without",
+    "example": "Access to clean water is _______ for the survival and health of any community.",
+    "synonyms": [
+      "essential",
+      "necessary",
+      "vital"
+    ],
+    "antonyms": [
+      "dispensable",
+      "optional",
+      "unnecessary"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 477,
+    "word": "landmark",
+    "pos": "adjective",
+    "phonetic": "/ˈlændmɑːk/",
+    "bangla": "মাইলফলক",
+    "definition": "Marking an important stage or turning point",
+    "example": "The treaty was a _______ moment in the history of international environmental law.",
+    "synonyms": [
+      "milestone",
+      "significant",
+      "historic"
+    ],
+    "antonyms": [
+      "minor",
+      "insignificant",
+      "ordinary"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 478,
+    "word": "mediocre",
+    "pos": "adjective",
+    "phonetic": "/ˌmiːdiˈəʊkər/",
+    "bangla": "সাধারণ মানের",
+    "definition": "Of only average quality; not very good",
+    "example": "A _______ performance at school does not necessarily predict future success in life.",
+    "synonyms": [
+      "average",
+      "ordinary",
+      "uninspiring"
+    ],
+    "antonyms": [
+      "excellent",
+      "outstanding",
+      "exceptional"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 479,
+    "word": "momentum",
+    "pos": "noun",
+    "phonetic": "/məˈmentəm/",
+    "bangla": "গতিবেগ",
+    "definition": "The impetus and driving force gained by the development of a process",
+    "example": "The campaign began to gain significant _______ after several celebrities supported it.",
+    "synonyms": [
+      "force",
+      "impetus",
+      "energy"
+    ],
+    "antonyms": [
+      "stagnation",
+      "inertia",
+      "slowdown"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 480,
+    "word": "narrative",
+    "pos": "noun",
+    "phonetic": "/ˈnærətɪv/",
+    "bangla": "আখ্যান",
+    "definition": "A spoken or written account of connected events; a story",
+    "example": "The government tried to control the public _______ around the new economic policy.",
+    "synonyms": [
+      "story",
+      "account",
+      "description"
+    ],
+    "antonyms": [
+      "silence",
+      "suppression",
+      "omission"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

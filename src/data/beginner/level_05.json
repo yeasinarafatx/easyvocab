@@ -1,0 +1,22 @@
+[
+  {"word":"edit","pos":"verb","phonetic":"/ˈedɪt/","bangla":"সম্পাদনা করা","example":"Please edit your essay before submission."},
+  {"word":"element","pos":"noun","phonetic":"/ˈelɪmənt/","bangla":"উপাদান","example":"Water is an essential element for life."},
+  {"word":"emerge","pos":"verb","phonetic":"/ɪˈmɜːdʒ/","bangla":"উদ্ভূত হওয়া","example":"New trends emerge every year."},
+  {"word":"emphasis","pos":"noun","phonetic":"/ˈemfəsɪs/","bangla":"গুরুত্বারোপ","example":"The course places emphasis on speaking."},
+  {"word":"enable","pos":"verb","phonetic":"/ɪˈneɪbəl/","bangla":"সক্ষম করা","example":"Scholarships enable students to study abroad."},
+  {"word":"encounter","pos":"verb/noun","phonetic":"/ɪnˈkaʊntər/","bangla":"মুখোমুখি হওয়া","example":"Tourists may encounter language barriers."},
+  {"word":"energy","pos":"noun","phonetic":"/ˈenədʒi/","bangla":"শক্তি","example":"Factories need a steady energy supply."},
+  {"word":"enforce","pos":"verb","phonetic":"/ɪnˈfɔːs/","bangla":"প্রয়োগ করা","example":"Police enforce traffic laws strictly."},
+  {"word":"enhance","pos":"verb","phonetic":"/ɪnˈhɑːns/","bangla":"উন্নত করা","example":"Reading can enhance vocabulary skills."},
+  {"word":"ensure","pos":"verb","phonetic":"/ɪnˈʃʊə/","bangla":"নিশ্চিত করা","example":"Please ensure all forms are complete."},
+  {"word":"environment","pos":"noun","phonetic":"/ɪnˈvaɪrənmənt/","bangla":"পরিবেশ","example":"We must protect the natural environment."},
+  {"word":"equal","pos":"adjective","phonetic":"/ˈiːkwəl/","bangla":"সমান","example":"Everyone deserves equal opportunities."},
+  {"word":"establish","pos":"verb","phonetic":"/ɪˈstæblɪʃ/","bangla":"প্রতিষ্ঠা করা","example":"They established a new training center."},
+  {"word":"estimate","pos":"verb/noun","phonetic":"/ˈestɪmeɪt/","bangla":"আনুমান করা","example":"Experts estimate costs for the project."},
+  {"word":"ethical","pos":"adjective","phonetic":"/ˈeθɪkəl/","bangla":"নৈতিক","example":"Researchers must follow ethical rules."},
+  {"word":"evaluate","pos":"verb","phonetic":"/ɪˈvæljueɪt/","bangla":"মূল্যায়ন করা","example":"Teachers evaluate students' performance."},
+  {"word":"evidence","pos":"noun","phonetic":"/ˈevɪdəns/","bangla":"প্রমাণ","example":"There is clear evidence of climate change."},
+  {"word":"evolve","pos":"verb","phonetic":"/ɪˈvɒlv/","bangla":"বিবর্তিত হওয়া","example":"Languages evolve over long periods."},
+  {"word":"exceed","pos":"verb","phonetic":"/ɪkˈsiːd/","bangla":"অতিক্রম করা","example":"Demand may exceed supply this year."},
+  {"word":"exclude","pos":"verb","phonetic":"/ɪkˈskluːd/","bangla":"বাদ দেওয়া","example":"The survey excluded children under ten."}
+]

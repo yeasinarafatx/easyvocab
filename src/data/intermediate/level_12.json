@@ -1,0 +1,462 @@
+[
+  {
+    "id": 421,
+    "word": "mechanism",
+    "pos": "noun",
+    "phonetic": "/ˈmekənɪzəm/",
+    "bangla": "প্রক্রিয়া, কৌশল",
+    "definition": "A system of parts working together; a natural or established process",
+    "example": "The body has natural _______ for fighting infection and recovering from disease.",
+    "synonyms": [
+      "system",
+      "process",
+      "procedure"
+    ],
+    "antonyms": [
+      "chaos",
+      "disorder",
+      "randomness"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 422,
+    "word": "methodical",
+    "pos": "adjective",
+    "phonetic": "/mɪˈθɒdɪkl/",
+    "bangla": "সুশৃঙ্খল, পদ্ধতিগত",
+    "definition": "Done according to a systematic or established procedure",
+    "example": "A _______ approach to problem-solving leads to more consistent and reliable results.",
+    "synonyms": [
+      "systematic",
+      "organized",
+      "thorough"
+    ],
+    "antonyms": [
+      "disorganized",
+      "random",
+      "haphazard"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 423,
+    "word": "mobility",
+    "pos": "noun",
+    "phonetic": "/məˈbɪlɪti/",
+    "bangla": "গতিশীলতা",
+    "definition": "The ability to move or be moved freely and easily",
+    "example": "Social _______ allows people to improve their economic position through hard work.",
+    "synonyms": [
+      "movement",
+      "flexibility",
+      "freedom"
+    ],
+    "antonyms": [
+      "immobility",
+      "restriction",
+      "stagnation"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 424,
+    "word": "momentum",
+    "pos": "noun",
+    "phonetic": "/məˈmentəm/",
+    "bangla": "গতিবেগ",
+    "definition": "The impetus and driving force gained by the development of a process",
+    "example": "The campaign began to gain _______ after several celebrities publicly supported it.",
+    "synonyms": [
+      "force",
+      "impetus",
+      "energy"
+    ],
+    "antonyms": [
+      "stagnation",
+      "inertia",
+      "slowdown"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 425,
+    "word": "monopoly",
+    "pos": "noun",
+    "phonetic": "/məˈnɒpəli/",
+    "bangla": "একচেটিয়া ব্যবসা",
+    "definition": "The exclusive possession or control of something",
+    "example": "Governments must prevent companies from gaining a _______ in key industries.",
+    "synonyms": [
+      "dominance",
+      "control",
+      "exclusivity"
+    ],
+    "antonyms": [
+      "competition",
+      "plurality",
+      "diversity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 426,
+    "word": "multifaceted",
+    "pos": "adjective",
+    "phonetic": "/ˌmʌltiˈfæsɪtɪd/",
+    "bangla": "বহুমাত্রিক",
+    "definition": "Having many different aspects or features",
+    "example": "Poverty is a _______ issue that requires responses across health, education and economics.",
+    "synonyms": [
+      "complex",
+      "diverse",
+      "varied"
+    ],
+    "antonyms": [
+      "simple",
+      "straightforward",
+      "one-dimensional"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 427,
+    "word": "mutual",
+    "pos": "adjective",
+    "phonetic": "/ˈmjuːtʃuəl/",
+    "bangla": "পারস্পরিক",
+    "definition": "Experienced or done by each of two or more parties equally",
+    "example": "International trade agreements are based on _______ benefit and active cooperation.",
+    "synonyms": [
+      "shared",
+      "reciprocal",
+      "joint"
+    ],
+    "antonyms": [
+      "one-sided",
+      "unilateral",
+      "selfish"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 428,
+    "word": "narrative",
+    "pos": "noun",
+    "phonetic": "/ˈnærətɪv/",
+    "bangla": "বিবরণ, আখ্যান",
+    "definition": "A spoken or written account of connected events",
+    "example": "The government tried to control the public _______ around the new economic policy.",
+    "synonyms": [
+      "story",
+      "account",
+      "description"
+    ],
+    "antonyms": [
+      "silence",
+      "suppression",
+      "omission"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 429,
+    "word": "negligible",
+    "pos": "adjective",
+    "phonetic": "/ˈneɡlɪdʒɪbl/",
+    "bangla": "নগণ্য",
+    "definition": "So small or unimportant as to be not worth considering",
+    "example": "The difference in cost between the two options was _______ and easily overlooked.",
+    "synonyms": [
+      "insignificant",
+      "minimal",
+      "trivial"
+    ],
+    "antonyms": [
+      "significant",
+      "considerable",
+      "important"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 430,
+    "word": "nuance",
+    "pos": "noun",
+    "phonetic": "/ˈnjuːɑːns/",
+    "bangla": "সূক্ষ্ম পার্থক্য",
+    "definition": "A subtle difference in meaning, expression, or sound",
+    "example": "Good writing captures the _______ of human emotion and lived experience.",
+    "synonyms": [
+      "subtlety",
+      "distinction",
+      "shade"
+    ],
+    "antonyms": [
+      "obviousness",
+      "bluntness",
+      "crudeness"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 431,
+    "word": "obscure",
+    "pos": "adjective",
+    "phonetic": "/əbˈskjʊər/",
+    "bangla": "অস্পষ্ট",
+    "definition": "Not discovered or known about; difficult to understand",
+    "example": "The politician's answer was deliberately _______ to avoid taking a clear position.",
+    "synonyms": [
+      "unclear",
+      "vague",
+      "hidden"
+    ],
+    "antonyms": [
+      "clear",
+      "obvious",
+      "transparent"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 432,
+    "word": "obstacle",
+    "pos": "noun",
+    "phonetic": "/ˈɒbstəkl/",
+    "bangla": "বাধা",
+    "definition": "A thing that blocks one's way or prevents progress",
+    "example": "Language barriers remain a significant _______ to full social integration.",
+    "synonyms": [
+      "barrier",
+      "hindrance",
+      "difficulty"
+    ],
+    "antonyms": [
+      "aid",
+      "help",
+      "assistance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 433,
+    "word": "overarching",
+    "pos": "adjective",
+    "phonetic": "/ˌəʊvərˈɑːtʃɪŋ/",
+    "bangla": "সামগ্রিক",
+    "definition": "Forming an arch over everything; comprehensive",
+    "example": "The _______ goal of the policy is to reduce inequality and promote social justice.",
+    "synonyms": [
+      "overall",
+      "comprehensive",
+      "broad"
+    ],
+    "antonyms": [
+      "narrow",
+      "specific",
+      "limited"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 434,
+    "word": "overhaul",
+    "pos": "verb",
+    "phonetic": "/ˈəʊvəhɔːl/",
+    "bangla": "সংস্কার করা",
+    "definition": "To take apart and repair or revise completely",
+    "example": "The government announced a complete _______ of the country's healthcare system.",
+    "synonyms": [
+      "reform",
+      "revamp",
+      "renovate"
+    ],
+    "antonyms": [
+      "preserve",
+      "maintain",
+      "continue"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 435,
+    "word": "oversee",
+    "pos": "verb",
+    "phonetic": "/ˌəʊvəˈsiː/",
+    "bangla": "তদারকি করা",
+    "definition": "To watch and direct; to supervise",
+    "example": "An independent body was appointed to _______ the implementation of the new regulations.",
+    "synonyms": [
+      "supervise",
+      "manage",
+      "monitor"
+    ],
+    "antonyms": [
+      "ignore",
+      "neglect",
+      "abandon"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 436,
+    "word": "paramount",
+    "pos": "adjective",
+    "phonetic": "/ˈpærəmaʊnt/",
+    "bangla": "সর্বোচ্চ গুরুত্বপূর্ণ",
+    "definition": "More important than anything else; supreme",
+    "example": "The safety of passengers must be of _______ importance in all public transport.",
+    "synonyms": [
+      "supreme",
+      "primary",
+      "foremost"
+    ],
+    "antonyms": [
+      "minor",
+      "secondary",
+      "unimportant"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 437,
+    "word": "perpetuate",
+    "pos": "verb",
+    "phonetic": "/pəˈpetʃueɪt/",
+    "bangla": "স্থায়ী করা",
+    "definition": "To make something continue indefinitely",
+    "example": "Poverty can _______ itself across generations without targeted social intervention.",
+    "synonyms": [
+      "continue",
+      "maintain",
+      "sustain"
+    ],
+    "antonyms": [
+      "end",
+      "stop",
+      "eliminate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 438,
+    "word": "pertinent",
+    "pos": "adjective",
+    "phonetic": "/ˈpɜːtɪnənt/",
+    "bangla": "প্রাসঙ্গিক",
+    "definition": "Relevant or applicable to a particular matter",
+    "example": "Please include only _______ information when completing the application form.",
+    "synonyms": [
+      "relevant",
+      "applicable",
+      "appropriate"
+    ],
+    "antonyms": [
+      "irrelevant",
+      "inappropriate",
+      "unrelated"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 439,
+    "word": "plausible",
+    "pos": "adjective",
+    "phonetic": "/ˈplɔːzɪbl/",
+    "bangla": "গ্রহণযোগ্য",
+    "definition": "Seeming reasonable or probable; credible",
+    "example": "The scientist offered a _______ explanation for the completely unexpected results.",
+    "synonyms": [
+      "credible",
+      "reasonable",
+      "believable"
+    ],
+    "antonyms": [
+      "implausible",
+      "unbelievable",
+      "unlikely"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 440,
+    "word": "polarize",
+    "pos": "verb",
+    "phonetic": "/ˈpəʊləraɪz/",
+    "bangla": "দ্বিধাবিভক্ত করা",
+    "definition": "To divide into two sharply contrasting groups",
+    "example": "Social media has tended to _______ public opinion on many important political issues.",
+    "synonyms": [
+      "divide",
+      "split",
+      "separate"
+    ],
+    "antonyms": [
+      "unite",
+      "reconcile",
+      "bring together"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

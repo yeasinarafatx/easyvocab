@@ -1,0 +1,428 @@
+[
+  {
+    "id": 641,
+    "word": "cogent",
+    "pos": "adjective",
+    "phonetic": "/ˈkə͡ʊd͡ʒn̩t/",
+    "bangla": "যুক্তিসঙ্গত এবং বিশ্বাসযোগ্য",
+    "definition": "Reasonable and convincing; based on evidence.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on reasonable and convincing; based on evidence.",
+    "synonyms": [
+      "potent",
+      "powerful",
+      "weighty",
+      "influential"
+    ],
+    "antonyms": [
+      "non cogent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 642,
+    "word": "collude",
+    "pos": "verb",
+    "phonetic": "/kəˈlud/",
+    "bangla": "সংঘবদ্ধ করা",
+    "definition": "To act in concert with; to conspire",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to cahoots.",
+    "synonyms": [
+      "cahoots",
+      "conspire",
+      "plot",
+      "scheme"
+    ],
+    "antonyms": [
+      "not collude"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 643,
+    "word": "complacent",
+    "pos": "adjective",
+    "phonetic": "/kəmˈpleɪsənt/",
+    "bangla": "আত্মতুষ্টি",
+    "definition": "Uncritically satisfied with oneself or one's achievements; smug.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is self-satisfied.",
+    "synonyms": [
+      "self-satisfied",
+      "smug"
+    ],
+    "antonyms": [
+      "non complacent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 644,
+    "word": "conundrum",
+    "pos": "noun",
+    "phonetic": "/kəˈnʌn.dɹəm/",
+    "bangla": "ধাঁধা",
+    "definition": "A difficult question or riddle, especially one using a play on words in the answer.",
+    "example": "In the paragraph analysis, _______ to frame the main argument clearly in that section. as it is close to brain-teaser.",
+    "synonyms": [
+      "brain-teaser",
+      "enigma",
+      "puzzle",
+      "riddle"
+    ],
+    "antonyms": [
+      "non conundrum"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 645,
+    "word": "corroborate",
+    "pos": "verb",
+    "phonetic": "/kəˈɹɒbəɹeɪ̯t/",
+    "bangla": "সমর্থন করা",
+    "definition": "To confirm or support something with additional evidence; to attest or vouch for.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to sustain.",
+    "synonyms": [
+      "sustain",
+      "affirm",
+      "support",
+      "substantiate"
+    ],
+    "antonyms": [
+      "negate",
+      "contradict"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 646,
+    "word": "credulous",
+    "pos": "adjective",
+    "phonetic": "/kɹɛdjələs/",
+    "bangla": "বিশ্বাসযোগ্য",
+    "definition": "Excessively ready to believe things; gullible.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to naive.",
+    "synonyms": [
+      "naive",
+      "unworldly"
+    ],
+    "antonyms": [
+      "incredulous",
+      "noncredulous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 647,
+    "word": "deleterious",
+    "pos": "adjective",
+    "phonetic": "/ˌdɛlɪˈtɪəɹi.əs/",
+    "bangla": "ক্ষতিকর",
+    "definition": "Harmful often in a subtle or unexpected way.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is destructive.",
+    "synonyms": [
+      "destructive",
+      "harmful",
+      "hurtful",
+      "injurious"
+    ],
+    "antonyms": [
+      "non deleterious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 648,
+    "word": "demur",
+    "pos": "verb",
+    "phonetic": "/dɪˈmɜː/",
+    "bangla": "ক্ষোভ",
+    "definition": "Stop; pause; hesitation as to proceeding; suspense of decision or action; scruple.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of stop; pause; hesitation as to proceeding; suspense of.",
+    "synonyms": [
+      "demurrer",
+      "demurral",
+      "except"
+    ],
+    "antonyms": [
+      "not demur"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 649,
+    "word": "deride",
+    "pos": "verb",
+    "phonetic": "/dɪˈɹaɪd/",
+    "bangla": "উপহাস",
+    "definition": "To harshly mock; ridicule.",
+    "example": "Before choosing an option, candidates tried to _______ without weakening the central thesis during the reasoning task. as it is close to related to deride.",
+    "synonyms": [
+      "related to deride"
+    ],
+    "antonyms": [
+      "not deride"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 650,
+    "word": "diatribe",
+    "pos": "noun",
+    "phonetic": "/ˈdaɪ.əˌtɹaɪb/",
+    "bangla": "একটি আপত্তিজনক, তিক্ত, আক্রমণ বা সমালোচনা: নিন্দা",
+    "definition": "An abusive, bitter, attack or criticism: denunciation.",
+    "example": "In the paragraph analysis, _______ while connecting key evidence in the explanation. where a similar notion is fulmination.",
+    "synonyms": [
+      "fulmination"
+    ],
+    "antonyms": [
+      "non diatribe"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 651,
+    "word": "didactic",
+    "pos": "adjective",
+    "phonetic": "/daɪˈdæk.tɪk/",
+    "bangla": "উপদেশমূলক",
+    "definition": "A treatise on teaching or education.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is educative.",
+    "synonyms": [
+      "educative",
+      "instructive"
+    ],
+    "antonyms": [
+      "non didactic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 652,
+    "word": "disparate",
+    "pos": "adjective",
+    "phonetic": "/ˈdɪsp(ə)ɹət/",
+    "bangla": "ভিন্ন",
+    "definition": "(chiefly in the plural) Any of a group of unequal or dissimilar things.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is incongruous.",
+    "synonyms": [
+      "incongruous",
+      "mismatched",
+      "uncoordinated",
+      "incommensurable"
+    ],
+    "antonyms": [
+      "non disparate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 653,
+    "word": "disparage",
+    "pos": "verb",
+    "phonetic": "/dɪsˈpæɹɪd͡ʒ/",
+    "bangla": "অপমান",
+    "definition": "Inequality in marriage; marriage with an inferior.",
+    "example": "To support the argument, the author had to _______ so that the logic stayed consistent in the GRE passage. with focus on inequality in marriage; marriage with an inferior.",
+    "synonyms": [
+      "belittle",
+      "pick at",
+      "find fault with"
+    ],
+    "antonyms": [
+      "blandish",
+      "flatter"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 654,
+    "word": "duplicitous",
+    "pos": "adjective",
+    "phonetic": "/djʊˈplɪsɪtəs/",
+    "bangla": "দ্বিগুণ",
+    "definition": "Given to or marked by deliberate deceptiveness in behavior or speech.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to deceitful.",
+    "synonyms": [
+      "deceitful",
+      "double-dealing",
+      "two-faced"
+    ],
+    "antonyms": [
+      "non duplicitous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 655,
+    "word": "eclectic",
+    "pos": "adjective",
+    "phonetic": "/ɛkˈlɛk.tɪk/",
+    "bangla": "সারগ্রাহী",
+    "definition": "Someone who selects according to the eclectic method.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to heterogeneous.",
+    "synonyms": [
+      "heterogeneous"
+    ],
+    "antonyms": [
+      "exclusive",
+      "homogeneous",
+      "orthodox",
+      "standard"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 656,
+    "word": "efface",
+    "pos": "verb",
+    "phonetic": "/əˈfeɪs/",
+    "bangla": "নিষ্কাশন",
+    "definition": "To erase (as anything impressed or inscribed upon a surface); to render illegible or indiscernible.",
+    "example": "While analyzing the claim, students needed to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to erase (as anything impressed or inscribed upon.",
+    "synonyms": [
+      "obliterate",
+      "wipe",
+      "erase",
+      "rub out"
+    ],
+    "antonyms": [
+      "not efface"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 657,
+    "word": "effervescent",
+    "pos": "adjective",
+    "phonetic": "/ˌɛfəˈvɛsənt/",
+    "bangla": "উজ্জ্বল",
+    "definition": "(of a liquid) Giving off bubbles; fizzy.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is bubbly.",
+    "synonyms": [
+      "bubbly",
+      "ebullient",
+      "sparkling"
+    ],
+    "antonyms": [
+      "noneffervescent",
+      "still"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 658,
+    "word": "egregious",
+    "pos": "adjective",
+    "phonetic": "/əˈɡɹiː.dʒi.əs/",
+    "bangla": "জঘন্য",
+    "definition": "Usually in a negative sense: conspicuous, exceptional, outstanding.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on usually in a negative sense: conspicuous, exceptional, outstanding.",
+    "synonyms": [
+      "conspicuous",
+      "flagrant",
+      "obvious",
+      "rank"
+    ],
+    "antonyms": [
+      "non egregious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 659,
+    "word": "elucidate",
+    "pos": "verb",
+    "phonetic": "/əˈluː.sɪ.de͡ɪt/",
+    "bangla": "ব্যাখ্যা করা",
+    "definition": "To make clear; to clarify; to shed light upon.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to explicate.",
+    "synonyms": [
+      "explicate",
+      "illuminate"
+    ],
+    "antonyms": [
+      "obscure",
+      "obfuscate",
+      "blur",
+      "confuse"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 660,
+    "word": "emulate",
+    "pos": "verb",
+    "phonetic": "/ˈɛm.jə.leɪt/",
+    "bangla": "অনুকরণ করা",
+    "definition": "To attempt to equal or be the same as.",
+    "example": "Before choosing an option, candidates tried to _______ without weakening the central thesis during the reasoning task. as it is close to copy.",
+    "synonyms": [
+      "copy"
+    ],
+    "antonyms": [
+      "not emulate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

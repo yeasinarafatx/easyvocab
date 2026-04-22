@@ -1,262 +1,142 @@
 [
   {
-    "id": 1,
     "word": "abandon",
     "pos": "verb",
     "phonetic": "/əˈbændən/",
-    "bangla": "ত্যাগ করা, পরিত্যাগ করা",
-    "definition": "To leave someone or something without intending to return; to give up or stop doing something",
-    "example": "The captain refused to _______ his ship during the storm.",
-    "synonyms": ["desert", "forsake", "leave", "quit"],
-    "antonyms": ["keep", "retain", "maintain"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "bangla": "ত্যাগ করা",
+    "example": "He had to abandon his car in the snow."
   },
   {
-    "id": 2,
-    "word": "achieve",
+    "word": "abstract",
+    "pos": "adjective",
+    "phonetic": "/ˈæbstrækt/",
+    "bangla": "বিমূর্ত",
+    "example": "The painting was very abstract."
+  },
+  {
+    "word": "accelerate",
     "pos": "verb",
-    "phonetic": "/əˈtʃiːv/",
-    "bangla": "অর্জন করা, সফল হওয়া",
-    "definition": "To successfully reach or accomplish a goal or target through effort",
-    "example": "With hard work and dedication, she managed to _______ her dream of becoming a doctor.",
-    "synonyms": ["accomplish", "attain", "succeed", "complete"],
-    "antonyms": ["fail", "lose", "give up"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "phonetic": "/əkˈseləreɪt/",
+    "bangla": "ত্বরান্বিত করা",
+    "example": "The car began to accelerate down the highway."
   },
   {
-    "id": 3,
+    "word": "accommodate",
+    "pos": "verb",
+    "phonetic": "/əˈkɒmədeɪt/",
+    "bangla": "সামঞ্জস্য করা",
+    "example": "The hotel can accommodate up to 200 guests."
+  },
+  {
+    "word": "accumulate",
+    "pos": "verb",
+    "phonetic": "/əˈkjuːmjuleɪt/",
+    "bangla": "সংগ্রহ করা",
+    "example": "Dust will accumulate on the shelf if you don't clean it."
+  },
+  {
+    "word": "accurate",
+    "pos": "adjective",
+    "phonetic": "/ˈækjərət/",
+    "bangla": "নির্ভুল",
+    "example": "The scientist made an accurate measurement."
+  },
+  {
+    "word": "acquire",
+    "pos": "verb",
+    "phonetic": "/əˈkwaɪər/",
+    "bangla": "অর্জন করা",
+    "example": "She worked hard to acquire new skills."
+  },
+  {
+    "word": "acute",
+    "pos": "adjective",
+    "phonetic": "/əˈkjuːt/",
+    "bangla": "তীক্ষ্ণ",
+    "example": "He suffered from acute pain in his leg."
+  },
+  {
+    "word": "adapt",
+    "pos": "verb",
+    "phonetic": "/əˈdæpt/",
+    "bangla": "খাপ খাইয়ে নেওয়া",
+    "example": "Animals adapt to their environment over time."
+  },
+  {
     "word": "adequate",
     "pos": "adjective",
     "phonetic": "/ˈædɪkwət/",
-    "bangla": "পর্যাপ্ত, যথেষ্ট",
-    "definition": "Enough in quantity or quality to meet a need or requirement",
-    "example": "The company provided _______ training for all new employees.",
-    "synonyms": ["sufficient", "enough", "satisfactory"],
-    "antonyms": ["inadequate", "insufficient", "lacking"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "bangla": "পর্যাপ্ত",
+    "example": "We have adequate supplies for the project."
   },
   {
-    "id": 4,
-    "word": "analyze",
-    "pos": "verb",
-    "phonetic": "/ˈænəlaɪz/",
-    "bangla": "বিশ্লেষণ করা",
-    "definition": "To examine something carefully and in detail to understand or explain it",
-    "example": "The researchers had to _______ the data carefully to draw meaningful conclusions.",
-    "synonyms": ["examine", "study", "investigate", "break down"],
-    "antonyms": ["synthesize", "combine", "ignore"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 5,
-    "word": "benefit",
-    "pos": "noun/verb",
-    "phonetic": "/ˈbenɪfɪt/",
-    "bangla": "উপকার, সুবিধা",
-    "definition": "An advantage or profit gained from something; to gain something good or useful",
-    "example": "Students will _______ greatly from this new educational program.",
-    "synonyms": ["advantage", "profit", "gain", "help"],
-    "antonyms": ["harm", "loss", "disadvantage"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 6,
-    "word": "concept",
-    "pos": "noun",
-    "phonetic": "/ˈkɒnsept/",
-    "bangla": "ধারণা, পরিকল্পনা",
-    "definition": "An abstract idea or general notion; a principle or framework for understanding something",
-    "example": "The _______ of sustainable development is crucial for environmental protection.",
-    "synonyms": ["idea", "notion", "principle", "theory"],
-    "antonyms": ["reality", "fact"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 7,
-    "word": "context",
-    "pos": "noun",
-    "phonetic": "/ˈkɒntekst/",
-    "bangla": "প্রসঙ্গ, পটভূমি",
-    "definition": "The circumstances or situation that surrounds an event or statement; the setting in which something occurs",
-    "example": "To understand the author's message, you must consider the historical _______ in which it was written.",
-    "synonyms": ["background", "setting", "circumstances", "situation"],
-    "antonyms": ["isolation", "disconnection"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 8,
-    "word": "create",
-    "pos": "verb",
-    "phonetic": "/kriːˈeɪt/",
-    "bangla": "সৃষ্টি করা, তৈরি করা",
-    "definition": "To bring something into existence or cause something new to exist",
-    "example": "The artist decided to _______ a masterpiece that would inspire generations.",
-    "synonyms": ["make", "produce", "design", "invent"],
-    "antonyms": ["destroy", "demolish", "erase"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 9,
-    "word": "define",
-    "pos": "verb",
-    "phonetic": "/dɪˈfaɪn/",
-    "bangla": "সংজ্ঞায়িত করা, নির্ধারণ করা",
-    "definition": "To state or explain the meaning of a word, term, or concept clearly and precisely",
-    "example": "The dictionary helps students to _______ unfamiliar words they encounter in texts.",
-    "synonyms": ["explain", "describe", "specify", "clarify"],
-    "antonyms": ["confuse", "obscure"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 10,
-    "word": "evident",
+    "word": "adjacent",
     "pos": "adjective",
-    "phonetic": "/ˈevɪdənt/",
-    "bangla": "স্পষ্ট, সুস্পষ্ট",
-    "definition": "Clearly seen or understood; obvious and easily noticed",
-    "example": "It was _______ from her smile that she was pleased with the results.",
-    "synonyms": ["obvious", "clear", "apparent", "noticeable"],
-    "antonyms": ["hidden", "obscure", "unclear"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "phonetic": "/əˈdʒeɪsənt/",
+    "bangla": "সংলগ্ন",
+    "example": "The two houses are adjacent to each other."
   },
   {
-    "id": 11,
-    "word": "factor",
+    "word": "admire",
+    "pos": "verb",
+    "phonetic": "/ədˈmaɪər/",
+    "bangla": "প্রশংসা করা",
+    "example": "I admire her courage and determination."
+  },
+  {
+    "word": "adolescent",
     "pos": "noun",
-    "phonetic": "/ˈfæktər/",
-    "bangla": "কারণ, উপাদান",
-    "definition": "A circumstance, fact, or element that contributes to a particular result or situation",
-    "example": "The _______ of proper nutrition is essential for child development.",
-    "synonyms": ["cause", "element", "component", "aspect"],
-    "antonyms": ["whole", "total"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "phonetic": "/ˌædəˈlesənt/",
+    "bangla": "কিশোর",
+    "example": "The adolescent years can be challenging."
   },
   {
-    "id": 12,
-    "word": "focus",
-    "pos": "noun/verb",
-    "phonetic": "/ˈfəʊkəs/",
-    "bangla": "মনোযোগ দেওয়া, কেন্দ্র বিন্দু",
-    "definition": "A center of attention or activity; to concentrate or direct attention toward something",
-    "example": "Students need to _______ on their studies during exam season.",
-    "synonyms": ["concentrate", "center", "emphasize", "attention"],
-    "antonyms": ["distract", "scatter", "ignore"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "word": "adopt",
+    "pos": "verb",
+    "phonetic": "/əˈdɒpt/",
+    "bangla": "গ্রহণ করা",
+    "example": "The family decided to adopt a child."
   },
   {
-    "id": 13,
-    "word": "global",
+    "word": "adore",
+    "pos": "verb",
+    "phonetic": "/əˈdɔːr/",
+    "bangla": "পূজা করা",
+    "example": "She adores her grandmother."
+  },
+  {
+    "word": "adorn",
+    "pos": "verb",
+    "phonetic": "/əˈdɔːrn/",
+    "bangla": "সজ্জিত করা",
+    "example": "Flowers adorned the wedding hall."
+  },
+  {
+    "word": "adverse",
     "pos": "adjective",
-    "phonetic": "/ˈɡləʊbəl/",
-    "bangla": "বৈশ্বিক, সর্বজনীন",
-    "definition": "Relating to or affecting the whole world; worldwide or international in scope",
-    "example": "Climate change is a _______ issue that requires international cooperation.",
-    "synonyms": ["worldwide", "international", "universal", "planetary"],
-    "antonyms": ["local", "regional", "limited"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "phonetic": "/ˈædvɜːrs/",
+    "bangla": "বিরূপ",
+    "example": "The adverse weather prevented the game."
   },
   {
-    "id": 14,
-    "word": "impact",
-    "pos": "noun/verb",
-    "phonetic": "/ˈɪmpækt/",
-    "bangla": "প্রভাব, প্রভাব ফেলা",
-    "definition": "A strong effect or influence on something; to have a strong effect on something",
-    "example": "The new technology will _______ how people communicate in the future.",
-    "synonyms": ["effect", "influence", "consequence", "result"],
-    "antonyms": ["insignificance", "neutrality"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 15,
-    "word": "indicate",
+    "word": "advocate",
     "pos": "verb",
-    "phonetic": "/ˈɪndɪkeɪt/",
-    "bangla": "ইঙ্গিত করা, দেখায়",
-    "definition": "To point out, show, or suggest something; to be a sign or evidence of something",
-    "example": "The rising temperatures _______ that the planet is getting warmer.",
-    "synonyms": ["show", "suggest", "point", "demonstrate"],
-    "antonyms": ["hide", "conceal", "dispute"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "phonetic": "/ˈædvəkeɪt/",
+    "bangla": "সমর্থন করা",
+    "example": "He advocates for environmental protection."
   },
   {
-    "id": 16,
-    "word": "major",
-    "pos": "adjective/noun",
-    "phonetic": "/ˈmeɪdʒər/",
-    "bangla": "প্রধান, বড়",
-    "definition": "Of great importance or significance; larger or greater in size, extent, or importance",
-    "example": "The government announced a _______ investment in renewable energy.",
-    "synonyms": ["significant", "important", "main", "principal"],
-    "antonyms": ["minor", "insignificant", "small"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 17,
-    "word": "obtain",
-    "pos": "verb",
-    "phonetic": "/əbˈteɪn/",
-    "bangla": "পাওয়া, অর্জন করা",
-    "definition": "To get or acquire something, especially by effort or request",
-    "example": "You can _______ a visa from the embassy by submitting the required documents.",
-    "synonyms": ["get", "acquire", "secure", "gain"],
-    "antonyms": ["lose", "give", "surrender"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 18,
-    "word": "policy",
+    "word": "affection",
     "pos": "noun",
-    "phonetic": "/ˈpɒləsi/",
-    "bangla": "নীতি, নীতিমালা",
-    "definition": "A course of action adopted and pursued by a government, organization, or individual",
-    "example": "The company's new _______ prohibits employees from using personal devices at work.",
-    "synonyms": ["strategy", "approach", "principle", "plan"],
-    "antonyms": ["improvisation", "chaos"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
+    "phonetic": "/əˈfekʃən/",
+    "bangla": "স্নেহ",
+    "example": "She showed great affection for her pets."
   },
   {
-    "id": 19,
-    "word": "require",
+    "word": "afford",
     "pos": "verb",
-    "phonetic": "/rɪˈkwaɪər/",
-    "bangla": "চাওয়া, প্রয়োজন",
-    "definition": "To need something; to demand or insist that something should be done",
-    "example": "The job _______ excellent communication skills and attention to detail.",
-    "synonyms": ["need", "demand", "necessitate", "call for"],
-    "antonyms": ["provide", "offer", "waive"],
-    "examTags": ["IELTS"],
-    "difficulty": "intermediate"
-  },
-  {
-    "id": 20,
-    "word": "significant",
-    "pos": "adjective",
-    "phonetic": "/sɪɡˈnɪfɪkənt/",
-    "bangla": "উল্লেখযোগ্য, গুরুত্বপূর্ণ",
-    "definition": "Important or meaningful; having a particular effect or consequence",
-    "example": "The discovery of penicillin was a _______ breakthrough in medical history.",
-    "synonyms": ["important", "meaningful", "substantial", "noteworthy"],
-    "antonyms": ["insignificant", "trivial", "minor"],
-    "examTags": ["IELTS"],
-    "difficulty": "upper-intermediate"
+    "phonetic": "/əˈfɔːrd/",
+    "bangla": "সামর্থ্য রাখা",
+    "example": "We cannot afford to buy a new house."
   }
 ]

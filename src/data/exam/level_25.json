@@ -1,0 +1,420 @@
+[
+  {
+    "id": 1081,
+    "word": "nonperforming",
+    "pos": "noun",
+    "phonetic": "/nɑnpərˈfɔrmɪŋ/",
+    "bangla": "অকার্যকর",
+    "definition": "adj Not performing satisfactorily; not functioning well.",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1082,
+    "word": "premium",
+    "pos": "adjective",
+    "phonetic": "/ˈpɹimiəm/",
+    "bangla": "প্রিমিয়াম",
+    "definition": "A prize or award.",
+    "example": "The bank adopted a _______ to strengthen internal monitoring in the risk framework. to explain the idea of a prize or award.",
+    "synonyms": [
+      "agio",
+      "bounty",
+      "agiotage",
+      "exchange premium"
+    ],
+    "antonyms": [
+      "discount"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1083,
+    "word": "quotation",
+    "pos": "noun",
+    "phonetic": "/kwoʊˈteɪʃən/",
+    "bangla": "উদ্ধৃতি",
+    "definition": "A fragment of a human expression that is repeated by somebody else. Most often a quotation is taken from literature or speech, but also scenes from a movie, elements of a painting, a passage of music, etc., may be quoted.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of a fragment of a human expression that is.",
+    "synonyms": [
+      "quote",
+      "citation"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1084,
+    "word": "refinance",
+    "pos": "verb",
+    "phonetic": "/ˌrifəˈnæns/",
+    "bangla": "পুনঃঅর্থায়ন",
+    "definition": "To renew the terms of a loan.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of to renew the terms of a loan.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1085,
+    "word": "refund",
+    "pos": "verb",
+    "phonetic": "/ˈriˌfənd/",
+    "bangla": "ফেরত",
+    "definition": "An amount of money returned.",
+    "example": "Before final approval, the audit team had to _______ before posting the final report in the branch office. with focus on an amount of money returned.",
+    "synonyms": [
+      "return",
+      "repayment",
+      "repay",
+      "give back"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1086,
+    "word": "reconciliation",
+    "pos": "noun",
+    "phonetic": "/ˌɹɛkənˌsɪliˈeɪʃən/",
+    "bangla": "পুনর্মিলন",
+    "definition": "The reestablishment of friendly relations; conciliation or rapprochement.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is saught.",
+    "synonyms": [
+      "saught"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1087,
+    "word": "repo",
+    "pos": "verb",
+    "phonetic": "/ˈɹiːpoʊ/",
+    "bangla": "রেপো",
+    "definition": "Repossession",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of repossession.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1088,
+    "word": "security",
+    "pos": "noun",
+    "phonetic": "/sɪˈkjɔːɹəti/",
+    "bangla": "নিরাপত্তা",
+    "definition": "The condition of not being threatened, especially physically, psychologically, emotionally, or financially.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of the condition of not being threatened, especially physically,.",
+    "synonyms": [
+      "safety",
+      "protection",
+      "guarantee",
+      "surety"
+    ],
+    "antonyms": [
+      "insecurity"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1089,
+    "word": "speculation",
+    "pos": "noun",
+    "phonetic": "/ˌspɛkjəˈleɪʃən/",
+    "bangla": "জল্পনা",
+    "definition": "The process of thinking or meditating on a subject.",
+    "example": "For professional banking knowledge, _______ is treated as a core concept for candidates. with focus on the process of thinking or meditating on a.",
+    "synonyms": [
+      "surmise",
+      "conjecture",
+      "venture",
+      "supposition"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1090,
+    "word": "spread",
+    "pos": "verb",
+    "phonetic": "/spɹɛd/",
+    "bangla": "ছড়িয়ে পড়া",
+    "definition": "The act of spreading.",
+    "example": "The branch manager instructed staff to _______ for stronger compliance control in daily banking practice. where a similar notion is straddle.",
+    "synonyms": [
+      "straddle",
+      "swole",
+      "circulate",
+      "diffuse"
+    ],
+    "antonyms": [
+      "fold",
+      "gather",
+      "collect",
+      "turn up"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1091,
+    "word": "subscription",
+    "pos": "noun",
+    "phonetic": "/səbˈskrɪpʃən/",
+    "bangla": "সদস্যতা",
+    "definition": "Access to a resource for a period of time, generally for payment.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1092,
+    "word": "transaction",
+    "pos": "noun",
+    "phonetic": "/tɹænˈzækʃən/",
+    "bangla": "লেনদেন",
+    "definition": "The act of conducting or carrying out (business, negotiations, plans).",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on the act of conducting or carrying out (business,.",
+    "synonyms": [
+      "dealing",
+      "dealings"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1093,
+    "word": "treasurer",
+    "pos": "noun",
+    "phonetic": "/ˈtɹɛʒəɹə(ɹ)/",
+    "bangla": "কোষাধ্যক্ষ",
+    "definition": "The government official in charge of the Treasury.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is financial officer.",
+    "synonyms": [
+      "financial officer"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1094,
+    "word": "underwrite",
+    "pos": "verb",
+    "phonetic": "/ʌndəˈɹaɪt/",
+    "bangla": "আন্ডাররাইট",
+    "definition": "To write below or under; subscribe.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on to write below or under; subscribe.",
+    "synonyms": [
+      "cover",
+      "insure"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1095,
+    "word": "wire",
+    "pos": "verb",
+    "phonetic": "/waɪə(ɹ)/",
+    "bangla": "তার",
+    "definition": "Metal formed into a thin, even thread, now usually by being drawn through a hole in a steel die.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on metal formed into a thin, even thread, now.",
+    "synonyms": [
+      "barbed wire",
+      "telegram",
+      "telegraph",
+      "conducting wire"
+    ],
+    "antonyms": [
+      "unwire"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1096,
+    "word": "withdraw",
+    "pos": "verb",
+    "phonetic": "/wɪðˈdɹɔː/",
+    "bangla": "প্রত্যাহার",
+    "definition": "To pull (something) back, aside, or away.",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of to pull (something) back, aside, or away.",
+    "synonyms": [
+      "recant",
+      "unsay"
+    ],
+    "antonyms": [
+      "engage",
+      "operate",
+      "bank",
+      "mesh"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1097,
+    "word": "writeoff",
+    "pos": "noun",
+    "phonetic": "/ˈraɪtɔf/",
+    "bangla": "বন্ধ",
+    "definition": "The cancellation of an item; the amount cancelled or lost",
+    "example": "In financial operations, _______ plays an important role in decision-making in real scenarios. as it is close to related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1098,
+    "word": "yielding",
+    "pos": "verb",
+    "phonetic": "/ˈjiːldɪŋ/",
+    "bangla": "ফলন",
+    "definition": "To pay, give in payment; repay, recompense; reward; requite.",
+    "example": "During reconciliation, analysts were asked to _______ while checking transaction history for the bank statement. as it is close to bear.",
+    "synonyms": [
+      "bear",
+      "capitulate",
+      "cede",
+      "defer"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1099,
+    "word": "assetbase",
+    "pos": "noun",
+    "phonetic": "/assetbase/",
+    "bangla": "সম্পদবেস",
+    "definition": "Related to assetbase.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1100,
+    "word": "bookkeeping",
+    "pos": "verb",
+    "phonetic": "/ˈbʊkˌkipɪŋ/",
+    "bangla": "খাতা",
+    "definition": "To do bookkeeping.",
+    "example": "The branch manager instructed staff to _______ while checking transaction history for the bank statement. as it is close to keep books.",
+    "synonyms": [
+      "keep books",
+      "housekeeping"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  }
+]

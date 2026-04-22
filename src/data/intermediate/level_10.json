@@ -1,0 +1,462 @@
+[
+  {
+    "id": 381,
+    "word": "engender",
+    "pos": "verb",
+    "phonetic": "/ɪnˈdʒendər/",
+    "bangla": "সৃষ্টি করা",
+    "definition": "To cause or give rise to a feeling or situation",
+    "example": "Poverty can _______ resentment and serious social instability within communities.",
+    "synonyms": [
+      "cause",
+      "create",
+      "produce"
+    ],
+    "antonyms": [
+      "prevent",
+      "suppress",
+      "eliminate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 382,
+    "word": "entail",
+    "pos": "verb",
+    "phonetic": "/ɪnˈteɪl/",
+    "bangla": "অন্তর্ভুক্ত করা",
+    "definition": "To involve something as a necessary or inevitable part",
+    "example": "Major infrastructure projects _______ significant costs and long periods of disruption.",
+    "synonyms": [
+      "involve",
+      "require",
+      "necessitate"
+    ],
+    "antonyms": [
+      "exclude",
+      "prevent",
+      "avoid"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 383,
+    "word": "equilibrium",
+    "pos": "noun",
+    "phonetic": "/ˌiːkwɪˈlɪbriəm/",
+    "bangla": "ভারসাম্য",
+    "definition": "A state in which opposing forces or influences are balanced",
+    "example": "The ecosystem depends on a delicate _______ between all living organisms.",
+    "synonyms": [
+      "balance",
+      "stability",
+      "harmony"
+    ],
+    "antonyms": [
+      "imbalance",
+      "instability",
+      "disorder"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 384,
+    "word": "erode",
+    "pos": "verb",
+    "phonetic": "/ɪˈrəʊd/",
+    "bangla": "ক্ষয় করা",
+    "definition": "To gradually destroy or remove",
+    "example": "Years of poor government policy have begun to _______ public confidence.",
+    "synonyms": [
+      "wear away",
+      "undermine",
+      "weaken"
+    ],
+    "antonyms": [
+      "strengthen",
+      "build",
+      "reinforce"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 385,
+    "word": "evoke",
+    "pos": "verb",
+    "phonetic": "/ɪˈvəʊk/",
+    "bangla": "জাগিয়ে তোলা",
+    "definition": "To bring a feeling or memory into the mind",
+    "example": "The documentary managed to _______ a powerful emotional response from its audience.",
+    "synonyms": [
+      "arouse",
+      "provoke",
+      "inspire"
+    ],
+    "antonyms": [
+      "suppress",
+      "prevent",
+      "quell"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 386,
+    "word": "exert",
+    "pos": "verb",
+    "phonetic": "/ɪɡˈzɜːt/",
+    "bangla": "প্রভাব বিস্তার করা",
+    "definition": "To apply or bring to bear a force or influence",
+    "example": "Parents _______ a powerful influence on the values and attitudes of their children.",
+    "synonyms": [
+      "apply",
+      "exercise",
+      "use"
+    ],
+    "antonyms": [
+      "withhold",
+      "refrain",
+      "avoid"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 387,
+    "word": "expenditure",
+    "pos": "noun",
+    "phonetic": "/ɪkˈspenditʃər/",
+    "bangla": "ব্যয়",
+    "definition": "The action of spending funds; an amount of money spent",
+    "example": "Public _______ on education has declined in real terms over the past decade.",
+    "synonyms": [
+      "spending",
+      "cost",
+      "outlay"
+    ],
+    "antonyms": [
+      "income",
+      "revenue",
+      "savings"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 388,
+    "word": "expertise",
+    "pos": "noun",
+    "phonetic": "/ˌekspɜːˈtiːz/",
+    "bangla": "বিশেষজ্ঞতা",
+    "definition": "Expert skill or knowledge in a particular field",
+    "example": "The project requires the _______ of engineers, scientists, and policy makers.",
+    "synonyms": [
+      "skill",
+      "knowledge",
+      "proficiency"
+    ],
+    "antonyms": [
+      "ignorance",
+      "inexperience",
+      "incompetence"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 389,
+    "word": "exponential",
+    "pos": "adjective",
+    "phonetic": "/ˌekspəˈnenʃl/",
+    "bangla": "দ্রুতবর্ধনশীল",
+    "definition": "Becoming more rapid as the quantity grows",
+    "example": "The _______ growth of social media usage has transformed how people communicate.",
+    "synonyms": [
+      "rapid",
+      "dramatic",
+      "accelerating"
+    ],
+    "antonyms": [
+      "slow",
+      "gradual",
+      "steady"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 390,
+    "word": "extensive",
+    "pos": "adjective",
+    "phonetic": "/ɪkˈstensɪv/",
+    "bangla": "ব্যাপক",
+    "definition": "Covering a large area; having a wide scope",
+    "example": "The journalist conducted _______ research before publishing the investigative report.",
+    "synonyms": [
+      "broad",
+      "wide",
+      "comprehensive"
+    ],
+    "antonyms": [
+      "limited",
+      "narrow",
+      "restricted"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 391,
+    "word": "facet",
+    "pos": "noun",
+    "phonetic": "/ˈfæsɪt/",
+    "bangla": "দিক",
+    "definition": "One aspect of something that has many sides",
+    "example": "Every _______ of the problem must be carefully considered before a solution is proposed.",
+    "synonyms": [
+      "aspect",
+      "element",
+      "feature"
+    ],
+    "antonyms": [
+      "whole",
+      "entirety",
+      "totality"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 392,
+    "word": "finite",
+    "pos": "adjective",
+    "phonetic": "/ˈfaɪnaɪt/",
+    "bangla": "সীমিত",
+    "definition": "Having limits or an end; not infinite",
+    "example": "The world's fossil fuel reserves are _______ and will eventually run out.",
+    "synonyms": [
+      "limited",
+      "bounded",
+      "restricted"
+    ],
+    "antonyms": [
+      "infinite",
+      "unlimited",
+      "endless"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 393,
+    "word": "flaw",
+    "pos": "noun",
+    "phonetic": "/flɔː/",
+    "bangla": "ত্রুটি",
+    "definition": "A mark, fault, or other imperfection in something",
+    "example": "The researchers identified a fundamental _______ in the methodology of the study.",
+    "synonyms": [
+      "defect",
+      "fault",
+      "weakness"
+    ],
+    "antonyms": [
+      "strength",
+      "virtue",
+      "perfection"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 394,
+    "word": "flourish",
+    "pos": "verb",
+    "phonetic": "/ˈflʌrɪʃ/",
+    "bangla": "সমৃদ্ধ হওয়া",
+    "definition": "To grow or develop in a healthy or vigorous way",
+    "example": "Small businesses tend to _______ when there is a stable economic environment.",
+    "synonyms": [
+      "thrive",
+      "prosper",
+      "grow"
+    ],
+    "antonyms": [
+      "decline",
+      "wither",
+      "struggle"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 395,
+    "word": "forge",
+    "pos": "verb",
+    "phonetic": "/fɔːdʒ/",
+    "bangla": "গড়ে তোলা",
+    "definition": "To create something strong or successful",
+    "example": "The two countries decided to _______ a new and lasting economic partnership.",
+    "synonyms": [
+      "create",
+      "build",
+      "establish"
+    ],
+    "antonyms": [
+      "destroy",
+      "break",
+      "sever"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 396,
+    "word": "framework",
+    "pos": "noun",
+    "phonetic": "/ˈfreɪmwɜːk/",
+    "bangla": "কাঠামো",
+    "definition": "A basic structure underlying a system or concept",
+    "example": "International law provides a _______ for resolving disputes between countries.",
+    "synonyms": [
+      "structure",
+      "system",
+      "basis"
+    ],
+    "antonyms": [
+      "chaos",
+      "disorder",
+      "randomness"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 397,
+    "word": "frugal",
+    "pos": "adjective",
+    "phonetic": "/ˈfruːɡl/",
+    "bangla": "মিতব্যয়ী",
+    "definition": "Simple and plain and costing little; economical",
+    "example": "A _______ lifestyle can help individuals save money and reduce environmental impact.",
+    "synonyms": [
+      "economical",
+      "thrifty",
+      "careful"
+    ],
+    "antonyms": [
+      "wasteful",
+      "extravagant",
+      "lavish"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 398,
+    "word": "governance",
+    "pos": "noun",
+    "phonetic": "/ˈɡʌvənəns/",
+    "bangla": "শাসন, পরিচালনা",
+    "definition": "The action or manner of governing a state or organization",
+    "example": "Good _______ is essential for achieving economic development and political stability.",
+    "synonyms": [
+      "management",
+      "administration",
+      "control"
+    ],
+    "antonyms": [
+      "mismanagement",
+      "chaos",
+      "disorder"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 399,
+    "word": "hamper",
+    "pos": "verb",
+    "phonetic": "/ˈhæmpər/",
+    "bangla": "বাধা দেওয়া",
+    "definition": "To hinder or impede the movement or progress of something",
+    "example": "Lack of funding continues to _______ scientific research in many poor countries.",
+    "synonyms": [
+      "hinder",
+      "obstruct",
+      "impede"
+    ],
+    "antonyms": [
+      "assist",
+      "help",
+      "facilitate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 400,
+    "word": "hinder",
+    "pos": "verb",
+    "phonetic": "/ˈhɪndər/",
+    "bangla": "বাধা দেওয়া",
+    "definition": "To create difficulties for someone or something",
+    "example": "Poor infrastructure can significantly _______ economic growth in developing nations.",
+    "synonyms": [
+      "obstruct",
+      "impede",
+      "hamper"
+    ],
+    "antonyms": [
+      "help",
+      "assist",
+      "facilitate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

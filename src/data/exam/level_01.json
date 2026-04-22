@@ -1,0 +1,453 @@
+[
+  {
+    "id": 601,
+    "word": "abate",
+    "pos": "verb",
+    "phonetic": "/əˈbeɪt/",
+    "bangla": "হ্রাস করা",
+    "definition": "Abatement.",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on abatement.",
+    "synonyms": [
+      "contract",
+      "cut short",
+      "decrease",
+      "diminish"
+    ],
+    "antonyms": [
+      "accelerate",
+      "aggravate",
+      "amplify",
+      "augment"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 602,
+    "word": "aberrant",
+    "pos": "adjective",
+    "phonetic": "/əˈbɛɹ.n̩t/",
+    "bangla": "বিভ্রান্ত",
+    "definition": "A person or object that deviates from the rest of a group.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is deviant.",
+    "synonyms": [
+      "deviant",
+      "freak",
+      "abnormal",
+      "exceptional"
+    ],
+    "antonyms": [
+      "continuous",
+      "normal",
+      "regular",
+      "true"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 603,
+    "word": "abhor",
+    "pos": "verb",
+    "phonetic": "/əbˈhɔː(ɹ)/",
+    "bangla": "ঘৃণা",
+    "definition": "To regard with horror or detestation; to shrink back with shuddering from; to feel excessive repugnance toward; to detest to extremity; to loathe.",
+    "example": "Before choosing an option, candidates tried to _______ to make the conclusion more convincing in the critical reading set. where a similar notion is loathe.",
+    "synonyms": [
+      "loathe",
+      "execrate",
+      "abominate"
+    ],
+    "antonyms": [
+      "not abhor"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 604,
+    "word": "abjure",
+    "pos": "verb",
+    "phonetic": "/æbˈdʒʊɹ/",
+    "bangla": "পরিত্যাগ করা",
+    "definition": "To renounce upon oath; to forswear; to disavow.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to renounce upon oath; to forswear; to disavow.",
+    "synonyms": [
+      "avoid",
+      "shun",
+      "disclaim",
+      "repudiate"
+    ],
+    "antonyms": [
+      "not abjure"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 605,
+    "word": "abridge",
+    "pos": "verb",
+    "phonetic": "/əˈbɹɪd͡ʒ/",
+    "bangla": "সংক্ষিপ্ত",
+    "definition": "To deprive; to cut off.",
+    "example": "While analyzing the claim, students needed to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to deprive; to cut off.",
+    "synonyms": [
+      "reduce",
+      "contract",
+      "abbreviate",
+      "cut"
+    ],
+    "antonyms": [
+      "not abridge"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 606,
+    "word": "abstain",
+    "pos": "verb",
+    "phonetic": "/əbˈsteɪn/",
+    "bangla": "বিরত থাকা",
+    "definition": "Keep or withhold oneself.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to deny.",
+    "synonyms": [
+      "deny",
+      "forbear",
+      "forgo",
+      "give up"
+    ],
+    "antonyms": [
+      "have",
+      "take",
+      "take in",
+      "ingest"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 607,
+    "word": "abstruse",
+    "pos": "adjective",
+    "phonetic": "/əbˈstɹuːs/",
+    "bangla": "বিমূর্ত",
+    "definition": "Difficult to comprehend or understand.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of difficult to comprehend or understand.",
+    "synonyms": [
+      "clandestine",
+      "secret",
+      "surreptitious",
+      "esoteric"
+    ],
+    "antonyms": [
+      "non abstruse"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 608,
+    "word": "acerbic",
+    "pos": "adjective",
+    "phonetic": "/əˈsɜː(ɹ)bɪk/",
+    "bangla": "অ্যাসারবিক",
+    "definition": "Tasting sour or bitter.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of tasting sour or bitter.",
+    "synonyms": [
+      "acrid",
+      "acrimonious",
+      "scathing",
+      "acerb"
+    ],
+    "antonyms": [
+      "non acerbic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 609,
+    "word": "acquiesce",
+    "pos": "verb",
+    "phonetic": "/ˌækwiˈɛs/",
+    "bangla": "স্বীকার করা",
+    "definition": "(with in (or sometimes with, to)) To rest satisfied, or apparently satisfied, or to rest without opposition and discontent (usually implying previous opposition or discontent); to accept or consent by silence or by omitting to object.",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on (with in (or sometimes with, to)) to rest.",
+    "synonyms": [
+      "accept",
+      "go along with",
+      "tacitly",
+      "agree"
+    ],
+    "antonyms": [
+      "dissent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 610,
+    "word": "acrimony",
+    "pos": "noun",
+    "phonetic": "/ˈækrɪˌmoʊni/",
+    "bangla": "তীব্রতা",
+    "definition": "A sharp and bitter hatred.",
+    "example": "In the GRE reading set, the term _______ which highlighted the author's intent for the passage. with focus on a sharp and bitter hatred.",
+    "synonyms": [
+      "animosity",
+      "bitterness",
+      "enmity",
+      "hatred"
+    ],
+    "antonyms": [
+      "friendship",
+      "peace"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 611,
+    "word": "acuity",
+    "pos": "noun",
+    "phonetic": "/əˈkjuːɪti/",
+    "bangla": "তীক্ষ্ণতা",
+    "definition": "Sharpness or acuteness, as of a needle, wit, etc.",
+    "example": "In the paragraph analysis, _______ to frame the main argument clearly in that section. as it is close to keenness.",
+    "synonyms": [
+      "keenness",
+      "acuteness",
+      "visual acuity",
+      "sharp-sightedness"
+    ],
+    "antonyms": [
+      "non acuity"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 612,
+    "word": "adamant",
+    "pos": "adjective",
+    "phonetic": "/ˈæ.də.mænt/",
+    "bangla": "অবিচল",
+    "definition": "An imaginary rock or mineral of impenetrable hardness; a name given to the diamond and other substances of extreme hardness.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is inexorable.",
+    "synonyms": [
+      "inexorable",
+      "intransigent",
+      "adamantine",
+      "inflexible"
+    ],
+    "antonyms": [
+      "non adamant"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 613,
+    "word": "adept",
+    "pos": "adjective",
+    "phonetic": "/əˈdɛpt/",
+    "bangla": "পারদর্শী",
+    "definition": "One fully skilled or well versed in anything; a proficient",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of one fully skilled or well versed in anything;.",
+    "synonyms": [
+      "proficient",
+      "good",
+      "maven",
+      "virtuoso"
+    ],
+    "antonyms": [
+      "inept"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 614,
+    "word": "aesthetic",
+    "pos": "adjective",
+    "phonetic": "/iːs.ˈθe.tɪk/",
+    "bangla": "নান্দনিক",
+    "definition": "The study of art or beauty.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is aesthetical.",
+    "synonyms": [
+      "aesthetical",
+      "esthetic",
+      "tasteful"
+    ],
+    "antonyms": [
+      "inaesthetic",
+      "unaesthetic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 615,
+    "word": "affable",
+    "pos": "adjective",
+    "phonetic": "/ˈæf.ə.bəl/",
+    "bangla": "সহানুভূতিশীল",
+    "definition": "Receiving others kindly and conversing with them in a free and friendly manner; friendly, courteous, sociable.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is accessible.",
+    "synonyms": [
+      "accessible",
+      "civil",
+      "complaisant",
+      "courteous"
+    ],
+    "antonyms": [
+      "inaffable"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 616,
+    "word": "affinity",
+    "pos": "noun",
+    "phonetic": "/əˈfɪnɪti/",
+    "bangla": "সম্বন্ধ",
+    "definition": "A natural attraction or feeling of kinship to a person or thing.",
+    "example": "For the comprehension question, _______ to frame the main argument clearly in that section. as it is close to kinship.",
+    "synonyms": [
+      "kinship",
+      "chemical attraction",
+      "phylogenetic relation",
+      "kinship by marriage"
+    ],
+    "antonyms": [
+      "cognation",
+      "consanguinity",
+      "blood kinship"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 617,
+    "word": "affirm",
+    "pos": "verb",
+    "phonetic": "/əˈfɜːm/",
+    "bangla": "নিশ্চিত করা",
+    "definition": "To agree, verify or concur; to answer positively.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to agree, verify or concur; to answer positively.",
+    "synonyms": [
+      "validate"
+    ],
+    "antonyms": [
+      "deny",
+      "disaffirm",
+      "invalidate",
+      "repudiate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 618,
+    "word": "aggrandize",
+    "pos": "verb",
+    "phonetic": "/əˈɡɹændaɪ̯z/",
+    "bangla": "বড় করা",
+    "definition": "To make great; to enlarge; to increase.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to embellish.",
+    "synonyms": [
+      "embellish",
+      "pad",
+      "blow up",
+      "lard"
+    ],
+    "antonyms": [
+      "not aggrandize"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 619,
+    "word": "agile",
+    "pos": "adjective",
+    "phonetic": "/ˈæd͡ʒ.aɪl/",
+    "bangla": "চটপটে",
+    "definition": "Having the faculty of quick motion in the limbs; apt or ready to move",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to active.",
+    "synonyms": [
+      "active",
+      "alert",
+      "brisk",
+      "lively"
+    ],
+    "antonyms": [
+      "unagile"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 620,
+    "word": "agnostic",
+    "pos": "adjective",
+    "phonetic": "/aɡˈnɒstɪk/",
+    "bangla": "অজ্ঞেয়বাদী",
+    "definition": "A person who holds to a form of agnosticism, especially uncertainty of the existence of a deity.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is nescient.",
+    "synonyms": [
+      "nescient",
+      "unbelieving",
+      "undogmatic",
+      "noncommital"
+    ],
+    "antonyms": [
+      "gnostic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

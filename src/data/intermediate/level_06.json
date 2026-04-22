@@ -1,0 +1,462 @@
+[
+  {
+    "id": 301,
+    "word": "phenomenon",
+    "pos": "noun",
+    "phonetic": "/fɪˈnɒmɪnən/",
+    "bangla": "ঘটনা, প্রপঞ্চ",
+    "definition": "A fact or situation that is observed to exist or happen",
+    "example": "Climate change is a global _______ that affects every nation on earth.",
+    "synonyms": [
+      "occurrence",
+      "event",
+      "fact"
+    ],
+    "antonyms": [
+      "mystery",
+      "unknown",
+      "obscurity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 302,
+    "word": "pragmatic",
+    "pos": "adjective",
+    "phonetic": "/præɡˈmætɪk/",
+    "bangla": "ব্যবহারিক, বাস্তবসম্মত",
+    "definition": "Dealing with things sensibly and realistically",
+    "example": "A _______ approach to policy often works better than a purely idealistic one.",
+    "synonyms": [
+      "practical",
+      "realistic",
+      "sensible"
+    ],
+    "antonyms": [
+      "idealistic",
+      "impractical",
+      "unrealistic"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 303,
+    "word": "precedent",
+    "pos": "noun",
+    "phonetic": "/ˈpresɪdənt/",
+    "bangla": "পূর্বনজির",
+    "definition": "An earlier event used as a guide for future action",
+    "example": "The court ruling set an important _______ for all future similar cases.",
+    "synonyms": [
+      "example",
+      "model",
+      "standard"
+    ],
+    "antonyms": [
+      "deviation",
+      "exception",
+      "novelty"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 304,
+    "word": "predominant",
+    "pos": "adjective",
+    "phonetic": "/prɪˈdɒmɪnənt/",
+    "bangla": "প্রধান",
+    "definition": "Present as the strongest or main element",
+    "example": "English is the _______ language of international business and science today.",
+    "synonyms": [
+      "main",
+      "dominant",
+      "leading"
+    ],
+    "antonyms": [
+      "minor",
+      "secondary",
+      "subordinate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 305,
+    "word": "proactive",
+    "pos": "adjective",
+    "phonetic": "/ˌprəʊˈæktɪv/",
+    "bangla": "সক্রিয়",
+    "definition": "Creating or controlling a situation rather than just responding to it",
+    "example": "Companies need to take a _______ approach to managing environmental risks.",
+    "synonyms": [
+      "active",
+      "forward-thinking",
+      "preventive"
+    ],
+    "antonyms": [
+      "reactive",
+      "passive",
+      "responsive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 306,
+    "word": "profound",
+    "pos": "adjective",
+    "phonetic": "/prəˈfaʊnd/",
+    "bangla": "গভীর",
+    "definition": "Very great or intense; having deep insight or knowledge",
+    "example": "The discovery had a _______ effect on scientific understanding of the universe.",
+    "synonyms": [
+      "deep",
+      "significant",
+      "intense"
+    ],
+    "antonyms": [
+      "shallow",
+      "superficial",
+      "minor"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 307,
+    "word": "proliferate",
+    "pos": "verb",
+    "phonetic": "/prəˈlɪfəreɪt/",
+    "bangla": "দ্রুত বৃদ্ধি পাওয়া",
+    "definition": "To increase rapidly in numbers",
+    "example": "Misinformation tends to _______ quickly on social media platforms.",
+    "synonyms": [
+      "multiply",
+      "spread",
+      "grow"
+    ],
+    "antonyms": [
+      "decrease",
+      "reduce",
+      "diminish"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 308,
+    "word": "proportion",
+    "pos": "noun",
+    "phonetic": "/prəˈpɔːʃn/",
+    "bangla": "অনুপাত",
+    "definition": "A part or share of a whole; a relationship between things",
+    "example": "A large _______ of the country's energy now comes from renewable sources.",
+    "synonyms": [
+      "ratio",
+      "fraction",
+      "part"
+    ],
+    "antonyms": [
+      "whole",
+      "total",
+      "entirety"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 309,
+    "word": "pursuit",
+    "pos": "noun",
+    "phonetic": "/pəˈsjuːt/",
+    "bangla": "অন্বেষণ",
+    "definition": "The action of following or searching for something",
+    "example": "The _______ of knowledge is one of the noblest human endeavours.",
+    "synonyms": [
+      "search",
+      "chase",
+      "quest"
+    ],
+    "antonyms": [
+      "avoidance",
+      "retreat",
+      "abandonment"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 310,
+    "word": "radical",
+    "pos": "adjective",
+    "phonetic": "/ˈrædɪkl/",
+    "bangla": "আমূল",
+    "definition": "Relating to fundamental change; far-reaching",
+    "example": "The country underwent _______ economic reform in the 1990s.",
+    "synonyms": [
+      "fundamental",
+      "extreme",
+      "drastic"
+    ],
+    "antonyms": [
+      "moderate",
+      "minor",
+      "conservative"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 311,
+    "word": "rationale",
+    "pos": "noun",
+    "phonetic": "/ˌræʃəˈnɑːl/",
+    "bangla": "যৌক্তিক কারণ",
+    "definition": "A set of reasons for a course of action",
+    "example": "The report explains the _______ behind the new environmental regulations.",
+    "synonyms": [
+      "reason",
+      "justification",
+      "basis"
+    ],
+    "antonyms": [
+      "irrationality",
+      "illogic",
+      "emotion"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 312,
+    "word": "realistic",
+    "pos": "adjective",
+    "phonetic": "/ˌrɪəˈlɪstɪk/",
+    "bangla": "বাস্তববাদী",
+    "definition": "Having a sensible and practical idea of what can be achieved",
+    "example": "It is important to set _______ goals that can be achieved with available resources.",
+    "synonyms": [
+      "practical",
+      "sensible",
+      "achievable"
+    ],
+    "antonyms": [
+      "unrealistic",
+      "idealistic",
+      "impractical"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 313,
+    "word": "reinforce",
+    "pos": "verb",
+    "phonetic": "/ˌriːɪnˈfɔːs/",
+    "bangla": "শক্তিশালী করা",
+    "definition": "To strengthen or support something",
+    "example": "Positive feedback can _______ good behaviour and strong learning habits.",
+    "synonyms": [
+      "strengthen",
+      "support",
+      "confirm"
+    ],
+    "antonyms": [
+      "weaken",
+      "undermine",
+      "discourage"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 314,
+    "word": "reluctant",
+    "pos": "adjective",
+    "phonetic": "/rɪˈlʌktənt/",
+    "bangla": "অনিচ্ছুক",
+    "definition": "Unwilling and hesitant; not eager",
+    "example": "Many people are _______ to change their lifestyle despite knowing the benefits.",
+    "synonyms": [
+      "unwilling",
+      "hesitant",
+      "resistant"
+    ],
+    "antonyms": [
+      "willing",
+      "eager",
+      "enthusiastic"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 315,
+    "word": "remedy",
+    "pos": "noun",
+    "phonetic": "/ˈremədi/",
+    "bangla": "প্রতিকার",
+    "definition": "A solution to a problem or disease",
+    "example": "Education is often cited as the most effective _______ for reducing poverty.",
+    "synonyms": [
+      "solution",
+      "cure",
+      "fix"
+    ],
+    "antonyms": [
+      "problem",
+      "issue",
+      "cause"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 316,
+    "word": "resilient",
+    "pos": "adjective",
+    "phonetic": "/rɪˈzɪliənt/",
+    "bangla": "স্থিতিস্থাপক",
+    "definition": "Able to recover quickly from difficult conditions",
+    "example": "Communities need to become more _______ in the face of natural disasters.",
+    "synonyms": [
+      "tough",
+      "adaptable",
+      "strong"
+    ],
+    "antonyms": [
+      "fragile",
+      "weak",
+      "vulnerable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 317,
+    "word": "rigorous",
+    "pos": "adjective",
+    "phonetic": "/ˈrɪɡərəs/",
+    "bangla": "কঠোর",
+    "definition": "Extremely thorough and careful",
+    "example": "Scientific research must meet _______ standards before it can be published.",
+    "synonyms": [
+      "thorough",
+      "strict",
+      "demanding"
+    ],
+    "antonyms": [
+      "careless",
+      "lax",
+      "lenient"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 318,
+    "word": "scrutinize",
+    "pos": "verb",
+    "phonetic": "/ˈskruːtɪnaɪz/",
+    "bangla": "সূক্ষ্মভাবে পরীক্ষা করা",
+    "definition": "To examine or inspect closely and thoroughly",
+    "example": "Voters must _______ politicians' promises carefully before casting their vote.",
+    "synonyms": [
+      "examine",
+      "inspect",
+      "analyze"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook",
+      "glance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 319,
+    "word": "sector",
+    "pos": "noun",
+    "phonetic": "/ˈsektər/",
+    "bangla": "খাত, বিভাগ",
+    "definition": "A distinct part or branch of a nation's economy",
+    "example": "The technology _______ has grown significantly over the past decade.",
+    "synonyms": [
+      "area",
+      "field",
+      "industry"
+    ],
+    "antonyms": [
+      "whole",
+      "entirety",
+      "total"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 320,
+    "word": "sequential",
+    "pos": "adjective",
+    "phonetic": "/sɪˈkwenʃl/",
+    "bangla": "ক্রমানুসারে",
+    "definition": "Following in a logical order or sequence",
+    "example": "The instructions must be followed in _______ order for the experiment to succeed.",
+    "synonyms": [
+      "ordered",
+      "successive",
+      "consecutive"
+    ],
+    "antonyms": [
+      "random",
+      "disorderly",
+      "simultaneous"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

@@ -20,7 +20,7 @@ export default function Home() {
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-6">
               <p className="inline-flex rounded-full border border-cyan-200/30 bg-cyan-200/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-100">
-                VocabVault
+                Easy Vocab
               </p>
 
               <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
@@ -113,8 +113,8 @@ export default function Home() {
           </section>
 
           <footer className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-300/90">
-            <p className="font-semibold text-slate-100">VocabVault</p>
-            <p className="mt-1">© 2026 VocabVault. All rights reserved.</p>
+            <p className="font-semibold text-slate-100">Easy Vocab</p>
+            <p className="mt-1">© 2026 Easy Vocab. All rights reserved.</p>
           </footer>
         </section>
       </main>

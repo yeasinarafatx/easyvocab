@@ -1,0 +1,462 @@
+[
+  {
+    "id": 321,
+    "word": "skeptical",
+    "pos": "adjective",
+    "phonetic": "/ˈskeptɪkl/",
+    "bangla": "সন্দেহপ্রবণ",
+    "definition": "Not easily convinced; having doubts or reservations",
+    "example": "Many scientists remain _______ about claims that have not been peer-reviewed.",
+    "synonyms": [
+      "doubtful",
+      "uncertain",
+      "questioning"
+    ],
+    "antonyms": [
+      "trusting",
+      "believing",
+      "accepting"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 322,
+    "word": "sophisticated",
+    "pos": "adjective",
+    "phonetic": "/səˈfɪstɪkeɪtɪd/",
+    "bangla": "পরিশীলিত",
+    "definition": "Developed to a high degree of complexity",
+    "example": "Modern smartphones are highly _______ devices that do far more than make calls.",
+    "synonyms": [
+      "advanced",
+      "complex",
+      "refined"
+    ],
+    "antonyms": [
+      "simple",
+      "basic",
+      "primitive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 323,
+    "word": "speculate",
+    "pos": "verb",
+    "phonetic": "/ˈspekjuleɪt/",
+    "bangla": "অনুমান করা",
+    "definition": "To form a theory without firm evidence",
+    "example": "Analysts _______ that interest rates will rise significantly in the coming months.",
+    "synonyms": [
+      "guess",
+      "theorize",
+      "assume"
+    ],
+    "antonyms": [
+      "know",
+      "confirm",
+      "prove"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 324,
+    "word": "stagnant",
+    "pos": "adjective",
+    "phonetic": "/ˈstæɡnənt/",
+    "bangla": "স্থবির",
+    "definition": "Showing no activity; not growing or developing",
+    "example": "A _______ economy leads to unemployment and declining living standards.",
+    "synonyms": [
+      "static",
+      "inactive",
+      "motionless"
+    ],
+    "antonyms": [
+      "dynamic",
+      "growing",
+      "active"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 325,
+    "word": "stimulate",
+    "pos": "verb",
+    "phonetic": "/ˈstɪmjuleɪt/",
+    "bangla": "উদ্দীপিত করা",
+    "definition": "To encourage activity or development",
+    "example": "Lower interest rates are designed to _______ economic growth and investment.",
+    "synonyms": [
+      "encourage",
+      "boost",
+      "promote"
+    ],
+    "antonyms": [
+      "discourage",
+      "hinder",
+      "suppress"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 326,
+    "word": "subjective",
+    "pos": "adjective",
+    "phonetic": "/səbˈdʒektɪv/",
+    "bangla": "ব্যক্তিগত",
+    "definition": "Based on personal feelings rather than facts",
+    "example": "Beauty is often considered _______ because different people find different things attractive.",
+    "synonyms": [
+      "personal",
+      "biased",
+      "individual"
+    ],
+    "antonyms": [
+      "objective",
+      "impartial",
+      "factual"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 327,
+    "word": "substantial",
+    "pos": "adjective",
+    "phonetic": "/səbˈstænʃl/",
+    "bangla": "উল্লেখযোগ্য",
+    "definition": "Of considerable importance, size, or worth",
+    "example": "There has been a _______ increase in the number of electric vehicles on the roads.",
+    "synonyms": [
+      "significant",
+      "considerable",
+      "large"
+    ],
+    "antonyms": [
+      "minor",
+      "small",
+      "negligible"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 328,
+    "word": "supplement",
+    "pos": "verb",
+    "phonetic": "/ˈsʌplɪment/",
+    "bangla": "পরিপূরক যোগ করা",
+    "definition": "To add to something to make it more complete",
+    "example": "Students are encouraged to _______ their classroom reading with independent research.",
+    "synonyms": [
+      "add to",
+      "enhance",
+      "complement"
+    ],
+    "antonyms": [
+      "reduce",
+      "remove",
+      "subtract"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 329,
+    "word": "suppress",
+    "pos": "verb",
+    "phonetic": "/səˈpres/",
+    "bangla": "দমন করা",
+    "definition": "To forcibly put an end to; to prevent from being known",
+    "example": "Authoritarian governments often _______ free speech and independent journalism.",
+    "synonyms": [
+      "silence",
+      "control",
+      "restrict"
+    ],
+    "antonyms": [
+      "encourage",
+      "promote",
+      "allow"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 330,
+    "word": "sustainable",
+    "pos": "adjective",
+    "phonetic": "/səˈsteɪnəbl/",
+    "bangla": "টেকসই",
+    "definition": "Able to be maintained without depleting natural resources",
+    "example": "Businesses must adopt _______ practices to reduce their environmental impact.",
+    "synonyms": [
+      "renewable",
+      "viable",
+      "long-term"
+    ],
+    "antonyms": [
+      "unsustainable",
+      "harmful",
+      "wasteful"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 331,
+    "word": "synthesis",
+    "pos": "noun",
+    "phonetic": "/ˈsɪnθəsɪs/",
+    "bangla": "সংশ্লেষণ",
+    "definition": "The combination of elements to form a connected whole",
+    "example": "A good essay requires a _______ of information from multiple reliable sources.",
+    "synonyms": [
+      "combination",
+      "blend",
+      "integration"
+    ],
+    "antonyms": [
+      "separation",
+      "division",
+      "analysis"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 332,
+    "word": "tangible",
+    "pos": "adjective",
+    "phonetic": "/ˈtændʒɪbl/",
+    "bangla": "মূর্ত, স্পর্শযোগ্য",
+    "definition": "Perceptible by touch; clear and definite; real",
+    "example": "The project has produced _______ benefits for the local community.",
+    "synonyms": [
+      "real",
+      "concrete",
+      "physical"
+    ],
+    "antonyms": [
+      "intangible",
+      "abstract",
+      "vague"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 333,
+    "word": "transparent",
+    "pos": "adjective",
+    "phonetic": "/trænsˈpærənt/",
+    "bangla": "স্বচ্ছ",
+    "definition": "Easy to see through; open and honest",
+    "example": "Governments need to be _______ about how public money is collected and spent.",
+    "synonyms": [
+      "clear",
+      "open",
+      "honest"
+    ],
+    "antonyms": [
+      "opaque",
+      "secretive",
+      "deceptive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 334,
+    "word": "undermine",
+    "pos": "verb",
+    "phonetic": "/ˌʌndəˈmaɪn/",
+    "bangla": "দুর্বল করা",
+    "definition": "To lessen the effectiveness or power of something gradually",
+    "example": "Corruption can seriously _______ public trust in government institutions.",
+    "synonyms": [
+      "weaken",
+      "damage",
+      "erode"
+    ],
+    "antonyms": [
+      "strengthen",
+      "support",
+      "reinforce"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 335,
+    "word": "universal",
+    "pos": "adjective",
+    "phonetic": "/ˌjuːnɪˈvɜːsl/",
+    "bangla": "সর্বজনীন",
+    "definition": "Done by or involving all people; applicable everywhere",
+    "example": "Access to education should be a _______ right for every child on earth.",
+    "synonyms": [
+      "global",
+      "general",
+      "widespread"
+    ],
+    "antonyms": [
+      "local",
+      "limited",
+      "specific"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 336,
+    "word": "unprecedented",
+    "pos": "adjective",
+    "phonetic": "/ʌnˈpresɪdentɪd/",
+    "bangla": "অভূতপূর্ব",
+    "definition": "Never done or known before",
+    "example": "The pandemic caused _______ disruption to economies all around the world.",
+    "synonyms": [
+      "unique",
+      "unparalleled",
+      "extraordinary"
+    ],
+    "antonyms": [
+      "common",
+      "ordinary",
+      "familiar"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 337,
+    "word": "validate",
+    "pos": "verb",
+    "phonetic": "/ˈvælɪdeɪt/",
+    "bangla": "বৈধতা প্রমাণ করা",
+    "definition": "To check that something is correct or effective",
+    "example": "Further research is needed to _______ the findings of the initial study.",
+    "synonyms": [
+      "confirm",
+      "verify",
+      "prove"
+    ],
+    "antonyms": [
+      "invalidate",
+      "disprove",
+      "reject"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 338,
+    "word": "variable",
+    "pos": "adjective",
+    "phonetic": "/ˈveəriəbl/",
+    "bangla": "পরিবর্তনশীল",
+    "definition": "Subject to change; not constant",
+    "example": "Temperature is an important _______ in determining the rate of chemical reactions.",
+    "synonyms": [
+      "changeable",
+      "fluctuating",
+      "unstable"
+    ],
+    "antonyms": [
+      "constant",
+      "fixed",
+      "stable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 339,
+    "word": "viable",
+    "pos": "adjective",
+    "phonetic": "/ˈvaɪəbl/",
+    "bangla": "সম্ভবপর",
+    "definition": "Capable of working successfully; feasible",
+    "example": "Solar energy is an increasingly _______ alternative to fossil fuels.",
+    "synonyms": [
+      "feasible",
+      "practical",
+      "workable"
+    ],
+    "antonyms": [
+      "impossible",
+      "impractical",
+      "unworkable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 340,
+    "word": "volatile",
+    "pos": "adjective",
+    "phonetic": "/ˈvɒlətaɪl/",
+    "bangla": "অস্থির",
+    "definition": "Liable to change rapidly and unpredictably",
+    "example": "Oil markets are highly _______ and can be affected by political events.",
+    "synonyms": [
+      "unstable",
+      "unpredictable",
+      "erratic"
+    ],
+    "antonyms": [
+      "stable",
+      "steady",
+      "predictable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

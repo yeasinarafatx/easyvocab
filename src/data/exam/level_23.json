@@ -1,0 +1,406 @@
+[
+  {
+    "id": 1041,
+    "word": "reserve",
+    "pos": "verb",
+    "phonetic": "/ɹɪˈzɜːv/",
+    "bangla": "রিজার্ভ",
+    "definition": "(behaviour) Restriction.",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of (behaviour) restriction.",
+    "synonyms": [
+      "army reserve",
+      "ta",
+      "tavr",
+      "territorial army"
+    ],
+    "antonyms": [
+      "not reserve"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1042,
+    "word": "risk",
+    "pos": "verb",
+    "phonetic": "/ɹɪsk/",
+    "bangla": "ঝুঁকি",
+    "definition": "A possible adverse event or outcome",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on a possible adverse event or outcome.",
+    "synonyms": [
+      "danger",
+      "hazard",
+      "peril"
+    ],
+    "antonyms": [
+      "not risk"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1043,
+    "word": "savings",
+    "pos": "noun",
+    "phonetic": "/ˈseɪvɪŋz/",
+    "bangla": "সঞ্চয়",
+    "definition": "A reduction in cost or expenditure.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to nest egg.",
+    "synonyms": [
+      "nest egg"
+    ],
+    "antonyms": [
+      "non savings"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1044,
+    "word": "settlement",
+    "pos": "noun",
+    "phonetic": "/ˈset.l.mənt/",
+    "bangla": "নিষ্পত্তি",
+    "definition": "The act of settling.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is arrangement.",
+    "synonyms": [
+      "arrangement"
+    ],
+    "antonyms": [
+      "non settlement"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1045,
+    "word": "share",
+    "pos": "verb",
+    "phonetic": "/ʃɛə/",
+    "bangla": "ভাগ",
+    "definition": "A portion of something, especially a portion given or allotted to someone.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on a portion of something, especially a portion given.",
+    "synonyms": [
+      "part",
+      "deal",
+      "contribution",
+      "portion"
+    ],
+    "antonyms": [
+      "not share"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1046,
+    "word": "solvency",
+    "pos": "noun",
+    "phonetic": "/ˈsɔlvənsi/",
+    "bangla": "স্বচ্ছলতা",
+    "definition": "The state of having enough funds or liquid assets to pay all of one's debts; the state of being solvent.",
+    "example": "For professional banking knowledge, _______ is treated as a core concept for candidates. with focus on the state of having enough funds or liquid.",
+    "synonyms": [
+      "related to solvency"
+    ],
+    "antonyms": [
+      "insolvency"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1047,
+    "word": "stock",
+    "pos": "verb",
+    "phonetic": "/stɒk/",
+    "bangla": "স্টক",
+    "definition": "A store or supply.",
+    "example": "During reconciliation, analysts were asked to _______ for stronger compliance control in daily banking practice. where a similar notion is rudder stock.",
+    "synonyms": [
+      "rudder stock",
+      "livestock",
+      "card stock",
+      "rootstock"
+    ],
+    "antonyms": [
+      "not stock"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1048,
+    "word": "turnover",
+    "pos": "adjective",
+    "phonetic": "/ˈtərˌnoʊvər/",
+    "bangla": "টার্নওভার",
+    "definition": "The amount of money taken as sales transacted in a given period.",
+    "example": "The board approved a _______ for stable financial operations during loan evaluation. as it is close to upset.",
+    "synonyms": [
+      "upset",
+      "overturn",
+      "turnover rate",
+      "dollar volume"
+    ],
+    "antonyms": [
+      "non turnover"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1049,
+    "word": "underwriting",
+    "pos": "verb",
+    "phonetic": "/ˈəndərˈraɪtɪŋ/",
+    "bangla": "আন্ডাররাইটিং",
+    "definition": "To write below or under; subscribe.",
+    "example": "The branch manager instructed staff to _______ while checking transaction history for the bank statement. as it is close to related to underwriting.",
+    "synonyms": [
+      "related to underwriting"
+    ],
+    "antonyms": [
+      "not underwriting"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1050,
+    "word": "valuation",
+    "pos": "noun",
+    "phonetic": "/ˌvæ.ljuːˈeɪ.ʃən/",
+    "bangla": "মূল্যায়ন",
+    "definition": "An estimation of something's worth.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is evaluation.",
+    "synonyms": [
+      "evaluation",
+      "rating"
+    ],
+    "antonyms": [
+      "non valuation"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1051,
+    "word": "voucher",
+    "pos": "verb",
+    "phonetic": "/ˈvaʊtʃə(ɹ)/",
+    "bangla": "ভাউচার",
+    "definition": "A piece of paper that entitles the holder to a discount, or that can be exchanged for goods and services.",
+    "example": "During reconciliation, analysts were asked to _______ for stronger compliance control in daily banking practice. where a similar notion is coupon.",
+    "synonyms": [
+      "coupon"
+    ],
+    "antonyms": [
+      "not voucher"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1052,
+    "word": "withdrawal",
+    "pos": "noun",
+    "phonetic": "/wɪðˈdɹɔːəl/",
+    "bangla": "প্রত্যাহার",
+    "definition": "Receiving from someone's care what one has earlier entrusted to them. Usually refers to money.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of receiving from someone's care what one has earlier.",
+    "synonyms": [
+      "detachment",
+      "secession",
+      "climb-down",
+      "backdown"
+    ],
+    "antonyms": [
+      "deposit"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1053,
+    "word": "yield",
+    "pos": "verb",
+    "phonetic": "/jiːld/",
+    "bangla": "ফলন",
+    "definition": "To pay, give in payment; repay, recompense; reward; requite.",
+    "example": "The branch manager instructed staff to _______ for stronger compliance control in daily banking practice. where a similar notion is bear.",
+    "synonyms": [
+      "bear",
+      "capitulate",
+      "cede",
+      "defer"
+    ],
+    "antonyms": [
+      "stand",
+      "survive",
+      "make it",
+      "pull through"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1054,
+    "word": "amortization",
+    "pos": "noun",
+    "phonetic": "/əˌmɔːtaɪˈzeɪʃən/",
+    "bangla": "পরিশোধ",
+    "definition": "The reduction of loan principal over a series of payments.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of the reduction of loan principal over a series.",
+    "synonyms": [
+      "amortisation"
+    ],
+    "antonyms": [
+      "non amortization"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1055,
+    "word": "annuity",
+    "pos": "noun",
+    "phonetic": "/əˈn(j)uɪti/",
+    "bangla": "বার্ষিক",
+    "definition": "A right to receive amounts of money regularly over a certain fixed period, in perpetuity, or, especially, over the remaining life or lives of one or more beneficiaries.",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is rente.",
+    "synonyms": [
+      "rente"
+    ],
+    "antonyms": [
+      "non annuity"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1056,
+    "word": "arbitrage",
+    "pos": "verb",
+    "phonetic": "/ˈɑːɹ.bɪ.tɹɪdʒ/",
+    "bangla": "সালিশ",
+    "definition": "A market activity in which a security, commodity, currency or other tradable item is bought in one market and sold simultaneously in another, in order to profit from price differences between the markets.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of a market activity in which a security, commodity,.",
+    "synonyms": [
+      "related to arbitrage"
+    ],
+    "antonyms": [
+      "not arbitrage"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1057,
+    "word": "bearish",
+    "pos": "adjective",
+    "phonetic": "/ˈbɛrɪʃ/",
+    "bangla": "বিয়ারিশ",
+    "definition": "Resembling or likened to a bear, typically in being rough, surly, or clumsy.",
+    "example": "The bank adopted a _______ to keep credit risk under control across all branches. with focus on resembling or likened to a bear, typically in.",
+    "synonyms": [
+      "pessimistic"
+    ],
+    "antonyms": [
+      "bullish"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1058,
+    "word": "bullish",
+    "pos": "adjective",
+    "phonetic": "/ˈbʊlɪʃ/",
+    "bangla": "বুলিশ",
+    "definition": "Having a muscular physique",
+    "example": "The lending desk followed a _______ to keep credit risk under control across all branches. with focus on having a muscular physique.",
+    "synonyms": [
+      "optimistic"
+    ],
+    "antonyms": [
+      "bearish"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1059,
+    "word": "capitalization",
+    "pos": "noun",
+    "phonetic": "/ˌkæpɪtəlɪˈzeɪʃən/",
+    "bangla": "মূলধন",
+    "definition": "The act or process of capitalising.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of the act or process of capitalising.",
+    "synonyms": [
+      "capitalisation"
+    ],
+    "antonyms": [
+      "non capitalization"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1060,
+    "word": "clearinghouse",
+    "pos": "noun",
+    "phonetic": "/ˈklɪrɪŋˌhaʊs/",
+    "bangla": "ক্লিয়ারিংহাউস",
+    "definition": "A central point where clearing banks and other financial firms exchange checks, settle accounts, etc.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to related to clearinghouse.",
+    "synonyms": [
+      "related to clearinghouse"
+    ],
+    "antonyms": [
+      "non clearinghouse"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  }
+]

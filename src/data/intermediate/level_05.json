@@ -1,0 +1,462 @@
+[
+  {
+    "id": 281,
+    "word": "interact",
+    "pos": "verb",
+    "phonetic": "/ˌɪntərˈækt/",
+    "bangla": "মিথস্ক্রিয়া করা",
+    "definition": "To communicate or react with each other",
+    "example": "Children learn vital social skills when they _______ with peers in group settings.",
+    "synonyms": [
+      "communicate",
+      "connect",
+      "engage"
+    ],
+    "antonyms": [
+      "isolate",
+      "separate",
+      "avoid"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 282,
+    "word": "interdependent",
+    "pos": "adjective",
+    "phonetic": "/ˌɪntədɪˈpendənt/",
+    "bangla": "পরস্পর নির্ভরশীল",
+    "definition": "Dependent on each other; mutually reliant",
+    "example": "In a global economy, countries are increasingly _______ in terms of trade.",
+    "synonyms": [
+      "interconnected",
+      "reliant",
+      "linked"
+    ],
+    "antonyms": [
+      "independent",
+      "separate",
+      "isolated"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 283,
+    "word": "intrinsic",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈtrɪnzɪk/",
+    "bangla": "অন্তর্নিহিত",
+    "definition": "Belonging naturally; essential; coming from within",
+    "example": "The _______ motivation to learn is more powerful than external rewards.",
+    "synonyms": [
+      "inherent",
+      "natural",
+      "built-in"
+    ],
+    "antonyms": [
+      "extrinsic",
+      "external",
+      "added"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 284,
+    "word": "irreversible",
+    "pos": "adjective",
+    "phonetic": "/ˌɪrɪˈvɜːsɪbl/",
+    "bangla": "অপরিবর্তনীয়",
+    "definition": "Not able to be undone or altered",
+    "example": "Climate scientists warn that some effects of global warming may become _______.",
+    "synonyms": [
+      "permanent",
+      "unchangeable",
+      "final"
+    ],
+    "antonyms": [
+      "reversible",
+      "temporary",
+      "changeable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 285,
+    "word": "leverage",
+    "pos": "verb",
+    "phonetic": "/ˈliːvərɪdʒ/",
+    "bangla": "সুবিধা নেওয়া",
+    "definition": "To use something to maximum advantage",
+    "example": "Small businesses can _______ social media to compete with larger companies.",
+    "synonyms": [
+      "use",
+      "exploit",
+      "apply"
+    ],
+    "antonyms": [
+      "waste",
+      "ignore",
+      "misuse"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 286,
+    "word": "mitigate",
+    "pos": "verb",
+    "phonetic": "/ˈmɪtɪɡeɪt/",
+    "bangla": "প্রশমিত করা",
+    "definition": "To make less severe, serious, or painful",
+    "example": "Tree planting programmes can help to _______ the effects of carbon dioxide.",
+    "synonyms": [
+      "reduce",
+      "lessen",
+      "ease"
+    ],
+    "antonyms": [
+      "worsen",
+      "increase",
+      "aggravate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 287,
+    "word": "monitor",
+    "pos": "verb",
+    "phonetic": "/ˈmɒnɪtər/",
+    "bangla": "পর্যবেক্ষণ করা",
+    "definition": "To observe and check progress or quality over time",
+    "example": "Health authorities must _______ the spread of infectious diseases carefully.",
+    "synonyms": [
+      "observe",
+      "track",
+      "watch"
+    ],
+    "antonyms": [
+      "ignore",
+      "neglect",
+      "overlook"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 288,
+    "word": "neglect",
+    "pos": "verb",
+    "phonetic": "/nɪˈɡlekt/",
+    "bangla": "অবহেলা করা",
+    "definition": "To fail to give proper care or attention to something",
+    "example": "It is wrong to _______ the needs of vulnerable members of our society.",
+    "synonyms": [
+      "ignore",
+      "overlook",
+      "abandon"
+    ],
+    "antonyms": [
+      "care for",
+      "attend to",
+      "address"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 289,
+    "word": "norm",
+    "pos": "noun",
+    "phonetic": "/nɔːm/",
+    "bangla": "আদর্শ মান",
+    "definition": "Something that is usual, typical, or standard",
+    "example": "Working from home has become the _______ for many professionals since the pandemic.",
+    "synonyms": [
+      "standard",
+      "typical",
+      "usual"
+    ],
+    "antonyms": [
+      "exception",
+      "abnormality",
+      "deviation"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 290,
+    "word": "notion",
+    "pos": "noun",
+    "phonetic": "/ˈnəʊʃn/",
+    "bangla": "ধারণা",
+    "definition": "A concept or belief; an impulse or desire",
+    "example": "The _______ that money always brings happiness has been challenged by psychologists.",
+    "synonyms": [
+      "idea",
+      "concept",
+      "belief"
+    ],
+    "antonyms": [
+      "fact",
+      "certainty",
+      "reality"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 291,
+    "word": "objective",
+    "pos": "noun",
+    "phonetic": "/əbˈdʒektɪv/",
+    "bangla": "উদ্দেশ্য",
+    "definition": "A goal or aim to be achieved",
+    "example": "The main _______ of this research is to find a sustainable solution to the energy crisis.",
+    "synonyms": [
+      "goal",
+      "aim",
+      "purpose"
+    ],
+    "antonyms": [
+      "distraction",
+      "obstacle",
+      "barrier"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 292,
+    "word": "obsolete",
+    "pos": "adjective",
+    "phonetic": "/ˈɒbsəliːt/",
+    "bangla": "অপ্রচলিত",
+    "definition": "No longer produced or used; out of date",
+    "example": "Many traditional manufacturing skills have become _______ due to automation.",
+    "synonyms": [
+      "outdated",
+      "old-fashioned",
+      "extinct"
+    ],
+    "antonyms": [
+      "current",
+      "modern",
+      "relevant"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 293,
+    "word": "offset",
+    "pos": "verb",
+    "phonetic": "/ˈɒfset/",
+    "bangla": "ভারসাম্য রক্ষা করা",
+    "definition": "To counteract something by having an equal and opposite force",
+    "example": "Airlines offer passengers the option to _______ their carbon emissions by planting trees.",
+    "synonyms": [
+      "counterbalance",
+      "compensate",
+      "neutralize"
+    ],
+    "antonyms": [
+      "increase",
+      "worsen",
+      "add to"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 294,
+    "word": "ongoing",
+    "pos": "adjective",
+    "phonetic": "/ˈɒnɡəʊɪŋ/",
+    "bangla": "চলমান",
+    "definition": "Continuing to exist or progress",
+    "example": "There is an _______ debate about the best way to reform the education system.",
+    "synonyms": [
+      "continuing",
+      "current",
+      "active"
+    ],
+    "antonyms": [
+      "finished",
+      "completed",
+      "ended"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 295,
+    "word": "optimistic",
+    "pos": "adjective",
+    "phonetic": "/ˌɒptɪˈmɪstɪk/",
+    "bangla": "আশাবাদী",
+    "definition": "Hopeful and confident about the future",
+    "example": "Scientists remain _______ that a vaccine for the disease will be found soon.",
+    "synonyms": [
+      "hopeful",
+      "positive",
+      "confident"
+    ],
+    "antonyms": [
+      "pessimistic",
+      "negative",
+      "doubtful"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 296,
+    "word": "outcome",
+    "pos": "noun",
+    "phonetic": "/ˈaʊtkʌm/",
+    "bangla": "ফলাফল",
+    "definition": "The way a thing turns out; a result or consequence",
+    "example": "The _______ of the negotiations will determine the future of the trade agreement.",
+    "synonyms": [
+      "result",
+      "consequence",
+      "effect"
+    ],
+    "antonyms": [
+      "cause",
+      "reason",
+      "origin"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 297,
+    "word": "outweigh",
+    "pos": "verb",
+    "phonetic": "/ˌaʊtˈweɪ/",
+    "bangla": "ছাড়িয়ে যাওয়া",
+    "definition": "To be greater or more significant than something else",
+    "example": "The benefits of the new policy seem to _______ its potential drawbacks.",
+    "synonyms": [
+      "exceed",
+      "surpass",
+      "override"
+    ],
+    "antonyms": [
+      "underperform",
+      "fall short",
+      "lag"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 298,
+    "word": "paradigm",
+    "pos": "noun",
+    "phonetic": "/ˈpærədaɪm/",
+    "bangla": "দৃষ্টান্ত",
+    "definition": "A typical example or pattern; a model or framework",
+    "example": "The internet has created a new _______ for how people access and share information.",
+    "synonyms": [
+      "model",
+      "framework",
+      "pattern"
+    ],
+    "antonyms": [
+      "exception",
+      "deviation",
+      "anomaly"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 299,
+    "word": "perception",
+    "pos": "noun",
+    "phonetic": "/pəˈsepʃn/",
+    "bangla": "উপলব্ধি",
+    "definition": "The way in which something is regarded or understood",
+    "example": "Public _______ of a government's performance can heavily affect election results.",
+    "synonyms": [
+      "view",
+      "understanding",
+      "impression"
+    ],
+    "antonyms": [
+      "reality",
+      "fact",
+      "truth"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 300,
+    "word": "persist",
+    "pos": "verb",
+    "phonetic": "/pəˈsɪst/",
+    "bangla": "অবিচল থাকা",
+    "definition": "To continue firmly in doing something despite difficulty",
+    "example": "Successful people _______ in the face of failure and always learn from their mistakes.",
+    "synonyms": [
+      "continue",
+      "endure",
+      "persevere"
+    ],
+    "antonyms": [
+      "give up",
+      "quit",
+      "abandon"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

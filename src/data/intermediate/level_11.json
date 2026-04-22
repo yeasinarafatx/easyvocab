@@ -1,0 +1,462 @@
+[
+  {
+    "id": 401,
+    "word": "imminent",
+    "pos": "adjective",
+    "phonetic": "/ˈɪmɪnənt/",
+    "bangla": "আসন্ন",
+    "definition": "About to happen very soon",
+    "example": "Scientists warned that an ecological catastrophe was _______ without immediate action.",
+    "synonyms": [
+      "impending",
+      "approaching",
+      "forthcoming"
+    ],
+    "antonyms": [
+      "distant",
+      "remote",
+      "unlikely"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 402,
+    "word": "impartial",
+    "pos": "adjective",
+    "phonetic": "/ɪmˈpɑːʃl/",
+    "bangla": "নিরপেক্ষ",
+    "definition": "Treating all rivals or disputants equally; fair and just",
+    "example": "A judge must remain _______ and base decisions only on the evidence presented.",
+    "synonyms": [
+      "neutral",
+      "unbiased",
+      "fair"
+    ],
+    "antonyms": [
+      "biased",
+      "partial",
+      "prejudiced"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 403,
+    "word": "impede",
+    "pos": "verb",
+    "phonetic": "/ɪmˈpiːd/",
+    "bangla": "বাধা দেওয়া",
+    "definition": "To delay or prevent progress; to obstruct",
+    "example": "Bureaucratic delays can _______ the delivery of essential services to communities.",
+    "synonyms": [
+      "hinder",
+      "obstruct",
+      "block"
+    ],
+    "antonyms": [
+      "help",
+      "assist",
+      "accelerate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 404,
+    "word": "inception",
+    "pos": "noun",
+    "phonetic": "/ɪnˈsepʃn/",
+    "bangla": "শুরু, উৎপত্তি",
+    "definition": "The establishment or starting point of an institution",
+    "example": "Since its _______, the organization has helped over a million people worldwide.",
+    "synonyms": [
+      "beginning",
+      "start",
+      "origin"
+    ],
+    "antonyms": [
+      "end",
+      "conclusion",
+      "termination"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 405,
+    "word": "inclusive",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈkluːsɪv/",
+    "bangla": "অন্তর্ভুক্তিমূলক",
+    "definition": "Not excluding any section of society or group of people",
+    "example": "Education systems should be _______ and cater to the needs of all learners.",
+    "synonyms": [
+      "comprehensive",
+      "universal",
+      "all-encompassing"
+    ],
+    "antonyms": [
+      "exclusive",
+      "selective",
+      "discriminatory"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 406,
+    "word": "incorporate",
+    "pos": "verb",
+    "phonetic": "/ɪnˈkɔːpəreɪt/",
+    "bangla": "অন্তর্ভুক্ত করা",
+    "definition": "To include or integrate something into a larger whole",
+    "example": "The new curriculum will _______ digital literacy as a core subject for all students.",
+    "synonyms": [
+      "include",
+      "integrate",
+      "absorb"
+    ],
+    "antonyms": [
+      "exclude",
+      "separate",
+      "remove"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 407,
+    "word": "indispensable",
+    "pos": "adjective",
+    "phonetic": "/ˌɪndɪˈspensəbl/",
+    "bangla": "অপরিহার্য",
+    "definition": "Absolutely necessary; impossible to do without",
+    "example": "Access to clean water is _______ for the survival and health of any community.",
+    "synonyms": [
+      "essential",
+      "necessary",
+      "vital"
+    ],
+    "antonyms": [
+      "dispensable",
+      "optional",
+      "unnecessary"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 408,
+    "word": "induce",
+    "pos": "verb",
+    "phonetic": "/ɪnˈdjuːs/",
+    "bangla": "প্রলুব্ধ করা",
+    "definition": "To succeed in persuading someone to do something",
+    "example": "Financial incentives may _______ more people to adopt energy-efficient practices.",
+    "synonyms": [
+      "persuade",
+      "encourage",
+      "motivate"
+    ],
+    "antonyms": [
+      "deter",
+      "discourage",
+      "prevent"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 409,
+    "word": "inference",
+    "pos": "noun",
+    "phonetic": "/ˈɪnfərəns/",
+    "bangla": "অনুমান",
+    "definition": "A conclusion drawn from evidence and reasoning",
+    "example": "The _______ drawn from the data was that air quality had improved significantly.",
+    "synonyms": [
+      "conclusion",
+      "deduction",
+      "assumption"
+    ],
+    "antonyms": [
+      "fact",
+      "certainty",
+      "knowledge"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 410,
+    "word": "inhibit",
+    "pos": "verb",
+    "phonetic": "/ɪnˈhɪbɪt/",
+    "bangla": "বাধা দেওয়া",
+    "definition": "To hinder, restrain, or prevent an action or process",
+    "example": "Fear of failure can _______ creativity and discourage healthy risk-taking.",
+    "synonyms": [
+      "prevent",
+      "hinder",
+      "suppress"
+    ],
+    "antonyms": [
+      "encourage",
+      "promote",
+      "facilitate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 411,
+    "word": "initiate",
+    "pos": "verb",
+    "phonetic": "/ɪˈnɪʃieɪt/",
+    "bangla": "শুরু করা",
+    "definition": "To cause a process or action to begin",
+    "example": "The government plans to _______ a major reform of the country's tax system.",
+    "synonyms": [
+      "begin",
+      "start",
+      "launch"
+    ],
+    "antonyms": [
+      "end",
+      "terminate",
+      "conclude"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 412,
+    "word": "innovate",
+    "pos": "verb",
+    "phonetic": "/ˈɪnəveɪt/",
+    "bangla": "উদ্ভাবন করা",
+    "definition": "To introduce new methods, ideas, or products",
+    "example": "Companies that fail to _______ risk becoming outdated and losing their market share.",
+    "synonyms": [
+      "create",
+      "invent",
+      "develop"
+    ],
+    "antonyms": [
+      "imitate",
+      "copy",
+      "stagnate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 413,
+    "word": "instigate",
+    "pos": "verb",
+    "phonetic": "/ˈɪnstɪɡeɪt/",
+    "bangla": "উস্কানি দেওয়া, শুরু করা",
+    "definition": "To bring about by inciting; to stir up or provoke",
+    "example": "The documentary helped to _______ a wider public debate about environmental policy.",
+    "synonyms": [
+      "provoke",
+      "trigger",
+      "cause"
+    ],
+    "antonyms": [
+      "prevent",
+      "stop",
+      "suppress"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 414,
+    "word": "integrity",
+    "pos": "noun",
+    "phonetic": "/ɪnˈteɡrɪti/",
+    "bangla": "সততা",
+    "definition": "The quality of being honest and having strong moral principles",
+    "example": "A politician who acts with _______ will earn the long-term trust of the public.",
+    "synonyms": [
+      "honesty",
+      "principle",
+      "virtue"
+    ],
+    "antonyms": [
+      "dishonesty",
+      "corruption",
+      "immorality"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 415,
+    "word": "intensify",
+    "pos": "verb",
+    "phonetic": "/ɪnˈtensɪfaɪ/",
+    "bangla": "তীব্র করা",
+    "definition": "To become or make more intense or severe",
+    "example": "Competition in the technology sector is expected to _______ in the coming years.",
+    "synonyms": [
+      "increase",
+      "strengthen",
+      "escalate"
+    ],
+    "antonyms": [
+      "reduce",
+      "weaken",
+      "lessen"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 416,
+    "word": "intervene",
+    "pos": "verb",
+    "phonetic": "/ˌɪntəˈviːn/",
+    "bangla": "হস্তক্ষেপ করা",
+    "definition": "To come between so as to prevent or alter a result",
+    "example": "The international community was slow to _______ in the humanitarian crisis.",
+    "synonyms": [
+      "interfere",
+      "mediate",
+      "intercede"
+    ],
+    "antonyms": [
+      "ignore",
+      "withdraw",
+      "abstain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 417,
+    "word": "isolate",
+    "pos": "verb",
+    "phonetic": "/ˈaɪsəleɪt/",
+    "bangla": "বিচ্ছিন্ন করা",
+    "definition": "To cause to be alone or apart from others",
+    "example": "Scientists _______ the bacteria to study its properties more carefully in the lab.",
+    "synonyms": [
+      "separate",
+      "detach",
+      "quarantine"
+    ],
+    "antonyms": [
+      "connect",
+      "integrate",
+      "combine"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 418,
+    "word": "jeopardize",
+    "pos": "verb",
+    "phonetic": "/ˈdʒepədaɪz/",
+    "bangla": "বিপদে ফেলা",
+    "definition": "To put someone or something into a situation of danger",
+    "example": "Reckless spending could _______ the country's long-term economic stability.",
+    "synonyms": [
+      "endanger",
+      "threaten",
+      "risk"
+    ],
+    "antonyms": [
+      "protect",
+      "secure",
+      "safeguard"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 419,
+    "word": "legitimate",
+    "pos": "adjective",
+    "phonetic": "/lɪˈdʒɪtɪmɪt/",
+    "bangla": "বৈধ",
+    "definition": "Conforming to the law or to rules; justifiable",
+    "example": "The protesters had a _______ grievance that the government needed to address.",
+    "synonyms": [
+      "lawful",
+      "valid",
+      "justified"
+    ],
+    "antonyms": [
+      "illegal",
+      "unjustified",
+      "invalid"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 420,
+    "word": "marginal",
+    "pos": "adjective",
+    "phonetic": "/ˈmɑːdʒɪnl/",
+    "bangla": "প্রান্তিক",
+    "definition": "Relating to a minimum; of minor importance or effect",
+    "example": "There has only been a _______ improvement in living standards for the poorest groups.",
+    "synonyms": [
+      "minor",
+      "slight",
+      "peripheral"
+    ],
+    "antonyms": [
+      "significant",
+      "substantial",
+      "central"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

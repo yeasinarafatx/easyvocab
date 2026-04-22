@@ -1,0 +1,410 @@
+[
+  {
+    "id": 1021,
+    "word": "drawer",
+    "pos": "noun",
+    "phonetic": "/dɹɔː(ɹ)/",
+    "bangla": "ড্রয়ার",
+    "definition": "An open-topped box that can be slid in and out of the cabinet that contains it, used for storing clothing or other articles.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is draftsman.",
+    "synonyms": [
+      "draftsman"
+    ],
+    "antonyms": [
+      "non drawer"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1022,
+    "word": "equity",
+    "pos": "noun",
+    "phonetic": "/ˈɛk.wɪ.ti/",
+    "bangla": "ইক্যুইটি",
+    "definition": "Fairness, impartiality, or justice as determined in light of \"natural law\" or \"natural right\".",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is fairness.",
+    "synonyms": [
+      "fairness"
+    ],
+    "antonyms": [
+      "inequity",
+      "unfairness"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1023,
+    "word": "escrow",
+    "pos": "verb",
+    "phonetic": "/ˈɛs.kɹəʊ̯/",
+    "bangla": "এসক্রো",
+    "definition": "A written instrument, such as a deed, temporarily deposited with a neutral third party (the escrow agent), by the agreement of two parties to a valid contract. The escrow agent will deliver the document to the benefited party when the conditions of the contract have been met. The depositor has no control over the instrument in escrow.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of a written instrument, such as a deed, temporarily.",
+    "synonyms": [
+      "related to escrow"
+    ],
+    "antonyms": [
+      "not escrow"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1024,
+    "word": "exchange",
+    "pos": "noun",
+    "phonetic": "/ɛksˈtʃeɪndʒ/",
+    "bangla": "বিনিময়",
+    "definition": "An act of exchanging or trading.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to convert.",
+    "synonyms": [
+      "convert",
+      "change",
+      "interchange",
+      "commute"
+    ],
+    "antonyms": [
+      "non exchange"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1025,
+    "word": "expense",
+    "pos": "verb",
+    "phonetic": "/ɪkˈspɛns/",
+    "bangla": "খরচ",
+    "definition": "A spending or consuming, often a disbursement of funds.",
+    "example": "Before final approval, the audit team had to _______ before posting the final report in the branch office. with focus on a spending or consuming, often a disbursement of.",
+    "synonyms": [
+      "charge",
+      "cost",
+      "disbursement",
+      "expenditure"
+    ],
+    "antonyms": [
+      "not expense"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1026,
+    "word": "fund",
+    "pos": "verb",
+    "phonetic": "/ˈfʌnd/",
+    "bangla": "তহবিল",
+    "definition": "A sum or source of money.",
+    "example": "During reconciliation, analysts were asked to _______ while checking transaction history for the bank statement. as it is close to stock.",
+    "synonyms": [
+      "stock",
+      "store",
+      "investment company",
+      "investment trust"
+    ],
+    "antonyms": [
+      "not fund"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1027,
+    "word": "hedge",
+    "pos": "noun",
+    "phonetic": "/hɛdʒ/",
+    "bangla": "হেজ",
+    "definition": "A thicket of bushes or other shrubbery, especially one planted as a fence between two portions of land, or to separate the parts of a garden.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of a thicket of bushes or other shrubbery, especially.",
+    "synonyms": [
+      "elude",
+      "circumvent",
+      "evade",
+      "dodge"
+    ],
+    "antonyms": [
+      "non hedge"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1028,
+    "word": "interest",
+    "pos": "verb",
+    "phonetic": "/ˈɪntəɹɪst/",
+    "bangla": "সুদ",
+    "definition": "The price paid for obtaining, or price received for providing, money or goods in a credit transaction, calculated as a fraction of the amount or value of what was borrowed.",
+    "example": "Before final approval, the audit team had to _______ before posting the final report in the branch office. with focus on the price paid for obtaining, or price received.",
+    "synonyms": [
+      "cost of money",
+      "oker"
+    ],
+    "antonyms": [
+      "bore",
+      "disinterest"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1029,
+    "word": "inventory",
+    "pos": "verb",
+    "phonetic": "/ɪnˈvɛn.tə.ɹi/",
+    "bangla": "জায়",
+    "definition": "(operations) The stock of an item on hand at a particular location or business.",
+    "example": "The branch manager instructed staff to _______ while checking transaction history for the bank statement. as it is close to index.",
+    "synonyms": [
+      "index",
+      "inventorize",
+      "take inventory",
+      "take stock"
+    ],
+    "antonyms": [
+      "not inventory"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1030,
+    "word": "invoice",
+    "pos": "verb",
+    "phonetic": "/ˈɪnˌvɔɪs/",
+    "bangla": "চালান",
+    "definition": "A bill; a commercial document issued by a seller to a buyer indicating the products, quantities and agreed prices for products or services that the seller has already provided the buyer with. An invoice indicates that, unless paid in advance, payment is due by the buyer to the seller, according to the agreed terms.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on a bill; a commercial document issued by a.",
+    "synonyms": [
+      "shipment"
+    ],
+    "antonyms": [
+      "not invoice"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1031,
+    "word": "ledger",
+    "pos": "verb",
+    "phonetic": "/ˈlɛdʒə/",
+    "bangla": "খাতা",
+    "definition": "A book for keeping notes, especially one for keeping accounting records; a record book, a register.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on a book for keeping notes, especially one for.",
+    "synonyms": [
+      "ligger"
+    ],
+    "antonyms": [
+      "not ledger"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1032,
+    "word": "liquidity",
+    "pos": "noun",
+    "phonetic": "/lɪkˈwɪdəti/",
+    "bangla": "তারল্য",
+    "definition": "The degree of which something is in high supply and demand, making it easily convertible to cash",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on the degree of which something is in high.",
+    "synonyms": [
+      "fluidity",
+      "liquid",
+      "liquidness",
+      "fluidness"
+    ],
+    "antonyms": [
+      "illiquidity"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1033,
+    "word": "loan",
+    "pos": "verb",
+    "phonetic": "/ləʊn/",
+    "bangla": "ঋণ",
+    "definition": "An act or instance of lending, an act or instance of granting something for temporary use.",
+    "example": "During reconciliation, analysts were asked to _______ for stronger compliance control in daily banking practice. where a similar notion is lending.",
+    "synonyms": [
+      "lending",
+      "loaning",
+      "principal"
+    ],
+    "antonyms": [
+      "borrow"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1034,
+    "word": "mortgage",
+    "pos": "verb",
+    "phonetic": "/ˈmɔː.ɡɪdʒ/",
+    "bangla": "বন্ধক",
+    "definition": "A special form of secured loan where the purpose of the loan must be specified to the lender, to purchase assets that must be fixed (not movable) property, such as a house or piece of farm land. The assets are registered as the legal property of the borrower but the lender can seize them and dispose of them if they are not satisfied with the manner in which the repayment of the loan is conducted by the borrower. Once the loan is fully repaid, the lender loses this right of seizure and the assets are then deemed to be unencumbered.",
+    "example": "The branch manager instructed staff to _______ while checking transaction history for the bank statement. as it is close to related to mortgage.",
+    "synonyms": [
+      "related to mortgage"
+    ],
+    "antonyms": [
+      "not mortgage"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1035,
+    "word": "overdraft",
+    "pos": "verb",
+    "phonetic": "/ˈəʊvədɹɑːft/",
+    "bangla": "ওভারড্রাফ্ট",
+    "definition": "The act of overdrawing a bank account.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on the act of overdrawing a bank account.",
+    "synonyms": [
+      "related to overdraft"
+    ],
+    "antonyms": [
+      "not overdraft"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1036,
+    "word": "payment",
+    "pos": "noun",
+    "phonetic": "/ˈpeɪmənt/",
+    "bangla": "পেমেন্ট",
+    "definition": "The act of paying.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on the act of paying.",
+    "synonyms": [
+      "scot"
+    ],
+    "antonyms": [
+      "default",
+      "nonpayment",
+      "nonremittal"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1037,
+    "word": "profit",
+    "pos": "verb",
+    "phonetic": "/ˈpɹɒfɪt/",
+    "bangla": "লাভ",
+    "definition": "Total income or cash flow minus expenditures. The money or other benefit a non-governmental organization or individual receives in exchange for products and services sold at an advertised price.",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of total income or cash flow minus expenditures. the.",
+    "synonyms": [
+      "gain"
+    ],
+    "antonyms": [
+      "loss"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1038,
+    "word": "rate",
+    "pos": "verb",
+    "phonetic": "/ɹeɪt/",
+    "bangla": "হার",
+    "definition": "The worth of something; value.",
+    "example": "Before final approval, the audit team had to _______ before posting the final report in the branch office. with focus on the worth of something; value.",
+    "synonyms": [
+      "rank"
+    ],
+    "antonyms": [
+      "not rate"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1039,
+    "word": "receipt",
+    "pos": "verb",
+    "phonetic": "/ɹɪˈsiːt/",
+    "bangla": "রসিদ",
+    "definition": "The act of receiving, or the fact of having been received.",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of the act of receiving, or the fact of.",
+    "synonyms": [
+      "acknowledge",
+      "reception",
+      "receiving"
+    ],
+    "antonyms": [
+      "not receipt"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1040,
+    "word": "remittance",
+    "pos": "noun",
+    "phonetic": "/rəˈmɪtəns/",
+    "bangla": "রেমিটেন্স",
+    "definition": "The act of transmitting money, bills, etc. to a distant place, in return or payment for goods purchased.",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is remission.",
+    "synonyms": [
+      "remission",
+      "remittal"
+    ],
+    "antonyms": [
+      "non remittance"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  }
+]

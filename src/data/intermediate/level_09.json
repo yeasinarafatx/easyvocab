@@ -1,0 +1,462 @@
+[
+  {
+    "id": 361,
+    "word": "convergence",
+    "pos": "noun",
+    "phonetic": "/kənˈvɜːdʒəns/",
+    "bangla": "একত্রীভূতকরণ",
+    "definition": "The process of coming together from different directions",
+    "example": "The _______ of digital and physical retail has transformed consumer behaviour.",
+    "synonyms": [
+      "merging",
+      "meeting",
+      "union"
+    ],
+    "antonyms": [
+      "divergence",
+      "separation",
+      "division"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 362,
+    "word": "convey",
+    "pos": "verb",
+    "phonetic": "/kənˈveɪ/",
+    "bangla": "প্রকাশ করা",
+    "definition": "To communicate or make something known to others",
+    "example": "A good teacher can _______ complex ideas in a way that all students can understand.",
+    "synonyms": [
+      "express",
+      "communicate",
+      "transmit"
+    ],
+    "antonyms": [
+      "conceal",
+      "hide",
+      "withhold"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 363,
+    "word": "credible",
+    "pos": "adjective",
+    "phonetic": "/ˈkredɪbl/",
+    "bangla": "বিশ্বাসযোগ্য",
+    "definition": "Able to be believed; convincing and trustworthy",
+    "example": "The witness provided a _______ account of the events she had directly observed.",
+    "synonyms": [
+      "believable",
+      "trustworthy",
+      "convincing"
+    ],
+    "antonyms": [
+      "incredible",
+      "untrustworthy",
+      "unconvincing"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 364,
+    "word": "curtail",
+    "pos": "verb",
+    "phonetic": "/kɜːˈteɪl/",
+    "bangla": "সংক্ষিপ্ত করা",
+    "definition": "To reduce in extent or quantity; to impose a restriction on",
+    "example": "The government announced plans to _______ public spending to reduce the deficit.",
+    "synonyms": [
+      "reduce",
+      "limit",
+      "cut"
+    ],
+    "antonyms": [
+      "increase",
+      "expand",
+      "extend"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 365,
+    "word": "cynical",
+    "pos": "adjective",
+    "phonetic": "/ˈsɪnɪkl/",
+    "bangla": "সংশয়বাদী",
+    "definition": "Believing the worst of human nature; distrustful",
+    "example": "Many voters have become _______ about politicians' promises after repeated disappointments.",
+    "synonyms": [
+      "skeptical",
+      "distrustful",
+      "pessimistic"
+    ],
+    "antonyms": [
+      "trusting",
+      "optimistic",
+      "idealistic"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 366,
+    "word": "decisive",
+    "pos": "adjective",
+    "phonetic": "/dɪˈsaɪsɪv/",
+    "bangla": "নির্ণায়ক",
+    "definition": "Settling an issue; having the ability to make decisions quickly",
+    "example": "A _______ leader must be able to act quickly and firmly in times of crisis.",
+    "synonyms": [
+      "determined",
+      "firm",
+      "conclusive"
+    ],
+    "antonyms": [
+      "indecisive",
+      "hesitant",
+      "uncertain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 367,
+    "word": "degrade",
+    "pos": "verb",
+    "phonetic": "/dɪˈɡreɪd/",
+    "bangla": "অবনতি করা",
+    "definition": "To cause something to become worse in quality",
+    "example": "Pollution continues to _______ the natural environment at an alarming rate.",
+    "synonyms": [
+      "worsen",
+      "deteriorate",
+      "damage"
+    ],
+    "antonyms": [
+      "improve",
+      "restore",
+      "enhance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 368,
+    "word": "deprive",
+    "pos": "verb",
+    "phonetic": "/dɪˈpraɪv/",
+    "bangla": "বঞ্চিত করা",
+    "definition": "To prevent from having or using something",
+    "example": "Children who are _______ of education are far less likely to escape poverty.",
+    "synonyms": [
+      "deny",
+      "take away",
+      "withhold"
+    ],
+    "antonyms": [
+      "provide",
+      "give",
+      "allow"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 369,
+    "word": "discrepancy",
+    "pos": "noun",
+    "phonetic": "/dɪˈskrepənsi/",
+    "bangla": "অসঙ্গতি",
+    "definition": "A lack of compatibility between facts or claims",
+    "example": "There was a significant _______ between the official figures and the actual results.",
+    "synonyms": [
+      "inconsistency",
+      "difference",
+      "gap"
+    ],
+    "antonyms": [
+      "consistency",
+      "agreement",
+      "similarity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 370,
+    "word": "disparity",
+    "pos": "noun",
+    "phonetic": "/dɪˈspærɪti/",
+    "bangla": "বৈষম্য",
+    "definition": "A great difference between things or people",
+    "example": "The growing _______ between rich and poor is a major concern in many countries.",
+    "synonyms": [
+      "inequality",
+      "difference",
+      "gap"
+    ],
+    "antonyms": [
+      "equality",
+      "similarity",
+      "uniformity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 371,
+    "word": "displace",
+    "pos": "verb",
+    "phonetic": "/dɪsˈpleɪs/",
+    "bangla": "স্থানচ্যুত করা",
+    "definition": "To move from its place; to force to leave a home",
+    "example": "Automation may _______ millions of workers from their jobs in the coming decades.",
+    "synonyms": [
+      "replace",
+      "move",
+      "remove"
+    ],
+    "antonyms": [
+      "place",
+      "keep",
+      "retain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 372,
+    "word": "distinction",
+    "pos": "noun",
+    "phonetic": "/dɪˈstɪŋkʃn/",
+    "bangla": "পার্থক্য, বিশেষত্ব",
+    "definition": "A difference or contrast between similar things",
+    "example": "There is an important _______ between correlation and causation in scientific research.",
+    "synonyms": [
+      "difference",
+      "contrast",
+      "separation"
+    ],
+    "antonyms": [
+      "similarity",
+      "sameness",
+      "identity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 373,
+    "word": "domain",
+    "pos": "noun",
+    "phonetic": "/dəˈmeɪn/",
+    "bangla": "ক্ষেত্র, এলাকা",
+    "definition": "A field of activity or knowledge; a territory",
+    "example": "Artificial intelligence is rapidly changing the _______ of healthcare and medicine.",
+    "synonyms": [
+      "field",
+      "area",
+      "sphere"
+    ],
+    "antonyms": [
+      "whole",
+      "entirety",
+      "everything"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 374,
+    "word": "drastic",
+    "pos": "adjective",
+    "phonetic": "/ˈdræstɪk/",
+    "bangla": "আমূল, চরম",
+    "definition": "Likely to have a strong or far-reaching effect",
+    "example": "The government took _______ measures to control the rapidly spreading epidemic.",
+    "synonyms": [
+      "extreme",
+      "severe",
+      "radical"
+    ],
+    "antonyms": [
+      "mild",
+      "moderate",
+      "gentle"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 375,
+    "word": "durable",
+    "pos": "adjective",
+    "phonetic": "/ˈdjʊərəbl/",
+    "bangla": "টেকসই",
+    "definition": "Able to withstand wear; lasting a long time",
+    "example": "We need _______ solutions to environmental problems, not temporary quick fixes.",
+    "synonyms": [
+      "lasting",
+      "strong",
+      "resilient"
+    ],
+    "antonyms": [
+      "fragile",
+      "temporary",
+      "weak"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 376,
+    "word": "elaborate",
+    "pos": "adjective",
+    "phonetic": "/ɪˈlæbərɪt/",
+    "bangla": "বিস্তারিত",
+    "definition": "Involving many carefully arranged parts; detailed",
+    "example": "The architect presented an _______ design for the new cultural centre.",
+    "synonyms": [
+      "detailed",
+      "complex",
+      "intricate"
+    ],
+    "antonyms": [
+      "simple",
+      "basic",
+      "plain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 377,
+    "word": "elicit",
+    "pos": "verb",
+    "phonetic": "/ɪˈlɪsɪt/",
+    "bangla": "বের করা",
+    "definition": "To draw out a response or reaction from someone",
+    "example": "The controversial speech _______ a strong reaction from both sides of parliament.",
+    "synonyms": [
+      "draw out",
+      "evoke",
+      "provoke"
+    ],
+    "antonyms": [
+      "suppress",
+      "prevent",
+      "discourage"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 378,
+    "word": "embody",
+    "pos": "verb",
+    "phonetic": "/ɪmˈbɒdi/",
+    "bangla": "মূর্তিমান করা",
+    "definition": "To represent in concrete form; to be an expression of",
+    "example": "The constitution _______ the core values of freedom, equality, and justice.",
+    "synonyms": [
+      "represent",
+      "express",
+      "personify"
+    ],
+    "antonyms": [
+      "conceal",
+      "contradict",
+      "undermine"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 379,
+    "word": "encompass",
+    "pos": "verb",
+    "phonetic": "/ɪnˈkʌmpəs/",
+    "bangla": "অন্তর্ভুক্ত করা",
+    "definition": "To include a wide range of things",
+    "example": "The report _______ a wide range of important issues related to climate change.",
+    "synonyms": [
+      "include",
+      "cover",
+      "contain"
+    ],
+    "antonyms": [
+      "exclude",
+      "omit",
+      "ignore"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 380,
+    "word": "endorse",
+    "pos": "verb",
+    "phonetic": "/ɪnˈdɔːs/",
+    "bangla": "সমর্থন করা",
+    "definition": "To declare public approval or support for something",
+    "example": "The organization officially _______ the new international climate agreement.",
+    "synonyms": [
+      "support",
+      "approve",
+      "back"
+    ],
+    "antonyms": [
+      "oppose",
+      "reject",
+      "condemn"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

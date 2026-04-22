@@ -1,0 +1,456 @@
+[
+  {
+    "id": 661,
+    "word": "enervate",
+    "pos": "verb",
+    "phonetic": "/enervate/",
+    "bangla": "উদ্দীপিত করা",
+    "definition": "To reduce strength or energy; debilitate.",
+    "example": "While analyzing the claim, students needed to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to reduce strength or energy; debilitate.",
+    "synonyms": [
+      "debilitate",
+      "weaken"
+    ],
+    "antonyms": [
+      "bolster",
+      "revive",
+      "strengthen"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 662,
+    "word": "ephemeral",
+    "pos": "adjective",
+    "phonetic": "/əˈfɛ.mə.ɹəl/",
+    "bangla": "ক্ষণস্থায়ী",
+    "definition": "Something which lasts for a short period of time.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is ephemeron.",
+    "synonyms": [
+      "ephemeron",
+      "evanescent",
+      "fleeting",
+      "momentary"
+    ],
+    "antonyms": [
+      "eternal",
+      "everlasting",
+      "permanent",
+      "timeless"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 663,
+    "word": "equivocal",
+    "pos": "adjective",
+    "phonetic": "/əˈkwɪvəkəl/",
+    "bangla": "দ্ব্যর্থহীন",
+    "definition": "A word or expression capable of different meanings; an ambiguous term.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of a word or expression capable of different meanings;.",
+    "synonyms": [
+      "double entendre",
+      "equivoque",
+      "ambiguous",
+      "indeterminate"
+    ],
+    "antonyms": [
+      "certain",
+      "unequivocal",
+      "univocal"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 664,
+    "word": "esoteric",
+    "pos": "adjective",
+    "phonetic": "/ˌɛs.əʊˈtɛɹ.ɪk/",
+    "bangla": "গুপ্ত",
+    "definition": "An esoteric doctrine or treatise; esoteric philosophy.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of an esoteric doctrine or treatise; esoteric philosophy.",
+    "synonyms": [
+      "secretive",
+      "cerebral",
+      "arcane",
+      "recondite"
+    ],
+    "antonyms": [
+      "exoteric"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 665,
+    "word": "exacerbate",
+    "pos": "verb",
+    "phonetic": "/ɪkˈsæs-/",
+    "bangla": "বৃদ্ধি করা",
+    "definition": "To make worse (a problem, bad situation, negative feeling, etc.); aggravate; exasperate.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to aggravate.",
+    "synonyms": [
+      "aggravate",
+      "exasperate",
+      "worsen"
+    ],
+    "antonyms": [
+      "ameliorate",
+      "improve",
+      "meliorate",
+      "better"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 666,
+    "word": "exculpate",
+    "pos": "verb",
+    "phonetic": "/ˈɛkskəlpeɪt/",
+    "bangla": "দোষী সাব্যস্ত করা",
+    "definition": "To clear of or to free from guilt; exonerate.",
+    "example": "In the final paragraph, the reviewer decided to _______ to make the conclusion more convincing in the critical reading set. where a similar notion is absolve.",
+    "synonyms": [
+      "absolve",
+      "acquit",
+      "disculpate",
+      "exonerate"
+    ],
+    "antonyms": [
+      "condemn",
+      "inculpate",
+      "indict"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 667,
+    "word": "exonerate",
+    "pos": "verb",
+    "phonetic": "/ɛɡ-/",
+    "bangla": "মুক্ত করা",
+    "definition": "To relieve (someone or something) of a load; to unburden (a load).",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on to relieve (someone or something) of a load;.",
+    "synonyms": [
+      "acquit",
+      "exculpate"
+    ],
+    "antonyms": [
+      "convict"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 668,
+    "word": "expedient",
+    "pos": "adjective",
+    "phonetic": "/ɪkˈspiːdi.ənt/",
+    "bangla": "সমীচীন",
+    "definition": "A method or means for achieving a particular result, especially when direct or efficient; a resource.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on a method or means for achieving a particular.",
+    "synonyms": [
+      "advisable",
+      "desirable",
+      "judicious",
+      "politic"
+    ],
+    "antonyms": [
+      "inexpedient"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 669,
+    "word": "fatuous",
+    "pos": "adjective",
+    "phonetic": "/ˈfæt.ju.əs/",
+    "bangla": "মিথ্যা",
+    "definition": "Obnoxiously stupid, vacantly silly, content in one's foolishness.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is childish.",
+    "synonyms": [
+      "childish",
+      "imbecilic",
+      "inane",
+      "insipid"
+    ],
+    "antonyms": [
+      "non fatuous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 670,
+    "word": "feckless",
+    "pos": "adjective",
+    "phonetic": "/ˈfɛkləs/",
+    "bangla": "নির্বোধ",
+    "definition": "Lacking purpose.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on lacking purpose.",
+    "synonyms": [
+      "feeble",
+      "futile",
+      "hopeless",
+      "ineffective"
+    ],
+    "antonyms": [
+      "effective",
+      "efficient",
+      "meaningful",
+      "useful"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 671,
+    "word": "fervent",
+    "pos": "adjective",
+    "phonetic": "/ˈfɜː.vənt/",
+    "bangla": "উগ্র",
+    "definition": "Exhibiting particular enthusiasm, zeal, conviction, persistence, or belief.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to torrid.",
+    "synonyms": [
+      "torrid",
+      "fervid",
+      "ardent",
+      "cordial"
+    ],
+    "antonyms": [
+      "non fervent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 672,
+    "word": "fortuitous",
+    "pos": "adjective",
+    "phonetic": "/fɔːˈtjuːɪtəs/",
+    "bangla": "আকস্মিক",
+    "definition": "Happening by chance; coincidental, accidental.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on happening by chance; coincidental, accidental.",
+    "synonyms": [
+      "by accident",
+      "causeless",
+      "incidental",
+      "happy"
+    ],
+    "antonyms": [
+      "non fortuitous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 673,
+    "word": "fractious",
+    "pos": "adjective",
+    "phonetic": "/ˈfɹæk.ʃəs/",
+    "bangla": "খণ্ডিত",
+    "definition": "Given to troublemaking.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is hard.",
+    "synonyms": [
+      "hard",
+      "difficult",
+      "petulant",
+      "tetchy"
+    ],
+    "antonyms": [
+      "non fractious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 674,
+    "word": "garrulous",
+    "pos": "adjective",
+    "phonetic": "/ˈɡæɹ.jʊ.ləs/",
+    "bangla": "গরুলস",
+    "definition": "Excessively or tiresomely talkative.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on excessively or tiresomely talkative.",
+    "synonyms": [
+      "bombastic",
+      "rambling",
+      "wordy",
+      "chatty"
+    ],
+    "antonyms": [
+      "non garrulous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 675,
+    "word": "grandiose",
+    "pos": "adjective",
+    "phonetic": "/ˌgrændiˈoʊs/",
+    "bangla": "বিশাল",
+    "definition": "Large and impressive, in size, scope or extent",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of large and impressive, in size, scope or extent.",
+    "synonyms": [
+      "pretentious",
+      "impressive",
+      "highfalutin",
+      "hoity-toity"
+    ],
+    "antonyms": [
+      "non grandiose"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 676,
+    "word": "harangue",
+    "pos": "verb",
+    "phonetic": "/həˈɹeɪŋ/",
+    "bangla": "হারাঙ্গু",
+    "definition": "An impassioned, disputatious public speech.",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on an impassioned, disputatious public speech.",
+    "synonyms": [
+      "admonition",
+      "condemnation",
+      "criticism",
+      "diatribe"
+    ],
+    "antonyms": [
+      "not harangue"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 677,
+    "word": "heterodox",
+    "pos": "adjective",
+    "phonetic": "/ˈhɛtɛɹədɒks/",
+    "bangla": "ধর্ম, বিশ্বাস বা শিক্ষার সাথে সম্পর্কিত, বিশেষ করে ধর্মীয় বিষয়গুলি",
+    "definition": "Of or pertaining to creeds, beliefs, or teachings, especially religious ones, that are different from orthodoxy, or the norm, but not sufficiently different to be called heretical.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on of or pertaining to creeds, beliefs, or teachings,.",
+    "synonyms": [
+      "dissident",
+      "unorthodox",
+      "heretical"
+    ],
+    "antonyms": [
+      "orthodox"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 678,
+    "word": "implacable",
+    "pos": "adjective",
+    "phonetic": "/-ˈpleɪ-/",
+    "bangla": "অদম্য",
+    "definition": "Not able to be placated or appeased.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to impacable.",
+    "synonyms": [
+      "impacable",
+      "irreconcilable",
+      "unassuageable",
+      "unplacable"
+    ],
+    "antonyms": [
+      "appeasable",
+      "assuageable",
+      "pacable",
+      "pacifiable"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 679,
+    "word": "impugn",
+    "pos": "verb",
+    "phonetic": "/ɪmˈpjuːn/",
+    "bangla": "অপমান করা",
+    "definition": "To assault, attack.",
+    "example": "While analyzing the claim, students needed to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to assault, attack.",
+    "synonyms": [
+      "call into question",
+      "challenge",
+      "contest",
+      "contradict"
+    ],
+    "antonyms": [
+      "authenticate",
+      "endorse",
+      "support"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 680,
+    "word": "inchoate",
+    "pos": "verb",
+    "phonetic": "/ɪnˈkəʊeɪt/",
+    "bangla": "একটি শুরু, একটি অপরিণত শুরু",
+    "definition": "A beginning, an immature start.",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on a beginning, an immature start.",
+    "synonyms": [
+      "chaotic",
+      "confused",
+      "elementary",
+      "embryonic"
+    ],
+    "antonyms": [
+      "not inchoate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

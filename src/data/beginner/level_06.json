@@ -1,0 +1,22 @@
+[
+  {"word":"expand","pos":"verb","phonetic":"/ɪkˈspænd/","bangla":"প্রসারিত করা","example":"The company plans to expand globally."},
+  {"word":"expert","pos":"noun","phonetic":"/ˈekspɜːt/","bangla":"বিশেষজ্ঞ","example":"An expert explained the new policy."},
+  {"word":"expose","pos":"verb","phonetic":"/ɪkˈspəʊz/","bangla":"উন্মুক্ত করা","example":"The course will expose students to new ideas."},
+  {"word":"external","pos":"adjective","phonetic":"/ɪkˈstɜːnəl/","bangla":"বাহ্যিক","example":"External factors affect exam results."},
+  {"word":"facilitate","pos":"verb","phonetic":"/fəˈsɪlɪteɪt/","bangla":"সহজ করা","example":"Technology facilitates remote learning."},
+  {"word":"factor","pos":"noun","phonetic":"/ˈfæktər/","bangla":"কারক","example":"Cost is an important factor in decisions."},
+  {"word":"feature","pos":"noun","phonetic":"/ˈfiːtʃər/","bangla":"বৈশিষ্ট্য","example":"This app has a useful feature."},
+  {"word":"finance","pos":"noun/verb","phonetic":"/ˈfaɪnæns/","bangla":"অর্থায়ন","example":"The project needs proper finance."},
+  {"word":"focus","pos":"verb/noun","phonetic":"/ˈfəʊkəs/","bangla":"মনোযোগ","example":"Please focus on the key points."},
+  {"word":"format","pos":"noun","phonetic":"/ˈfɔːmæt/","bangla":"বিন্যাস","example":"Use the correct format in writing."},
+  {"word":"function","pos":"noun/verb","phonetic":"/ˈfʌŋkʃən/","bangla":"কার্য","example":"The main function of this tool is analysis."},
+  {"word":"fundamental","pos":"adjective","phonetic":"/ˌfʌndəˈmentl/","bangla":"মৌলিক","example":"Reading is a fundamental skill."},
+  {"word":"generate","pos":"verb","phonetic":"/ˈdʒenəreɪt/","bangla":"উৎপন্ন করা","example":"Wind turbines generate electricity."},
+  {"word":"goal","pos":"noun","phonetic":"/ɡəʊl/","bangla":"লক্ষ্য","example":"Set a clear goal for each week."},
+  {"word":"grade","pos":"noun","phonetic":"/ɡreɪd/","bangla":"গ্রেড","example":"She received a high grade in IELTS."},
+  {"word":"grant","pos":"noun/verb","phonetic":"/ɡrɑːnt/","bangla":"অনুদান","example":"The university granted him a scholarship."},
+  {"word":"guideline","pos":"noun","phonetic":"/ˈɡaɪdlaɪn/","bangla":"নির্দেশিকা","example":"Follow the guideline for task writing."},
+  {"word":"hypothesis","pos":"noun","phonetic":"/haɪˈpɒθəsɪs/","bangla":"অনুমানমূলক ধারণা","example":"The hypothesis was tested in the lab."},
+  {"word":"identify","pos":"verb","phonetic":"/aɪˈdentɪfaɪ/","bangla":"সনাক্ত করা","example":"Can you identify the main trend?"},
+  {"word":"ignore","pos":"verb","phonetic":"/ɪɡˈnɔː/","bangla":"উপেক্ষা করা","example":"Do not ignore important evidence."}
+]

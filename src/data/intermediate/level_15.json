@@ -1,0 +1,462 @@
+[
+  {
+    "id": 481,
+    "word": "obsolete",
+    "pos": "adjective",
+    "phonetic": "/ˈɒbsəliːt/",
+    "bangla": "অপ্রচলিত",
+    "definition": "No longer produced or used; out of date",
+    "example": "Many traditional manufacturing skills have become _______ due to widespread automation.",
+    "synonyms": [
+      "outdated",
+      "old-fashioned",
+      "extinct"
+    ],
+    "antonyms": [
+      "current",
+      "modern",
+      "relevant"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 482,
+    "word": "orient",
+    "pos": "verb",
+    "phonetic": "/ˈɔːrient/",
+    "bangla": "অভিমুখ নির্ধারণ করা",
+    "definition": "To align or position relative to a point; to familiarize with a situation",
+    "example": "New employees need time to _______ themselves to the company's culture and processes.",
+    "synonyms": [
+      "align",
+      "adjust",
+      "direct"
+    ],
+    "antonyms": [
+      "confuse",
+      "disorient",
+      "mislead"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 483,
+    "word": "overarching",
+    "pos": "adjective",
+    "phonetic": "/ˌəʊvərˈɑːtʃɪŋ/",
+    "bangla": "সামগ্রিক",
+    "definition": "Forming an arch over everything; all-embracing and comprehensive",
+    "example": "The _______ goal of the policy is to reduce inequality and promote social justice.",
+    "synonyms": [
+      "overall",
+      "comprehensive",
+      "broad"
+    ],
+    "antonyms": [
+      "narrow",
+      "specific",
+      "limited"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 484,
+    "word": "paramount",
+    "pos": "adjective",
+    "phonetic": "/ˈpærəmaʊnt/",
+    "bangla": "সর্বোচ্চ গুরুত্বপূর্ণ",
+    "definition": "More important than anything else; of supreme importance",
+    "example": "The safety of all passengers must be of _______ importance in public transport.",
+    "synonyms": [
+      "supreme",
+      "primary",
+      "foremost"
+    ],
+    "antonyms": [
+      "minor",
+      "secondary",
+      "unimportant"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 485,
+    "word": "perpetuate",
+    "pos": "verb",
+    "phonetic": "/pəˈpetʃueɪt/",
+    "bangla": "স্থায়ী করা",
+    "definition": "To make something continue indefinitely",
+    "example": "Poverty can _______ itself across generations without targeted and sustained social intervention.",
+    "synonyms": [
+      "continue",
+      "maintain",
+      "sustain"
+    ],
+    "antonyms": [
+      "end",
+      "stop",
+      "eliminate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 486,
+    "word": "plausible",
+    "pos": "adjective",
+    "phonetic": "/ˈplɔːzɪbl/",
+    "bangla": "গ্রহণযোগ্য",
+    "definition": "Seeming reasonable or probable; credible",
+    "example": "The scientist offered a _______ explanation for the completely unexpected results.",
+    "synonyms": [
+      "credible",
+      "reasonable",
+      "believable"
+    ],
+    "antonyms": [
+      "implausible",
+      "unbelievable",
+      "unlikely"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 487,
+    "word": "polarize",
+    "pos": "verb",
+    "phonetic": "/ˈpəʊləraɪz/",
+    "bangla": "দ্বিধাবিভক্ত করা",
+    "definition": "To divide into two sharply contrasting groups",
+    "example": "Social media has tended to _______ public opinion on many political issues.",
+    "synonyms": [
+      "divide",
+      "split",
+      "separate"
+    ],
+    "antonyms": [
+      "unite",
+      "reconcile",
+      "bring together"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 488,
+    "word": "premise",
+    "pos": "noun",
+    "phonetic": "/ˈpremɪs/",
+    "bangla": "পূর্বধারণা",
+    "definition": "A previous statement from which another is inferred",
+    "example": "The entire argument is built on the _______ that economic growth leads to greater equality.",
+    "synonyms": [
+      "assumption",
+      "basis",
+      "foundation"
+    ],
+    "antonyms": [
+      "conclusion",
+      "result",
+      "outcome"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 489,
+    "word": "prevalent",
+    "pos": "adjective",
+    "phonetic": "/ˈprevələnt/",
+    "bangla": "প্রচলিত",
+    "definition": "Widespread in a particular area or at a particular time",
+    "example": "Heart disease is particularly _______ in countries with high-fat dietary habits.",
+    "synonyms": [
+      "common",
+      "widespread",
+      "frequent"
+    ],
+    "antonyms": [
+      "rare",
+      "unusual",
+      "uncommon"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 490,
+    "word": "proactive",
+    "pos": "adjective",
+    "phonetic": "/ˌprəʊˈæktɪv/",
+    "bangla": "সক্রিয়",
+    "definition": "Creating or controlling a situation rather than just responding to it",
+    "example": "Companies need to take a _______ approach to managing all environmental risks.",
+    "synonyms": [
+      "active",
+      "forward-thinking",
+      "preventive"
+    ],
+    "antonyms": [
+      "reactive",
+      "passive",
+      "responsive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 491,
+    "word": "rigorous",
+    "pos": "adjective",
+    "phonetic": "/ˈrɪɡərəs/",
+    "bangla": "কঠোর",
+    "definition": "Extremely thorough, exhaustive, and accurate",
+    "example": "Scientific research must meet _______ standards before it can be published in journals.",
+    "synonyms": [
+      "thorough",
+      "strict",
+      "demanding"
+    ],
+    "antonyms": [
+      "careless",
+      "lax",
+      "lenient"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 492,
+    "word": "scrutinize",
+    "pos": "verb",
+    "phonetic": "/ˈskruːtɪnaɪz/",
+    "bangla": "সূক্ষ্মভাবে পরীক্ষা করা",
+    "definition": "To examine or inspect closely and thoroughly",
+    "example": "Voters must carefully _______ politicians' promises before casting their vote.",
+    "synonyms": [
+      "examine",
+      "inspect",
+      "analyze"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook",
+      "glance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 493,
+    "word": "sophisticated",
+    "pos": "adjective",
+    "phonetic": "/səˈfɪstɪkeɪtɪd/",
+    "bangla": "পরিশীলিত",
+    "definition": "Developed to a high degree of complexity",
+    "example": "Modern smartphones are highly _______ devices that do far more than simply make calls.",
+    "synonyms": [
+      "advanced",
+      "complex",
+      "refined"
+    ],
+    "antonyms": [
+      "simple",
+      "basic",
+      "primitive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 494,
+    "word": "substantial",
+    "pos": "adjective",
+    "phonetic": "/səbˈstænʃl/",
+    "bangla": "উল্লেখযোগ্য",
+    "definition": "Of considerable importance, size, or worth",
+    "example": "There has been a _______ increase in the number of electric vehicles on the roads.",
+    "synonyms": [
+      "significant",
+      "considerable",
+      "large"
+    ],
+    "antonyms": [
+      "minor",
+      "small",
+      "negligible"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 495,
+    "word": "synthesis",
+    "pos": "noun",
+    "phonetic": "/ˈsɪnθəsɪs/",
+    "bangla": "সংশ্লেষণ",
+    "definition": "The combination of elements to form a connected and coherent whole",
+    "example": "A good essay requires a _______ of information from multiple reliable sources.",
+    "synonyms": [
+      "combination",
+      "blend",
+      "integration"
+    ],
+    "antonyms": [
+      "separation",
+      "division",
+      "analysis"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 496,
+    "word": "tangible",
+    "pos": "adjective",
+    "phonetic": "/ˈtændʒɪbl/",
+    "bangla": "মূর্ত",
+    "definition": "Perceptible by touch; clear and definite; real",
+    "example": "The project has produced _______ benefits for the local community over time.",
+    "synonyms": [
+      "real",
+      "concrete",
+      "physical"
+    ],
+    "antonyms": [
+      "intangible",
+      "abstract",
+      "vague"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 497,
+    "word": "transparent",
+    "pos": "adjective",
+    "phonetic": "/trænsˈpærənt/",
+    "bangla": "স্বচ্ছ",
+    "definition": "Easy to perceive or detect; open and honest",
+    "example": "Governments need to be fully _______ about how public money is collected and spent.",
+    "synonyms": [
+      "clear",
+      "open",
+      "honest"
+    ],
+    "antonyms": [
+      "opaque",
+      "secretive",
+      "deceptive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 498,
+    "word": "universal",
+    "pos": "adjective",
+    "phonetic": "/ˌjuːnɪˈvɜːsl/",
+    "bangla": "সর্বজনীন",
+    "definition": "Done by or involving all people; applicable everywhere",
+    "example": "Access to basic education should be a _______ right for every child everywhere.",
+    "synonyms": [
+      "global",
+      "general",
+      "worldwide"
+    ],
+    "antonyms": [
+      "local",
+      "limited",
+      "specific"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 499,
+    "word": "validate",
+    "pos": "verb",
+    "phonetic": "/ˈvælɪdeɪt/",
+    "bangla": "বৈধতা প্রমাণ করা",
+    "definition": "To check or prove that something is correct or effective",
+    "example": "Further research is urgently needed to _______ the findings of the initial study.",
+    "synonyms": [
+      "confirm",
+      "verify",
+      "prove"
+    ],
+    "antonyms": [
+      "invalidate",
+      "disprove",
+      "reject"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 500,
+    "word": "viable",
+    "pos": "adjective",
+    "phonetic": "/ˈvaɪəbl/",
+    "bangla": "সম্ভবপর",
+    "definition": "Capable of working successfully; feasible and practical",
+    "example": "Solar energy is an increasingly _______ alternative to fossil fuels worldwide.",
+    "synonyms": [
+      "feasible",
+      "practical",
+      "workable"
+    ],
+    "antonyms": [
+      "impossible",
+      "impractical",
+      "unworkable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

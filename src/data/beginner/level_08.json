@@ -1,0 +1,22 @@
+[
+  {"word":"internal","pos":"adjective","phonetic":"/ɪnˈtɜːnəl/","bangla":"অভ্যন্তরীণ","example":"Internal factors can affect success."},
+  {"word":"interpret","pos":"verb","phonetic":"/ɪnˈtɜːprɪt/","bangla":"ব্যাখ্যা করা","example":"Students interpret graphs in Task 1."},
+  {"word":"intervention","pos":"noun","phonetic":"/ˌɪntəˈvenʃən/","bangla":"হস্তক্ষেপ","example":"Early intervention improves outcomes."},
+  {"word":"introduce","pos":"verb","phonetic":"/ˌɪntrəˈdjuːs/","bangla":"পরিচয় করানো","example":"The school introduced a new policy."},
+  {"word":"invest","pos":"verb","phonetic":"/ɪnˈvest/","bangla":"বিনিয়োগ করা","example":"Governments invest in public health."},
+  {"word":"investigate","pos":"verb","phonetic":"/ɪnˈvestɪɡeɪt/","bangla":"তদন্ত করা","example":"Scientists investigate water pollution."},
+  {"word":"isolate","pos":"verb","phonetic":"/ˈaɪsəleɪt/","bangla":"বিচ্ছিন্ন করা","example":"Researchers isolate variables in experiments."},
+  {"word":"issue","pos":"noun","phonetic":"/ˈɪʃuː/","bangla":"সমস্যা","example":"Traffic congestion is a major issue."},
+  {"word":"justify","pos":"verb","phonetic":"/ˈdʒʌstɪfaɪ/","bangla":"যুক্তিসংগত প্রমাণ করা","example":"Use data to justify your argument."},
+  {"word":"labour","pos":"noun","phonetic":"/ˈleɪbə/","bangla":"শ্রম","example":"The labour market changed rapidly."},
+  {"word":"legal","pos":"adjective","phonetic":"/ˈliːɡəl/","bangla":"আইনগত","example":"Smoking in public places is a legal issue."},
+  {"word":"legislate","pos":"verb","phonetic":"/ˈledʒɪsleɪt/","bangla":"আইন প্রণয়ন করা","example":"Parliaments legislate new safety standards."},
+  {"word":"link","pos":"noun/verb","phonetic":"/lɪŋk/","bangla":"সংযোগ","example":"Research shows a link between diet and health."},
+  {"word":"locate","pos":"verb","phonetic":"/ləʊˈkeɪt/","bangla":"অবস্থান নির্ধারণ করা","example":"The factory is located near the port."},
+  {"word":"logic","pos":"noun","phonetic":"/ˈlɒdʒɪk/","bangla":"যুক্তি","example":"Your essay needs clear logic and structure."},
+  {"word":"maintain","pos":"verb","phonetic":"/meɪnˈteɪn/","bangla":"বজায় রাখা","example":"It is hard to maintain high motivation."},
+  {"word":"majority","pos":"noun","phonetic":"/məˈdʒɒrəti/","bangla":"অধিকাংশ","example":"The majority preferred online classes."},
+  {"word":"manual","pos":"adjective/noun","phonetic":"/ˈmænjuəl/","bangla":"হাতে করা/নির্দেশিকা","example":"Manual work decreased with automation."},
+  {"word":"margin","pos":"noun","phonetic":"/ˈmɑːdʒɪn/","bangla":"প্রান্ত/ব্যবধান","example":"Keep a margin in your notebook."},
+  {"word":"mature","pos":"adjective/verb","phonetic":"/məˈtʃʊə/","bangla":"পরিপক্ব","example":"Children mature at different rates."}
+]

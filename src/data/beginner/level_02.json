@@ -1,0 +1,22 @@
+[
+  {"word": "access", "pos": "noun/verb", "phonetic": "/ˈækses/", "bangla": "প্রবেশাধিকার", "example": "Students need internet access for online classes."},
+  {"word": "account", "pos": "noun", "phonetic": "/əˈkaʊnt/", "bangla": "বিবরণ", "example": "The report gives an account of recent changes."},
+  {"word": "achieve", "pos": "verb", "phonetic": "/əˈtʃiːv/", "bangla": "অর্জন করা", "example": "She worked hard to achieve her goals."},
+  {"word": "acknowledge", "pos": "verb", "phonetic": "/əkˈnɒlɪdʒ/", "bangla": "স্বীকার করা", "example": "He acknowledged his mistake openly."},
+  {"word": "administration", "pos": "noun", "phonetic": "/ədˌmɪnɪˈstreɪʃən/", "bangla": "প্রশাসন", "example": "The university administration announced new rules."},
+  {"word": "affect", "pos": "verb", "phonetic": "/əˈfekt/", "bangla": "প্রভাবিত করা", "example": "The weather can affect your mood."},
+  {"word": "allocate", "pos": "verb", "phonetic": "/ˈæləkeɪt/", "bangla": "বরাদ্দ করা", "example": "The government allocated funds for education."},
+  {"word": "alter", "pos": "verb", "phonetic": "/ˈɔːltər/", "bangla": "পরিবর্তন করা", "example": "They had to alter their plans due to rain."},
+  {"word": "alternative", "pos": "noun/adjective", "phonetic": "/ɔːlˈtɜːnətɪv/", "bangla": "বিকল্প", "example": "Solar power is an alternative energy source."},
+  {"word": "ambiguous", "pos": "adjective", "phonetic": "/æmˈbɪɡjuəs/", "bangla": "দ্ব্যর্থবোধক", "example": "The instructions were ambiguous and confusing."},
+  {"word": "analyze", "pos": "verb", "phonetic": "/ˈænəlaɪz/", "bangla": "বিশ্লেষণ করা", "example": "Scientists analyze data to find patterns."},
+  {"word": "annual", "pos": "adjective", "phonetic": "/ˈænjuəl/", "bangla": "বার্ষিক", "example": "The company published its annual report."},
+  {"word": "apparent", "pos": "adjective", "phonetic": "/əˈpærənt/", "bangla": "স্পষ্ট", "example": "It was apparent that she was tired."},
+  {"word": "approach", "pos": "verb/noun", "phonetic": "/əˈprəʊtʃ/", "bangla": "পদ্ধতি", "example": "We should approach the problem carefully."},
+  {"word": "appropriate", "pos": "adjective", "phonetic": "/əˈprəʊpriət/", "bangla": "উপযুক্ত", "example": "Wear appropriate clothing for the weather."},
+  {"word": "approximately", "pos": "adverb", "phonetic": "/əˈprɒksɪmətli/", "bangla": "প্রায়", "example": "It takes approximately two hours to drive there."},
+  {"word": "assess", "pos": "verb", "phonetic": "/əˈses/", "bangla": "মূল্যায়ন করা", "example": "Teachers assess students through exams."},
+  {"word": "assign", "pos": "verb", "phonetic": "/əˈsaɪn/", "bangla": "নিযুক্ত করা", "example": "The teacher assigned homework to the class."},
+  {"word": "assume", "pos": "verb", "phonetic": "/əˈsjuːm/", "bangla": "ধরে নেওয়া", "example": "Don't assume everyone agrees with you."},
+  {"word": "attitude", "pos": "noun", "phonetic": "/ˈætɪtjuːd/", "bangla": "মনোভাব", "example": "A positive attitude helps students learn better."}
+]

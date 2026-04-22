@@ -1,0 +1,462 @@
+[
+  {
+    "id": 221,
+    "word": "comprehend",
+    "pos": "verb",
+    "phonetic": "/ˌkɒmprɪˈhend/",
+    "bangla": "বোঝা, উপলব্ধি করা",
+    "definition": "To grasp the meaning of something fully",
+    "example": "It is difficult to fully _______ the scale of damage caused by the earthquake.",
+    "synonyms": [
+      "understand",
+      "grasp",
+      "perceive"
+    ],
+    "antonyms": [
+      "misunderstand",
+      "confuse",
+      "ignore"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 222,
+    "word": "compromise",
+    "pos": "noun/verb",
+    "phonetic": "/ˈkɒmprəmaɪz/",
+    "bangla": "আপোষ করা",
+    "definition": "An agreement reached by each side making concessions",
+    "example": "Reaching a _______ is often necessary in international trade negotiations.",
+    "synonyms": [
+      "agreement",
+      "settlement",
+      "middle ground"
+    ],
+    "antonyms": [
+      "stubbornness",
+      "conflict",
+      "refusal"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 223,
+    "word": "concede",
+    "pos": "verb",
+    "phonetic": "/kənˈsiːd/",
+    "bangla": "স্বীকার করা, মেনে নেওয়া",
+    "definition": "To admit that something is true after denying it",
+    "example": "The politician had to _______ that the new tax policy had hurt low-income families.",
+    "synonyms": [
+      "admit",
+      "acknowledge",
+      "yield"
+    ],
+    "antonyms": [
+      "deny",
+      "refuse",
+      "dispute"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 224,
+    "word": "concurrent",
+    "pos": "adjective",
+    "phonetic": "/kənˈkɜːrənt/",
+    "bangla": "একসাথে ঘটা",
+    "definition": "Existing or happening at the same time",
+    "example": "The two projects ran _______ and shared resources from the same department.",
+    "synonyms": [
+      "simultaneous",
+      "parallel",
+      "coinciding"
+    ],
+    "antonyms": [
+      "sequential",
+      "consecutive",
+      "separate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 225,
+    "word": "conducive",
+    "pos": "adjective",
+    "phonetic": "/kənˈdjuːsɪv/",
+    "bangla": "সহায়ক, অনুকূল",
+    "definition": "Making a certain outcome likely or possible",
+    "example": "A quiet study environment is _______ to concentration and academic achievement.",
+    "synonyms": [
+      "favorable",
+      "helpful",
+      "beneficial"
+    ],
+    "antonyms": [
+      "unfavorable",
+      "harmful",
+      "counterproductive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 226,
+    "word": "confront",
+    "pos": "verb",
+    "phonetic": "/kənˈfrʌnt/",
+    "bangla": "মোকাবেলা করা",
+    "definition": "To face up to and deal with a problem directly",
+    "example": "Leaders must be willing to _______ difficult issues rather than avoiding them.",
+    "synonyms": [
+      "face",
+      "tackle",
+      "challenge"
+    ],
+    "antonyms": [
+      "avoid",
+      "evade",
+      "ignore"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 227,
+    "word": "consensus",
+    "pos": "noun",
+    "phonetic": "/kənˈsensəs/",
+    "bangla": "ঐকমত্য",
+    "definition": "General agreement among a group of people",
+    "example": "There is a growing _______ among scientists that action on climate change is urgent.",
+    "synonyms": [
+      "agreement",
+      "harmony",
+      "unity"
+    ],
+    "antonyms": [
+      "disagreement",
+      "conflict",
+      "discord"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 228,
+    "word": "constitute",
+    "pos": "verb",
+    "phonetic": "/ˈkɒnstɪtjuːt/",
+    "bangla": "গঠন করা",
+    "definition": "To be a part of a whole; to make up something",
+    "example": "Women _______ more than half of the university's student population this year.",
+    "synonyms": [
+      "form",
+      "make up",
+      "compose"
+    ],
+    "antonyms": [
+      "destroy",
+      "break up",
+      "dissolve"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 229,
+    "word": "constrain",
+    "pos": "verb",
+    "phonetic": "/kənˈstreɪn/",
+    "bangla": "সীমাবদ্ধ করা",
+    "definition": "To severely restrict the scope or activity of something",
+    "example": "Lack of funding continues to _______ scientific research in developing countries.",
+    "synonyms": [
+      "restrict",
+      "limit",
+      "confine"
+    ],
+    "antonyms": [
+      "free",
+      "release",
+      "allow"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 230,
+    "word": "contemplate",
+    "pos": "verb",
+    "phonetic": "/ˈkɒntəmpleɪt/",
+    "bangla": "গভীরভাবে চিন্তা করা",
+    "definition": "To think deeply about something; to consider doing something",
+    "example": "Before making a major decision, it is wise to _______ all possible consequences.",
+    "synonyms": [
+      "consider",
+      "reflect",
+      "ponder"
+    ],
+    "antonyms": [
+      "ignore",
+      "dismiss",
+      "rush"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 231,
+    "word": "contradict",
+    "pos": "verb",
+    "phonetic": "/ˌkɒntrəˈdɪkt/",
+    "bangla": "খণ্ডন করা",
+    "definition": "To assert the opposite of a statement made by someone",
+    "example": "The new data appears to _______ the earlier research on the effects of the drug.",
+    "synonyms": [
+      "deny",
+      "oppose",
+      "refute"
+    ],
+    "antonyms": [
+      "confirm",
+      "support",
+      "agree"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 232,
+    "word": "conviction",
+    "pos": "noun",
+    "phonetic": "/kənˈvɪkʃn/",
+    "bangla": "দৃঢ় বিশ্বাস",
+    "definition": "A firmly held belief or opinion",
+    "example": "She spoke with great _______ about the urgent need to reform the healthcare system.",
+    "synonyms": [
+      "belief",
+      "certainty",
+      "opinion"
+    ],
+    "antonyms": [
+      "doubt",
+      "uncertainty",
+      "indecision"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 233,
+    "word": "correlate",
+    "pos": "verb",
+    "phonetic": "/ˈkɒrəleɪt/",
+    "bangla": "সম্পর্কযুক্ত করা",
+    "definition": "To have a mutual relationship or connection with something",
+    "example": "Research shows that poverty levels closely _______ with poor health outcomes.",
+    "synonyms": [
+      "connect",
+      "relate",
+      "link"
+    ],
+    "antonyms": [
+      "disconnect",
+      "separate",
+      "differ"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 234,
+    "word": "counterpart",
+    "pos": "noun",
+    "phonetic": "/ˈkaʊntəpɑːt/",
+    "bangla": "সমকক্ষ ব্যক্তি বা বস্তু",
+    "definition": "A person or thing that has the same function as another in a different place",
+    "example": "The British minister met with his Chinese _______ to discuss trade agreements.",
+    "synonyms": [
+      "equivalent",
+      "parallel",
+      "match"
+    ],
+    "antonyms": [
+      "opposite",
+      "contrast",
+      "rival"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 235,
+    "word": "critique",
+    "pos": "noun/verb",
+    "phonetic": "/krɪˈtiːk/",
+    "bangla": "সমালোচনা করা",
+    "definition": "A detailed analysis and assessment of something",
+    "example": "The students were asked to write a _______ of the novel's main themes.",
+    "synonyms": [
+      "analysis",
+      "evaluation",
+      "review"
+    ],
+    "antonyms": [
+      "praise",
+      "approval",
+      "endorsement"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 236,
+    "word": "culminate",
+    "pos": "verb",
+    "phonetic": "/ˈkʌlmɪneɪt/",
+    "bangla": "পরিণতিতে পৌঁছানো",
+    "definition": "To reach a climax or point of highest development",
+    "example": "Years of hard work finally _______ in her winning the prestigious national award.",
+    "synonyms": [
+      "result in",
+      "peak",
+      "conclude"
+    ],
+    "antonyms": [
+      "begin",
+      "start",
+      "initiate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 237,
+    "word": "cumulative",
+    "pos": "adjective",
+    "phonetic": "/ˈkjuːmjulətɪv/",
+    "bangla": "ক্রমবর্ধমান, সঞ্চিত",
+    "definition": "Increasing or increased by successive additions",
+    "example": "The _______ effect of small daily habits can lead to significant long-term results.",
+    "synonyms": [
+      "increasing",
+      "growing",
+      "accumulating"
+    ],
+    "antonyms": [
+      "decreasing",
+      "diminishing",
+      "isolated"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 238,
+    "word": "curb",
+    "pos": "verb",
+    "phonetic": "/kɜːb/",
+    "bangla": "নিয়ন্ত্রণ করা, রোধ করা",
+    "definition": "To restrain or keep something in check",
+    "example": "The new law aims to _______ the excessive use of plastic packaging in stores.",
+    "synonyms": [
+      "restrict",
+      "control",
+      "limit"
+    ],
+    "antonyms": [
+      "encourage",
+      "promote",
+      "allow"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 239,
+    "word": "debatable",
+    "pos": "adjective",
+    "phonetic": "/dɪˈbeɪtəbl/",
+    "bangla": "বিতর্কযোগ্য",
+    "definition": "Open to discussion or argument; not certain",
+    "example": "Whether social media has a positive effect on society is highly _______.",
+    "synonyms": [
+      "controversial",
+      "questionable",
+      "arguable"
+    ],
+    "antonyms": [
+      "certain",
+      "settled",
+      "indisputable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 240,
+    "word": "deduce",
+    "pos": "verb",
+    "phonetic": "/dɪˈdjuːs/",
+    "bangla": "অনুমান করা, নিষ্কর্ষ টানা",
+    "definition": "To arrive at a conclusion by reasoning from evidence",
+    "example": "From the clues gathered, the detective was able to _______ who had committed the crime.",
+    "synonyms": [
+      "conclude",
+      "infer",
+      "reason"
+    ],
+    "antonyms": [
+      "assume",
+      "guess",
+      "speculate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

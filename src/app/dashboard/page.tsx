@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
-type StageName = "Beginner" | "Intermediate" | "Advanced";
+type StageName = "Beginner" | "Intermediate" | "Advanced" | "Exam";
 
 type StageConfig = {
   name: StageName;
@@ -16,7 +16,8 @@ type StageConfig = {
 const stages: StageConfig[] = [
   { name: "Beginner", totalWords: 200, totalLevels: 10, unlockThreshold: 0, dependsOn: null },
   { name: "Intermediate", totalWords: 300, totalLevels: 15, unlockThreshold: 5, dependsOn: "Beginner" },
-  { name: "Advanced", totalWords: 300, totalLevels: 15, unlockThreshold: 8, dependsOn: "Intermediate" },
+  { name: "Advanced", totalWords: 300, totalLevels: 15, unlockThreshold: 0, dependsOn: "Intermediate" },
+  { name: "Exam", totalWords: 600, totalLevels: 30, unlockThreshold: 0, dependsOn: null },
 ];
 
 function LockIcon() {
@@ -36,19 +37,12 @@ function LockIcon() {
 }
 
 export default function DashboardPage() {
-  const [completedCount, setCompletedCount] = useState<Record<StageName, number>>({
-    Beginner: 0,
-    Intermediate: 0,
-    Advanced: 0,
-  });
-
-  useEffect(() => {
+  const [completedCount] = useState<Record<StageName, number>>(() => {
     if (typeof window === "undefined") {
-      return;
+      return { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0 };
     }
 
-    const counts: Record<StageName, number> = { Beginner: 0, Intermediate: 0, Advanced: 0 };
-
+    const counts: Record<StageName, number> = { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0 };
     stages.forEach((stage) => {
       for (let i = 1; i <= stage.totalLevels; i++) {
         const levelId = `${stage.name.toLowerCase()}-${i}`;
@@ -57,15 +51,16 @@ export default function DashboardPage() {
         }
       }
     });
-
-    setCompletedCount(counts);
-  }, []);
+    return counts;
+  });
 
   const stageStatus = useMemo(() => {
     return stages.map((stage) => {
       let isLocked = false;
 
-      if (stage.dependsOn) {
+      if (stage.name === "Advanced") {
+        isLocked = window.localStorage.getItem("completed_intermediate-8") !== "true";
+      } else if (stage.dependsOn) {
         const dependency = stages.find((s) => s.name === stage.dependsOn);
         if (dependency) {
           isLocked = completedCount[stage.dependsOn] < stage.unlockThreshold;
@@ -82,7 +77,8 @@ export default function DashboardPage() {
     return (
       completedCount.Beginner * 20 +
       completedCount.Intermediate * 20 +
-      completedCount.Advanced * 20
+      completedCount.Advanced * 20 +
+      completedCount.Exam * 20
     );
   }, [completedCount]);
 
@@ -97,11 +93,17 @@ export default function DashboardPage() {
             <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
-                  VocabVault
+                  Easy Vocab
                 </p>
                 <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">
                   আমার ড্যাশবোর্ড
                 </h1>
+                <Link
+                  href="/"
+                  className="mt-4 inline-flex rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+                >
+                  product page
+                </Link>
               </div>
 
               <div className="flex gap-3 text-center text-xs sm:text-sm">
@@ -119,19 +121,29 @@ export default function DashboardPage() {
 
           <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
             {stageStatus.map((stage) => {
+              const isExamStage = stage.name === "Exam";
+
               const buttonColor = stage.isLocked
                 ? "border border-slate-500/30 bg-slate-500/20 text-slate-400 cursor-not-allowed"
-                : "border border-cyan-200/30 bg-cyan-200/10 text-cyan-100 hover:bg-cyan-200/20 transition";
+                : isExamStage
+                  ? "border border-amber-300/30 bg-amber-300/10 text-amber-200 hover:bg-amber-300/20 transition"
+                  : "border border-cyan-200/30 bg-cyan-200/10 text-cyan-100 hover:bg-cyan-200/20 transition";
 
               const cardOpacity = stage.isLocked ? "opacity-60" : "opacity-100";
+
+              const cardClassName = isExamStage
+                ? `rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 transition hover:border-amber-200 hover:bg-amber-300/20 sm:p-6`
+                : `rounded-2xl border border-cyan-200/30 bg-cyan-200/10 p-5 transition hover:border-cyan-100 hover:bg-cyan-200/20 sm:p-6`;
 
               const cardContent = (
                 <>
                   <div className="flex items-start justify-between">
                     <div>
-                      <h2 className="text-2xl font-extrabold">{stage.name}</h2>
+                      <h2 className={`text-2xl font-extrabold ${isExamStage ? "text-amber-200" : ""}`}>
+                        {isExamStage ? "GRE • BCS • Bank" : stage.name}
+                      </h2>
                       <p className="mt-1 text-sm text-slate-300">
-                        {stage.totalWords} words • {stage.completedCount}/{stage.totalLevels} levels
+                        {isExamStage ? "পরীক্ষার প্রস্তুতি" : `${stage.totalWords} words`} • {stage.completedCount}/{stage.totalLevels} levels
                       </p>
                     </div>
                     {stage.isLocked ? <LockIcon /> : null}
@@ -175,7 +187,7 @@ export default function DashboardPage() {
                 <Link
                   key={stage.name}
                   href={`/stage/${stage.name.toLowerCase()}`}
-                  className={`rounded-2xl border border-cyan-200/30 bg-cyan-200/10 p-5 transition hover:border-cyan-100 hover:bg-cyan-200/20 sm:p-6`}
+                  className={cardClassName}
                 >
                   {cardContent}
                 </Link>

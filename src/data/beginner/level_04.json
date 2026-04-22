@@ -1,0 +1,22 @@
+[
+  {"word":"data","pos":"noun","phonetic":"/ˈdeɪtə/","bangla":"তথ্য","example":"Scientists collect data from experiments."},
+  {"word":"debate","pos":"noun/verb","phonetic":"/dɪˈbeɪt/","bangla":"বিতর্ক","example":"Students debate the topic in class."},
+  {"word":"decline","pos":"verb","phonetic":"/dɪˈklaɪn/","bangla":"কমে যাওয়া","example":"The population may decline in some regions."},
+  {"word":"define","pos":"verb","phonetic":"/dɪˈfaɪn/","bangla":"সংজ্ঞায়িত করা","example":"Please define the term clearly."},
+  {"word":"demonstrate","pos":"verb","phonetic":"/ˈdemənstreɪt/","bangla":"প্রদর্শন করা","example":"The graph demonstrates rapid growth."},
+  {"word":"derive","pos":"verb","phonetic":"/dɪˈraɪv/","bangla":"উদ্ভূত হওয়া","example":"Many medicines derive from plants."},
+  {"word":"design","pos":"verb/noun","phonetic":"/dɪˈzaɪn/","bangla":"নকশা করা","example":"Engineers design safer bridges."},
+  {"word":"despite","pos":"preposition","phonetic":"/dɪˈspaɪt/","bangla":"সত্ত্বেও","example":"Despite rain, the event continued."},
+  {"word":"detect","pos":"verb","phonetic":"/dɪˈtekt/","bangla":"সনাক্ত করা","example":"Doctors can detect disease early."},
+  {"word":"determine","pos":"verb","phonetic":"/dɪˈtɜːmɪn/","bangla":"নির্ধারণ করা","example":"Tests determine students' levels."},
+  {"word":"develop","pos":"verb","phonetic":"/dɪˈveləp/","bangla":"উন্নয়ন করা","example":"Cities develop over many years."},
+  {"word":"differ","pos":"verb","phonetic":"/ˈdɪfər/","bangla":"ভিন্ন হওয়া","example":"Opinions differ across age groups."},
+  {"word":"digital","pos":"adjective","phonetic":"/ˈdɪdʒɪtəl/","bangla":"ডিজিটাল","example":"Digital tools improve communication."},
+  {"word":"dimension","pos":"noun","phonetic":"/daɪˈmenʃən/","bangla":"মাত্রা","example":"The problem has many dimensions."},
+  {"word":"distribute","pos":"verb","phonetic":"/dɪˈstrɪbjuːt/","bangla":"বিতরণ করা","example":"Aid groups distribute food and water."},
+  {"word":"diverse","pos":"adjective","phonetic":"/daɪˈvɜːs/","bangla":"বৈচিত্র্যময়","example":"The city has a diverse population."},
+  {"word":"domestic","pos":"adjective","phonetic":"/dəˈmestɪk/","bangla":"দেশীয়","example":"Domestic demand increased last year."},
+  {"word":"duration","pos":"noun","phonetic":"/djʊˈreɪʃən/","bangla":"সময়কাল","example":"The duration of the class is two hours."},
+  {"word":"dynamic","pos":"adjective","phonetic":"/daɪˈnæmɪk/","bangla":"গতিশীল","example":"Technology is a dynamic field."},
+  {"word":"economy","pos":"noun","phonetic":"/ɪˈkɒnəmi/","bangla":"অর্থনীতি","example":"A stable economy supports employment."}
+]

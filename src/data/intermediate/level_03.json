@@ -1,0 +1,462 @@
+[
+  {
+    "id": 241,
+    "word": "deplete",
+    "pos": "verb",
+    "phonetic": "/dɪˈpliːt/",
+    "bangla": "নিঃশেষ করা",
+    "definition": "To reduce the quantity or quality of something significantly",
+    "example": "Overfishing is rapidly _______ing the world's ocean fish populations.",
+    "synonyms": [
+      "exhaust",
+      "drain",
+      "reduce"
+    ],
+    "antonyms": [
+      "replenish",
+      "restore",
+      "increase"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 242,
+    "word": "derive",
+    "pos": "verb",
+    "phonetic": "/dɪˈraɪv/",
+    "bangla": "উদ্ভূত হওয়া",
+    "definition": "To obtain something from a specified source",
+    "example": "Many English words _______ from Latin and ancient Greek roots.",
+    "synonyms": [
+      "obtain",
+      "originate",
+      "stem"
+    ],
+    "antonyms": [
+      "give",
+      "provide",
+      "supply"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 243,
+    "word": "designate",
+    "pos": "verb",
+    "phonetic": "/ˈdezɪɡneɪt/",
+    "bangla": "মনোনীত করা",
+    "definition": "To officially give a particular name or status to something",
+    "example": "The area was _______ as a protected national park in 1980.",
+    "synonyms": [
+      "appoint",
+      "assign",
+      "name"
+    ],
+    "antonyms": [
+      "dismiss",
+      "cancel",
+      "abolish"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 244,
+    "word": "deteriorate",
+    "pos": "verb",
+    "phonetic": "/dɪˈtɪəriəreɪt/",
+    "bangla": "অবনতি হওয়া",
+    "definition": "To become progressively worse in quality or condition",
+    "example": "Without proper maintenance, the building began to _______ rapidly.",
+    "synonyms": [
+      "worsen",
+      "decline",
+      "degrade"
+    ],
+    "antonyms": [
+      "improve",
+      "recover",
+      "enhance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 245,
+    "word": "devote",
+    "pos": "verb",
+    "phonetic": "/dɪˈvəʊt/",
+    "bangla": "নিবেদন করা",
+    "definition": "To give all or most of one's time or resources to something",
+    "example": "She _______ her entire career to helping those affected by poverty.",
+    "synonyms": [
+      "dedicate",
+      "commit",
+      "give"
+    ],
+    "antonyms": [
+      "neglect",
+      "abandon",
+      "ignore"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 246,
+    "word": "disproportionate",
+    "pos": "adjective",
+    "phonetic": "/ˌdɪsprəˈpɔːʃənət/",
+    "bangla": "অসামঞ্জস্যপূর্ণ",
+    "definition": "Too large or too small in comparison with something else",
+    "example": "The punishment seemed _______ to the minor offense that was committed.",
+    "synonyms": [
+      "unequal",
+      "excessive",
+      "unbalanced"
+    ],
+    "antonyms": [
+      "proportionate",
+      "equal",
+      "balanced"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 247,
+    "word": "distort",
+    "pos": "verb",
+    "phonetic": "/dɪˈstɔːt/",
+    "bangla": "বিকৃত করা",
+    "definition": "To give a misleading or false account of something",
+    "example": "The media sometimes _______ facts to make stories more sensational.",
+    "synonyms": [
+      "twist",
+      "misrepresent",
+      "warp"
+    ],
+    "antonyms": [
+      "clarify",
+      "correct",
+      "straighten"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 248,
+    "word": "drawback",
+    "pos": "noun",
+    "phonetic": "/ˈdrɔːbæk/",
+    "bangla": "অসুবিধা, ত্রুটি",
+    "definition": "A feature that makes something less useful or desirable",
+    "example": "One major _______ of living in the city is the very high cost of housing.",
+    "synonyms": [
+      "disadvantage",
+      "downside",
+      "problem"
+    ],
+    "antonyms": [
+      "advantage",
+      "benefit",
+      "asset"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 249,
+    "word": "duration",
+    "pos": "noun",
+    "phonetic": "/djʊˈreɪʃn/",
+    "bangla": "সময়কাল, মেয়াদ",
+    "definition": "The time during which something continues",
+    "example": "The _______ of the course is six months, including practical assessments.",
+    "synonyms": [
+      "length",
+      "period",
+      "time"
+    ],
+    "antonyms": [
+      "moment",
+      "instant",
+      "brief"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 250,
+    "word": "eager",
+    "pos": "adjective",
+    "phonetic": "/ˈiːɡər/",
+    "bangla": "উৎসুক, আগ্রহী",
+    "definition": "Wanting to do or have something very much",
+    "example": "Young students are often _______ to learn new skills and explore new ideas.",
+    "synonyms": [
+      "keen",
+      "enthusiastic",
+      "willing"
+    ],
+    "antonyms": [
+      "reluctant",
+      "unwilling",
+      "indifferent"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 251,
+    "word": "elaborate",
+    "pos": "verb",
+    "phonetic": "/ɪˈlæbəreɪt/",
+    "bangla": "বিস্তারিত বর্ণনা করা",
+    "definition": "To add more detail or information to something already said",
+    "example": "Could you please _______ on the main points of your research proposal?",
+    "synonyms": [
+      "expand",
+      "explain",
+      "detail"
+    ],
+    "antonyms": [
+      "summarize",
+      "simplify",
+      "condense"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 252,
+    "word": "empirical",
+    "pos": "adjective",
+    "phonetic": "/ɪmˈpɪrɪkl/",
+    "bangla": "অভিজ্ঞতালব্ধ",
+    "definition": "Based on observation or experience rather than theory",
+    "example": "Scientific theories must be supported by _______ evidence from experiments.",
+    "synonyms": [
+      "experimental",
+      "observed",
+      "practical"
+    ],
+    "antonyms": [
+      "theoretical",
+      "speculative",
+      "hypothetical"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 253,
+    "word": "envisage",
+    "pos": "verb",
+    "phonetic": "/ɪnˈvɪzɪdʒ/",
+    "bangla": "কল্পনা করা",
+    "definition": "To contemplate or conceive of something as a future possibility",
+    "example": "The architect _______ a building that would blend perfectly with its surroundings.",
+    "synonyms": [
+      "imagine",
+      "foresee",
+      "picture"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook",
+      "disregard"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 254,
+    "word": "equitable",
+    "pos": "adjective",
+    "phonetic": "/ˈekwɪtəbl/",
+    "bangla": "ন্যায্য, সমতাভিত্তিক",
+    "definition": "Fair and impartial; treating people equally",
+    "example": "An _______ distribution of resources is essential in a just society.",
+    "synonyms": [
+      "fair",
+      "just",
+      "impartial"
+    ],
+    "antonyms": [
+      "unfair",
+      "biased",
+      "unjust"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 255,
+    "word": "evolve",
+    "pos": "verb",
+    "phonetic": "/ɪˈvɒlv/",
+    "bangla": "বিবর্তিত হওয়া",
+    "definition": "To develop gradually from a simple to a more complex form",
+    "example": "Technology continues to _______ at a pace that challenges even large organizations.",
+    "synonyms": [
+      "develop",
+      "progress",
+      "change"
+    ],
+    "antonyms": [
+      "regress",
+      "stagnate",
+      "decline"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 256,
+    "word": "exacerbate",
+    "pos": "verb",
+    "phonetic": "/ɪɡˈzæsəbeɪt/",
+    "bangla": "আরো খারাপ করা",
+    "definition": "To make a problem or bad situation worse",
+    "example": "Drought conditions were _______ by the lack of investment in irrigation.",
+    "synonyms": [
+      "worsen",
+      "aggravate",
+      "intensify"
+    ],
+    "antonyms": [
+      "alleviate",
+      "improve",
+      "reduce"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 257,
+    "word": "exclusive",
+    "pos": "adjective",
+    "phonetic": "/ɪkˈskluːsɪv/",
+    "bangla": "একচেটিয়া, সীমাবদ্ধ",
+    "definition": "Restricted to a particular group; not shared",
+    "example": "Access to quality healthcare should not be _______ to those who can afford it.",
+    "synonyms": [
+      "limited",
+      "restricted",
+      "elite"
+    ],
+    "antonyms": [
+      "inclusive",
+      "open",
+      "accessible"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 258,
+    "word": "exempt",
+    "pos": "adjective",
+    "phonetic": "/ɪɡˈzempt/",
+    "bangla": "অব্যাহতিপ্রাপ্ত",
+    "definition": "Free from an obligation or liability imposed on others",
+    "example": "Charities are often _______ from paying certain government taxes.",
+    "synonyms": [
+      "excused",
+      "free",
+      "released"
+    ],
+    "antonyms": [
+      "included",
+      "required",
+      "obligated"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 259,
+    "word": "exhaust",
+    "pos": "verb",
+    "phonetic": "/ɪɡˈzɔːst/",
+    "bangla": "নিঃশেষ করা, ক্লান্ত করা",
+    "definition": "To use up completely; to make someone very tired",
+    "example": "We cannot continue to _______ natural resources at the current rate of consumption.",
+    "synonyms": [
+      "deplete",
+      "drain",
+      "consume"
+    ],
+    "antonyms": [
+      "replenish",
+      "restore",
+      "energize"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 260,
+    "word": "explicit",
+    "pos": "adjective",
+    "phonetic": "/ɪkˈsplɪsɪt/",
+    "bangla": "সুস্পষ্ট, প্রকাশ্য",
+    "definition": "Stated clearly and in detail, leaving no room for confusion",
+    "example": "The contract includes _______ terms about what happens if either party fails to comply.",
+    "synonyms": [
+      "clear",
+      "direct",
+      "specific"
+    ],
+    "antonyms": [
+      "implicit",
+      "vague",
+      "unclear"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

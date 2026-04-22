@@ -1,0 +1,415 @@
+[
+  {
+    "id": 861,
+    "word": "amnesty",
+    "pos": "verb",
+    "phonetic": "/ˈæm.nɪ.sti/",
+    "bangla": "সাধারণ ক্ষমা",
+    "definition": "Forgetfulness; cessation of remembrance of wrong; oblivion.",
+    "example": "The ministry planned to _______ before implementing the reform under the new policy. to explain the idea of forgetfulness; cessation of remembrance of wrong; oblivion.",
+    "synonyms": [
+      "pardon",
+      "free pardon"
+    ],
+    "antonyms": [
+      "not amnesty"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 862,
+    "word": "assessment",
+    "pos": "noun",
+    "phonetic": "/əˈsɛsmənt/",
+    "bangla": "মূল্যায়ন",
+    "definition": "The act of assessing or an amount (of tax, levy or duty etc) assessed.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on the act of assessing or an amount (of.",
+    "synonyms": [
+      "judgment",
+      "appraisal",
+      "judgement"
+    ],
+    "antonyms": [
+      "non assessment"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 863,
+    "word": "authorization",
+    "pos": "noun",
+    "phonetic": "/ˌɔθərəˈzeɪʃən/",
+    "bangla": "অনুমোদন",
+    "definition": "Permission.",
+    "example": "In BCS preparation, _______ supports arguments about public administration in public sector contexts. to explain the idea of permission.",
+    "synonyms": [
+      "authority",
+      "mandate",
+      "empowerment",
+      "authorisation"
+    ],
+    "antonyms": [
+      "non authorization"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 864,
+    "word": "beneficiary",
+    "pos": "adjective",
+    "phonetic": "/ˌbɛn.əˈfɪʃ.əɹ.i/",
+    "bangla": "সুবিধাভোগী",
+    "definition": "One who benefits or receives an advantage.",
+    "example": "The report recommended a _______ to improve administrative outcomes during reform efforts. to explain the idea of one who benefits or receives an advantage.",
+    "synonyms": [
+      "donee"
+    ],
+    "antonyms": [
+      "non beneficiary"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 865,
+    "word": "capacity",
+    "pos": "adjective",
+    "phonetic": "/kəˈpæsɪti/",
+    "bangla": "ক্ষমতা",
+    "definition": "The ability to hold, receive or absorb",
+    "example": "The report recommended a _______ to ensure transparent implementation across agencies. with focus on the ability to hold, receive or absorb.",
+    "synonyms": [
+      "throughput"
+    ],
+    "antonyms": [
+      "incapacity"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 866,
+    "word": "deputation",
+    "pos": "noun",
+    "phonetic": "/ˌdɛpjuːˈteɪʃən/",
+    "bangla": "ডেপুটেশন",
+    "definition": "The act of deputing, or of appointing or commissioning a deputy or representative; office of a deputy or delegate; vicegerency.",
+    "example": "In BCS preparation, _______ supports arguments about public administration in public sector contexts. to explain the idea of the act of deputing, or of appointing or.",
+    "synonyms": [
+      "commission",
+      "mission",
+      "delegacy",
+      "delegation"
+    ],
+    "antonyms": [
+      "non deputation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 867,
+    "word": "deregulation",
+    "pos": "noun",
+    "phonetic": "/diˌrɛgjəˈleɪʃən/",
+    "bangla": "নিয়ন্ত্রণমুক্ত",
+    "definition": "The process of removing constraints, especially government-imposed economic regulation.",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to deregulating.",
+    "synonyms": [
+      "deregulating"
+    ],
+    "antonyms": [
+      "non deregulation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 868,
+    "word": "disbursement",
+    "pos": "noun",
+    "phonetic": "/dɪsˈbərsmənt/",
+    "bangla": "বিতরণ",
+    "definition": "The act, instance, or process of disbursing.",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to outlay.",
+    "synonyms": [
+      "outlay",
+      "expense",
+      "disbursal",
+      "spending"
+    ],
+    "antonyms": [
+      "non disbursement"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 869,
+    "word": "discretionary",
+    "pos": "adjective",
+    "phonetic": "/dɪˈskɹɛʃən(ə)ɹi/",
+    "bangla": "বিবেচনামূলক",
+    "definition": "Available at one's discretion; able to be used as one chooses; left to or regulated by one's own discretion or judgment.",
+    "example": "The district plan required a _______ to improve administrative outcomes during reform efforts. to explain the idea of available at one's discretion; able to be used.",
+    "synonyms": [
+      "elective",
+      "optional"
+    ],
+    "antonyms": [
+      "non discretionary"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 870,
+    "word": "electoral",
+    "pos": "adjective",
+    "phonetic": "/ɪˈlɛktərəl/",
+    "bangla": "নির্বাচনী",
+    "definition": "Relating to or composed of electors.",
+    "example": "The guideline followed a _______ for stronger institutional control in the public sector. as it is close to elected.",
+    "synonyms": [
+      "elected",
+      "elective"
+    ],
+    "antonyms": [
+      "non electoral"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 871,
+    "word": "enquiry",
+    "pos": "noun",
+    "phonetic": "/ɛnˈkwaɪ.ɹi/",
+    "bangla": "তদন্ত",
+    "definition": "A question.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is inquiry.",
+    "synonyms": [
+      "inquiry",
+      "question",
+      "research",
+      "query"
+    ],
+    "antonyms": [
+      "answer"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 872,
+    "word": "federal",
+    "pos": "adjective",
+    "phonetic": "/ˈfɛdəɹəl/",
+    "bangla": "ফেডারেল",
+    "definition": "A law-enforcement official of the FBI; a federal agent.",
+    "example": "The guideline followed a _______ for stronger institutional control in the public sector. as it is close to fed.",
+    "synonyms": [
+      "fed"
+    ],
+    "antonyms": [
+      "unitary"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 873,
+    "word": "governing",
+    "pos": "verb",
+    "phonetic": "/ˈɡʌvənɪŋ/",
+    "bangla": "গভর্নিং",
+    "definition": "To make and administer the public policy and affairs of; to exercise sovereign authority in.",
+    "example": "In the policy memo, officers agreed to _______ to improve service delivery in public offices. with focus on to make and administer the public policy and.",
+    "synonyms": [
+      "dominant",
+      "governance",
+      "government"
+    ],
+    "antonyms": [
+      "not governing"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 874,
+    "word": "grievance",
+    "pos": "noun",
+    "phonetic": "/ˈɡɹi.vəns/",
+    "bangla": "অভিযোগ",
+    "definition": "Something which causes grief.",
+    "example": "For administrative analysis, _______ helps connect reform with practice for policy evaluation. as it is close to score.",
+    "synonyms": [
+      "score",
+      "grudge"
+    ],
+    "antonyms": [
+      "non grievance"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 875,
+    "word": "licence",
+    "pos": "verb",
+    "phonetic": "/ˈlaɪsəns/",
+    "bangla": "লাইসেন্স",
+    "definition": "A legal document giving official permission to do something; a permit.",
+    "example": "The committee decided to _______ to address field-level challenges for effective governance. where a similar notion is certify.",
+    "synonyms": [
+      "certify",
+      "license"
+    ],
+    "antonyms": [
+      "decertify",
+      "derecognize"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 876,
+    "word": "mandate",
+    "pos": "verb",
+    "phonetic": "/ˈmæn.deɪt/",
+    "bangla": "আদেশ",
+    "definition": "An official or authoritative command; an order or injunction; a commission; a judicial precept.",
+    "example": "For better administration, the department would _______ to address field-level challenges for effective governance. where a similar notion is territory.",
+    "synonyms": [
+      "territory",
+      "authorization",
+      "territorial dominion",
+      "colony"
+    ],
+    "antonyms": [
+      "not mandate"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 877,
+    "word": "monitoring",
+    "pos": "verb",
+    "phonetic": "/ˈmɑnətərɪŋ/",
+    "bangla": "পর্যবেক্ষণ",
+    "definition": "To watch over; to guard.",
+    "example": "For better administration, the department would _______ to address field-level challenges for effective governance. where a similar notion is oversee.",
+    "synonyms": [
+      "oversee",
+      "supervise",
+      "track"
+    ],
+    "antonyms": [
+      "not monitoring"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 878,
+    "word": "quota",
+    "pos": "noun",
+    "phonetic": "/ˈkwoʊtə/",
+    "bangla": "কোটা",
+    "definition": "A proportional part or share; the share or proportion assigned to each in a division.",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is allocation.",
+    "synonyms": [
+      "allocation",
+      "allotment",
+      "apportionment",
+      "quotum"
+    ],
+    "antonyms": [
+      "non quota"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 879,
+    "word": "ratification",
+    "pos": "noun",
+    "phonetic": "/ˌrætəfəˈkeɪʃən/",
+    "bangla": "অনুসমর্থন",
+    "definition": "The act or process of ratifying, or the state of being ratified.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is confirmation.",
+    "synonyms": [
+      "confirmation"
+    ],
+    "antonyms": [
+      "non ratification"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 880,
+    "word": "scrutiny",
+    "pos": "verb",
+    "phonetic": "/ˈskɹuː.tɪ.ni/",
+    "bangla": "যাচাই",
+    "definition": "Intense study of someone or something.",
+    "example": "The ministry planned to _______ before implementing the reform under the new policy. to explain the idea of intense study of someone or something.",
+    "synonyms": [
+      "examination",
+      "exploration",
+      "going-over",
+      "inquiry"
+    ],
+    "antonyms": [
+      "not scrutiny"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  }
+]

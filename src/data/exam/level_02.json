@@ -1,0 +1,441 @@
+[
+  {
+    "id": 621,
+    "word": "alacrity",
+    "pos": "noun",
+    "phonetic": "/[əˈlækɹɨti]/",
+    "bangla": "তত্পরতা",
+    "definition": "Eagerness; liveliness; enthusiasm.",
+    "example": "For the comprehension question, _______ while connecting key evidence in the explanation. where a similar notion is avidity.",
+    "synonyms": [
+      "avidity",
+      "eagerness",
+      "enthusiasm",
+      "willingness"
+    ],
+    "antonyms": [
+      "apathy",
+      "disinclination",
+      "hesitance",
+      "indifference"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 622,
+    "word": "alleviate",
+    "pos": "verb",
+    "phonetic": "/əˈli.vi.eɪt/",
+    "bangla": "উপশম করা",
+    "definition": "To make less severe, as a pain or difficulty.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to make less severe, as a pain or.",
+    "synonyms": [
+      "address",
+      "allay",
+      "ameliorate",
+      "assuage"
+    ],
+    "antonyms": [
+      "aggravate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 623,
+    "word": "aloof",
+    "pos": "adjective",
+    "phonetic": "/əˈluːf/",
+    "bangla": "দূরে",
+    "definition": "Reserved and remote; either physically or emotionally distant; standoffish.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is reserved.",
+    "synonyms": [
+      "reserved",
+      "distant"
+    ],
+    "antonyms": [
+      "non aloof"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 624,
+    "word": "altruism",
+    "pos": "noun",
+    "phonetic": "/ˈæltruˌɪzəm/",
+    "bangla": "পরোপকার",
+    "definition": "Regard for others, both natural and moral without regard for oneself; devotion to the interests of others; brotherly kindness.",
+    "example": "The central idea was clarified by _______ which highlighted the author's intent for the passage. with focus on regard for others, both natural and moral without.",
+    "synonyms": [
+      "philanthropy",
+      "selflessness"
+    ],
+    "antonyms": [
+      "egoism",
+      "misanthropy",
+      "selfishness"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 625,
+    "word": "ambivalent",
+    "pos": "adjective",
+    "phonetic": "/æmˈbɪv.ə.lənt/",
+    "bangla": "দ্বৈত",
+    "definition": "Simultaneously experiencing or expressing opposing or contradictory feelings, beliefs, or motivations.",
+    "example": "In the model answer, the tone felt _______ when compared with standard theories in the text. with focus on simultaneously experiencing or expressing opposing or contradictory feelings,.",
+    "synonyms": [
+      "fluctuating",
+      "vacillating",
+      "wavering",
+      "conflicted"
+    ],
+    "antonyms": [
+      "non ambivalent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 626,
+    "word": "ameliorate",
+    "pos": "verb",
+    "phonetic": "/əˈmiːli.əɹeɪt/",
+    "bangla": "উন্নত করা",
+    "definition": "To make better, or improve, something perceived to be in a negative condition.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to make better, or improve, something perceived to.",
+    "synonyms": [
+      "improve",
+      "meliorate",
+      "better",
+      "amend"
+    ],
+    "antonyms": [
+      "deteriorate",
+      "worsen"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 627,
+    "word": "anodyne",
+    "pos": "adjective",
+    "phonetic": "/ˈæn.ə.daɪn/",
+    "bangla": "কোনো ওষুধ বা অন্য এজেন্ট যা ব্যথা উপশম করে",
+    "definition": "Any medicine or other agent that relieves pain",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on any medicine or other agent that relieves pain.",
+    "synonyms": [
+      "bland",
+      "inoffensive",
+      "noncontentious"
+    ],
+    "antonyms": [
+      "non anodyne"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 628,
+    "word": "apathy",
+    "pos": "noun",
+    "phonetic": "/ˈæ.pə.θi/",
+    "bangla": "উদাসীনতা",
+    "definition": "Lack of emotion or motivation; lack of interest or enthusiasm towards something; disinterest (in something).",
+    "example": "For the comprehension question, _______ while connecting key evidence in the explanation. where a similar notion is indifference.",
+    "synonyms": [
+      "indifference",
+      "neutrality"
+    ],
+    "antonyms": [
+      "empathy",
+      "sympathy"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 629,
+    "word": "appease",
+    "pos": "verb",
+    "phonetic": "/əˈpiːz/",
+    "bangla": "তুষ্ট করা",
+    "definition": "To make quiet; to calm; to reduce to a state of peace; to dispel (anger or hatred).",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on to make quiet; to calm; to reduce to.",
+    "synonyms": [
+      "calm",
+      "lull",
+      "pacify",
+      "placate"
+    ],
+    "antonyms": [
+      "antagonize"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 630,
+    "word": "arcane",
+    "pos": "adjective",
+    "phonetic": "/ɑɹˈkeɪn/",
+    "bangla": "মাত্র কয়েকজনের দ্বারা বোঝা যায়",
+    "definition": "Understood by only a few.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on understood by only a few.",
+    "synonyms": [
+      "clandestine",
+      "enigmatic",
+      "esoteric",
+      "recondite"
+    ],
+    "antonyms": [
+      "mundane"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 631,
+    "word": "ardent",
+    "pos": "adjective",
+    "phonetic": "/ˈɑːdənt/",
+    "bangla": "প্রবল",
+    "definition": "Full of ardor; fervent, passionate.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to torrid.",
+    "synonyms": [
+      "torrid",
+      "fervid",
+      "fervent",
+      "bright"
+    ],
+    "antonyms": [
+      "non ardent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 632,
+    "word": "assiduous",
+    "pos": "adjective",
+    "phonetic": "/əˈsɪdjuːəs/",
+    "bangla": "পরিশ্রমী",
+    "definition": "Hard-working, diligent or regular (in attendance or work); industrious.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of hard-working, diligent or regular (in attendance or work);.",
+    "synonyms": [
+      "diligent",
+      "meticulous",
+      "sedulous"
+    ],
+    "antonyms": [
+      "non assiduous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 633,
+    "word": "austere",
+    "pos": "adjective",
+    "phonetic": "/ɒstɪə(ɹ)/",
+    "bangla": "কঠোর",
+    "definition": "Grim or severe in manner or appearance",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is forbidding.",
+    "synonyms": [
+      "forbidding",
+      "stern",
+      "strict",
+      "plain"
+    ],
+    "antonyms": [
+      "extravagant",
+      "flamboyant",
+      "flashy",
+      "gaudy"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 634,
+    "word": "banal",
+    "pos": "adjective",
+    "phonetic": "/bəˈnæl/",
+    "bangla": "সাধারণ",
+    "definition": "Common in a boring way, to the point of being predictable; containing nothing new or fresh.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on common in a boring way, to the point.",
+    "synonyms": [
+      "everyday",
+      "prosaic"
+    ],
+    "antonyms": [
+      "new",
+      "original"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 635,
+    "word": "benevolent",
+    "pos": "adjective",
+    "phonetic": "/bəˈnɛvələnt/",
+    "bangla": "উপকারী",
+    "definition": "Having a disposition to do good.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of having a disposition to do good.",
+    "synonyms": [
+      "gracious",
+      "good",
+      "kind",
+      "eleemosynary"
+    ],
+    "antonyms": [
+      "malevolent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 636,
+    "word": "brusque",
+    "pos": "adjective",
+    "phonetic": "/bɹuːsk/",
+    "bangla": "rudely আকস্মিক, বন্ধুত্বহীন",
+    "definition": "Rudely abrupt, unfriendly.",
+    "example": "In the model answer, the tone felt _______ when compared with standard theories in the text. with focus on rudely abrupt, unfriendly.",
+    "synonyms": [
+      "short",
+      "discourteous",
+      "brusk",
+      "curt"
+    ],
+    "antonyms": [
+      "non brusque"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 637,
+    "word": "candor",
+    "pos": "noun",
+    "phonetic": "/ˈkæn.də(ɹ)/",
+    "bangla": "অকপট",
+    "definition": "Whiteness; brilliance; purity.",
+    "example": "For the comprehension question, _______ while connecting key evidence in the explanation. where a similar notion is equity.",
+    "synonyms": [
+      "equity",
+      "fairness",
+      "frankness",
+      "honesty"
+    ],
+    "antonyms": [
+      "deception",
+      "fraud",
+      "lie"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 638,
+    "word": "capricious",
+    "pos": "adjective",
+    "phonetic": "/kəˈpɹɪʃəs/",
+    "bangla": "কৌতুকপূর্ণ",
+    "definition": "Impulsive and unpredictable; determined by chance, impulse, or whim",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on impulsive and unpredictable; determined by chance, impulse, or.",
+    "synonyms": [
+      "arbitrary",
+      "whimsical"
+    ],
+    "antonyms": [
+      "conscientious",
+      "rigorous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 639,
+    "word": "cerebral",
+    "pos": "adjective",
+    "phonetic": "/səˈɹiː.bɹəl/",
+    "bangla": "সেরিব্রাল",
+    "definition": "Of, or relating to the brain, cerebrum, or cerebral cortex.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on of, or relating to the brain, cerebrum, or.",
+    "synonyms": [
+      "intellectual"
+    ],
+    "antonyms": [
+      "emotional"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 640,
+    "word": "chicanery",
+    "pos": "noun",
+    "phonetic": "/ʃɪˈkeɪn(ə)ɹi/",
+    "bangla": "চিকানিরি",
+    "definition": "Deception by use of trickery, quibbling, or subterfuge.",
+    "example": "For the comprehension question, _______ to frame the main argument clearly in that section. as it is close to dishonesty.",
+    "synonyms": [
+      "dishonesty",
+      "fraud",
+      "subterfuge",
+      "trickery"
+    ],
+    "antonyms": [
+      "non chicanery"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

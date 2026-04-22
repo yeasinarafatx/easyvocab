@@ -1,0 +1,445 @@
+[
+  {
+    "id": 681,
+    "word": "incipient",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈsɪp.i.ənt/",
+    "bangla": "শিক্ষানবিস",
+    "definition": "Beginner",
+    "example": "In the model answer, the tone felt _______ when compared with standard theories in the text. with focus on beginner.",
+    "synonyms": [
+      "beginner",
+      "inceptor",
+      "beginning",
+      "commencing"
+    ],
+    "antonyms": [
+      "cipient"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 682,
+    "word": "intransigent",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈtɹæn.sə.d͡ʒənt/",
+    "bangla": "অস্থির",
+    "definition": "A person who is intransigent.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on a person who is intransigent.",
+    "synonyms": [
+      "inexorable",
+      "adamant",
+      "adamantine",
+      "inflexible"
+    ],
+    "antonyms": [
+      "transigent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 683,
+    "word": "intrepid",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈtɹɛpɪd/",
+    "bangla": "নির্ভীক",
+    "definition": "Fearless; bold; brave.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of fearless; bold; brave.",
+    "synonyms": [
+      "courageous",
+      "fearless",
+      "unafraid"
+    ],
+    "antonyms": [
+      "trepid"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 684,
+    "word": "laconic",
+    "pos": "adjective",
+    "phonetic": "/ləˈkɒnɪk/",
+    "bangla": "যতটা সম্ভব কম শব্দ ব্যবহার করা",
+    "definition": "Using as few words as possible; pithy and concise.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is concise.",
+    "synonyms": [
+      "concise",
+      "pithy",
+      "terse"
+    ],
+    "antonyms": [
+      "bombastic",
+      "long-winded",
+      "loquacious",
+      "prolix"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 685,
+    "word": "laudable",
+    "pos": "adjective",
+    "phonetic": "/lɔːdəbl/",
+    "bangla": "প্রশংসনীয়",
+    "definition": "Worthy of being lauded; praiseworthy; commendable",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on worthy of being lauded; praiseworthy; commendable.",
+    "synonyms": [
+      "commendable",
+      "praiseworthy"
+    ],
+    "antonyms": [
+      "noxious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 686,
+    "word": "loquacious",
+    "pos": "adjective",
+    "phonetic": "/ləʊˈkweɪʃəs/",
+    "bangla": "উচ্চারিত",
+    "definition": "Talkative; chatty.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to chatty.",
+    "synonyms": [
+      "chatty",
+      "garrulous",
+      "talkative"
+    ],
+    "antonyms": [
+      "laconic",
+      "quiet",
+      "reserved",
+      "taciturn"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 687,
+    "word": "magnanimous",
+    "pos": "adjective",
+    "phonetic": "/mæɡˈnæn.ɪ.məs/",
+    "bangla": "উদার",
+    "definition": "Noble and generous in spirit.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is big-hearted.",
+    "synonyms": [
+      "big-hearted",
+      "generous",
+      "great-hearted",
+      "large-hearted"
+    ],
+    "antonyms": [
+      "non magnanimous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 688,
+    "word": "malaise",
+    "pos": "noun",
+    "phonetic": "/mæˈleɪz/",
+    "bangla": "অস্থিরতা",
+    "definition": "A feeling of general bodily discomfort, fatigue or unpleasantness, often at the onset of illness.",
+    "example": "For the comprehension question, _______ to frame the main argument clearly in that section. as it is close to angst.",
+    "synonyms": [
+      "angst",
+      "melancholy",
+      "weltschmerz",
+      "doldrums"
+    ],
+    "antonyms": [
+      "non malaise"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 689,
+    "word": "mendacious",
+    "pos": "adjective",
+    "phonetic": "/mɛnˈdeɪʃəs/",
+    "bangla": "দুষ্ট",
+    "definition": "(of a person) Lying, untruthful or dishonest.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of (of a person) lying, untruthful or dishonest.",
+    "synonyms": [
+      "false",
+      "lying",
+      "untruthful"
+    ],
+    "antonyms": [
+      "non mendacious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 690,
+    "word": "mercurial",
+    "pos": "adjective",
+    "phonetic": "/məːˈkjʊə.ɹɪ.əl/",
+    "bangla": "পারদ",
+    "definition": "Any of the plants known as mercury, especially the annual mercury or French mercury (Mercurialis annua).",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to fickle.",
+    "synonyms": [
+      "fickle",
+      "unpredictable"
+    ],
+    "antonyms": [
+      "non mercurial"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 691,
+    "word": "mitigate",
+    "pos": "verb",
+    "phonetic": "/ˈmɪt.ɪ.ɡeɪt/",
+    "bangla": "প্রশমিত করা",
+    "definition": "To reduce, lessen, or decrease; to make less severe or easier to bear.",
+    "example": "To support the argument, the author had to _______ so that the logic stayed consistent in the GRE passage. with focus on to reduce, lessen, or decrease; to make less.",
+    "synonyms": [
+      "alleviate",
+      "check",
+      "diminish",
+      "ease"
+    ],
+    "antonyms": [
+      "aggrandize",
+      "aggravate",
+      "exacerbate",
+      "incite"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 692,
+    "word": "morose",
+    "pos": "adjective",
+    "phonetic": "/məˈɹəʊs/",
+    "bangla": "নির্বোধ",
+    "definition": "Sullen, gloomy; showing a brooding ill humour.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to crabby.",
+    "synonyms": [
+      "crabby",
+      "glum",
+      "grouchy",
+      "gruff"
+    ],
+    "antonyms": [
+      "non morose"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 693,
+    "word": "nebulous",
+    "pos": "adjective",
+    "phonetic": "/ˈnɛbjʊləs/",
+    "bangla": "মেঘ বা কুয়াশার আকারে",
+    "definition": "In the form of a cloud or haze; hazy.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of in the form of a cloud or haze;.",
+    "synonyms": [
+      "indistinct",
+      "cloudy",
+      "nebulose",
+      "unfixed"
+    ],
+    "antonyms": [
+      "non nebulous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 694,
+    "word": "nefarious",
+    "pos": "adjective",
+    "phonetic": "/nɛˈfɛəɹi.əs/",
+    "bangla": "জঘন্য",
+    "definition": "Sinful, villainous, criminal, or wicked, especially when noteworthy or notorious for such characteristics.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of sinful, villainous, criminal, or wicked, especially when noteworthy.",
+    "synonyms": [
+      "evil",
+      "good-for-nothing",
+      "iniquitous",
+      "sinister"
+    ],
+    "antonyms": [
+      "non nefarious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 695,
+    "word": "nonchalant",
+    "pos": "adjective",
+    "phonetic": "/ˈnɒn.ʃəl.ənt/",
+    "bangla": "অমনোযোগী",
+    "definition": "Casually calm and relaxed.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on casually calm and relaxed.",
+    "synonyms": [
+      "carefree",
+      "cool",
+      "easygoing",
+      "mellow"
+    ],
+    "antonyms": [
+      "chalant"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 696,
+    "word": "obdurate",
+    "pos": "verb",
+    "phonetic": "/-ət/",
+    "bangla": "দৃঢ়",
+    "definition": "To harden; to obdure.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to hard-hearted.",
+    "synonyms": [
+      "hard-hearted",
+      "hardened",
+      "impertinent",
+      "intractable"
+    ],
+    "antonyms": [
+      "not obdurate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 697,
+    "word": "obfuscate",
+    "pos": "verb",
+    "phonetic": "/ˈɒbfəskeɪt/",
+    "bangla": "অস্পষ্ট",
+    "definition": "To make dark; overshadow",
+    "example": "While analyzing the claim, students needed to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of to make dark; overshadow.",
+    "synonyms": [
+      "confuse",
+      "muddle",
+      "obscure",
+      "darken"
+    ],
+    "antonyms": [
+      "explain",
+      "simplify"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 698,
+    "word": "obsequious",
+    "pos": "adjective",
+    "phonetic": "/əbˈsiːkwi.əs/",
+    "bangla": "অস্পষ্ট",
+    "definition": "Obedient; compliant with someone else's orders or wishes.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of obedient; compliant with someone else's orders or wishes.",
+    "synonyms": [
+      "asskissing",
+      "fawning",
+      "ingratiating",
+      "servile"
+    ],
+    "antonyms": [
+      "non obsequious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 699,
+    "word": "onerous",
+    "pos": "adjective",
+    "phonetic": "/ˈɒnəɹəs/",
+    "bangla": "কঠিন",
+    "definition": "Imposing or constituting a physical, mental, or figurative load which can be borne only with effort; burdensome.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to demanding.",
+    "synonyms": [
+      "demanding",
+      "difficult",
+      "taxing",
+      "wearing"
+    ],
+    "antonyms": [
+      "non onerous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 700,
+    "word": "opaque",
+    "pos": "verb",
+    "phonetic": "/əʊˈpeɪk/",
+    "bangla": "অস্বচ্ছ",
+    "definition": "An area of darkness; a place or region with no light.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of an area of darkness; a place or region.",
+    "synonyms": [
+      "blur",
+      "cloud"
+    ],
+    "antonyms": [
+      "bright",
+      "brilliant",
+      "clear",
+      "obvious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

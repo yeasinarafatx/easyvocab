@@ -1,0 +1,22 @@
+[
+  {"word":"benefit","pos":"noun/verb","phonetic":"/ˈbenɪfɪt/","bangla":"সুবিধা","example":"Regular exercise can benefit your health."},
+  {"word":"calculate","pos":"verb","phonetic":"/ˈkælkjuleɪt/","bangla":"হিসাব করা","example":"Please calculate the total cost carefully."},
+  {"word":"category","pos":"noun","phonetic":"/ˈkætəɡəri/","bangla":"বিভাগ","example":"Place each item in the correct category."},
+  {"word":"cause","pos":"noun/verb","phonetic":"/kɔːz/","bangla":"কারণ","example":"Air pollution can cause serious illness."},
+  {"word":"challenge","pos":"noun","phonetic":"/ˈtʃælɪndʒ/","bangla":"চ্যালেঞ্জ","example":"Learning a new language is a challenge."},
+  {"word":"change","pos":"verb","phonetic":"/tʃeɪndʒ/","bangla":"পরিবর্তন করা","example":"Climate patterns change over time."},
+  {"word":"compare","pos":"verb","phonetic":"/kəmˈpeər/","bangla":"তুলনা করা","example":"Compare the two charts before writing."},
+  {"word":"complex","pos":"adjective","phonetic":"/ˈkɒmpleks/","bangla":"জটিল","example":"This is a complex social issue."},
+  {"word":"conclude","pos":"verb","phonetic":"/kənˈkluːd/","bangla":"উপসংহার টানা","example":"Researchers conclude that sleep improves memory."},
+  {"word":"conduct","pos":"verb","phonetic":"/kənˈdʌkt/","bangla":"পরিচালনা করা","example":"They conduct a survey every year."},
+  {"word":"consequence","pos":"noun","phonetic":"/ˈkɒnsɪkwəns/","bangla":"পরিণতি","example":"Smoking has a harmful consequence on health."},
+  {"word":"consider","pos":"verb","phonetic":"/kənˈsɪdər/","bangla":"বিবেচনা করা","example":"Students should consider all options."},
+  {"word":"constant","pos":"adjective","phonetic":"/ˈkɒnstənt/","bangla":"নিরবচ্ছিন্ন","example":"There is constant pressure in modern life."},
+  {"word":"construct","pos":"verb","phonetic":"/kənˈstrʌkt/","bangla":"নির্মাণ করা","example":"Workers construct new roads in rural areas."},
+  {"word":"consume","pos":"verb","phonetic":"/kənˈsjuːm/","bangla":"ব্যবহার করা","example":"Cities consume large amounts of energy."},
+  {"word":"contemporary","pos":"adjective","phonetic":"/kənˈtempərəri/","bangla":"সমসাময়িক","example":"The article discusses contemporary education."},
+  {"word":"contribute","pos":"verb","phonetic":"/kənˈtrɪbjuːt/","bangla":"অবদান রাখা","example":"Volunteers contribute to community projects."},
+  {"word":"convert","pos":"verb","phonetic":"/kənˈvɜːt/","bangla":"রূপান্তর করা","example":"Factories convert waste into fuel."},
+  {"word":"create","pos":"verb","phonetic":"/kriˈeɪt/","bangla":"সৃষ্টি করা","example":"Teachers create a positive environment."},
+  {"word":"criteria","pos":"noun","phonetic":"/kraɪˈtɪəriə/","bangla":"মানদণ্ড","example":"Use clear criteria to assess writing."}
+]

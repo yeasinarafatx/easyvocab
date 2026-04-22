@@ -1,0 +1,410 @@
+[
+  {
+    "id": 1061,
+    "word": "collection",
+    "pos": "noun",
+    "phonetic": "/kəˈlɛkʃən/",
+    "bangla": "সংগ্রহ",
+    "definition": "A set of items or amount of material procured or gathered together.",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is compendium.",
+    "synonyms": [
+      "compendium",
+      "assemblage",
+      "aggregation",
+      "appeal"
+    ],
+    "antonyms": [
+      "non collection"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1062,
+    "word": "compound",
+    "pos": "noun",
+    "phonetic": "/ˈkɒmpaʊnd/",
+    "bangla": "যৌগ",
+    "definition": "An enclosure within which workers, prisoners, or soldiers are confined",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of an enclosure within which workers, prisoners, or soldiers.",
+    "synonyms": [
+      "gaol",
+      "jail",
+      "pen",
+      "pound"
+    ],
+    "antonyms": [
+      "simple",
+      "unsubdivided"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1063,
+    "word": "consumer",
+    "pos": "noun",
+    "phonetic": "/kənˈsjuːmə/",
+    "bangla": "ভোক্তা",
+    "definition": "One who, or that which, consumes.",
+    "example": "In financial operations, _______ plays an important role in decision-making in real scenarios. as it is close to related to consumer.",
+    "synonyms": [
+      "related to consumer"
+    ],
+    "antonyms": [
+      "producer"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1064,
+    "word": "counterparty",
+    "pos": "noun",
+    "phonetic": "/ˈkaʊntərˌpɑrti/",
+    "bangla": "প্রতিপক্ষ",
+    "definition": "The other party to a financial transaction",
+    "example": "In financial operations, _______ plays an important role in decision-making in real scenarios. as it is close to related to counterparty.",
+    "synonyms": [
+      "related to counterparty"
+    ],
+    "antonyms": [
+      "non counterparty"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1065,
+    "word": "creditor",
+    "pos": "noun",
+    "phonetic": "/ˈkrɛdɪtər/",
+    "bangla": "পাওনাদার",
+    "definition": "A person to whom a debt is owed.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on a person to whom a debt is owed.",
+    "synonyms": [
+      "related to creditor"
+    ],
+    "antonyms": [
+      "debtor"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1066,
+    "word": "debenture",
+    "pos": "noun",
+    "phonetic": "/dɪˈbɛntjʊə/",
+    "bangla": "ডিবেঞ্চার",
+    "definition": "A certificate that certifies an amount of money owed to someone; a certificate of indebtedness.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on a certificate that certifies an amount of money.",
+    "synonyms": [
+      "debenture bond",
+      "unsecured bond"
+    ],
+    "antonyms": [
+      "secured bond"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1067,
+    "word": "debtor",
+    "pos": "noun",
+    "phonetic": "/ˈdet.ə/",
+    "bangla": "ঋণী",
+    "definition": "A person or firm that owes money; one in debt; one who owes a debt",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is related to debtor.",
+    "synonyms": [
+      "related to debtor"
+    ],
+    "antonyms": [
+      "creditor"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1068,
+    "word": "default",
+    "pos": "verb",
+    "phonetic": "/dɪˈfɔːlt/",
+    "bangla": "ডিফল্ট",
+    "definition": "The condition of failing to meet an obligation.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on the condition of failing to meet an obligation.",
+    "synonyms": [
+      "default on",
+      "nonpayment",
+      "nonremittal",
+      "default option"
+    ],
+    "antonyms": [
+      "ante up",
+      "pay",
+      "pay up",
+      "payment"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1069,
+    "word": "discount",
+    "pos": "verb",
+    "phonetic": "/dɪsˈkaʊnt/",
+    "bangla": "ডিসকাউন্ট",
+    "definition": "A reduction in price.",
+    "example": "During reconciliation, analysts were asked to _______ while checking transaction history for the bank statement. as it is close to rebate.",
+    "synonyms": [
+      "rebate",
+      "reduction"
+    ],
+    "antonyms": [
+      "surcharge"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1070,
+    "word": "exchangeable",
+    "pos": "noun",
+    "phonetic": "/ɪksˈʧeɪnʤəbəl/",
+    "bangla": "বিনিময়যোগ্য",
+    "definition": "adj Able to be exchanged.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of adj able to be exchanged.",
+    "synonyms": [
+      "similar",
+      "standardized",
+      "interchangeable",
+      "replaceable"
+    ],
+    "antonyms": [
+      "inconvertible",
+      "unexchangeable",
+      "unconvertible"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1071,
+    "word": "forex",
+    "pos": "noun",
+    "phonetic": "/ˈfɔɹˌɛks/",
+    "bangla": "ফরেক্স",
+    "definition": "Short for foreign exchange.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of short for foreign exchange.",
+    "synonyms": [
+      "related to forex"
+    ],
+    "antonyms": [
+      "non forex"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1072,
+    "word": "guarantee",
+    "pos": "verb",
+    "phonetic": "/ˌɡæɹənˈtiː/",
+    "bangla": "গ্যারান্টি",
+    "definition": "Anything that assures a certain outcome.",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of anything that assures a certain outcome.",
+    "synonyms": [
+      "assure",
+      "warrant"
+    ],
+    "antonyms": [
+      "not guarantee"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1073,
+    "word": "indebted",
+    "pos": "verb",
+    "phonetic": "/ɪnˈdɛtɪd/",
+    "bangla": "ঋণী",
+    "definition": "To bring into debt; to place under obligation.",
+    "example": "The branch manager instructed staff to _______ for stronger compliance control in daily banking practice. where a similar notion is beholden.",
+    "synonyms": [
+      "beholden",
+      "obliged"
+    ],
+    "antonyms": [
+      "not indebted"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1074,
+    "word": "insolvency",
+    "pos": "noun",
+    "phonetic": "/[ɪnˈsɒlvn̩si]/",
+    "bangla": "অসচ্ছলতা",
+    "definition": "The condition of being insolvent; the state or condition of a person who is insolvent; the condition of one who is unable to pay his debts as they fall due, or in the usual course of trade and business.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on the condition of being insolvent; the state or.",
+    "synonyms": [
+      "related to insolvency"
+    ],
+    "antonyms": [
+      "solvency"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1075,
+    "word": "insurance",
+    "pos": "noun",
+    "phonetic": "/ɪn.ˈʃɔː.ɹəns/",
+    "bangla": "বীমা",
+    "definition": "A means of indemnity against a future occurrence of an uncertain event.",
+    "example": "In financial operations, _______ plays an important role in decision-making in real scenarios. as it is close to indemnity.",
+    "synonyms": [
+      "indemnity",
+      "policy",
+      "coverage",
+      "insurance policy"
+    ],
+    "antonyms": [
+      "non insurance"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1076,
+    "word": "issuer",
+    "pos": "noun",
+    "phonetic": "/ˈɪʃuər/",
+    "bangla": "ইস্যুকারী",
+    "definition": "One who issues, emits, or publishes.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of one who issues, emits, or publishes.",
+    "synonyms": [
+      "related to issuer"
+    ],
+    "antonyms": [
+      "non issuer"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1077,
+    "word": "kiting",
+    "pos": "noun",
+    "phonetic": "/ˈkaɪtɪŋ/",
+    "bangla": "কাটিং",
+    "definition": "The act of writing a check on an account with insufficient funds, expecting that funds will become available by the time the check clears.",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is related to kiting.",
+    "synonyms": [
+      "related to kiting"
+    ],
+    "antonyms": [
+      "non kiting"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1078,
+    "word": "leverage",
+    "pos": "verb",
+    "phonetic": "/ˈliːv(ə)ɹɪdʒ/",
+    "bangla": "লিভারেজ",
+    "definition": "A force compounded by means of a lever rotating around a pivot; see torque.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of a force compounded by means of a lever.",
+    "synonyms": [
+      "operating leverage",
+      "mechanical advantage",
+      "financial leverage",
+      "exploit"
+    ],
+    "antonyms": [
+      "not leverage"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1079,
+    "word": "markup",
+    "pos": "noun",
+    "phonetic": "/ˈmɑː(ɹ)k.ʌp/",
+    "bangla": "মার্কআপ",
+    "definition": "The notation that is used to indicate the meaning of the elements in an electronic document, or to dictate how text should be displayed.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of the notation that is used to indicate the.",
+    "synonyms": [
+      "related to markup"
+    ],
+    "antonyms": [
+      "non markup"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1080,
+    "word": "monetary",
+    "pos": "adjective",
+    "phonetic": "/ˈmʌnɪtəɹi/",
+    "bangla": "আর্থিক",
+    "definition": "Of, pertaining to, or consisting of money.",
+    "example": "The bank adopted a _______ to strengthen internal monitoring in the risk framework. to explain the idea of of, pertaining to, or consisting of money.",
+    "synonyms": [
+      "pecuniary"
+    ],
+    "antonyms": [
+      "non monetary"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  }
+]

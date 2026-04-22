@@ -1,0 +1,408 @@
+[
+  {
+    "id": 741,
+    "word": "ubiquitous",
+    "pos": "adjective",
+    "phonetic": "/juːˈbɪk.wə.təs/",
+    "bangla": "সর্বব্যাপী",
+    "definition": "Being everywhere at once: omnipresent.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on being everywhere at once: omnipresent.",
+    "synonyms": [
+      "common",
+      "pervasive",
+      "ever-present",
+      "omnipresent"
+    ],
+    "antonyms": [
+      "non ubiquitous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 742,
+    "word": "untenable",
+    "pos": "adjective",
+    "phonetic": "/ənˈtɛnəbəl/",
+    "bangla": "অসমর্থ",
+    "definition": "Not able to be held, as of an opinion or position; unholdable, indefensible.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of not able to be held, as of an.",
+    "synonyms": [
+      "unreasonable",
+      "indefensible"
+    ],
+    "antonyms": [
+      "defensible",
+      "sustainable",
+      "tenable",
+      "habitable"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 743,
+    "word": "vacillate",
+    "pos": "verb",
+    "phonetic": "/ˈvæ.sə.leɪt/",
+    "bangla": "অস্থিরতা",
+    "definition": "To sway unsteadily from one side to the other; oscillate.",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on to sway unsteadily from one side to the.",
+    "synonyms": [
+      "stagger",
+      "blow hot and cold",
+      "waffle"
+    ],
+    "antonyms": [
+      "not vacillate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 744,
+    "word": "verbose",
+    "pos": "adjective",
+    "phonetic": "/vəˈbəʊs/",
+    "bangla": "ভার্বোস",
+    "definition": "Abounding in words, containing more words than necessary; long-winded.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on abounding in words, containing more words than necessary;.",
+    "synonyms": [
+      "tedious",
+      "prolix",
+      "wordy",
+      "long-winded"
+    ],
+    "antonyms": [
+      "concise",
+      "terse"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 745,
+    "word": "virulent",
+    "pos": "adjective",
+    "phonetic": "/ˈvɪɹjʊlənt/",
+    "bangla": "ভাইরাল",
+    "definition": "(of a disease or disease-causing agent) Highly infectious, malignant or deadly.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to acerbic.",
+    "synonyms": [
+      "acerbic",
+      "caustic",
+      "acrid",
+      "vitriolic"
+    ],
+    "antonyms": [
+      "avirulent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 746,
+    "word": "vitriol",
+    "pos": "verb",
+    "phonetic": "/ˈvɪ.tɹi.əl/",
+    "bangla": "সালফিউরিক অ্যাসিড এবং বিভিন্ন ধাতব সালফেট",
+    "definition": "Sulphuric acid and various metal sulphates.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of sulphuric acid and various metal sulphates.",
+    "synonyms": [
+      "invective",
+      "vituperation",
+      "sulfuric acid",
+      "sulphuric acid"
+    ],
+    "antonyms": [
+      "not vitriol"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 747,
+    "word": "warrant",
+    "pos": "verb",
+    "phonetic": "/ˈwɒɹənt/",
+    "bangla": "পরোয়ানা",
+    "definition": "Authorization or certification; a sanction, as given by a superior.",
+    "example": "Before choosing an option, candidates tried to _______ without weakening the central thesis during the reasoning task. as it is close to warren earth.",
+    "synonyms": [
+      "warren earth"
+    ],
+    "antonyms": [
+      "not warrant"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 748,
+    "word": "zealous",
+    "pos": "adjective",
+    "phonetic": "/ˈzɛl.əs/",
+    "bangla": "উদ্যোগী",
+    "definition": "Full of zeal; ardent, fervent; exhibiting enthusiasm or strong passion.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of full of zeal; ardent, fervent; exhibiting enthusiasm or.",
+    "synonyms": [
+      "ardent",
+      "eager",
+      "enthusiastic",
+      "fervent"
+    ],
+    "antonyms": [
+      "apathetic",
+      "dispassionate",
+      "indifferent",
+      "unenthusiastic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 749,
+    "word": "abdominoanterior",
+    "pos": "noun",
+    "phonetic": "/abdominoanterior/",
+    "bangla": "একটি আভিধানিক শব্দ যা একাডেমিক এবং পরীক্ষার প্রসঙ্গে 'অ্যাবডোমিনোঅ্যান্টেরিয়র' হিসাবে ব্যবহৃত হয়",
+    "definition": "A lexical term used in academic and examination contexts as 'abdominoanterior'.",
+    "example": "For the comprehension question, _______ while connecting key evidence in the explanation. where a similar notion is related to abdominoanterior.",
+    "synonyms": [
+      "related to abdominoanterior"
+    ],
+    "antonyms": [
+      "non abdominoanterior"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 750,
+    "word": "abdominocentesis",
+    "pos": "noun",
+    "phonetic": "/abdominocentesis/",
+    "bangla": "n (সার্জারি) ট্রোকার ব্যবহার করে মূল্যায়নের জন্য পেট থেকে পেরিটোনিয়াল তরল নিষ্কাশন",
+    "definition": "n (surgery) Extraction of peritoneal fluid from the abdomen for evaluation, using a trocar.",
+    "example": "The central idea was clarified by _______ which highlighted the author's intent for the passage. with focus on n (surgery) extraction of peritoneal fluid from the.",
+    "synonyms": [
+      "paracentesis"
+    ],
+    "antonyms": [
+      "non abdominocentesis"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 751,
+    "word": "abdominothoracic",
+    "pos": "noun",
+    "phonetic": "/abdominothoracic/",
+    "bangla": "adj পেট এবং বক্ষ, বা বুকের সাথে সম্পর্কিত",
+    "definition": "adj Relating to the abdomen and the thorax, or chest.",
+    "example": "In the paragraph analysis, _______ while connecting key evidence in the explanation. where a similar notion is related to abdominothoracic.",
+    "synonyms": [
+      "related to abdominothoracic"
+    ],
+    "antonyms": [
+      "non abdominothoracic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 752,
+    "word": "absolutistically",
+    "pos": "noun",
+    "phonetic": "/absolutistically/",
+    "bangla": "নিখুঁতভাবে",
+    "definition": "adv In an absolutist manner.",
+    "example": "In the paragraph analysis, _______ while connecting key evidence in the explanation. where a similar notion is related to absolutistically.",
+    "synonyms": [
+      "related to absolutistically"
+    ],
+    "antonyms": [
+      "non absolutistically"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 753,
+    "word": "acanthocephalous",
+    "pos": "noun",
+    "phonetic": "/acanthocephalous/",
+    "bangla": "অ্যাকান্থোসেফালাস",
+    "definition": "adj (zoology) Having a spiny head, as one of the Acanthocephala.",
+    "example": "In the paragraph analysis, _______ while connecting key evidence in the explanation. where a similar notion is related to acanthocephalous.",
+    "synonyms": [
+      "related to acanthocephalous"
+    ],
+    "antonyms": [
+      "non acanthocephalous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 754,
+    "word": "acanthopterygian",
+    "pos": "noun",
+    "phonetic": "/acanthopterygian/",
+    "bangla": "n (প্রাণিবিদ্যা) সুপার অর্ডার অ্যাকানথোপটেরিগির যে কোনও মাছ",
+    "definition": "n (zoology) Any fish of the superorder Acanthopterygii.",
+    "example": "In the GRE reading set, the term _______ and guided the final inference for test-takers. to explain the idea of n (zoology) any fish of the superorder acanthopterygii.",
+    "synonyms": [
+      "spiny-finned fish"
+    ],
+    "antonyms": [
+      "malacopterygian",
+      "soft-finned fish"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 755,
+    "word": "accommodableness",
+    "pos": "noun",
+    "phonetic": "/accommodableness/",
+    "bangla": "বাসযোগ্যতা",
+    "definition": "n (rare) The quality or condition of being accommodable",
+    "example": "The central idea was clarified by _______ and guided the final inference for test-takers. to explain the idea of n (rare) the quality or condition of being.",
+    "synonyms": [
+      "related to accommodableness"
+    ],
+    "antonyms": [
+      "non accommodableness"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 756,
+    "word": "accumulativeness",
+    "pos": "noun",
+    "phonetic": "/accumulativeness/",
+    "bangla": "n সঞ্চিত হওয়ার অবস্থা বা গুণাবলী",
+    "definition": "n The state or qualities of being accumulative.",
+    "example": "In the GRE reading set, the term _______ which highlighted the author's intent for the passage. with focus on n the state or qualities of being accumulative.",
+    "synonyms": [
+      "related to accumulativeness"
+    ],
+    "antonyms": [
+      "non accumulativeness"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 757,
+    "word": "acetoacetanilide",
+    "pos": "noun",
+    "phonetic": "/acetoacetanilide/",
+    "bangla": "n (জৈব রসায়ন) অ্যানিলিনের acetoacetamide ডেরিভেটিভ",
+    "definition": "n (organic chemistry) acetoacetamide derivative of aniline.",
+    "example": "For the comprehension question, _______ while connecting key evidence in the explanation. where a similar notion is related to acetoacetanilide.",
+    "synonyms": [
+      "related to acetoacetanilide"
+    ],
+    "antonyms": [
+      "non acetoacetanilide"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 758,
+    "word": "acetoamidophenol",
+    "pos": "noun",
+    "phonetic": "/acetoamidophenol/",
+    "bangla": "'অ্যাসিটোমিডোফেনল' হিসাবে একাডেমিক এবং পরীক্ষার প্রসঙ্গে ব্যবহৃত একটি আভিধানিক শব্দ",
+    "definition": "A lexical term used in academic and examination contexts as 'acetoamidophenol'.",
+    "example": "The central idea was clarified by _______ and guided the final inference for test-takers. to explain the idea of a lexical term used in academic and examination.",
+    "synonyms": [
+      "related to acetoamidophenol"
+    ],
+    "antonyms": [
+      "non acetoamidophenol"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 759,
+    "word": "acetobromanilide",
+    "pos": "noun",
+    "phonetic": "/acetobromanilide/",
+    "bangla": "একটি আভিধানিক শব্দ যা একাডেমিক এবং পরীক্ষার প্রসঙ্গে 'অ্যাসেটোব্রোম্যানিলাইড' হিসাবে ব্যবহৃত হয়",
+    "definition": "A lexical term used in academic and examination contexts as 'acetobromanilide'.",
+    "example": "In the GRE reading set, the term _______ which highlighted the author's intent for the passage. with focus on a lexical term used in academic and examination.",
+    "synonyms": [
+      "related to acetobromanilide"
+    ],
+    "antonyms": [
+      "non acetobromanilide"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 760,
+    "word": "acetoxyphthalide",
+    "pos": "noun",
+    "phonetic": "/acetoxyphthalide/",
+    "bangla": "একটি আভিধানিক শব্দ যা একাডেমিক এবং পরীক্ষার প্রসঙ্গে 'অ্যাসেটক্সিফথালাইড' হিসাবে ব্যবহৃত হয়",
+    "definition": "A lexical term used in academic and examination contexts as 'acetoxyphthalide'.",
+    "example": "The central idea was clarified by _______ and guided the final inference for test-takers. to explain the idea of a lexical term used in academic and examination.",
+    "synonyms": [
+      "related to acetoxyphthalide"
+    ],
+    "antonyms": [
+      "non acetoxyphthalide"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "id": 201,
+    "word": "abolish",
+    "pos": "verb",
+    "phonetic": "/əˈbɒlɪʃ/",
+    "bangla": "বিলুপ্ত করা",
+    "definition": "To formally put an end to a system or practice",
+    "example": "Many campaigners argue that we should _______ the death penalty entirely.",
+    "synonyms": [
+      "eliminate",
+      "eradicate",
+      "end"
+    ],
+    "antonyms": [
+      "establish",
+      "create",
+      "maintain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 202,
+    "word": "accelerate",
+    "pos": "verb",
+    "phonetic": "/əkˈseləreɪt/",
+    "bangla": "ত্বরান্বিত করা",
+    "definition": "To increase in rate or speed; to cause to happen sooner",
+    "example": "Investment in renewables will _______ the shift away from fossil fuels.",
+    "synonyms": [
+      "speed up",
+      "quicken",
+      "hasten"
+    ],
+    "antonyms": [
+      "slow down",
+      "delay",
+      "hinder"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 203,
+    "word": "accommodate",
+    "pos": "verb",
+    "phonetic": "/əˈkɒmədeɪt/",
+    "bangla": "সুবিধা দেওয়া, মিটমাট করা",
+    "definition": "To provide space or adapt to the needs of someone",
+    "example": "The new policy will _______ the needs of both full-time and part-time workers.",
+    "synonyms": [
+      "house",
+      "adapt",
+      "adjust"
+    ],
+    "antonyms": [
+      "exclude",
+      "reject",
+      "refuse"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 204,
+    "word": "accumulate",
+    "pos": "verb",
+    "phonetic": "/əˈkjuːmjuleɪt/",
+    "bangla": "সঞ্চয় করা, জমা করা",
+    "definition": "To gather an increasing amount of something over time",
+    "example": "Small daily savings can _______ into a substantial sum over the years.",
+    "synonyms": [
+      "gather",
+      "collect",
+      "amass"
+    ],
+    "antonyms": [
+      "spend",
+      "distribute",
+      "scatter"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 205,
+    "word": "acknowledge",
+    "pos": "verb",
+    "phonetic": "/əkˈnɒlɪdʒ/",
+    "bangla": "স্বীকার করা",
+    "definition": "To accept or admit the truth or existence of something",
+    "example": "The government finally _______ that the policy had completely failed.",
+    "synonyms": [
+      "admit",
+      "recognize",
+      "accept"
+    ],
+    "antonyms": [
+      "deny",
+      "reject",
+      "ignore"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 206,
+    "word": "advocate",
+    "pos": "verb",
+    "phonetic": "/ˈædvəkeɪt/",
+    "bangla": "সমর্থন করা",
+    "definition": "To publicly recommend or support a cause or policy",
+    "example": "Environmental groups _______ for stricter laws to protect endangered species.",
+    "synonyms": [
+      "support",
+      "promote",
+      "champion"
+    ],
+    "antonyms": [
+      "oppose",
+      "condemn",
+      "criticize"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 207,
+    "word": "affluent",
+    "pos": "adjective",
+    "phonetic": "/ˈæfluənt/",
+    "bangla": "ধনী, সম্পদশালী",
+    "definition": "Having a great deal of money; wealthy",
+    "example": "Children from _______ families often have better access to quality education.",
+    "synonyms": [
+      "wealthy",
+      "rich",
+      "prosperous"
+    ],
+    "antonyms": [
+      "poor",
+      "destitute",
+      "impoverished"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 208,
+    "word": "alleviate",
+    "pos": "verb",
+    "phonetic": "/əˈliːvieɪt/",
+    "bangla": "লাঘব করা, কমানো",
+    "definition": "To make suffering or a problem less severe",
+    "example": "Foreign aid can help to _______ the suffering caused by the famine.",
+    "synonyms": [
+      "reduce",
+      "ease",
+      "relieve"
+    ],
+    "antonyms": [
+      "worsen",
+      "aggravate",
+      "intensify"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 209,
+    "word": "ambiguous",
+    "pos": "adjective",
+    "phonetic": "/æmˈbɪɡjuəs/",
+    "bangla": "দ্ব্যর্থবোধক, অস্পষ্ট",
+    "definition": "Open to more than one interpretation; not having one obvious meaning",
+    "example": "The politician gave an _______ answer that could be interpreted in different ways.",
+    "synonyms": [
+      "unclear",
+      "vague",
+      "uncertain"
+    ],
+    "antonyms": [
+      "clear",
+      "definite",
+      "precise"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 210,
+    "word": "amplify",
+    "pos": "verb",
+    "phonetic": "/ˈæmplɪfaɪ/",
+    "bangla": "বিস্তার করা, বাড়ানো",
+    "definition": "To increase the volume or strength of something",
+    "example": "Social media can _______ the spread of misinformation at an alarming rate.",
+    "synonyms": [
+      "increase",
+      "expand",
+      "strengthen"
+    ],
+    "antonyms": [
+      "reduce",
+      "minimize",
+      "weaken"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 211,
+    "word": "anticipate",
+    "pos": "verb",
+    "phonetic": "/ænˈtɪsɪpeɪt/",
+    "bangla": "আগে থেকে ধারণা করা",
+    "definition": "To expect or predict something before it happens",
+    "example": "Companies must _______ changes in consumer demand to stay competitive.",
+    "synonyms": [
+      "expect",
+      "foresee",
+      "predict"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook",
+      "react"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 212,
+    "word": "apparent",
+    "pos": "adjective",
+    "phonetic": "/əˈpærənt/",
+    "bangla": "স্পষ্ট, প্রতীয়মান",
+    "definition": "Clearly visible or understood; obvious",
+    "example": "It became _______ that the new economic policy was not working as planned.",
+    "synonyms": [
+      "obvious",
+      "clear",
+      "evident"
+    ],
+    "antonyms": [
+      "hidden",
+      "obscure",
+      "unclear"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 213,
+    "word": "arbitrary",
+    "pos": "adjective",
+    "phonetic": "/ˈɑːbɪtrəri/",
+    "bangla": "খেয়ালখুশিমতো, স্বেচ্ছাচারী",
+    "definition": "Based on random choice rather than any reason or system",
+    "example": "The selection process seemed _______ and unfair to many of the applicants.",
+    "synonyms": [
+      "random",
+      "capricious",
+      "unreasonable"
+    ],
+    "antonyms": [
+      "reasoned",
+      "logical",
+      "systematic"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 214,
+    "word": "assert",
+    "pos": "verb",
+    "phonetic": "/əˈsɜːt/",
+    "bangla": "দৃঢ়ভাবে বলা",
+    "definition": "To state a fact or belief confidently and forcefully",
+    "example": "The scientist _______ that the new drug would prove effective in trials.",
+    "synonyms": [
+      "claim",
+      "declare",
+      "state"
+    ],
+    "antonyms": [
+      "deny",
+      "doubt",
+      "question"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 215,
+    "word": "attribute",
+    "pos": "verb",
+    "phonetic": "/əˈtrɪbjuːt/",
+    "bangla": "কারণ হিসেবে দেখানো",
+    "definition": "To regard something as caused by a particular factor",
+    "example": "The researchers _______ the rise in disease to a lack of clean water.",
+    "synonyms": [
+      "assign",
+      "credit",
+      "blame"
+    ],
+    "antonyms": [
+      "deny",
+      "disclaim",
+      "remove"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 216,
+    "word": "autonomous",
+    "pos": "adjective",
+    "phonetic": "/ɔːˈtɒnəməs/",
+    "bangla": "স্বায়ত্তশাসিত, স্বাধীন",
+    "definition": "Having the freedom to govern itself or control its own affairs",
+    "example": "The region demanded _______ status from the central government.",
+    "synonyms": [
+      "independent",
+      "self-governing",
+      "free"
+    ],
+    "antonyms": [
+      "dependent",
+      "controlled",
+      "subordinate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 217,
+    "word": "benchmark",
+    "pos": "noun",
+    "phonetic": "/ˈbentʃmɑːk/",
+    "bangla": "মানদণ্ড, তুলনার মাপকাঠি",
+    "definition": "A standard or point of reference against which things may be compared",
+    "example": "The literacy rate serves as a _______ for measuring educational progress.",
+    "synonyms": [
+      "standard",
+      "measure",
+      "reference"
+    ],
+    "antonyms": [
+      "deviation",
+      "exception",
+      "irregularity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 218,
+    "word": "cease",
+    "pos": "verb",
+    "phonetic": "/siːs/",
+    "bangla": "বন্ধ করা, থামানো",
+    "definition": "To come or bring to an end; to stop",
+    "example": "The factory was ordered to _______ production until safety standards were met.",
+    "synonyms": [
+      "stop",
+      "end",
+      "halt"
+    ],
+    "antonyms": [
+      "continue",
+      "begin",
+      "start"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 219,
+    "word": "coherent",
+    "pos": "adjective",
+    "phonetic": "/kəʊˈhɪərənt/",
+    "bangla": "সুসংগত, যুক্তিসঙ্গত",
+    "definition": "Logical and consistent; forming a unified whole",
+    "example": "A _______ argument requires clear logic and well-supported evidence throughout.",
+    "synonyms": [
+      "logical",
+      "consistent",
+      "clear"
+    ],
+    "antonyms": [
+      "incoherent",
+      "confused",
+      "disjointed"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 220,
+    "word": "compensate",
+    "pos": "verb",
+    "phonetic": "/ˈkɒmpenseɪt/",
+    "bangla": "ক্ষতিপূরণ দেওয়া",
+    "definition": "To give something to make up for loss or suffering",
+    "example": "The airline agreed to _______ passengers for the lengthy delay of their flight.",
+    "synonyms": [
+      "reimburse",
+      "repay",
+      "make up for"
+    ],
+    "antonyms": [
+      "deprive",
+      "take",
+      "withhold"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

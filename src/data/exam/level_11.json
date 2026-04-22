@@ -1,0 +1,420 @@
+[
+  {
+    "id": 801,
+    "word": "annexation",
+    "pos": "noun",
+    "phonetic": "/ˌænɛkˈseɪʃən/",
+    "bangla": "সংযুক্তি",
+    "definition": "Addition or incorporation of something, or territories that have been annexed.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is annexion.",
+    "synonyms": [
+      "annexion"
+    ],
+    "antonyms": [
+      "separation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 802,
+    "word": "authority",
+    "pos": "noun",
+    "phonetic": "/ɔːˈθɒɹəti/",
+    "bangla": "কর্তৃত্ব",
+    "definition": "The power to enforce rules or give orders.",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to sanction.",
+    "synonyms": [
+      "sanction",
+      "dominance",
+      "agency",
+      "confidence"
+    ],
+    "antonyms": [
+      "non authority"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 803,
+    "word": "cabinet",
+    "pos": "noun",
+    "phonetic": "/ˈkæ.bɪ.nɪt/",
+    "bangla": "ক্যাবিনেট",
+    "definition": "A storage closet either separate from, or built into, a wall.",
+    "example": "For administrative analysis, _______ helps connect reform with practice for policy evaluation. as it is close to console.",
+    "synonyms": [
+      "console",
+      "locker",
+      "storage locker"
+    ],
+    "antonyms": [
+      "non cabinet"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 804,
+    "word": "candidature",
+    "pos": "noun",
+    "phonetic": "/candidature/",
+    "bangla": "প্রার্থীতা",
+    "definition": "The condition of becoming a candidate.",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is campaigning.",
+    "synonyms": [
+      "campaigning",
+      "candidacy",
+      "electioneering",
+      "political campaign"
+    ],
+    "antonyms": [
+      "non candidature"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 805,
+    "word": "citizenship",
+    "pos": "noun",
+    "phonetic": "/ˈsɪtɪzənˌʃɪp/",
+    "bangla": "নাগরিকত্ব",
+    "definition": "The status of being a citizen, in its various senses.",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is citizenhood.",
+    "synonyms": [
+      "citizenhood",
+      "freedom of the city",
+      "freemanship"
+    ],
+    "antonyms": [
+      "non citizenship"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 806,
+    "word": "civil",
+    "pos": "adjective",
+    "phonetic": "/ˈsɪv.əl/",
+    "bangla": "নাগরিক",
+    "definition": "Having to do with people and government office as opposed to the military or religion.",
+    "example": "The district plan required a _______ to ensure transparent implementation across agencies. with focus on having to do with people and government office.",
+    "synonyms": [
+      "civilized",
+      "civilian",
+      "civic",
+      "polite"
+    ],
+    "antonyms": [
+      "anti-civil",
+      "impolite",
+      "inconsiderate",
+      "noncivil"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 807,
+    "word": "coalition",
+    "pos": "noun",
+    "phonetic": "/koʊəˈlɪʃən/",
+    "bangla": "জোট",
+    "definition": "A temporary group or union of organizations, usually formed for a particular advantage.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on a temporary group or union of organizations, usually.",
+    "synonyms": [
+      "alignment",
+      "fusion",
+      "alinement",
+      "alliance"
+    ],
+    "antonyms": [
+      "nonalignment",
+      "nonalinement"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 808,
+    "word": "commission",
+    "pos": "verb",
+    "phonetic": "/kəˈmɪʃən/",
+    "bangla": "কমিশন",
+    "definition": "A sending or mission (to do or accomplish something).",
+    "example": "The ministry planned to _______ before implementing the reform under the new policy. to explain the idea of a sending or mission (to do or accomplish.",
+    "synonyms": [
+      "committee",
+      "government body"
+    ],
+    "antonyms": [
+      "omission"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 809,
+    "word": "committee",
+    "pos": "noun",
+    "phonetic": "/kəˈmɪti/",
+    "bangla": "কমিটি",
+    "definition": "A body of one or more persons convened for the accomplishment of some specific purpose, typically with formal protocols.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is commission.",
+    "synonyms": [
+      "commission",
+      "citizens committee"
+    ],
+    "antonyms": [
+      "non committee"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 810,
+    "word": "constitution",
+    "pos": "noun",
+    "phonetic": "/ˌkɒnstɪˈtjuːʃən/",
+    "bangla": "সংবিধান",
+    "definition": "The act, or process of setting something up, or establishing something; the composition or structure of such a thing; its makeup.",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to configuration.",
+    "synonyms": [
+      "configuration",
+      "form"
+    ],
+    "antonyms": [
+      "non constitution"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 811,
+    "word": "corruption",
+    "pos": "noun",
+    "phonetic": "/kəˈɹʌpʃən/",
+    "bangla": "দুর্নীতি",
+    "definition": "The act of corrupting or of impairing integrity, virtue, or moral principle; the state of being corrupted or debased; loss of purity or integrity",
+    "example": "In BCS preparation, _______ supports arguments about public administration in public sector contexts. to explain the idea of the act of corrupting or of impairing integrity,.",
+    "synonyms": [
+      "destroying",
+      "ruining",
+      "spoiling",
+      "deterioration"
+    ],
+    "antonyms": [
+      "incorruption",
+      "incorruptness"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 812,
+    "word": "delegation",
+    "pos": "noun",
+    "phonetic": "/dɛlɪˈɡeɪʃən/",
+    "bangla": "প্রতিনিধি দল",
+    "definition": "An act of delegating.",
+    "example": "In governance-focused writing, _______ supports arguments about public administration in public sector contexts. to explain the idea of an act of delegating.",
+    "synonyms": [
+      "commission",
+      "mission",
+      "delegacy",
+      "deputation"
+    ],
+    "antonyms": [
+      "non delegation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 813,
+    "word": "democracy",
+    "pos": "noun",
+    "phonetic": "/dɪˈmɒkɹəsi/",
+    "bangla": "গণতন্ত্র",
+    "definition": "Rule by the people, especially as a form of government; either directly or through elected representatives (representative democracy).",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to democratism.",
+    "synonyms": [
+      "democratism"
+    ],
+    "antonyms": [
+      "autarchy",
+      "autocracy"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 814,
+    "word": "development",
+    "pos": "noun",
+    "phonetic": "/dɪˈvɛləpmənt/",
+    "bangla": "উন্নয়ন",
+    "definition": "The process of developing; growth, directed change.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on the process of developing; growth, directed change.",
+    "synonyms": [
+      "growth",
+      "exploitation",
+      "evolution",
+      "developing"
+    ],
+    "antonyms": [
+      "nondevelopment"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 815,
+    "word": "election",
+    "pos": "noun",
+    "phonetic": "/ɪˈlɛkʃ(ə)n/",
+    "bangla": "নির্বাচন",
+    "definition": "A process of choosing a leader, members of parliament, councillors or other representatives by popular vote.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on a process of choosing a leader, members of.",
+    "synonyms": [
+      "chosenness"
+    ],
+    "antonyms": [
+      "non election"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 816,
+    "word": "entitlement",
+    "pos": "noun",
+    "phonetic": "/ənˈtaɪtəlmənt/",
+    "bangla": "এনটাইটেলমেন্ট",
+    "definition": "The right to have something, whether actual or perceived.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on the right to have something, whether actual or.",
+    "synonyms": [
+      "related to entitlement"
+    ],
+    "antonyms": [
+      "non entitlement"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 817,
+    "word": "federation",
+    "pos": "adjective",
+    "phonetic": "/ˌfɛdəˈɹeɪʃn̩/",
+    "bangla": "ফেডারেশন",
+    "definition": "Act of joining together into a single political entity.",
+    "example": "The report recommended a _______ to improve administrative outcomes during reform efforts. to explain the idea of act of joining together into a single political.",
+    "synonyms": [
+      "confederacy",
+      "confederation"
+    ],
+    "antonyms": [
+      "non federation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 818,
+    "word": "institution",
+    "pos": "noun",
+    "phonetic": "/ˌɪnstɪˈtjuːʃən/",
+    "bangla": "প্রতিষ্ঠান",
+    "definition": "A custom or practice of a society or community.",
+    "example": "For administrative analysis, _______ helps connect reform with practice for policy evaluation. as it is close to establishment.",
+    "synonyms": [
+      "establishment"
+    ],
+    "antonyms": [
+      "non institution"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 819,
+    "word": "local",
+    "pos": "adjective",
+    "phonetic": "/ˈləʊkl̩/",
+    "bangla": "স্থানীয়",
+    "definition": "A person who lives near a given place.",
+    "example": "The district plan required a _______ to ensure transparent implementation across agencies. with focus on a person who lives near a given place.",
+    "synonyms": [
+      "stopper",
+      "topical"
+    ],
+    "antonyms": [
+      "express",
+      "fast",
+      "global"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 820,
+    "word": "ministry",
+    "pos": "noun",
+    "phonetic": "/ˈmɪnɪstɹi/",
+    "bangla": "মন্ত্রণালয়",
+    "definition": "Government department, at the administrative level normally headed by a minister (or equivalent rank, e.g. secretary of state), who holds it as portfolio, especially in a constitutional monarchy, but also as a polity",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is related to ministry.",
+    "synonyms": [
+      "related to ministry"
+    ],
+    "antonyms": [
+      "non ministry"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  }
+]

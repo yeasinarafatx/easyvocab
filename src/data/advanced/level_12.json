@@ -1,0 +1,142 @@
+[
+  {
+    "word": "theoretical",
+    "pos": "adjective",
+    "phonetic": "/theoretical/",
+    "bangla": "তাত্ত্বিক",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "substantive",
+    "pos": "adjective",
+    "phonetic": "/substantive/",
+    "bangla": "উপাদান",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "prospective",
+    "pos": "adjective",
+    "phonetic": "/prospective/",
+    "bangla": "সম্ভাব্য",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "retrospective",
+    "pos": "adjective",
+    "phonetic": "/retrospective/",
+    "bangla": "পূর্ববর্তী",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "transformative",
+    "pos": "adjective",
+    "phonetic": "/transformative/",
+    "bangla": "রূপান্তরকারী",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "distributive",
+    "pos": "adjective",
+    "phonetic": "/distributive/",
+    "bangla": "বিতরণকারী",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "regulative",
+    "pos": "adjective",
+    "phonetic": "/regulative/",
+    "bangla": "নিয়ন্ত্রক",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "legislative",
+    "pos": "adjective",
+    "phonetic": "/legislative/",
+    "bangla": "আইনী",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "administrative",
+    "pos": "adjective",
+    "phonetic": "/administrative/",
+    "bangla": "প্রশাসনিক",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "constitutional",
+    "pos": "adjective",
+    "phonetic": "/constitutional/",
+    "bangla": "সাংবিধানিক",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "jurisdictional",
+    "pos": "adjective",
+    "phonetic": "/jurisdictional/",
+    "bangla": "বিচার বিভাগীয়",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "transnational",
+    "pos": "adjective",
+    "phonetic": "/transnational/",
+    "bangla": "আন্তর্জাতিক",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "intercultural",
+    "pos": "adjective",
+    "phonetic": "/intercultural/",
+    "bangla": "আন্তঃসাংস্কৃতিক",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "interdisciplinary",
+    "pos": "adjective",
+    "phonetic": "/interdisciplinary/",
+    "bangla": "আন্তঃবিভাগীয়",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "transdisciplinary",
+    "pos": "adjective",
+    "phonetic": "/transdisciplinary/",
+    "bangla": "ট্রান্সডিসিপ্লিনারি",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "adaptability",
+    "pos": "noun",
+    "phonetic": "/adaptability/",
+    "bangla": "অভিযোজনযোগ্যতা",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "inclusiveness",
+    "pos": "noun",
+    "phonetic": "/inclusiveness/",
+    "bangla": "অন্তর্ভুক্তি",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "traceability",
+    "pos": "noun",
+    "phonetic": "/traceability/",
+    "bangla": "ট্রেসেবিলিটি",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "plausibility",
+    "pos": "noun",
+    "phonetic": "/plausibility/",
+    "bangla": "যুক্তিসঙ্গততা",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  },
+  {
+    "word": "verifiability",
+    "pos": "noun",
+    "phonetic": "/verifiability/",
+    "bangla": "যাচাইযোগ্যতা",
+    "example": "In the academic discussion, _______ played a central role in the final argument."
+  }
+]

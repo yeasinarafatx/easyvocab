@@ -1,0 +1,22 @@
+[
+  {"word":"portion","pos":"noun","phonetic":"/ˈpɔːʃən/","bangla":"অংশ","example":"A large portion of students passed."},
+  {"word":"potential","pos":"noun/adjective","phonetic":"/pəˈtenʃəl/","bangla":"সম্ভাবনা","example":"Every child has great potential."},
+  {"word":"predict","pos":"verb","phonetic":"/prɪˈdɪkt/","bangla":"পূর্বাভাস দেওয়া","example":"Experts predict more rainfall this year."},
+  {"word":"primary","pos":"adjective","phonetic":"/ˈpraɪməri/","bangla":"প্রাথমিক","example":"Primary education is very important."},
+  {"word":"principal","pos":"adjective/noun","phonetic":"/ˈprɪnsəpəl/","bangla":"প্রধান","example":"The principal reason is lack of time."},
+  {"word":"priority","pos":"noun","phonetic":"/praɪˈɒrəti/","bangla":"অগ্রাধিকার","example":"Health should be a national priority."},
+  {"word":"proceed","pos":"verb","phonetic":"/prəˈsiːd/","bangla":"এগিয়ে চলা","example":"The meeting will proceed as planned."},
+  {"word":"process","pos":"noun","phonetic":"/ˈprəʊses/","bangla":"প্রক্রিয়া","example":"Learning is a gradual process."},
+  {"word":"professional","pos":"adjective/noun","phonetic":"/prəˈfeʃənəl/","bangla":"পেশাগত","example":"She wants professional training."},
+  {"word":"promote","pos":"verb","phonetic":"/prəˈməʊt/","bangla":"উন্নীত/প্রচার করা","example":"Schools promote healthy habits."},
+  {"word":"proportion","pos":"noun","phonetic":"/prəˈpɔːʃən/","bangla":"অনুপাত","example":"A high proportion of people use smartphones."},
+  {"word":"propose","pos":"verb","phonetic":"/prəˈpəʊz/","bangla":"প্রস্তাব করা","example":"The committee proposed a new plan."},
+  {"word":"prospect","pos":"noun","phonetic":"/ˈprɒspekt/","bangla":"সম্ভাবনা","example":"Graduates have good job prospects."},
+  {"word":"protect","pos":"verb","phonetic":"/prəˈtekt/","bangla":"রক্ষা করা","example":"We must protect natural resources."},
+  {"word":"publish","pos":"verb","phonetic":"/ˈpʌblɪʃ/","bangla":"প্রকাশ করা","example":"Researchers publish their findings annually."},
+  {"word":"range","pos":"noun","phonetic":"/reɪndʒ/","bangla":"পরিসর","example":"The store has a wide range of books."},
+  {"word":"ratio","pos":"noun","phonetic":"/ˈreɪʃiəʊ/","bangla":"অনুপাত","example":"The teacher-student ratio is improving."},
+  {"word":"react","pos":"verb","phonetic":"/riˈækt/","bangla":"প্রতিক্রিয়া দেখানো","example":"People react differently to stress."},
+  {"word":"recover","pos":"verb","phonetic":"/rɪˈkʌvə/","bangla":"পুনরুদ্ধার করা","example":"The economy began to recover slowly."},
+  {"word":"region","pos":"noun","phonetic":"/ˈriːdʒən/","bangla":"অঞ্চল","example":"This region grows a lot of rice."}
+]

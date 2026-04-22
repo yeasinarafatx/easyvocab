@@ -1,0 +1,438 @@
+[
+  {
+    "id": 701,
+    "word": "ostentatious",
+    "pos": "adjective",
+    "phonetic": "/ˌɒs.tənˈteɪ.ʃəs/",
+    "bangla": "আড়ম্বরপূর্ণ",
+    "definition": "Of ostentation.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of of ostentation.",
+    "synonyms": [
+      "conspicuous",
+      "pretentious",
+      "kitsch",
+      "showy"
+    ],
+    "antonyms": [
+      "unpretentious",
+      "unostentatious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 702,
+    "word": "parsimonious",
+    "pos": "adjective",
+    "phonetic": "/pɑɹ.sɪˈmo͡ʊn.i.əs/",
+    "bangla": "পার্সিমনি প্রদর্শন করা হচ্ছে",
+    "definition": "Exhibiting parsimony; sparing in the expenditure of money; frugal to excess.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to niggardly.",
+    "synonyms": [
+      "niggardly",
+      "penurious",
+      "stingy",
+      "tight-fisted"
+    ],
+    "antonyms": [
+      "non parsimonious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 703,
+    "word": "paucity",
+    "pos": "noun",
+    "phonetic": "/ˈpɑsɪti/",
+    "bangla": "অভাব",
+    "definition": "Fewness in number; too few.",
+    "example": "In the GRE reading set, the term _______ and guided the final inference for test-takers. to explain the idea of fewness in number; too few.",
+    "synonyms": [
+      "dearth",
+      "scantiness",
+      "scarcity"
+    ],
+    "antonyms": [
+      "non paucity"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 704,
+    "word": "pejorative",
+    "pos": "adjective",
+    "phonetic": "/pɪˈdʒɒɹətɪv/",
+    "bangla": "নিন্দনীয়",
+    "definition": "A disparaging, belittling, or derogatory word or expression.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is dyslogism.",
+    "synonyms": [
+      "dyslogism",
+      "dysphemism",
+      "derogatory",
+      "dyslogistic"
+    ],
+    "antonyms": [
+      "approvative",
+      "euphemism",
+      "approbative",
+      "eulogistic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 705,
+    "word": "perfidious",
+    "pos": "adjective",
+    "phonetic": "/pəˈfɪdi.əs/",
+    "bangla": "বিশ্বাসঘাতক",
+    "definition": "Of, pertaining to, or representing perfidy; disloyal to what should command one's fidelity or allegiance.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to disloyal.",
+    "synonyms": [
+      "disloyal",
+      "traitorous",
+      "treacherous",
+      "unfaithful"
+    ],
+    "antonyms": [
+      "non perfidious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 706,
+    "word": "pernicious",
+    "pos": "adjective",
+    "phonetic": "/pəˈnɪʃəs/",
+    "bangla": "ক্ষতিকর",
+    "definition": "Causing much harm in a subtle way.",
+    "example": "In the model answer, the tone felt _______ when compared with standard theories in the text. with focus on causing much harm in a subtle way.",
+    "synonyms": [
+      "attery",
+      "deleterious"
+    ],
+    "antonyms": [
+      "non pernicious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 707,
+    "word": "perspicacious",
+    "pos": "adjective",
+    "phonetic": "/ˌpɜː.spɪˈkeɪ.ʃəs/",
+    "bangla": "সুদর্শন",
+    "definition": "Of acute discernment; having keen insight; mentally perceptive.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of of acute discernment; having keen insight; mentally perceptive.",
+    "synonyms": [
+      "sagacious",
+      "discerning",
+      "sapient",
+      "wise"
+    ],
+    "antonyms": [
+      "non perspicacious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 708,
+    "word": "phlegmatic",
+    "pos": "adjective",
+    "phonetic": "/flɛɡˈmætɪk/",
+    "bangla": "কফসংক্রান্ত",
+    "definition": "One who has a phlegmatic disposition.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to apathetic.",
+    "synonyms": [
+      "apathetic",
+      "cold-blooded",
+      "sluggish",
+      "stoic"
+    ],
+    "antonyms": [
+      "non phlegmatic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 709,
+    "word": "pithy",
+    "pos": "adjective",
+    "phonetic": "/ˈpɪθi/",
+    "bangla": "নির্বোধ",
+    "definition": "Concise and meaningful.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to concise.",
+    "synonyms": [
+      "concise",
+      "laconic",
+      "succinct",
+      "terse"
+    ],
+    "antonyms": [
+      "non pithy"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 710,
+    "word": "platitude",
+    "pos": "noun",
+    "phonetic": "/ˈplatɪtjuːd/",
+    "bangla": "নমনীয়তা",
+    "definition": "An often-quoted saying that is supposed to be meaningful but has become unoriginal or hackneyed through overuse; a cliché.",
+    "example": "In the GRE reading set, the term _______ which highlighted the author's intent for the passage. with focus on an often-quoted saying that is supposed to be.",
+    "synonyms": [
+      "banality",
+      "commonplace",
+      "bromide",
+      "cliche"
+    ],
+    "antonyms": [
+      "non platitude"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 711,
+    "word": "pragmatic",
+    "pos": "adjective",
+    "phonetic": "/pɹæɡˈmætɪk/",
+    "bangla": "বাস্তববাদী",
+    "definition": "A man of business.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to down-to-earth.",
+    "synonyms": [
+      "down-to-earth",
+      "functional",
+      "practical",
+      "realistic"
+    ],
+    "antonyms": [
+      "idealistic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 712,
+    "word": "precocious",
+    "pos": "adjective",
+    "phonetic": "/pɹəˈkəʊʃəs/",
+    "bangla": "অকাল",
+    "definition": "Characterized by exceptionally early development or maturity.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of characterized by exceptionally early development or maturity.",
+    "synonyms": [
+      "tranty"
+    ],
+    "antonyms": [
+      "altricious",
+      "serotinous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 713,
+    "word": "precipitate",
+    "pos": "verb",
+    "phonetic": "/pɹəˈsɪpɪteɪt/",
+    "bangla": "বর্ষণ",
+    "definition": "To make something happen suddenly and quickly.",
+    "example": "In the final paragraph, the reviewer decided to _______ without weakening the central thesis during the reasoning task. as it is close to accelerate.",
+    "synonyms": [
+      "accelerate",
+      "advance",
+      "hasten",
+      "speed up"
+    ],
+    "antonyms": [
+      "not precipitate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 714,
+    "word": "prescient",
+    "pos": "adjective",
+    "phonetic": "/ˈpɹiːʃɪənt/",
+    "bangla": "প্রদর্শনী বা বিচক্ষণতা: জ্ঞান থাকা, বা আপাতদৃষ্টিতে সঠিকভাবে সক্ষম",
+    "definition": "Exhibiting or possessing prescience: having knowledge of, or seemingly able to correctly predict, events before they take place.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of exhibiting or possessing prescience: having knowledge of, or.",
+    "synonyms": [
+      "clairvoyant",
+      "foreknowing",
+      "foreseeing",
+      "prescientific"
+    ],
+    "antonyms": [
+      "unforeseeing"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 715,
+    "word": "presumptuous",
+    "pos": "adjective",
+    "phonetic": "/pɹəˈzʌmp.tjuː.əs/",
+    "bangla": "অভিমানী",
+    "definition": "Going beyond what is right, proper, or appropriate because of an excess of self-confidence or arrogance.",
+    "example": "The critic described the perspective as _______ when compared with standard theories in the text. with focus on going beyond what is right, proper, or appropriate.",
+    "synonyms": [
+      "arrogant",
+      "conceited",
+      "foolhardy",
+      "forward"
+    ],
+    "antonyms": [
+      "non presumptuous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 716,
+    "word": "probity",
+    "pos": "noun",
+    "phonetic": "/ˈpɹəʊbɪti/",
+    "bangla": "সম্ভাবনা",
+    "definition": "Integrity, especially of the quality of having strong moral principles; honesty and decency.",
+    "example": "The central idea was clarified by _______ which highlighted the author's intent for the passage. with focus on integrity, especially of the quality of having strong.",
+    "synonyms": [
+      "decency",
+      "godliness",
+      "goodness",
+      "honesty"
+    ],
+    "antonyms": [
+      "wickedness"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 717,
+    "word": "proclivity",
+    "pos": "noun",
+    "phonetic": "/pɹoʊˈklɪvəti/",
+    "bangla": "প্রবণতা",
+    "definition": "A predisposition or natural inclination, propensity, or a predilection; especially, a strong disposition or bent.",
+    "example": "In the GRE reading set, the term _______ and guided the final inference for test-takers. to explain the idea of a predisposition or natural inclination, propensity, or a.",
+    "synonyms": [
+      "penchant",
+      "propensity"
+    ],
+    "antonyms": [
+      "non proclivity"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 718,
+    "word": "prodigal",
+    "pos": "adjective",
+    "phonetic": "/ˈpɹɒdɪɡəl/",
+    "bangla": "অপব্যয়ী",
+    "definition": "A prodigal person, a spendthrift.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to profligate.",
+    "synonyms": [
+      "profligate",
+      "lavish",
+      "extravagant",
+      "generous"
+    ],
+    "antonyms": [
+      "frugal"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 719,
+    "word": "propitious",
+    "pos": "adjective",
+    "phonetic": "/pɹoʊˈpɪʃəs/",
+    "bangla": "অনুগ্রহপূর্ণ",
+    "definition": "Favorable; benevolent.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of favorable; benevolent.",
+    "synonyms": [
+      "advantageous",
+      "auspicious",
+      "fortunate",
+      "promising"
+    ],
+    "antonyms": [
+      "unpropitious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 720,
+    "word": "punctilious",
+    "pos": "adjective",
+    "phonetic": "/pʌŋkˈtɪli.əs/",
+    "bangla": "শাস্তিমূলক",
+    "definition": "Strictly attentive to detail; meticulous or fastidious, particularly to codes or conventions.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to finicky.",
+    "synonyms": [
+      "finicky",
+      "nitpicky",
+      "precise"
+    ],
+    "antonyms": [
+      "non punctilious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

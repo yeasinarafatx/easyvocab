@@ -1,0 +1,402 @@
+[
+  {
+    "id": 1101,
+    "word": "budgeting",
+    "pos": "verb",
+    "phonetic": "/ˈbəʤɪtɪŋ/",
+    "bangla": "বাজেটিং",
+    "definition": "To construct or draw up a budget.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of to construct or draw up a budget.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1102,
+    "word": "capitalgain",
+    "pos": "noun",
+    "phonetic": "/capitalgain/",
+    "bangla": "মূলধন",
+    "definition": "n (economics, business, finance) An increase in the value of a capital asset; an amount by which the value or the proceeds of the sale of a capital asset by its owner exceed its cost to the owner.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1103,
+    "word": "cashflow",
+    "pos": "adjective",
+    "phonetic": "/ˈkæʃˌfloʊ/",
+    "bangla": "নগদ প্রবাহ",
+    "definition": "The sum of cash revenues and expenditures over a period of time.",
+    "example": "The bank adopted a _______ to strengthen internal monitoring in the risk framework. to explain the idea of the sum of cash revenues and expenditures over.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1104,
+    "word": "chargeback",
+    "pos": "noun",
+    "phonetic": "/chargeback/",
+    "bangla": "চার্জব্যাক",
+    "definition": "A reversal of an accounting entry, especially of a disputed credit-card transaction.",
+    "example": "In financial operations, _______ helps explain operational procedures for practical understanding. where a similar notion is related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1105,
+    "word": "creditline",
+    "pos": "noun",
+    "phonetic": "/creditline/",
+    "bangla": "ক্রেডিটলাইন",
+    "definition": "n (finance, banking) Synonym of line of credit.",
+    "example": "For professional banking knowledge, _______ is treated as a core concept for candidates. with focus on n (finance, banking) synonym of line of credit.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1106,
+    "word": "debt",
+    "pos": "noun",
+    "phonetic": "/dɛt/",
+    "bangla": "ঋণ",
+    "definition": "An action, state of mind, or object one has an obligation to perform for another, adopt toward another, or give to another.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1107,
+    "word": "depositary",
+    "pos": "adjective",
+    "phonetic": "/dɪˈpɒzɪtɹi/",
+    "bangla": "আমানতকারী",
+    "definition": "One who receives a deposit in trust",
+    "example": "The board approved a _______ for better regulatory alignment for portfolio management. where a similar notion is trustee.",
+    "synonyms": [
+      "trustee",
+      "depository"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1108,
+    "word": "draft",
+    "pos": "verb",
+    "phonetic": "/dɹæft/",
+    "bangla": "খসড়া",
+    "definition": "A current of air, usually coming into a room or vehicle.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of a current of air, usually coming into a.",
+    "synonyms": [
+      "swig"
+    ],
+    "antonyms": [
+      "discharge",
+      "muster out"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1109,
+    "word": "ecommerce",
+    "pos": "noun",
+    "phonetic": "/ecommerce/",
+    "bangla": "ইকমার্স",
+    "definition": "Commercial activity conducted via the Internet.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of commercial activity conducted via the internet.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1110,
+    "word": "archaeographical",
+    "pos": "noun",
+    "phonetic": "/archaeographical/",
+    "bangla": "প্রত্নতাত্ত্বিক",
+    "definition": "Related to archaeographical.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of related to archaeographical.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1111,
+    "word": "archaeologically",
+    "pos": "noun",
+    "phonetic": "/archaeologically/",
+    "bangla": "প্রত্নতাত্ত্বিকভাবে",
+    "definition": "adv Regarding archaeology.",
+    "example": "For professional banking knowledge, _______ is treated as a core concept for candidates. with focus on adv regarding archaeology.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1112,
+    "word": "archaeostomatous",
+    "pos": "noun",
+    "phonetic": "/archaeostomatous/",
+    "bangla": "আর্কিওস্টোমাটাস সম্পর্কিত",
+    "definition": "Related to archaeostomatous.",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of related to archaeostomatous.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1113,
+    "word": "archecclesiastic",
+    "pos": "noun",
+    "phonetic": "/archecclesiastic/",
+    "bangla": "archecclesiastic সম্পর্কিত",
+    "definition": "Related to archecclesiastic.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on related to archecclesiastic.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1114,
+    "word": "archichlamydeous",
+    "pos": "noun",
+    "phonetic": "/archichlamydeous/",
+    "bangla": "আর্কিক্ল্যামাইডাস",
+    "definition": "adj (botany) Of or relating to the Archichlamydeae.",
+    "example": "For professional banking knowledge, _______ is treated as a core concept for candidates. with focus on adj (botany) of or relating to the archichlamydeae.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1115,
+    "word": "archicleistogamy",
+    "pos": "noun",
+    "phonetic": "/archicleistogamy/",
+    "bangla": "Archicleistogamy সম্পর্কিত",
+    "definition": "Related to archicleistogamy.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on related to archicleistogamy.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1116,
+    "word": "archididascalian",
+    "pos": "noun",
+    "phonetic": "/archididascalian/",
+    "bangla": "আর্কিডিডাস্কালিয়ান",
+    "definition": "adj of, like or pertaining to headmasters",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1117,
+    "word": "archiepiscopally",
+    "pos": "noun",
+    "phonetic": "/archiepiscopally/",
+    "bangla": "adj of or relating to an archbishop or an archbishopric",
+    "definition": "adj Of or relating to an archbishop or an archbishopric.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on adj of or relating to an archbishop or.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1118,
+    "word": "architecturalist",
+    "pos": "noun",
+    "phonetic": "/architecturalist/",
+    "bangla": "স্থাপত্যবিদ",
+    "definition": "Related to architecturalist.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of related to architecturalist.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1119,
+    "word": "architecturesque",
+    "pos": "noun",
+    "phonetic": "/architecturesque/",
+    "bangla": "স্থাপত্য",
+    "definition": "Related to architecturesque.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to related term.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1120,
+    "word": "architypographer",
+    "pos": "noun",
+    "phonetic": "/architypographer/",
+    "bangla": "স্থাপত্যবিদ",
+    "definition": "Related to architypographer.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on related to architypographer.",
+    "synonyms": [
+      "related term",
+      "associated concept"
+    ],
+    "antonyms": [
+      "opposite concept"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  }
+]

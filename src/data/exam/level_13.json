@@ -1,0 +1,421 @@
+[
+  {
+    "id": 841,
+    "word": "discretion",
+    "pos": "noun",
+    "phonetic": "/dɪˈskɹɛʃən/",
+    "bangla": "বিচক্ষণতা",
+    "definition": "The quality of being discreet or circumspect.",
+    "example": "In governance-focused writing, _______ supports arguments about public administration in public sector contexts. to explain the idea of the quality of being discreet or circumspect.",
+    "synonyms": [
+      "discernment",
+      "delicacy",
+      "circumspection",
+      "discreetness"
+    ],
+    "antonyms": [
+      "indiscretion"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 842,
+    "word": "fiscal",
+    "pos": "adjective",
+    "phonetic": "/ˈfɪskəl/",
+    "bangla": "আর্থিক",
+    "definition": "A public official in certain countries having control of public revenue.",
+    "example": "The report recommended a _______ to ensure transparent implementation across agencies. with focus on a public official in certain countries having control.",
+    "synonyms": [
+      "financial"
+    ],
+    "antonyms": [
+      "nonfinancial"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 843,
+    "word": "initiative",
+    "pos": "adjective",
+    "phonetic": "/ɪˈnɪʃətɪv/",
+    "bangla": "উদ্যোগ",
+    "definition": "A beginning; a first move.",
+    "example": "The board approved a _______ for stronger institutional control in the public sector. as it is close to direct initiative.",
+    "synonyms": [
+      "direct initiative"
+    ],
+    "antonyms": [
+      "noninitiative"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 844,
+    "word": "oversight",
+    "pos": "verb",
+    "phonetic": "/ˈoʊvə(ɹ)ˌsaɪt/",
+    "bangla": "তদারকি",
+    "definition": "An omission; something that is left out, missed or forgotten.",
+    "example": "For better administration, the department would _______ while maintaining accountability across districts. as it is close to lapse.",
+    "synonyms": [
+      "lapse",
+      "inadvertence",
+      "supervision",
+      "superintendence"
+    ],
+    "antonyms": [
+      "not oversight"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 845,
+    "word": "personnel",
+    "pos": "noun",
+    "phonetic": "/-el/",
+    "bangla": "কর্মীদের",
+    "definition": "Employees; office staff.",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is force.",
+    "synonyms": [
+      "force"
+    ],
+    "antonyms": [
+      "non personnel"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 846,
+    "word": "procedural",
+    "pos": "adjective",
+    "phonetic": "/prəˈsiʤərəl/",
+    "bangla": "পদ্ধতিগত",
+    "definition": "A type of literature, film, or television program involving a sequence of technical detail.",
+    "example": "The guideline followed a _______ for stronger institutional control in the public sector. as it is close to adjective.",
+    "synonyms": [
+      "adjective"
+    ],
+    "antonyms": [
+      "essential",
+      "substantive"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 847,
+    "word": "secretariat",
+    "pos": "noun",
+    "phonetic": "/ˌsɛkɹəˈtɛəɹɪət/",
+    "bangla": "সচিবালয়",
+    "definition": "The office or department of a government secretary.",
+    "example": "In BCS preparation, _______ supports arguments about public administration in public sector contexts. to explain the idea of the office or department of a government secretary.",
+    "synonyms": [
+      "secretariate"
+    ],
+    "antonyms": [
+      "non secretariat"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 848,
+    "word": "streamlining",
+    "pos": "verb",
+    "phonetic": "/ˈstrimˌlaɪnɪŋ/",
+    "bangla": "স্ট্রিমলাইনিং",
+    "definition": "To design and construct the contours of a vehicle etc. so as to offer the least resistance to its flow through a fluid.",
+    "example": "For better administration, the department would _______ while maintaining accountability across districts. as it is close to related to streamlining.",
+    "synonyms": [
+      "related to streamlining"
+    ],
+    "antonyms": [
+      "destreamline"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 849,
+    "word": "tender",
+    "pos": "adjective",
+    "phonetic": "/ˈtɛn.də(ɹ)/",
+    "bangla": "টেন্ডার",
+    "definition": "Care, kind concern, regard.",
+    "example": "The guideline followed a _______ for better policy execution within government departments. where a similar notion is nesh.",
+    "synonyms": [
+      "nesh"
+    ],
+    "antonyms": [
+      "tough",
+      "toughened"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 850,
+    "word": "transfer",
+    "pos": "verb",
+    "phonetic": "/ˈtɹænzfɜː/",
+    "bangla": "স্থানান্তর",
+    "definition": "The act of conveying or removing something from one place, person or thing to another.",
+    "example": "In the policy memo, officers agreed to _______ to improve service delivery in public offices. with focus on the act of conveying or removing something from.",
+    "synonyms": [
+      "transferal",
+      "transference",
+      "transfer student",
+      "copy"
+    ],
+    "antonyms": [
+      "not transfer"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 851,
+    "word": "treasury",
+    "pos": "noun",
+    "phonetic": "/ˈtɹɛʒəɹi/",
+    "bangla": "কোষাগার",
+    "definition": "A place where treasure is stored safely.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is finance ministry.",
+    "synonyms": [
+      "finance ministry",
+      "ministry",
+      "of finance"
+    ],
+    "antonyms": [
+      "non treasury"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 852,
+    "word": "uniform",
+    "pos": "verb",
+    "phonetic": "/ˈjuːnɪfɔːm/",
+    "bangla": "ইউনিফর্ম",
+    "definition": "A distinctive outfit that serves to identify members of a group.",
+    "example": "In the policy memo, officers agreed to _______ before implementing the reform under the new policy. to explain the idea of a distinctive outfit that serves to identify members.",
+    "synonyms": [
+      "invariable",
+      "of a piece",
+      "regular",
+      "stable"
+    ],
+    "antonyms": [
+      "nonuniform"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 853,
+    "word": "vigilance",
+    "pos": "noun",
+    "phonetic": "/ˈvɪdʒɪləns/",
+    "bangla": "সতর্কতা",
+    "definition": "Alert watchfulness.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on alert watchfulness.",
+    "synonyms": [
+      "alertness",
+      "watchfulness",
+      "weather eye"
+    ],
+    "antonyms": [
+      "non vigilance"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 854,
+    "word": "voluntary",
+    "pos": "adjective",
+    "phonetic": "/ˈvɒ.lən.tɹi/",
+    "bangla": "স্বেচ্ছায়",
+    "definition": "A short piece of music, often having improvisation, played on a solo instrument.",
+    "example": "The district plan required a _______ to improve administrative outcomes during reform efforts. to explain the idea of a short piece of music, often having improvisation,.",
+    "synonyms": [
+      "discretionary",
+      "optional",
+      "volitional",
+      "intentional"
+    ],
+    "antonyms": [
+      "compulsory",
+      "obligatory",
+      "involuntary",
+      "accidental"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 855,
+    "word": "workflow",
+    "pos": "noun",
+    "phonetic": "/ˈwɜːkfləʊ/",
+    "bangla": "কর্মপ্রবাহ",
+    "definition": "The rate at which a flow of work takes place",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is related to workflow.",
+    "synonyms": [
+      "related to workflow"
+    ],
+    "antonyms": [
+      "non workflow"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 856,
+    "word": "workforce",
+    "pos": "noun",
+    "phonetic": "/ˈwərkˌfɔrs/",
+    "bangla": "কর্মশক্তি",
+    "definition": "All the workers employed by a specific organization or state, or on a specific project",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on all the workers employed by a specific organization.",
+    "synonyms": [
+      "men",
+      "manpower",
+      "work force",
+      "hands"
+    ],
+    "antonyms": [
+      "non workforce"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 857,
+    "word": "accountable",
+    "pos": "adjective",
+    "phonetic": "/ə.ˈkaʊn.tə.bəl/",
+    "bangla": "দায়বদ্ধ",
+    "definition": "Obliged, when called upon, to answer (for one’s deeds); answerable.",
+    "example": "The guideline followed a _______ for stronger institutional control in the public sector. as it is close to amenable.",
+    "synonyms": [
+      "amenable",
+      "answerable",
+      "liable",
+      "responsible"
+    ],
+    "antonyms": [
+      "non accountable"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 858,
+    "word": "advisory",
+    "pos": "adjective",
+    "phonetic": "/ədˈvaɪzəɹi/",
+    "bangla": "উপদেশ",
+    "definition": "A warning.",
+    "example": "The guideline followed a _______ for stronger institutional control in the public sector. as it is close to informative.",
+    "synonyms": [
+      "informative",
+      "consultive",
+      "informatory",
+      "consultative"
+    ],
+    "antonyms": [
+      "non advisory"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 859,
+    "word": "admission",
+    "pos": "noun",
+    "phonetic": "/ædˈmɪʃ.ən/",
+    "bangla": "ভর্তি",
+    "definition": "The act or practice of admitting.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is acknowledgment.",
+    "synonyms": [
+      "acknowledgment",
+      "admittance",
+      "allowance",
+      "concession"
+    ],
+    "antonyms": [
+      "non admission"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 860,
+    "word": "allocation",
+    "pos": "noun",
+    "phonetic": "/ˌæləˈkeɪʃən/",
+    "bangla": "বরাদ্দ",
+    "definition": "The process or procedure for allocating things, especially money or other resources.",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is apportionment.",
+    "synonyms": [
+      "apportionment",
+      "allotment",
+      "parceling",
+      "apportioning"
+    ],
+    "antonyms": [
+      "non allocation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  }
+]

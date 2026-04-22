@@ -1,0 +1,462 @@
+[
+  {
+    "id": 441,
+    "word": "precede",
+    "pos": "verb",
+    "phonetic": "/prɪˈsiːd/",
+    "bangla": "আগে আসা",
+    "definition": "To come before in time, order, or position",
+    "example": "A thorough needs analysis should always _______ any major policy reform.",
+    "synonyms": [
+      "come before",
+      "lead",
+      "go ahead"
+    ],
+    "antonyms": [
+      "follow",
+      "succeed",
+      "come after"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 442,
+    "word": "predominate",
+    "pos": "verb",
+    "phonetic": "/prɪˈdɒmɪneɪt/",
+    "bangla": "প্রাধান্য পাওয়া",
+    "definition": "To be the strongest or main element; to have control",
+    "example": "In many developing countries, agriculture continues to _______ in the economy.",
+    "synonyms": [
+      "dominate",
+      "prevail",
+      "lead"
+    ],
+    "antonyms": [
+      "follow",
+      "lag",
+      "yield"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 443,
+    "word": "premise",
+    "pos": "noun",
+    "phonetic": "/ˈpremɪs/",
+    "bangla": "পূর্বধারণা",
+    "definition": "A statement from which another is inferred",
+    "example": "The entire argument is built on the _______ that economic growth leads to equality.",
+    "synonyms": [
+      "assumption",
+      "basis",
+      "foundation"
+    ],
+    "antonyms": [
+      "conclusion",
+      "result",
+      "outcome"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 444,
+    "word": "prevalent",
+    "pos": "adjective",
+    "phonetic": "/ˈprevələnt/",
+    "bangla": "প্রচলিত",
+    "definition": "Widespread in a particular area or at a particular time",
+    "example": "Heart disease is particularly _______ in countries with high-fat dietary habits.",
+    "synonyms": [
+      "common",
+      "widespread",
+      "frequent"
+    ],
+    "antonyms": [
+      "rare",
+      "unusual",
+      "uncommon"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 445,
+    "word": "proactive",
+    "pos": "adjective",
+    "phonetic": "/ˌprəʊˈæktɪv/",
+    "bangla": "সক্রিয়, আগাম পদক্ষেপমূলক",
+    "definition": "Creating or controlling a situation rather than just responding",
+    "example": "Companies need to take a _______ approach to managing all environmental risks.",
+    "synonyms": [
+      "active",
+      "forward-thinking",
+      "preventive"
+    ],
+    "antonyms": [
+      "reactive",
+      "passive",
+      "responsive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 446,
+    "word": "scrutinize",
+    "pos": "verb",
+    "phonetic": "/ˈskruːtɪnaɪz/",
+    "bangla": "সূক্ষ্মভাবে পরীক্ষা করা",
+    "definition": "To examine or inspect closely and thoroughly",
+    "example": "Voters must carefully _______ politicians' promises before casting their vote.",
+    "synonyms": [
+      "examine",
+      "inspect",
+      "analyze"
+    ],
+    "antonyms": [
+      "ignore",
+      "overlook",
+      "glance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 447,
+    "word": "stagnant",
+    "pos": "adjective",
+    "phonetic": "/ˈstæɡnənt/",
+    "bangla": "স্থবির, গতিহীন",
+    "definition": "Showing no activity; not growing or developing at all",
+    "example": "A _______ economy leads to high unemployment and declining living standards.",
+    "synonyms": [
+      "static",
+      "inactive",
+      "motionless"
+    ],
+    "antonyms": [
+      "dynamic",
+      "growing",
+      "active"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 448,
+    "word": "suppress",
+    "pos": "verb",
+    "phonetic": "/səˈpres/",
+    "bangla": "দমন করা",
+    "definition": "To forcibly put an end to; to prevent from being expressed",
+    "example": "Authoritarian governments often _______ free speech and independent journalism.",
+    "synonyms": [
+      "silence",
+      "control",
+      "restrict"
+    ],
+    "antonyms": [
+      "encourage",
+      "promote",
+      "allow"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 449,
+    "word": "tangible",
+    "pos": "adjective",
+    "phonetic": "/ˈtændʒɪbl/",
+    "bangla": "মূর্ত, স্পর্শযোগ্য",
+    "definition": "Perceptible by touch; clear and definite",
+    "example": "The project has produced _______ benefits for the local community over time.",
+    "synonyms": [
+      "real",
+      "concrete",
+      "physical"
+    ],
+    "antonyms": [
+      "intangible",
+      "abstract",
+      "vague"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 450,
+    "word": "transparent",
+    "pos": "adjective",
+    "phonetic": "/trænsˈpærənt/",
+    "bangla": "স্বচ্ছ",
+    "definition": "Easy to perceive or detect; open and honest",
+    "example": "Governments need to be fully _______ about how public money is spent.",
+    "synonyms": [
+      "clear",
+      "open",
+      "honest"
+    ],
+    "antonyms": [
+      "opaque",
+      "secretive",
+      "deceptive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 451,
+    "word": "undermine",
+    "pos": "verb",
+    "phonetic": "/ˌʌndəˈmaɪn/",
+    "bangla": "দুর্বল করা",
+    "definition": "To lessen the effectiveness or power of something gradually",
+    "example": "Corruption can seriously _______ public trust in all government institutions.",
+    "synonyms": [
+      "weaken",
+      "damage",
+      "erode"
+    ],
+    "antonyms": [
+      "strengthen",
+      "support",
+      "reinforce"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 452,
+    "word": "unprecedented",
+    "pos": "adjective",
+    "phonetic": "/ʌnˈpresɪdentɪd/",
+    "bangla": "অভূতপূর্ব",
+    "definition": "Never done or known before in history",
+    "example": "The pandemic caused _______ disruption to economies all around the world.",
+    "synonyms": [
+      "unique",
+      "unparalleled",
+      "extraordinary"
+    ],
+    "antonyms": [
+      "common",
+      "ordinary",
+      "familiar"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 453,
+    "word": "validate",
+    "pos": "verb",
+    "phonetic": "/ˈvælɪdeɪt/",
+    "bangla": "বৈধতা প্রমাণ করা",
+    "definition": "To check or prove that something is correct or effective",
+    "example": "Further research is urgently needed to _______ the findings of the initial study.",
+    "synonyms": [
+      "confirm",
+      "verify",
+      "prove"
+    ],
+    "antonyms": [
+      "invalidate",
+      "disprove",
+      "reject"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 454,
+    "word": "viable",
+    "pos": "adjective",
+    "phonetic": "/ˈvaɪəbl/",
+    "bangla": "সম্ভবপর, কার্যকর",
+    "definition": "Capable of working successfully; feasible and practical",
+    "example": "Solar energy is an increasingly _______ alternative to fossil fuels worldwide.",
+    "synonyms": [
+      "feasible",
+      "practical",
+      "workable"
+    ],
+    "antonyms": [
+      "impossible",
+      "impractical",
+      "unworkable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 455,
+    "word": "volatile",
+    "pos": "adjective",
+    "phonetic": "/ˈvɒlətaɪl/",
+    "bangla": "অস্থির",
+    "definition": "Liable to change rapidly and unpredictably",
+    "example": "Oil markets are highly _______ and can be affected by sudden political events.",
+    "synonyms": [
+      "unstable",
+      "unpredictable",
+      "erratic"
+    ],
+    "antonyms": [
+      "stable",
+      "steady",
+      "predictable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 456,
+    "word": "widespread",
+    "pos": "adjective",
+    "phonetic": "/ˈwaɪdspred/",
+    "bangla": "ব্যাপক",
+    "definition": "Found or distributed over a large area",
+    "example": "There is _______ concern about the long-term effects of screen time on young children.",
+    "synonyms": [
+      "extensive",
+      "broad",
+      "common"
+    ],
+    "antonyms": [
+      "limited",
+      "rare",
+      "localized"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 457,
+    "word": "zealous",
+    "pos": "adjective",
+    "phonetic": "/ˈzeləs/",
+    "bangla": "উৎসাহী, নিষ্ঠাবান",
+    "definition": "Having great energy or enthusiasm in pursuit of a cause",
+    "example": "The _______ volunteers worked tirelessly to help those affected by the disaster.",
+    "synonyms": [
+      "enthusiastic",
+      "dedicated",
+      "passionate"
+    ],
+    "antonyms": [
+      "indifferent",
+      "apathetic",
+      "unenthusiastic"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 458,
+    "word": "homogeneous",
+    "pos": "adjective",
+    "phonetic": "/ˌhɒməˈdʒiːniəs/",
+    "bangla": "একজাতীয়",
+    "definition": "Of the same kind; alike in nature or composition",
+    "example": "A _______ society may lack the diversity of ideas that drives innovation.",
+    "synonyms": [
+      "uniform",
+      "similar",
+      "identical"
+    ],
+    "antonyms": [
+      "diverse",
+      "varied",
+      "heterogeneous"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 459,
+    "word": "ideological",
+    "pos": "adjective",
+    "phonetic": "/ˌaɪdiəˈlɒdʒɪkl/",
+    "bangla": "আদর্শগত",
+    "definition": "Relating to a system of ideas and ideals",
+    "example": "The two parties have deep _______ differences that make cooperation very difficult.",
+    "synonyms": [
+      "political",
+      "doctrinal",
+      "philosophical"
+    ],
+    "antonyms": [
+      "practical",
+      "pragmatic",
+      "nonideological"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 460,
+    "word": "hypothetical",
+    "pos": "adjective",
+    "phonetic": "/ˌhaɪpəˈθetɪkl/",
+    "bangla": "কাল্পনিক",
+    "definition": "Based on or serving as a hypothesis; imagined",
+    "example": "The economist presented a _______ scenario to illustrate the risks of the policy.",
+    "synonyms": [
+      "theoretical",
+      "assumed",
+      "speculative"
+    ],
+    "antonyms": [
+      "actual",
+      "real",
+      "proven"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

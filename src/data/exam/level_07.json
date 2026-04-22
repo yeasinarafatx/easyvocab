@@ -1,0 +1,428 @@
+[
+  {
+    "id": 721,
+    "word": "quandary",
+    "pos": "noun",
+    "phonetic": "/ˈkwɔn.də.ɹi/",
+    "bangla": "দ্বন্দ্ব",
+    "definition": "A state of not knowing what to decide; a state of difficulty or perplexity; a state of uncertainty, hesitation or puzzlement.",
+    "example": "In the paragraph analysis, _______ to frame the main argument clearly in that section. as it is close to dilemma.",
+    "synonyms": [
+      "dilemma",
+      "perplexity",
+      "pickle",
+      "predicament"
+    ],
+    "antonyms": [
+      "non quandary"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 722,
+    "word": "quiescent",
+    "pos": "adjective",
+    "phonetic": "/ˈkwaɪ̯.ɛsn̩t/",
+    "bangla": "শান্ত",
+    "definition": "Inactive, quiet, at rest.",
+    "example": "The writer's position seemed _______ to explain the shift in viewpoint for that question. as it is close to dormant.",
+    "synonyms": [
+      "dormant",
+      "servile",
+      "calm",
+      "still"
+    ],
+    "antonyms": [
+      "non quiescent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 723,
+    "word": "recondite",
+    "pos": "verb",
+    "phonetic": "/ɹɪˈkɒndaɪt/",
+    "bangla": "পুনর্নির্মাণ",
+    "definition": "A recondite (hidden or obscure) person or thing.",
+    "example": "To support the argument, the author had to _______ before evaluating the counterpoint for a stronger interpretation. to explain the idea of a recondite (hidden or obscure) person or thing.",
+    "synonyms": [
+      "esoteric",
+      "deep",
+      "abstruse"
+    ],
+    "antonyms": [
+      "not recondite"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 724,
+    "word": "redolent",
+    "pos": "adjective",
+    "phonetic": "/ˈɹɛd.əl.ənt/",
+    "bangla": "সুগন্ধি বা সুগন্ধি",
+    "definition": "Fragrant or aromatic; having a sweet scent.",
+    "example": "The GRE passage introduced a _______ according to the evidence provided within the discussion. where a similar notion is aromatic.",
+    "synonyms": [
+      "aromatic",
+      "fragrant",
+      "reeking",
+      "smelling"
+    ],
+    "antonyms": [
+      "non redolent"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 725,
+    "word": "relegate",
+    "pos": "verb",
+    "phonetic": "/ˈɹɛlɪɡeɪt/",
+    "bangla": "ছেড়ে দেওয়া",
+    "definition": "Exile, banish, remove, or send away.",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on exile, banish, remove, or send away.",
+    "synonyms": [
+      "break",
+      "bar",
+      "submit",
+      "banish"
+    ],
+    "antonyms": [
+      "advance",
+      "promote",
+      "elevate",
+      "raise"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 726,
+    "word": "remonstrate",
+    "pos": "verb",
+    "phonetic": "/ˈɹɛ.mən.stɹeɪt/",
+    "bangla": "প্রতিফলন",
+    "definition": "To object; to express disapproval (with, against).",
+    "example": "Before choosing an option, candidates tried to _______ to make the conclusion more convincing in the critical reading set. where a similar notion is demur.",
+    "synonyms": [
+      "demur",
+      "expostulate"
+    ],
+    "antonyms": [
+      "not remonstrate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 727,
+    "word": "repudiate",
+    "pos": "verb",
+    "phonetic": "/ɹəˈpjuː.di.eɪt/",
+    "bangla": "প্রত্যাখ্যান",
+    "definition": "To reject the truth or validity of; to deny.",
+    "example": "In the final paragraph, the reviewer decided to _______ to make the conclusion more convincing in the critical reading set. where a similar notion is contradict.",
+    "synonyms": [
+      "contradict",
+      "deny",
+      "gainsay",
+      "disavow"
+    ],
+    "antonyms": [
+      "not repudiate"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 728,
+    "word": "salient",
+    "pos": "adjective",
+    "phonetic": "/ˈseɪ.li.ənt/",
+    "bangla": "উল্লেখযোগ্য",
+    "definition": "An outwardly projecting part of a fortification, trench system, or line of defense.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of an outwardly projecting part of a fortification, trench.",
+    "synonyms": [
+      "pertinent",
+      "relevant"
+    ],
+    "antonyms": [
+      "obscure",
+      "trivial"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 729,
+    "word": "sardonic",
+    "pos": "adjective",
+    "phonetic": "/saːˈdɔnɪk/",
+    "bangla": "ব্যঙ্গ",
+    "definition": "Scornfully mocking or cynical.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of scornfully mocking or cynical.",
+    "synonyms": [
+      "wry",
+      "sarcastic"
+    ],
+    "antonyms": [
+      "non sardonic"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 730,
+    "word": "scurrilous",
+    "pos": "adjective",
+    "phonetic": "/ˈskʌ.ɹə.ləs/",
+    "bangla": "কুরুচিপূর্ণ",
+    "definition": "(of a person) Given to vulgar verbal abuse; foul-mouthed.",
+    "example": "In the model answer, the tone felt _______ when compared with standard theories in the text. with focus on (of a person) given to vulgar verbal abuse;.",
+    "synonyms": [
+      "scornful",
+      "opprobrious",
+      "offensive",
+      "abusive"
+    ],
+    "antonyms": [
+      "non scurrilous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 731,
+    "word": "sequester",
+    "pos": "verb",
+    "phonetic": "/səˈkwɛs.tə/",
+    "bangla": "বিচ্ছিন্ন করা",
+    "definition": "Sequestration; separation",
+    "example": "While analyzing the claim, students needed to _______ so that the logic stayed consistent in the GRE passage. with focus on sequestration; separation.",
+    "synonyms": [
+      "segregate"
+    ],
+    "antonyms": [
+      "not sequester"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 732,
+    "word": "solicitous",
+    "pos": "adjective",
+    "phonetic": "/səˈlɪsɪtəs/",
+    "bangla": "অনুগত",
+    "definition": "Disposed to solicit; eager to obtain something desirable, or to avoid anything evil.",
+    "example": "The writer's position seemed _______ according to the evidence provided within the discussion. where a similar notion is attentive.",
+    "synonyms": [
+      "attentive",
+      "concerned"
+    ],
+    "antonyms": [
+      "non solicitous"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 733,
+    "word": "sophistry",
+    "pos": "noun",
+    "phonetic": "/ˈsɒ.fɪ.stɹi/",
+    "bangla": "কুতর্ক",
+    "definition": "Cunning, sometimes manifested as trickery.",
+    "example": "The central idea was clarified by _______ which highlighted the author's intent for the passage. with focus on cunning, sometimes manifested as trickery.",
+    "synonyms": [
+      "sophism"
+    ],
+    "antonyms": [
+      "non sophistry"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 734,
+    "word": "spurious",
+    "pos": "adjective",
+    "phonetic": "/ˈspjʊə.ɹi.əs/",
+    "bangla": "জাল",
+    "definition": "False, not authentic, not genuine.",
+    "example": "In the model answer, the tone felt _______ throughout the argument analysis in the reading section. to explain the idea of false, not authentic, not genuine.",
+    "synonyms": [
+      "bogus",
+      "counterfeit",
+      "fake",
+      "false"
+    ],
+    "antonyms": [
+      "genuine",
+      "representative"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 735,
+    "word": "taciturn",
+    "pos": "adjective",
+    "phonetic": "/ˈtæsɪtɜːn/",
+    "bangla": "স্বচ্ছন্দ",
+    "definition": "Silent; temperamentally untalkative; disinclined to speak.",
+    "example": "The GRE passage introduced a _______ to explain the shift in viewpoint for that question. as it is close to reticent.",
+    "synonyms": [
+      "reticent",
+      "untalkative"
+    ],
+    "antonyms": [
+      "garrulous",
+      "loquacious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 736,
+    "word": "tenacious",
+    "pos": "adjective",
+    "phonetic": "/təˈneɪʃəs/",
+    "bangla": "দৃঢ়",
+    "definition": "Clinging to an object or surface; adhesive.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of clinging to an object or surface; adhesive.",
+    "synonyms": [
+      "clingsome",
+      "sticky",
+      "elephantlike",
+      "memorious"
+    ],
+    "antonyms": [
+      "non tenacious"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 737,
+    "word": "tirade",
+    "pos": "verb",
+    "phonetic": "/ˈtaɪɹeɪd/",
+    "bangla": "একটি দীর্ঘ, রাগান্বিত বা হিংসাত্মক বক্তৃতা",
+    "definition": "A long, angry or violent speech; a diatribe.",
+    "example": "Before choosing an option, candidates tried to _______ without weakening the central thesis during the reasoning task. as it is close to laisse.",
+    "synonyms": [
+      "laisse",
+      "diatribe",
+      "rant"
+    ],
+    "antonyms": [
+      "not tirade"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 738,
+    "word": "toady",
+    "pos": "verb",
+    "phonetic": "/toady/",
+    "bangla": "একজন দালাল যে ব্যক্তিগত সুবিধা পেতে অন্যদের চাটুকার করে বা একজন আপত্তিকর দালাল বা",
+    "definition": "A sycophant who flatters others to gain personal advantage or an obsequious lackey or minion",
+    "example": "Before choosing an option, candidates tried to _______ without weakening the central thesis during the reasoning task. as it is close to sycophant.",
+    "synonyms": [
+      "sycophant",
+      "fawn",
+      "crawler",
+      "kowtow"
+    ],
+    "antonyms": [
+      "not toady"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 739,
+    "word": "travesty",
+    "pos": "verb",
+    "phonetic": "/ˈtɹæv.əs.ti/",
+    "bangla": "প্রতারণা",
+    "definition": "An absurd or grotesque misrepresentation.",
+    "example": "To support the argument, the author had to _______ so that the logic stayed consistent in the GRE passage. with focus on an absurd or grotesque misrepresentation.",
+    "synonyms": [
+      "caricature",
+      "feign"
+    ],
+    "antonyms": [
+      "veracity"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 740,
+    "word": "trenchant",
+    "pos": "adjective",
+    "phonetic": "/ˈtɹɛnʃənt/",
+    "bangla": "ট্রেঞ্চেন্ট",
+    "definition": "Fitted to trench or cut; gutting; sharp.",
+    "example": "The critic described the perspective as _______ throughout the argument analysis in the reading section. to explain the idea of fitted to trench or cut; gutting; sharp.",
+    "synonyms": [
+      "distinct",
+      "clear",
+      "intelligent",
+      "efficacious"
+    ],
+    "antonyms": [
+      "non trenchant"
+    ],
+    "examTags": [
+      "GRE"
+    ],
+    "difficulty": "advanced"
+  }
+]

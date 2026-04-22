@@ -1,0 +1,412 @@
+[
+  {
+    "id": 821,
+    "word": "municipality",
+    "pos": "noun",
+    "phonetic": "/mjʊˌnɪsɪˈpælɪti/",
+    "bangla": "পৌরসভা",
+    "definition": "A district with a government that typically encloses no other governed districts; a borough, city, or incorporated town or village.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on a district with a government that typically encloses.",
+    "synonyms": [
+      "related to municipality"
+    ],
+    "antonyms": [
+      "non municipality"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 822,
+    "word": "ordinance",
+    "pos": "noun",
+    "phonetic": "/ˈɔːd.nənts/",
+    "bangla": "অধ্যাদেশ",
+    "definition": "A local law",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is regulation.",
+    "synonyms": [
+      "regulation"
+    ],
+    "antonyms": [
+      "non ordinance"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 823,
+    "word": "parliament",
+    "pos": "noun",
+    "phonetic": "/ˈpɑːləmənt/",
+    "bangla": "সংসদ",
+    "definition": "A formal council summoned (especially by a monarch) to discuss important issues.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is fantan.",
+    "synonyms": [
+      "fantan",
+      "sevens"
+    ],
+    "antonyms": [
+      "non parliament"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 824,
+    "word": "population",
+    "pos": "noun",
+    "phonetic": "/ˌpɒpjʊˈleɪʃən/",
+    "bangla": "জনসংখ্যা",
+    "definition": "The people living within a political or geographical boundary.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on the people living within a political or geographical.",
+    "synonyms": [
+      "populating",
+      "universe"
+    ],
+    "antonyms": [
+      "non population"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 825,
+    "word": "procurement",
+    "pos": "noun",
+    "phonetic": "/pɹəˈkjʊə.mənt/",
+    "bangla": "সংগ্রহ",
+    "definition": "The purchasing department of a company.",
+    "example": "In governance-focused writing, _______ supports arguments about public administration in public sector contexts. to explain the idea of the purchasing department of a company.",
+    "synonyms": [
+      "procurance",
+      "procural"
+    ],
+    "antonyms": [
+      "non procurement"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 826,
+    "word": "project",
+    "pos": "verb",
+    "phonetic": "/ˈprɑʤɛkt/",
+    "bangla": "প্রকল্প",
+    "definition": "A planned endeavor, usually with a specific goal and accomplished in several steps or stages.",
+    "example": "For better administration, the department would _______ while maintaining accountability across districts. as it is close to cast.",
+    "synonyms": [
+      "cast",
+      "throw",
+      "extend",
+      "jut"
+    ],
+    "antonyms": [
+      "not project"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 827,
+    "word": "public",
+    "pos": "adjective",
+    "phonetic": "/ˈpʌblɪk/",
+    "bangla": "পাবলিক",
+    "definition": "The people in general, regardless of membership of any particular group.",
+    "example": "The district plan required a _______ to ensure transparent implementation across agencies. with focus on the people in general, regardless of membership of.",
+    "synonyms": [
+      "state",
+      "common",
+      "community",
+      "open"
+    ],
+    "antonyms": [
+      "private"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 828,
+    "word": "revenue",
+    "pos": "verb",
+    "phonetic": "/ˈɹɛvənjuː/",
+    "bangla": "রাজস্ব",
+    "definition": "The income returned by an investment.",
+    "example": "For better administration, the department would _______ to address field-level challenges for effective governance. where a similar notion is net sales.",
+    "synonyms": [
+      "net sales",
+      "turnover"
+    ],
+    "antonyms": [
+      "not revenue"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 829,
+    "word": "service",
+    "pos": "verb",
+    "phonetic": "/ˈsɜːvɪs/",
+    "bangla": "সেবা",
+    "definition": "An act of being of assistance to someone.",
+    "example": "In the policy memo, officers agreed to _______ to improve service delivery in public offices. with focus on an act of being of assistance to someone.",
+    "synonyms": [
+      "be with",
+      "go to bed with",
+      "sleep with",
+      "attend"
+    ],
+    "antonyms": [
+      "good",
+      "capital"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 830,
+    "word": "sovereignty",
+    "pos": "noun",
+    "phonetic": "/ˈsɒv.ɹən.ti/",
+    "bangla": "সার্বভৌমত্ব",
+    "definition": "(of a polity) The state of making laws and controlling resources without the coercion of other nations.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on (of a polity) the state of making laws.",
+    "synonyms": [
+      "autarchy",
+      "independence",
+      "nationality",
+      "nationhood"
+    ],
+    "antonyms": [
+      "non sovereignty"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 831,
+    "word": "statute",
+    "pos": "noun",
+    "phonetic": "/ˈstætʃuːt/",
+    "bangla": "আইন",
+    "definition": "Written law, as laid down by the legislature.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on written law, as laid down by the legislature.",
+    "synonyms": [
+      "codified",
+      "legislative act"
+    ],
+    "antonyms": [
+      "non statute"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 832,
+    "word": "subsidy",
+    "pos": "noun",
+    "phonetic": "/ˈsʌbsɨdi/",
+    "bangla": "ভর্তুকি",
+    "definition": "Financial support or assistance, such as a grant.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on financial support or assistance, such as a grant.",
+    "synonyms": [
+      "related to subsidy"
+    ],
+    "antonyms": [
+      "tax"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 833,
+    "word": "supervision",
+    "pos": "noun",
+    "phonetic": "/ˌs(j)uːpəˈvɪʒən/",
+    "bangla": "তত্ত্বাবধান",
+    "definition": "The act or instance of supervising.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on the act or instance of supervising.",
+    "synonyms": [
+      "oversight",
+      "superintendence",
+      "supervising"
+    ],
+    "antonyms": [
+      "non supervision"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 834,
+    "word": "transparency",
+    "pos": "noun",
+    "phonetic": "/tɹænsˈpæɹənsi/",
+    "bangla": "স্বচ্ছতা",
+    "definition": "The quality of being transparent; transparence.",
+    "example": "For administrative analysis, _______ helps connect reform with practice for policy evaluation. as it is close to foil.",
+    "synonyms": [
+      "foil",
+      "transparence",
+      "transparentness"
+    ],
+    "antonyms": [
+      "opacity",
+      "opaqueness"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 835,
+    "word": "union",
+    "pos": "verb",
+    "phonetic": "/ˈjuːnjən/",
+    "bangla": "ইউনিয়ন",
+    "definition": "The act of uniting or joining two or more things into one.",
+    "example": "For better administration, the department would _______ while maintaining accountability across districts. as it is close to coalition.",
+    "synonyms": [
+      "coalition",
+      "combination",
+      "junction"
+    ],
+    "antonyms": [
+      "separation",
+      "nonunion"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 836,
+    "word": "welfare",
+    "pos": "verb",
+    "phonetic": "/ˈwɛlˌfɛə/",
+    "bangla": "কল্যাণ",
+    "definition": "Health, safety, happiness and prosperity; well-being in any respect.",
+    "example": "For better administration, the department would _______ to address field-level challenges for effective governance. where a similar notion is income support.",
+    "synonyms": [
+      "income support",
+      "public assistance",
+      "social security"
+    ],
+    "antonyms": [
+      "ill-being"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 837,
+    "word": "district",
+    "pos": "verb",
+    "phonetic": "/ˈdɪstɹɪkt/",
+    "bangla": "জেলা",
+    "definition": "An administrative division of an area.",
+    "example": "In the policy memo, officers agreed to _______ before implementing the reform under the new policy. to explain the idea of an administrative division of an area.",
+    "synonyms": [
+      "territory",
+      "zone",
+      "local"
+    ],
+    "antonyms": [
+      "not district"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 838,
+    "word": "regional",
+    "pos": "adjective",
+    "phonetic": "/ˈɹiːdʒnəl/",
+    "bangla": "আঞ্চলিক",
+    "definition": "An entity or event with scope limited to a single region.",
+    "example": "The report recommended a _______ to improve administrative outcomes during reform efforts. to explain the idea of an entity or event with scope limited to.",
+    "synonyms": [
+      "territorial"
+    ],
+    "antonyms": [
+      "non regional"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 839,
+    "word": "budget",
+    "pos": "verb",
+    "phonetic": "/ˈbʌdʒ.ɪt/",
+    "bangla": "বাজেট",
+    "definition": "The amount of money or resources earmarked for a particular institution, activity or time-frame.",
+    "example": "The ministry planned to _______ before implementing the reform under the new policy. to explain the idea of the amount of money or resources earmarked for.",
+    "synonyms": [
+      "low-cost"
+    ],
+    "antonyms": [
+      "not budget"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 840,
+    "word": "directorate",
+    "pos": "noun",
+    "phonetic": "/daɪˈɹɛktəɹət/",
+    "bangla": "অধিদপ্তর",
+    "definition": "An agency headed by a director, usually a subdivision of a major government department.",
+    "example": "In governance-focused writing, _______ supports arguments about public administration in public sector contexts. to explain the idea of an agency headed by a director, usually a.",
+    "synonyms": [
+      "board of directors"
+    ],
+    "antonyms": [
+      "non directorate"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  }
+]

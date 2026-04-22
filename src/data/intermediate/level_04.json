@@ -1,0 +1,462 @@
+[
+  {
+    "id": 261,
+    "word": "exploit",
+    "pos": "verb",
+    "phonetic": "/ɪkˈsplɔɪt/",
+    "bangla": "শোষণ করা",
+    "definition": "To make use of a situation in an unfair way",
+    "example": "Companies must not be allowed to _______ workers in developing countries.",
+    "synonyms": [
+      "use",
+      "abuse",
+      "utilize"
+    ],
+    "antonyms": [
+      "protect",
+      "respect",
+      "support"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 262,
+    "word": "facilitate",
+    "pos": "verb",
+    "phonetic": "/fəˈsɪlɪteɪt/",
+    "bangla": "সহজ করা",
+    "definition": "To make an action or process easier",
+    "example": "The new agreement will _______ trade between the two neighbouring countries.",
+    "synonyms": [
+      "help",
+      "assist",
+      "ease"
+    ],
+    "antonyms": [
+      "hinder",
+      "obstruct",
+      "complicate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 263,
+    "word": "fluctuate",
+    "pos": "verb",
+    "phonetic": "/ˈflʌktʃueɪt/",
+    "bangla": "ওঠানামা করা",
+    "definition": "To rise and fall irregularly in number or amount",
+    "example": "Oil prices tend to _______ in response to political events and global demand.",
+    "synonyms": [
+      "vary",
+      "change",
+      "oscillate"
+    ],
+    "antonyms": [
+      "stabilize",
+      "remain constant",
+      "fix"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 264,
+    "word": "formulate",
+    "pos": "verb",
+    "phonetic": "/ˈfɔːmjuleɪt/",
+    "bangla": "প্রণয়ন করা",
+    "definition": "To create or devise something in a precise and careful way",
+    "example": "Governments must _______ policies that balance economic growth with environmental protection.",
+    "synonyms": [
+      "develop",
+      "create",
+      "devise"
+    ],
+    "antonyms": [
+      "destroy",
+      "discard",
+      "abandon"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 265,
+    "word": "foster",
+    "pos": "verb",
+    "phonetic": "/ˈfɒstər/",
+    "bangla": "উৎসাহিত করা",
+    "definition": "To encourage the development of something",
+    "example": "Schools should _______ a culture of curiosity and independent thinking among students.",
+    "synonyms": [
+      "encourage",
+      "promote",
+      "nurture"
+    ],
+    "antonyms": [
+      "hinder",
+      "suppress",
+      "discourage"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 266,
+    "word": "fragile",
+    "pos": "adjective",
+    "phonetic": "/ˈfrædʒaɪl/",
+    "bangla": "ভঙ্গুর",
+    "definition": "Easily broken or damaged; vulnerable to collapse",
+    "example": "The peace agreement remained _______ and required continued diplomatic support.",
+    "synonyms": [
+      "delicate",
+      "weak",
+      "vulnerable"
+    ],
+    "antonyms": [
+      "strong",
+      "sturdy",
+      "robust"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 267,
+    "word": "generalize",
+    "pos": "verb",
+    "phonetic": "/ˈdʒenrəlaɪz/",
+    "bangla": "সাধারণীকরণ করা",
+    "definition": "To draw general conclusions from specific examples",
+    "example": "It is dangerous to _______ about an entire culture based on a few examples.",
+    "synonyms": [
+      "conclude",
+      "summarize",
+      "assume"
+    ],
+    "antonyms": [
+      "specify",
+      "detail",
+      "differentiate"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 268,
+    "word": "hierarchy",
+    "pos": "noun",
+    "phonetic": "/ˈhaɪərɑːki/",
+    "bangla": "শ্রেণিবিন্যাস",
+    "definition": "A system of ranking things according to importance or status",
+    "example": "Within a large organization, _______ determines who has decision-making power.",
+    "synonyms": [
+      "ranking",
+      "order",
+      "structure"
+    ],
+    "antonyms": [
+      "equality",
+      "democracy",
+      "chaos"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 269,
+    "word": "highlight",
+    "pos": "verb",
+    "phonetic": "/ˈhaɪlaɪt/",
+    "bangla": "গুরুত্ব দেওয়া",
+    "definition": "To draw special attention to something important",
+    "example": "The report aims to _______ the urgent need for investment in renewable energy.",
+    "synonyms": [
+      "emphasize",
+      "stress",
+      "underline"
+    ],
+    "antonyms": [
+      "downplay",
+      "minimize",
+      "ignore"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 270,
+    "word": "hypothesis",
+    "pos": "noun",
+    "phonetic": "/haɪˈpɒθɪsɪs/",
+    "bangla": "অনুকল্প",
+    "definition": "A proposed explanation based on limited evidence",
+    "example": "The researcher developed a _______ that was then tested through experiments.",
+    "synonyms": [
+      "theory",
+      "assumption",
+      "proposal"
+    ],
+    "antonyms": [
+      "conclusion",
+      "fact",
+      "proof"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 271,
+    "word": "implement",
+    "pos": "verb",
+    "phonetic": "/ˈɪmplɪment/",
+    "bangla": "বাস্তবায়ন করা",
+    "definition": "To put a plan or decision into effect",
+    "example": "The school began to _______ the new curriculum at the start of the academic year.",
+    "synonyms": [
+      "carry out",
+      "execute",
+      "apply"
+    ],
+    "antonyms": [
+      "ignore",
+      "abandon",
+      "reject"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 272,
+    "word": "implication",
+    "pos": "noun",
+    "phonetic": "/ˌɪmplɪˈkeɪʃn/",
+    "bangla": "প্রভাব, ইঙ্গিত",
+    "definition": "A conclusion drawn from something not explicitly stated",
+    "example": "The _______ of the new research for public health policy are enormous.",
+    "synonyms": [
+      "consequence",
+      "effect",
+      "suggestion"
+    ],
+    "antonyms": [
+      "cause",
+      "origin",
+      "source"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 273,
+    "word": "implicit",
+    "pos": "adjective",
+    "phonetic": "/ɪmˈplɪsɪt/",
+    "bangla": "অন্তর্নিহিত",
+    "definition": "Suggested though not directly expressed",
+    "example": "There was an _______ understanding between the colleagues that they would support each other.",
+    "synonyms": [
+      "implied",
+      "unstated",
+      "indirect"
+    ],
+    "antonyms": [
+      "explicit",
+      "stated",
+      "direct"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 274,
+    "word": "impose",
+    "pos": "verb",
+    "phonetic": "/ɪmˈpəʊz/",
+    "bangla": "চাপিয়ে দেওয়া",
+    "definition": "To force something upon someone without their agreement",
+    "example": "It is not appropriate to _______ one's values and beliefs on other cultures.",
+    "synonyms": [
+      "force",
+      "enforce",
+      "inflict"
+    ],
+    "antonyms": [
+      "remove",
+      "lift",
+      "withdraw"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 275,
+    "word": "incentive",
+    "pos": "noun",
+    "phonetic": "/ɪnˈsentɪv/",
+    "bangla": "প্রণোদনা",
+    "definition": "A thing that motivates or encourages someone to do something",
+    "example": "Financial _______ can motivate employees to be more productive at work.",
+    "synonyms": [
+      "motivation",
+      "reward",
+      "stimulus"
+    ],
+    "antonyms": [
+      "deterrent",
+      "punishment",
+      "penalty"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 276,
+    "word": "inequality",
+    "pos": "noun",
+    "phonetic": "/ˌɪnɪˈkwɒlɪti/",
+    "bangla": "বৈষম্য",
+    "definition": "Difference in circumstances; lack of equality",
+    "example": "Growing economic _______ is one of the most pressing social challenges of our time.",
+    "synonyms": [
+      "disparity",
+      "imbalance",
+      "unfairness"
+    ],
+    "antonyms": [
+      "equality",
+      "fairness",
+      "parity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 277,
+    "word": "inevitable",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈevɪtəbl/",
+    "bangla": "অনিবার্য",
+    "definition": "Certain to happen; unable to be avoided",
+    "example": "Technological change is _______ and society must adapt to its consequences.",
+    "synonyms": [
+      "unavoidable",
+      "certain",
+      "definite"
+    ],
+    "antonyms": [
+      "avoidable",
+      "preventable",
+      "uncertain"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 278,
+    "word": "infer",
+    "pos": "verb",
+    "phonetic": "/ɪnˈfɜːr/",
+    "bangla": "অনুমান করা",
+    "definition": "To deduce or conclude from evidence and reasoning",
+    "example": "From her tone of voice, we can _______ that she was not satisfied with the outcome.",
+    "synonyms": [
+      "deduce",
+      "conclude",
+      "reason"
+    ],
+    "antonyms": [
+      "state",
+      "declare",
+      "announce"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 279,
+    "word": "inherent",
+    "pos": "adjective",
+    "phonetic": "/ɪnˈhɪərənt/",
+    "bangla": "সহজাত",
+    "definition": "Existing in something as a permanent essential characteristic",
+    "example": "There are _______ risks in any form of investment that investors must accept.",
+    "synonyms": [
+      "intrinsic",
+      "built-in",
+      "natural"
+    ],
+    "antonyms": [
+      "external",
+      "acquired",
+      "added"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 280,
+    "word": "integral",
+    "pos": "adjective",
+    "phonetic": "/ˈɪntɪɡrəl/",
+    "bangla": "অবিচ্ছেদ্য",
+    "definition": "Necessary to make a whole complete; essential",
+    "example": "Regular feedback is an _______ part of an effective teaching and learning process.",
+    "synonyms": [
+      "essential",
+      "necessary",
+      "fundamental"
+    ],
+    "antonyms": [
+      "optional",
+      "unnecessary",
+      "peripheral"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

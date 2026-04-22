@@ -1,0 +1,22 @@
+[
+  {"word":"measure","pos":"verb/noun","phonetic":"/ˈmeʒər/","bangla":"পরিমাপ করা","example":"Scientists measure air quality daily."},
+  {"word":"mechanism","pos":"noun","phonetic":"/ˈmekənɪzəm/","bangla":"প্রক্রিয়াগত পদ্ধতি","example":"The body has a mechanism to fight disease."},
+  {"word":"media","pos":"noun","phonetic":"/ˈmiːdiə/","bangla":"মাধ্যম","example":"Social media affects public opinion."},
+  {"word":"method","pos":"noun","phonetic":"/ˈmeθəd/","bangla":"পদ্ধতি","example":"This method is effective for revision."},
+  {"word":"migrate","pos":"verb","phonetic":"/maɪˈɡreɪt/","bangla":"স্থানান্তরিত হওয়া","example":"Many birds migrate in winter."},
+  {"word":"minimum","pos":"noun/adjective","phonetic":"/ˈmɪnɪməm/","bangla":"ন্যূনতম","example":"A minimum score is required."},
+  {"word":"modify","pos":"verb","phonetic":"/ˈmɒdɪfaɪ/","bangla":"পরিবর্তন করা","example":"We may modify the plan next week."},
+  {"word":"monitor","pos":"verb/noun","phonetic":"/ˈmɒnɪtə/","bangla":"নজরদারি করা","example":"Doctors monitor patients closely."},
+  {"word":"motivate","pos":"verb","phonetic":"/ˈməʊtɪveɪt/","bangla":"প্রেরণা দেওয়া","example":"Rewards motivate students to improve."},
+  {"word":"network","pos":"noun","phonetic":"/ˈnetwɜːk/","bangla":"নেটওয়ার্ক","example":"Transport network expanded this year."},
+  {"word":"notion","pos":"noun","phonetic":"/ˈnəʊʃən/","bangla":"ধারণা","example":"Many people reject that notion."},
+  {"word":"objective","pos":"noun/adjective","phonetic":"/əbˈdʒektɪv/","bangla":"উদ্দেশ্য","example":"Our main objective is better literacy."},
+  {"word":"obtain","pos":"verb","phonetic":"/əbˈteɪn/","bangla":"অর্জন করা","example":"Students obtain skills through practice."},
+  {"word":"option","pos":"noun","phonetic":"/ˈɒpʃən/","bangla":"বিকল্প","example":"Online learning is one option."},
+  {"word":"overall","pos":"adjective/adverb","phonetic":"/ˌəʊvərˈɔːl/","bangla":"সামগ্রিকভাবে","example":"Overall, the trend is upward."},
+  {"word":"participate","pos":"verb","phonetic":"/pɑːˈtɪsɪpeɪt/","bangla":"অংশগ্রহণ করা","example":"Students should participate in discussions."},
+  {"word":"perceive","pos":"verb","phonetic":"/pəˈsiːv/","bangla":"অনুভব করা","example":"People perceive risk differently."},
+  {"word":"period","pos":"noun","phonetic":"/ˈpɪəriəd/","bangla":"সময়কাল","example":"The study covers a ten-year period."},
+  {"word":"perspective","pos":"noun","phonetic":"/pəˈspektɪv/","bangla":"দৃষ্টিভঙ্গি","example":"Try to see the issue from another perspective."},
+  {"word":"policy","pos":"noun","phonetic":"/ˈpɒləsi/","bangla":"নীতি","example":"The school changed its policy on phones."}
+]

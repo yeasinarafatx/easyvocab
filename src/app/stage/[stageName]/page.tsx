@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo } from "react";
 
-type StageName = "beginner" | "intermediate" | "advanced";
+type StageName = "beginner" | "intermediate" | "advanced" | "exam";
 
 const stageConfig: Record<StageName, { bengali: string; totalLevels: number }> = {
   beginner: { bengali: "শুরুর স্তর", totalLevels: 10 },
   intermediate: { bengali: "মধ্যম স্তর", totalLevels: 15 },
   advanced: { bengali: "উন্নত স্তর", totalLevels: 15 },
+  exam: { bengali: "পরীক্ষার প্রস্তুতি", totalLevels: 30 },
 };
 
 function LockIcon() {
@@ -34,11 +35,9 @@ export default function StagePage() {
 
   const config = stageConfig[stageName] || stageConfig.beginner;
 
-  const [completedLevelIds, setCompletedLevelIds] = useState<Set<string>>(new Set());
-
-  useEffect(() => {
+  const completedLevelIds = useMemo(() => {
     if (typeof window === "undefined") {
-      return;
+      return new Set<string>();
     }
 
     const completed = new Set<string>();
@@ -48,7 +47,7 @@ export default function StagePage() {
         completed.add(levelId);
       }
     }
-    setCompletedLevelIds(completed);
+    return completed;
   }, [stageName, config.totalLevels]);
 
   const unlockedLevelIds = useMemo(() => {
@@ -76,7 +75,7 @@ export default function StagePage() {
           <div className="flex items-center justify-between border-b border-white/10 pb-6">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
-                VocabVault
+                Easy Vocab
               </p>
               <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">{config.bengali}</h1>
             </div>
@@ -116,9 +115,29 @@ export default function StagePage() {
 
                 if (isUnlocked) {
                   return (
-                    <Link key={levelId} href={`/learn/${levelId}`} className={cardClassName}>
-                      {cardContent}
-                    </Link>
+                    <div key={levelId} className={cardClassName}>
+                      <div className="flex items-center justify-between">
+                        <p className="text-sm font-semibold text-slate-200">Level {levelNumber}</p>
+                        {isCompleted ? (
+                          <p className="text-[11px] font-semibold text-emerald-300">✓ Completed</p>
+                        ) : null}
+                      </div>
+                      <p className="mt-3 text-xs text-slate-300">20 words</p>
+                      <div className="mt-4 flex items-center gap-2">
+                        <Link
+                          href={`/learn/${levelId}`}
+                          className="rounded-lg border border-cyan-200/30 bg-cyan-200/10 px-2 py-1 text-xs font-semibold text-cyan-100 transition hover:bg-cyan-200/20"
+                        >
+                          📝 Typing
+                        </Link>
+                        <Link
+                          href={`/speak/${levelId}`}
+                          className="rounded-lg border border-violet-300/30 bg-violet-300/10 px-2 py-1 text-xs font-semibold text-violet-200 transition hover:bg-violet-300/20"
+                        >
+                          🎤 Speaking
+                        </Link>
+                      </div>
+                    </div>
                   );
                 }
 

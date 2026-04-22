@@ -1,0 +1,462 @@
+[
+  {
+    "id": 341,
+    "word": "widespread",
+    "pos": "adjective",
+    "phonetic": "/ˈwaɪdspred/",
+    "bangla": "ব্যাপক",
+    "definition": "Found or distributed over a large area or among many people",
+    "example": "There is _______ concern about the long-term effects of screen time on children.",
+    "synonyms": [
+      "extensive",
+      "broad",
+      "common"
+    ],
+    "antonyms": [
+      "limited",
+      "rare",
+      "localized"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 342,
+    "word": "yield",
+    "pos": "verb",
+    "phonetic": "/jiːld/",
+    "bangla": "উৎপাদন করা, ফলদান করা",
+    "definition": "To produce or provide; to give way to something",
+    "example": "The new farming technique is expected to _______ significantly better crops.",
+    "synonyms": [
+      "produce",
+      "generate",
+      "give"
+    ],
+    "antonyms": [
+      "consume",
+      "take",
+      "receive"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 343,
+    "word": "accountable",
+    "pos": "adjective",
+    "phonetic": "/əˈkaʊntəbl/",
+    "bangla": "জবাবদিহিমূলক",
+    "definition": "Required to account for one's actions; responsible",
+    "example": "Government officials must be _______ to the public for how they spend taxpayers' money.",
+    "synonyms": [
+      "responsible",
+      "answerable",
+      "liable"
+    ],
+    "antonyms": [
+      "unaccountable",
+      "exempt",
+      "irresponsible"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 344,
+    "word": "adverse",
+    "pos": "adjective",
+    "phonetic": "/ˈædvɜːs/",
+    "bangla": "বিরূপ, ক্ষতিকর",
+    "definition": "Preventing success or development; harmful or unfavorable",
+    "example": "The drought had _______ effects on agricultural production across the region.",
+    "synonyms": [
+      "harmful",
+      "negative",
+      "unfavorable"
+    ],
+    "antonyms": [
+      "beneficial",
+      "positive",
+      "favorable"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 345,
+    "word": "aggregate",
+    "pos": "adjective",
+    "phonetic": "/ˈæɡrɪɡət/",
+    "bangla": "সামগ্রিক",
+    "definition": "A whole formed by combining several elements",
+    "example": "The _______ data from all studies shows a clear link between diet and health.",
+    "synonyms": [
+      "total",
+      "combined",
+      "overall"
+    ],
+    "antonyms": [
+      "individual",
+      "separate",
+      "partial"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 346,
+    "word": "ambivalent",
+    "pos": "adjective",
+    "phonetic": "/æmˈbɪvələnt/",
+    "bangla": "দ্বিধান্বিত",
+    "definition": "Having mixed feelings or contradictory ideas about something",
+    "example": "Many people feel _______ about the rapid pace of technological change in society.",
+    "synonyms": [
+      "uncertain",
+      "undecided",
+      "conflicted"
+    ],
+    "antonyms": [
+      "certain",
+      "decided",
+      "clear"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 347,
+    "word": "anomaly",
+    "pos": "noun",
+    "phonetic": "/əˈnɒməli/",
+    "bangla": "অসামঞ্জস্য",
+    "definition": "Something that deviates from the standard or expected",
+    "example": "The scientist noticed a strange _______ in the data that required further investigation.",
+    "synonyms": [
+      "irregularity",
+      "exception",
+      "deviation"
+    ],
+    "antonyms": [
+      "norm",
+      "standard",
+      "regularity"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 348,
+    "word": "articulate",
+    "pos": "verb",
+    "phonetic": "/ɑːˈtɪkjuleɪt/",
+    "bangla": "স্পষ্টভাবে প্রকাশ করা",
+    "definition": "To express thoughts or feelings clearly in words",
+    "example": "A good leader must be able to _______ a clear vision for the future.",
+    "synonyms": [
+      "express",
+      "communicate",
+      "explain"
+    ],
+    "antonyms": [
+      "mumble",
+      "confuse",
+      "obscure"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 349,
+    "word": "assertion",
+    "pos": "noun",
+    "phonetic": "/əˈsɜːʃn/",
+    "bangla": "দাবি, বক্তব্য",
+    "definition": "A confident and forceful statement of fact",
+    "example": "His _______ that technology would solve all our problems was widely contested.",
+    "synonyms": [
+      "claim",
+      "statement",
+      "declaration"
+    ],
+    "antonyms": [
+      "denial",
+      "question",
+      "doubt"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 350,
+    "word": "attain",
+    "pos": "verb",
+    "phonetic": "/əˈteɪn/",
+    "bangla": "অর্জন করা",
+    "definition": "To succeed in achieving something with effort",
+    "example": "With determination and hard work, anyone can _______ their most ambitious goals.",
+    "synonyms": [
+      "achieve",
+      "reach",
+      "accomplish"
+    ],
+    "antonyms": [
+      "fail",
+      "miss",
+      "lose"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 351,
+    "word": "augment",
+    "pos": "verb",
+    "phonetic": "/ɔːɡˈment/",
+    "bangla": "বৃদ্ধি করা",
+    "definition": "To make something greater by adding to it",
+    "example": "Regular practice helps to _______ language skills significantly over time.",
+    "synonyms": [
+      "increase",
+      "add to",
+      "enhance"
+    ],
+    "antonyms": [
+      "reduce",
+      "decrease",
+      "diminish"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 352,
+    "word": "autonomy",
+    "pos": "noun",
+    "phonetic": "/ɔːˈtɒnəmi/",
+    "bangla": "স্বায়ত্তশাসন",
+    "definition": "The right to self-government; freedom from external control",
+    "example": "Greater regional _______ can help address local needs more effectively.",
+    "synonyms": [
+      "independence",
+      "self-rule",
+      "freedom"
+    ],
+    "antonyms": [
+      "dependence",
+      "control",
+      "subjugation"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 353,
+    "word": "catalyst",
+    "pos": "noun",
+    "phonetic": "/ˈkætəlɪst/",
+    "bangla": "অনুঘটক",
+    "definition": "A person or thing that precipitates an important event",
+    "example": "The financial crisis served as a _______ for sweeping economic reforms.",
+    "synonyms": [
+      "trigger",
+      "stimulus",
+      "spark"
+    ],
+    "antonyms": [
+      "barrier",
+      "hindrance",
+      "obstacle"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 354,
+    "word": "chronic",
+    "pos": "adjective",
+    "phonetic": "/ˈkrɒnɪk/",
+    "bangla": "দীর্ঘস্থায়ী",
+    "definition": "Persisting for a long time; recurring frequently",
+    "example": "_______ poverty affects millions of people who are unable to meet their basic needs.",
+    "synonyms": [
+      "persistent",
+      "long-term",
+      "recurring"
+    ],
+    "antonyms": [
+      "temporary",
+      "acute",
+      "brief"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 355,
+    "word": "collaborate",
+    "pos": "verb",
+    "phonetic": "/kəˈlæbəreɪt/",
+    "bangla": "সহযোগিতা করা",
+    "definition": "To work jointly on a project or task with others",
+    "example": "Scientists from different countries _______ to develop a new treatment for the disease.",
+    "synonyms": [
+      "cooperate",
+      "work together",
+      "partner"
+    ],
+    "antonyms": [
+      "compete",
+      "oppose",
+      "hinder"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 356,
+    "word": "commodity",
+    "pos": "noun",
+    "phonetic": "/kəˈmɒdɪti/",
+    "bangla": "পণ্যদ্রব্য",
+    "definition": "A raw material or product that can be bought and sold",
+    "example": "Oil remains one of the most traded _______ in the global market.",
+    "synonyms": [
+      "product",
+      "goods",
+      "material"
+    ],
+    "antonyms": [
+      "service",
+      "idea",
+      "concept"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 357,
+    "word": "complement",
+    "pos": "verb",
+    "phonetic": "/ˈkɒmplɪment/",
+    "bangla": "পরিপূরক হওয়া",
+    "definition": "To add to so as to make whole; to go well together",
+    "example": "Theory and practice _______ each other perfectly in effective professional training.",
+    "synonyms": [
+      "complete",
+      "enhance",
+      "supplement"
+    ],
+    "antonyms": [
+      "contradict",
+      "oppose",
+      "clash"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 358,
+    "word": "compliance",
+    "pos": "noun",
+    "phonetic": "/kəmˈplaɪəns/",
+    "bangla": "সম্মতি, মেনে চলা",
+    "definition": "The act of conforming to a rule, wish, or command",
+    "example": "All employees must demonstrate full _______ with health and safety regulations.",
+    "synonyms": [
+      "obedience",
+      "adherence",
+      "conformity"
+    ],
+    "antonyms": [
+      "defiance",
+      "non-compliance",
+      "resistance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 359,
+    "word": "constraint",
+    "pos": "noun",
+    "phonetic": "/kənˈstreɪnt/",
+    "bangla": "সীমাবদ্ধতা",
+    "definition": "A limitation or restriction on freedom of action",
+    "example": "Budget _______ forced the team to find more creative solutions to the problem.",
+    "synonyms": [
+      "limitation",
+      "restriction",
+      "barrier"
+    ],
+    "antonyms": [
+      "freedom",
+      "opportunity",
+      "allowance"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  },
+  {
+    "id": 360,
+    "word": "contaminate",
+    "pos": "verb",
+    "phonetic": "/kənˈtæmɪneɪt/",
+    "bangla": "দূষিত করা",
+    "definition": "To make something impure by exposure to a polluting substance",
+    "example": "Industrial waste can _______ local water supplies and seriously harm communities.",
+    "synonyms": [
+      "pollute",
+      "infect",
+      "taint"
+    ],
+    "antonyms": [
+      "purify",
+      "clean",
+      "treat"
+    ],
+    "examTags": [
+      "IELTS"
+    ],
+    "difficulty": "upper-intermediate"
+  }
+]

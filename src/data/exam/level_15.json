@@ -1,0 +1,408 @@
+[
+  {
+    "id": 881,
+    "word": "sensitivity",
+    "pos": "noun",
+    "phonetic": "/ˌsɛnsɪˈtɪvɪti/",
+    "bangla": "সংবেদনশীলতা",
+    "definition": "The quality or state of being sensitive; sensitiveness.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on the quality or state of being sensitive; sensitiveness.",
+    "synonyms": [
+      "sensibility",
+      "predisposition",
+      "sensitiveness"
+    ],
+    "antonyms": [
+      "insensitivity",
+      "insensitiveness"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 882,
+    "word": "sovereign",
+    "pos": "verb",
+    "phonetic": "/ˈsɒv.ɹɪn/",
+    "bangla": "সার্বভৌম",
+    "definition": "A monarch; the ruler of a country.",
+    "example": "In the policy memo, officers agreed to _______ before implementing the reform under the new policy. to explain the idea of a monarch; the ruler of a country.",
+    "synonyms": [
+      "autonomous",
+      "supreme"
+    ],
+    "antonyms": [
+      "not sovereign"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 883,
+    "word": "standardization",
+    "pos": "noun",
+    "phonetic": "/stændərdɪˈzeɪʃən/",
+    "bangla": "প্রমিতকরণ",
+    "definition": "The process of complying (or evaluate by comparing) with a standard.",
+    "example": "In governance-focused writing, _______ is used to explain policy decisions in exam answers. with focus on the process of complying (or evaluate by comparing).",
+    "synonyms": [
+      "normalization",
+      "regularization",
+      "calibration",
+      "regularisation"
+    ],
+    "antonyms": [
+      "non standardization"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 884,
+    "word": "statutory",
+    "pos": "adjective",
+    "phonetic": "/ˈstætjʊt(ə)ɹɪ/",
+    "bangla": "সংবিধিবদ্ধ",
+    "definition": "Of, relating to, enacted or regulated by a statute.",
+    "example": "The report recommended a _______ to improve administrative outcomes during reform efforts. to explain the idea of of, relating to, enacted or regulated by a.",
+    "synonyms": [
+      "legal"
+    ],
+    "antonyms": [
+      "non statutory"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 885,
+    "word": "subcommittee",
+    "pos": "noun",
+    "phonetic": "/ˈsʌb.kəmˌmɪt.ti/",
+    "bangla": "উপকমিটি",
+    "definition": "A committee formed by an existing committee, comprising a subset of its members.",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to related to subcommittee.",
+    "synonyms": [
+      "related to subcommittee"
+    ],
+    "antonyms": [
+      "non subcommittee"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 886,
+    "word": "subsidiary",
+    "pos": "adjective",
+    "phonetic": "/sʌbˈsɪ.di.əɹ.i/",
+    "bangla": "সহায়ক",
+    "definition": "A company owned by a parent company or a holding company, also called daughter company or sister company.",
+    "example": "The district plan required a _______ to ensure transparent implementation across agencies. with focus on a company owned by a parent company or.",
+    "synonyms": [
+      "subordinate",
+      "adjunct",
+      "auxiliary",
+      "ancillary"
+    ],
+    "antonyms": [
+      "non subsidiary"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 887,
+    "word": "taxation",
+    "pos": "noun",
+    "phonetic": "/tækˈseɪ.ʃən/",
+    "bangla": "ট্যাক্সেশন",
+    "definition": "The act of imposing taxes and the fact of being taxed.",
+    "example": "For administrative analysis, _______ helps connect reform with practice for policy evaluation. as it is close to tax.",
+    "synonyms": [
+      "tax",
+      "tax revenue",
+      "revenue enhancement",
+      "tax income"
+    ],
+    "antonyms": [
+      "non taxation"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 888,
+    "word": "territorial",
+    "pos": "adjective",
+    "phonetic": "/ˌtɛ.ɹɪˈtɔː.ɹi.əl/",
+    "bangla": "আঞ্চলিক",
+    "definition": "A non-professional member of a territorial army.",
+    "example": "The district plan required a _______ to ensure transparent implementation across agencies. with focus on a non-professional member of a territorial army.",
+    "synonyms": [
+      "regional",
+      "jurisdictional",
+      "territorial reserve"
+    ],
+    "antonyms": [
+      "extraterritorial",
+      "exterritorial",
+      "nonterritorial"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 889,
+    "word": "threshold",
+    "pos": "noun",
+    "phonetic": "/ˈθɹeʃ(h)əʊld/",
+    "bangla": "প্রান্তিক",
+    "definition": "The bottom-most part of a doorway that one crosses to enter; a sill.",
+    "example": "During the viva discussion, _______ helps connect reform with practice for policy evaluation. as it is close to verge.",
+    "synonyms": [
+      "verge",
+      "limen",
+      "brink",
+      "doorway"
+    ],
+    "antonyms": [
+      "lintel"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 890,
+    "word": "transit",
+    "pos": "verb",
+    "phonetic": "/ˈtɹæn.sɪt/",
+    "bangla": "ট্রানজিট",
+    "definition": "The act of passing over, across, or through something.",
+    "example": "The committee decided to _______ to address field-level challenges for effective governance. where a similar notion is transportation.",
+    "synonyms": [
+      "transportation",
+      "pass over",
+      "pass through",
+      "theodolite"
+    ],
+    "antonyms": [
+      "not transit"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 891,
+    "word": "tribunal",
+    "pos": "noun",
+    "phonetic": "/tɹaɪˈbjuːnəl/",
+    "bangla": "ট্রাইব্যুনাল",
+    "definition": "An assembly including one or more judges to conduct judicial business; a court of law.",
+    "example": "In BCS preparation, _______ supports arguments about public administration in public sector contexts. to explain the idea of an assembly including one or more judges to.",
+    "synonyms": [
+      "court",
+      "judicature"
+    ],
+    "antonyms": [
+      "non tribunal"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 892,
+    "word": "verification",
+    "pos": "noun",
+    "phonetic": "/ˌvɛrəfəˈkeɪʃən/",
+    "bangla": "যাচাইকরণ",
+    "definition": "The act of verifying.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is check.",
+    "synonyms": [
+      "check",
+      "confirmation",
+      "substantiation"
+    ],
+    "antonyms": [
+      "non verification"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 893,
+    "word": "agrogeologically",
+    "pos": "noun",
+    "phonetic": "/agrogeologically/",
+    "bangla": "adv একটি কৃষিজৈবিক অর্থে",
+    "definition": "adv In an agrobiological sense.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on adv in an agrobiological sense.",
+    "synonyms": [
+      "related to agrogeologically"
+    ],
+    "antonyms": [
+      "non agrogeologically"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 894,
+    "word": "agrostographical",
+    "pos": "noun",
+    "phonetic": "/agrostographical/",
+    "bangla": "কৃষিবিদ",
+    "definition": "A lexical term used in academic and examination contexts as 'agrostographical'.",
+    "example": "For administrative analysis, _______ helps connect reform with practice for policy evaluation. as it is close to related to agrostographical.",
+    "synonyms": [
+      "related to agrostographical"
+    ],
+    "antonyms": [
+      "non agrostographical"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 895,
+    "word": "alcoholometrical",
+    "pos": "noun",
+    "phonetic": "/alcoholometrical/",
+    "bangla": "অ্যালকোহলমেট্রিকাল",
+    "definition": "adj Alternative form of alcoholometric. [Of or pertaining to the measurement of the alcohol content of beers, wines and spirits]",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is related to alcoholometrical.",
+    "synonyms": [
+      "related to alcoholometrical"
+    ],
+    "antonyms": [
+      "non alcoholometrical"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 896,
+    "word": "alectoromorphous",
+    "pos": "noun",
+    "phonetic": "/alectoromorphous/",
+    "bangla": "একটি আভিধানিক শব্দ যা একাডেমিক এবং পরীক্ষার প্রসঙ্গে 'অ্যালেক্টোরোমরফাস' হিসাবে ব্যবহৃত হয়",
+    "definition": "A lexical term used in academic and examination contexts as 'alectoromorphous'.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on a lexical term used in academic and examination.",
+    "synonyms": [
+      "related to alectoromorphous"
+    ],
+    "antonyms": [
+      "non alectoromorphous"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 897,
+    "word": "alimentativeness",
+    "pos": "noun",
+    "phonetic": "/alimentativeness/",
+    "bangla": "খাদ্যাভ্যাস",
+    "definition": "n The state or quality of being alimentive.",
+    "example": "In governance-focused writing, _______ supports arguments about public administration in public sector contexts. to explain the idea of n the state or quality of being alimentive.",
+    "synonyms": [
+      "related to alimentativeness"
+    ],
+    "antonyms": [
+      "non alimentativeness"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 898,
+    "word": "alkalimetrically",
+    "pos": "noun",
+    "phonetic": "/alkalimetrically/",
+    "bangla": "ক্ষারীয়ভাবে",
+    "definition": "adv By means of alkalimetry.",
+    "example": "During the viva discussion, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is related to alkalimetrically.",
+    "synonyms": [
+      "related to alkalimetrically"
+    ],
+    "antonyms": [
+      "non alkalimetrically"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 899,
+    "word": "alliterativeness",
+    "pos": "noun",
+    "phonetic": "/alliterativeness/",
+    "bangla": "অনুপ্রেরণা",
+    "definition": "n The state or quality of being alliterative.",
+    "example": "For administrative analysis, _______ clarifies institutional responsibilities for conceptual clarity. where a similar notion is related to alliterativeness.",
+    "synonyms": [
+      "related to alliterativeness"
+    ],
+    "antonyms": [
+      "non alliterativeness"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 900,
+    "word": "allopathetically",
+    "pos": "noun",
+    "phonetic": "/allopathetically/",
+    "bangla": "এলোপ্যাথিকভাবে",
+    "definition": "adv By allopathic methods.",
+    "example": "In BCS preparation, _______ is used to explain policy decisions in exam answers. with focus on adv by allopathic methods.",
+    "synonyms": [
+      "related to allopathetically"
+    ],
+    "antonyms": [
+      "non allopathetically"
+    ],
+    "examTags": [
+      "BCS"
+    ],
+    "difficulty": "advanced"
+  }
+]

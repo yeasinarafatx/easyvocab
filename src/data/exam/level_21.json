@@ -1,0 +1,424 @@
+[
+  {
+    "id": 1001,
+    "word": "accountant",
+    "pos": "noun",
+    "phonetic": "/ə.ˈkæʊn.(t)ən̩(t)/",
+    "bangla": "হিসাবরক্ষক",
+    "definition": "One who renders account; one accountable.",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is controller.",
+    "synonyms": [
+      "controller",
+      "comptroller"
+    ],
+    "antonyms": [
+      "non accountant"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1002,
+    "word": "accounting",
+    "pos": "verb",
+    "phonetic": "/ə.ˈkaʊn.tɪŋ/",
+    "bangla": "অ্যাকাউন্টিং",
+    "definition": "To provide explanation.",
+    "example": "Before final approval, the audit team had to _______ to maintain financial accuracy during routine operations. to explain the idea of to provide explanation.",
+    "synonyms": [
+      "account",
+      "accountancy",
+      "account statement",
+      "accounting system"
+    ],
+    "antonyms": [
+      "not accounting"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1003,
+    "word": "accrue",
+    "pos": "verb",
+    "phonetic": "/əˈkɹuː/",
+    "bangla": "জমা",
+    "definition": "Something that accrues; advantage accruing",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on something that accrues; advantage accruing.",
+    "synonyms": [
+      "add up",
+      "rise"
+    ],
+    "antonyms": [
+      "amortize",
+      "defer",
+      "prepay"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1004,
+    "word": "asset",
+    "pos": "noun",
+    "phonetic": "/ˈæsɪt/",
+    "bangla": "সম্পদ",
+    "definition": "Something or someone of any value; any portion of one's property or effects so considered.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on something or someone of any value; any portion.",
+    "synonyms": [
+      "plus"
+    ],
+    "antonyms": [
+      "liability"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1005,
+    "word": "audit",
+    "pos": "verb",
+    "phonetic": "/ɔː.dɪt/",
+    "bangla": "নিরীক্ষা",
+    "definition": "A judicial examination.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on a judicial examination.",
+    "synonyms": [
+      "scrutinize",
+      "inspect",
+      "audited account"
+    ],
+    "antonyms": [
+      "not audit"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1006,
+    "word": "bank",
+    "pos": "verb",
+    "phonetic": "/bæŋk/",
+    "bangla": "ব্যাংক",
+    "definition": "An institution where one can place and borrow money and take care of financial affairs.",
+    "example": "To reduce risk, officers must _______ to maintain financial accuracy during routine operations. to explain the idea of an institution where one can place and borrow.",
+    "synonyms": [
+      "banker"
+    ],
+    "antonyms": [
+      "draw",
+      "withdraw",
+      "distrust",
+      "mistrust"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1007,
+    "word": "banknote",
+    "pos": "noun",
+    "phonetic": "/ˈbæŋkˌnoʊt/",
+    "bangla": "নোট",
+    "definition": "A promissory note issued by a bank, payable at a given time to a specific beneficiary.",
+    "example": "In bank exam practice, _______ is treated as a core concept for candidates. with focus on a promissory note issued by a bank, payable.",
+    "synonyms": [
+      "bill",
+      "note"
+    ],
+    "antonyms": [
+      "non banknote"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1008,
+    "word": "balance",
+    "pos": "verb",
+    "phonetic": "/ˈbæləns/",
+    "bangla": "ভারসাম্য",
+    "definition": "A state in which opposing forces harmonise; equilibrium.",
+    "example": "The branch manager instructed staff to _______ while checking transaction history for the bank statement. as it is close to equilibrium.",
+    "synonyms": [
+      "equilibrium",
+      "account",
+      "scales",
+      "weighbridge"
+    ],
+    "antonyms": [
+      "imbalance",
+      "nonequilibrium",
+      "unbalance",
+      "bias"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1009,
+    "word": "bond",
+    "pos": "verb",
+    "phonetic": "/bɒnd/",
+    "bangla": "বন্ধন",
+    "definition": "Evidence of a long-term debt, by which the bond issuer (the borrower) is obliged to pay interest when due, and repay the principal at maturity, as specified on the face of the bond certificate. The rights of the holder are specified in the bond indenture, which contains the legal terms and conditions under which the bond was issued. Bonds are available in two forms: registered bonds, and bearer bonds.",
+    "example": "The branch manager instructed staff to _______ for stronger compliance control in daily banking practice. where a similar notion is enthralled.",
+    "synonyms": [
+      "enthralled",
+      "attachment",
+      "adhere",
+      "bind"
+    ],
+    "antonyms": [
+      "not bond"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1010,
+    "word": "brokerage",
+    "pos": "noun",
+    "phonetic": "/ˈbroʊkərɪʤ/",
+    "bangla": "দালালি",
+    "definition": "A business, firm, or company whose business is to act as a broker (e.g., stockbroker).",
+    "example": "For professional banking knowledge, _______ is frequently tested in objective questions during assessments. to explain the idea of a business, firm, or company whose business is.",
+    "synonyms": [
+      "brokerage house",
+      "brokerage firm",
+      "securities firm"
+    ],
+    "antonyms": [
+      "non brokerage"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1011,
+    "word": "capital",
+    "pos": "adjective",
+    "phonetic": "/ˈkæp.ɪ.təl/",
+    "bangla": "মূলধন",
+    "definition": "Already-produced durable goods available for use as a factor of production, such as steam shovels (equipment) and office buildings (structures).",
+    "example": "The compliance unit required a _______ for stable financial operations during loan evaluation. as it is close to caps.",
+    "synonyms": [
+      "caps",
+      "majuscule"
+    ],
+    "antonyms": [
+      "minuscule",
+      "lower-case"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1012,
+    "word": "cash",
+    "pos": "verb",
+    "phonetic": "/kæʃ/",
+    "bangla": "নগদ",
+    "definition": "Money in the form of notes/bills and coins, as opposed to cheques/checks or electronic transactions.",
+    "example": "The branch manager instructed staff to _______ for stronger compliance control in daily banking practice. where a similar notion is cash in.",
+    "synonyms": [
+      "cash in",
+      "immediate payment"
+    ],
+    "antonyms": [
+      "deferred payment",
+      "credit"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1013,
+    "word": "cheque",
+    "pos": "noun",
+    "phonetic": "/tʃɛk/",
+    "bangla": "চেক",
+    "definition": "A draft directing a bank to pay money to a named person or entity.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of a draft directing a bank to pay money.",
+    "synonyms": [
+      "check",
+      "check out",
+      "bank check"
+    ],
+    "antonyms": [
+      "non cheque"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1014,
+    "word": "clearance",
+    "pos": "noun",
+    "phonetic": "/ˈklɪrəns/",
+    "bangla": "ছাড়পত্র",
+    "definition": "The act of clearing or something (such as a space) cleared",
+    "example": "In branch-level training, _______ helps explain operational procedures for practical understanding. where a similar notion is headway.",
+    "synonyms": [
+      "headway",
+      "headroom"
+    ],
+    "antonyms": [
+      "non clearance"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1015,
+    "word": "collateral",
+    "pos": "adjective",
+    "phonetic": "/kəˈlætəɹəl/",
+    "bangla": "জামানত",
+    "definition": "A security or guarantee (usually an asset) pledged for the repayment of a loan if one cannot procure enough funds to repay.",
+    "example": "The compliance unit required a _______ for better regulatory alignment for portfolio management. where a similar notion is pledge.",
+    "synonyms": [
+      "pledge",
+      "ancillary",
+      "subordinate",
+      "tangential"
+    ],
+    "antonyms": [
+      "direct",
+      "lineal"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1016,
+    "word": "credit",
+    "pos": "verb",
+    "phonetic": "/ˈkɹɛdɪt/",
+    "bangla": "ক্রেডিট",
+    "definition": "Reliance on the truth of something said or done; faith; trust.",
+    "example": "To reduce risk, officers must _______ before posting the final report in the branch office. with focus on reliance on the truth of something said or.",
+    "synonyms": [
+      "unit",
+      "accept",
+      "believe"
+    ],
+    "antonyms": [
+      "debit"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1017,
+    "word": "currency",
+    "pos": "noun",
+    "phonetic": "/ˈkʌɹ.ən.si/",
+    "bangla": "মুদ্রা",
+    "definition": "Money or other items used to facilitate transactions.",
+    "example": "In bank exam practice, _______ is frequently tested in objective questions during assessments. to explain the idea of money or other items used to facilitate transactions.",
+    "synonyms": [
+      "vogue",
+      "currentness",
+      "up-to-dateness"
+    ],
+    "antonyms": [
+      "non currency"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1018,
+    "word": "debit",
+    "pos": "verb",
+    "phonetic": "/ˈdɛb.ɪt/",
+    "bangla": "ডেবিট",
+    "definition": "In bookkeeping, an entry in the left hand column of an account.",
+    "example": "Before final approval, the audit team had to _______ before posting the final report in the branch office. with focus on in bookkeeping, an entry in the left hand.",
+    "synonyms": [
+      "debit entry"
+    ],
+    "antonyms": [
+      "credit"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1019,
+    "word": "deposit",
+    "pos": "verb",
+    "phonetic": "/dɪˈpɒzɪt/",
+    "bangla": "আমানত",
+    "definition": "Sediment or rock that is not native to its present location or is different from the surrounding material. Sometimes refers to ore or gems.",
+    "example": "During reconciliation, analysts were asked to _______ for stronger compliance control in daily banking practice. where a similar notion is repository.",
+    "synonyms": [
+      "repository",
+      "pose",
+      "posit",
+      "bank"
+    ],
+    "antonyms": [
+      "withdrawal"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  },
+  {
+    "id": 1020,
+    "word": "dividend",
+    "pos": "noun",
+    "phonetic": "/ˈdɪvɪdɛnd/",
+    "bangla": "লভ্যাংশ",
+    "definition": "A number or expression that is to be divided by another.",
+    "example": "In branch-level training, _______ plays an important role in decision-making in real scenarios. as it is close to related to dividend.",
+    "synonyms": [
+      "related to dividend"
+    ],
+    "antonyms": [
+      "non dividend"
+    ],
+    "examTags": [
+      "Bank"
+    ],
+    "difficulty": "advanced"
+  }
+]

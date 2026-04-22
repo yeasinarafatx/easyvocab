@@ -1,0 +1,22 @@
+[
+  {"word":"impact","pos":"noun/verb","phonetic":"/ˈɪmpækt/","bangla":"প্রভাব","example":"Social media has a strong impact on youth."},
+  {"word":"implement","pos":"verb","phonetic":"/ˈɪmplɪment/","bangla":"বাস্তবায়ন করা","example":"Schools implement new teaching methods."},
+  {"word":"imply","pos":"verb","phonetic":"/ɪmˈplaɪ/","bangla":"ইঙ্গিত করা","example":"The chart implies a steady increase."},
+  {"word":"impose","pos":"verb","phonetic":"/ɪmˈpəʊz/","bangla":"আরোপ করা","example":"The government imposed strict rules."},
+  {"word":"improve","pos":"verb","phonetic":"/ɪmˈpruːv/","bangla":"উন্নত করা","example":"Practice can improve speaking fluency."},
+  {"word":"include","pos":"verb","phonetic":"/ɪnˈkluːd/","bangla":"অন্তর্ভুক্ত করা","example":"Your answer should include examples."},
+  {"word":"income","pos":"noun","phonetic":"/ˈɪnkʌm/","bangla":"আয়","example":"Family income affects education quality."},
+  {"word":"increase","pos":"verb/noun","phonetic":"/ɪnˈkriːs/","bangla":"বৃদ্ধি","example":"Prices increase during fuel shortages."},
+  {"word":"index","pos":"noun","phonetic":"/ˈɪndeks/","bangla":"সূচক","example":"The index shows market performance."},
+  {"word":"indicate","pos":"verb","phonetic":"/ˈɪndɪkeɪt/","bangla":"নির্দেশ করা","example":"The results indicate a positive trend."},
+  {"word":"individual","pos":"noun/adjective","phonetic":"/ˌɪndɪˈvɪdʒuəl/","bangla":"ব্যক্তিগত","example":"Each individual has unique skills."},
+  {"word":"inevitable","pos":"adjective","phonetic":"/ɪnˈevɪtəbəl/","bangla":"অপরিহার্য","example":"Some changes are inevitable over time."},
+  {"word":"influence","pos":"noun/verb","phonetic":"/ˈɪnfluəns/","bangla":"প্রভাব","example":"Parents influence children's behavior."},
+  {"word":"inhibit","pos":"verb","phonetic":"/ɪnˈhɪbɪt/","bangla":"বাধা দেওয়া","example":"Stress can inhibit learning ability."},
+  {"word":"initial","pos":"adjective","phonetic":"/ɪˈnɪʃəl/","bangla":"প্রাথমিক","example":"The initial results were surprising."},
+  {"word":"innovation","pos":"noun","phonetic":"/ˌɪnəˈveɪʃən/","bangla":"উদ্ভাবন","example":"Innovation drives economic growth."},
+  {"word":"input","pos":"noun","phonetic":"/ˈɪnpʊt/","bangla":"ইনপুট","example":"Teacher input is valuable in class."},
+  {"word":"insight","pos":"noun","phonetic":"/ˈɪnsaɪt/","bangla":"অন্তর্দৃষ্টি","example":"The survey gives insight into student habits."},
+  {"word":"instance","pos":"noun","phonetic":"/ˈɪnstəns/","bangla":"উদাহরণ","example":"For instance, public transport reduces traffic."},
+  {"word":"integrate","pos":"verb","phonetic":"/ˈɪntɪɡreɪt/","bangla":"একীভূত করা","example":"Schools integrate technology into lessons."}
+]
