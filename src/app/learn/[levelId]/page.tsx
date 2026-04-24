@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 interface Word {
@@ -14,12 +14,15 @@ interface Word {
 
 export default function LearnLevelPage() {
   const params = useParams<{ levelId: string }>();
+  const router = useRouter();
   const levelId = params?.levelId ?? "beginner-1";
 
   const parts = levelId.split("-");
   const stage = parts[0] ?? "beginner";
   const levelNumber = Number(parts[1] ?? "1");
   const file = `level_${String(Number.isFinite(levelNumber) ? levelNumber : 1).padStart(2, "0")}`;
+  const isDemoLevel = stage === "demo";
+  const backHref = stage === "demo" ? "/demo" : "/dashboard";
 
   const [words, setWords] = useState<Word[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -108,6 +111,18 @@ export default function LearnLevelPage() {
     return () => window.clearTimeout(t);
   }, [restartNotice]);
 
+  useEffect(() => {
+    if (!isDemoLevel || typeof window === "undefined") return;
+    window.localStorage.removeItem(`completed_${levelId}`);
+    window.localStorage.removeItem(`speak_completed_${levelId}`);
+  }, [isDemoLevel, levelId]);
+
+  useEffect(() => {
+    if (!isDemoLevel || !isCompleted) return;
+    const t = window.setTimeout(() => router.replace("/"), 1200);
+    return () => window.clearTimeout(t);
+  }, [isDemoLevel, isCompleted, router]);
+
   const handleNext = () => {
     if (isCompleted || !activeWord) return;
     if (!isCorrect) {
@@ -117,8 +132,10 @@ export default function LearnLevelPage() {
 
     const nextIndex = currentIndex + 1;
     if (examMode && nextIndex >= totalWords) {
-      if (typeof window !== "undefined") window.localStorage.setItem(`completed_${levelId}`, "true");
-      setShowSuccessModal(true);
+      if (!isDemoLevel && typeof window !== "undefined") {
+        window.localStorage.setItem(`completed_${levelId}`, "true");
+        setShowSuccessModal(true);
+      }
     }
 
     setTypedValue("");
@@ -174,8 +191,8 @@ export default function LearnLevelPage() {
                 <div className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all" style={{ width: `${progressPercent}%` }} />
               </div>
             </div>
-            <Link href="/dashboard" className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
-              Back to Dashboard
+            <Link href={backHref} className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
+              {stage === "demo" ? "Back to Demo" : "Back to Dashboard"}
             </Link>
           </div>
 
@@ -253,7 +270,9 @@ export default function LearnLevelPage() {
             <div className="mt-8 rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-6 text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Completed</p>
               <h2 className="mt-2 text-3xl font-extrabold text-emerald-100">দারুণ! ২০টি শব্দ শেষ।</h2>
-              <p className="mt-3 text-slate-200">সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।</p>
+              <p className="mt-3 text-slate-200">
+                {isDemoLevel ? "Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে..." : "সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।"}
+              </p>
             </div>
           )}
         </section>

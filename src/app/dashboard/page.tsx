@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
+import { supabase } from "@/lib/supabase";
 
 type StageName = "Beginner" | "Intermediate" | "Advanced" | "Exam";
 
@@ -37,6 +39,58 @@ function LockIcon() {
 }
 
 export default function DashboardPage() {
+  const router = useRouter();
+  const [authChecked, setAuthChecked] = useState(false);
+  const [userName, setUserName] = useState("");
+
+  useEffect(() => {
+    let mounted = true;
+
+    const verifySession = async () => {
+      const { data } = await supabase.auth.getSession();
+      if (!mounted) return;
+
+      if (!data.session) {
+        router.replace("/login");
+        return;
+      }
+
+      if (!data.session.user.email_confirmed_at) {
+        const email = encodeURIComponent(data.session.user.email ?? "");
+        await supabase.auth.signOut();
+        router.replace(`/verify-email?email=${email}`);
+        return;
+      }
+
+      const profileName =
+        (data.session.user.user_metadata?.full_name as string | undefined)?.trim() ||
+        (data.session.user.user_metadata?.name as string | undefined)?.trim() ||
+        data.session.user.email?.split("@")[0] ||
+        "User";
+
+      setUserName(profileName);
+      setAuthChecked(true);
+    };
+
+    verifySession();
+
+    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
+      if (event === "SIGNED_OUT" || !session) {
+        router.replace("/login");
+      }
+    });
+
+    return () => {
+      mounted = false;
+      authListener.subscription.unsubscribe();
+    };
+  }, [router]);
+
+  const handleLogout = async () => {
+    await supabase.auth.signOut();
+    router.replace("/login");
+  };
+
   const [completedCount] = useState<Record<StageName, number>>(() => {
     if (typeof window === "undefined") {
       return { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0 };
@@ -82,6 +136,14 @@ export default function DashboardPage() {
     );
   }, [completedCount]);
 
+  if (!authChecked) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+        <p className="text-sm">Session যাচাই হচ্ছে...</p>
+      </div>
+    );
+  }
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
       <div className="pointer-events-none absolute -left-20 top-12 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
@@ -96,14 +158,24 @@ export default function DashboardPage() {
                   Easy Vocab
                 </p>
                 <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">
-                  আমার ড্যাশবোর্ড
+                  <span className="block text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
+                    Welcome back
+                  </span>
+                  <span className="mt-1 block text-emerald-300">{userName}</span>
                 </h1>
                 <Link
                   href="/"
                   className="mt-4 inline-flex rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
                 >
-                  product page
+                  Product Page
                 </Link>
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="mt-4 ml-3 inline-flex rounded-lg border border-red-300/30 bg-red-300/10 px-4 py-2 text-sm font-semibold text-red-100 transition hover:bg-red-300/20"
+                >
+                  Logout
+                </button>
               </div>
 
               <div className="flex gap-3 text-center text-xs sm:text-sm">

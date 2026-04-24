@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 
 interface Word {
@@ -48,6 +48,7 @@ type ResultState = "none" | "correct" | "wrong";
 
 export default function SpeakLevelPage() {
 	const params = useParams<{ levelId: string }>();
+	const router = useRouter();
 	const levelId = params?.levelId ?? "beginner-1";
 	const [mode, setMode] = useState<Mode>("practice");
 	const [words, setWords] = useState<Word[]>([]);
@@ -65,6 +66,8 @@ export default function SpeakLevelPage() {
 	const stage = parts[0] ?? "beginner";
 	const levelNumber = Number(parts[1] ?? "1");
 	const file = `level_${String(Number.isFinite(levelNumber) ? levelNumber : 1).padStart(2, "0")}`;
+	const isDemoLevel = stage === "demo";
+	const backHref = stage === "demo" ? "/demo" : `/stage/${stage}`;
 
 	useEffect(() => {
 		let cancelled = false;
@@ -157,8 +160,30 @@ export default function SpeakLevelPage() {
 			return;
 		}
 
+		if (isDemoLevel) {
+			return;
+		}
+
 		window.localStorage.setItem(`speak_completed_${levelId}`, "true");
-	}, [isCompleted, levelId, mode]);
+	}, [isCompleted, levelId, mode, isDemoLevel]);
+
+	useEffect(() => {
+		if (!isDemoLevel || typeof window === "undefined") {
+			return;
+		}
+
+		window.localStorage.removeItem(`completed_${levelId}`);
+		window.localStorage.removeItem(`speak_completed_${levelId}`);
+	}, [isDemoLevel, levelId]);
+
+	useEffect(() => {
+		if (!isDemoLevel || !isCompleted) {
+			return;
+		}
+
+		const t = window.setTimeout(() => router.replace("/"), 1200);
+		return () => window.clearTimeout(t);
+	}, [isDemoLevel, isCompleted, router]);
 
 	const resetWordState = () => {
 		setListenState("idle");
@@ -342,10 +367,10 @@ export default function SpeakLevelPage() {
 						</div>
 
 						<Link
-							href={`/stage/${stage}`}
+							href={backHref}
 							className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
 						>
-							Back to Stage
+							{stage === "demo" ? "Back to Demo" : "Back to Stage"}
 						</Link>
 					</div>
 
@@ -381,12 +406,16 @@ export default function SpeakLevelPage() {
 					{isCompleted ? (
 						<div className="mt-8 rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-6 text-center">
 							<h2 className="text-3xl font-extrabold text-emerald-100">🎉 সব শব্দ শেষ!</h2>
-							<Link
-								href={`/stage/${stage}`}
-								className="mt-5 inline-flex rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
-							>
-								স্টেজে ফিরে যান
-							</Link>
+							{isDemoLevel ? (
+								<p className="mt-3 text-slate-200">Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে...</p>
+							) : (
+								<Link
+									href={`/stage/${stage}`}
+									className="mt-5 inline-flex rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+								>
+									স্টেজে ফিরে যান
+								</Link>
+							)}
 						</div>
 					) : activeWord ? (
 						<>
