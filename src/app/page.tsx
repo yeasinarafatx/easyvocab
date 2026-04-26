@@ -136,10 +136,10 @@ export default function Home() {
               <div className="max-w-2xl">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-100/80">Try Demo</p>
                 <h2 className="mt-2 text-2xl font-extrabold leading-tight tracking-tight text-slate-100 sm:text-[1.9rem]">
-                  ২০টি Random Exam Word দিয়ে Typing + Voice Demo
+                  ২০টি Exam Word দিয়ে Live Typing + Speaking + Flashcard Demo
                 </h2>
                 <p className="mt-3 max-w-xl text-sm leading-6 text-slate-200/85 sm:text-[0.98rem]">
-                  IELTS, GRE, BCS, IBA, Bank mix করে ২০টি unique শব্দের দ্রুত লাইভ প্র্যাকটিস।
+                  IELTS, GRE, BCS, IBA, Bank mix থেকে নেওয়া ২০টি unique শব্দ দিয়ে এক জায়গায় তিন ধরনের practice করুন।
                 </p>
               </div>
               <Link
@@ -178,7 +178,7 @@ export default function Home() {
                 </li>
                 <li className="flex gap-3 rounded-2xl border border-cyan-100/10 bg-cyan-200/5 px-4 py-3">
                   <span className="mt-0.5 text-emerald-300">✓</span>
-                  <span>Typing mode-এ word recall practice, আর Speak mode-এ voice recognition দিয়ে উচ্চারণ test</span>
+                  <span>Typing, Speaking এবং Flashcard mode-এ word recall, pronunciation ও revision practice</span>
                 </li>
                 <li className="flex gap-3 rounded-2xl border border-cyan-100/10 bg-cyan-200/5 px-4 py-3">
                   <span className="mt-0.5 text-emerald-300">✓</span>

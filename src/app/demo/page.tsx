@@ -19,10 +19,10 @@ export default function DemoPage() {
           <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-200/90 sm:text-base">
             এখানে IELTS, GRE, BCS, IBA, Bank পরীক্ষায় সাধারণত দেখা যায় এমন ২০টি
             unique শব্দ আছে। Beginner/Intermediate এর একই structure এ data রাখা হয়েছে,
-            তাই Typing এবং Speaking দুটোই directly test করতে পারবেন।
+            তাই Typing, Speaking এবং Flashcard তিনটাই directly test করতে পারবেন।
           </p>
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             <Link
               href="/learn/demo-1"
               className="rounded-2xl border border-cyan-200/30 bg-cyan-200/10 p-5 transition hover:border-cyan-100 hover:bg-cyan-200/20"
@@ -46,6 +46,19 @@ export default function DemoPage() {
               <h2 className="mt-2 text-xl font-extrabold">🎤 Start Voice (20 Words)</h2>
               <p className="mt-2 text-sm text-slate-300">
                 মাইক্রোফোন দিয়ে উচ্চারণ দিন এবং recognition result সাথে সাথে দেখুন।
+              </p>
+            </Link>
+
+            <Link
+              href="/flashcard/demo-1"
+              className="rounded-2xl border border-amber-200/30 bg-amber-200/10 p-5 transition hover:border-amber-100 hover:bg-amber-200/20"
+            >
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-100">
+                Flashcard Demo
+              </p>
+              <h2 className="mt-2 text-xl font-extrabold">🎴 Start Flashcard (20 Words)</h2>
+              <p className="mt-2 text-sm text-slate-300">
+                Front/Back flip করে EN→BN এবং BN→EN দুই mode-এ শব্দ অনুশীলন করুন।
               </p>
             </Link>
           </div>

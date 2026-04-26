@@ -1,0 +1,22 @@
+[
+  { "id": 61, "word": "Please open your book", "pos": "phrase", "phonetic": "/pliːz ˈoʊpən jʊr bʊk/", "bangla": "অনুগ্রহ করে বই খুলুন", "example": "Please open your book to page ten.", "category": "School" },
+  { "id": 62, "word": "Please close your book", "pos": "phrase", "phonetic": "/pliːz kloʊz jʊr bʊk/", "bangla": "অনুগ্রহ করে বই বন্ধ করুন", "example": "Please close your book now.", "category": "School" },
+  { "id": 63, "word": "Write your name", "pos": "phrase", "phonetic": "/raɪt jʊr neɪm/", "bangla": "তোমার নাম লেখো", "example": "Write your name on the paper.", "category": "School" },
+  { "id": 64, "word": "Read this line", "pos": "phrase", "phonetic": "/riːd ðɪs laɪn/", "bangla": "এই লাইনটি পড়ো", "example": "Read this line aloud.", "category": "School" },
+  { "id": 65, "word": "Listen carefully", "pos": "phrase", "phonetic": "/ˈlɪsən ˈkerfəli/", "bangla": "মনোযোগ দিয়ে শোনো", "example": "Listen carefully to the teacher.", "category": "School" },
+  { "id": 66, "word": "Raise your hand", "pos": "phrase", "phonetic": "/reɪz jʊr hænd/", "bangla": "হাত তোলো", "example": "Raise your hand if you know the answer.", "category": "School" },
+  { "id": 67, "word": "May I come in", "pos": "phrase", "phonetic": "/meɪ aɪ kʌm ɪn/", "bangla": "আমি কি ভিতরে আসতে পারি", "example": "May I come in, sir?", "category": "School" },
+  { "id": 68, "word": "May I go out", "pos": "phrase", "phonetic": "/meɪ aɪ ɡoʊ aʊt/", "bangla": "আমি কি বাইরে যেতে পারি", "example": "May I go out for a minute?", "category": "School" },
+  { "id": 69, "word": "I do not understand", "pos": "phrase", "phonetic": "/aɪ duː nɑːt ˌʌndərˈstænd/", "bangla": "আমি বুঝতে পারছি না", "example": "I do not understand this question.", "category": "School" },
+  { "id": 70, "word": "Please explain again", "pos": "phrase", "phonetic": "/pliːz ɪkˈspleɪn əˈɡɛn/", "bangla": "আবার বুঝিয়ে বলুন", "example": "Please explain again slowly.", "category": "School" },
+  { "id": 71, "word": "Can I ask a question", "pos": "phrase", "phonetic": "/kæn aɪ æsk ə ˈkwɛstʃən/", "bangla": "আমি কি একটি প্রশ্ন করতে পারি", "example": "Can I ask a question now?", "category": "School" },
+  { "id": 72, "word": "I forgot my homework", "pos": "phrase", "phonetic": "/aɪ fərˈɡɑːt maɪ ˈhoʊmwɝːk/", "bangla": "আমি হোমওয়ার্ক আনতে ভুলে গেছি", "example": "I forgot my homework at home.", "category": "School" },
+  { "id": 73, "word": "I will submit tomorrow", "pos": "phrase", "phonetic": "/aɪ wɪl səbˈmɪt təˈmɔːroʊ/", "bangla": "আমি আগামীকাল জমা দেব", "example": "I will submit tomorrow morning.", "category": "School" },
+  { "id": 74, "word": "The class is interesting", "pos": "phrase", "phonetic": "/ðə klæs ɪz ˈɪntrəstɪŋ/", "bangla": "ক্লাসটি মজার", "example": "The class is interesting today.", "category": "School" },
+  { "id": 75, "word": "Please speak slowly", "pos": "phrase", "phonetic": "/pliːz spiːk ˈsloʊli/", "bangla": "দয়া করে আস্তে বলুন", "example": "Please speak slowly for me.", "category": "School" },
+  { "id": 76, "word": "Work in pairs", "pos": "phrase", "phonetic": "/wɝːk ɪn perz/", "bangla": "দুইজন মিলে কাজ করো", "example": "Work in pairs for this task.", "category": "School" },
+  { "id": 77, "word": "Time is up", "pos": "phrase", "phonetic": "/taɪm ɪz ʌp/", "bangla": "সময় শেষ", "example": "Time is up, stop writing.", "category": "School" },
+  { "id": 78, "word": "Let us review", "pos": "phrase", "phonetic": "/lɛt ʌs rɪˈvjuː/", "bangla": "চলুন রিভিউ করি", "example": "Let us review the lesson.", "category": "School" },
+  { "id": 79, "word": "Great answer", "pos": "phrase", "phonetic": "/ɡreɪt ˈænsər/", "bangla": "দারুণ উত্তর", "example": "Great answer, well done.", "category": "School" },
+  { "id": 80, "word": "See you in class", "pos": "phrase", "phonetic": "/siː juː ɪn klæs/", "bangla": "ক্লাসে দেখা হবে", "example": "See you in class tomorrow.", "category": "School" }
+]

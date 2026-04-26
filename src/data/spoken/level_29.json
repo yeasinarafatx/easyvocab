@@ -1,0 +1,22 @@
+[
+  { "id": 561, "word": "Welcome to our home", "pos": "phrase", "phonetic": "/wɛlkəm tə aʊr hoʊm/", "bangla": "আমাদের বাসায় স্বাগতম", "example": "Welcome to our home this evening.", "category": "Hosting and Guests" },
+  { "id": 562, "word": "Please come in", "pos": "phrase", "phonetic": "/pliz kʌm ɪn/", "bangla": "ভিতরে আসুন", "example": "Please come in and have a seat.", "category": "Hosting and Guests" },
+  { "id": 563, "word": "Take off your shoes", "pos": "phrase", "phonetic": "/teɪk ɔf jɔr ʃuːz/", "bangla": "জুতা খুলে রাখুন", "example": "Take off your shoes at the door.", "category": "Hosting and Guests" },
+  { "id": 564, "word": "Please make yourself comfortable", "pos": "phrase", "phonetic": "/pliz meɪk jɔrsɛlf kʌmftərbəl/", "bangla": "নিজেকে স্বাচ্ছন্দ্যে রাখুন", "example": "Please make yourself comfortable here.", "category": "Hosting and Guests" },
+  { "id": 565, "word": "Would you like some tea", "pos": "phrase", "phonetic": "/wʊd ju laɪk sʌm ti/", "bangla": "আপনি কি চা খাবেন", "example": "Would you like some tea or coffee?", "category": "Hosting and Guests" },
+  { "id": 566, "word": "Please have some snacks", "pos": "phrase", "phonetic": "/pliz hæv sʌm snæks/", "bangla": "দয়া করে কিছু নাস্তা নিন", "example": "Please have some snacks first.", "category": "Hosting and Guests" },
+  { "id": 567, "word": "Dinner will be ready soon", "pos": "phrase", "phonetic": "/dɪnər wɪl bi rɛdi suːn/", "bangla": "রাতের খাবার শিগগিরই প্রস্তুত হবে", "example": "Dinner will be ready soon, please wait.", "category": "Hosting and Guests" },
+  { "id": 568, "word": "Please join us for dinner", "pos": "phrase", "phonetic": "/pliz dʒɔɪn ʌs fɔr dɪnər/", "bangla": "দয়া করে আমাদের সাথে রাতের খাবারে যোগ দিন", "example": "Please join us for dinner tonight.", "category": "Hosting and Guests" },
+  { "id": 569, "word": "Do you need anything else", "pos": "phrase", "phonetic": "/du ju niːd ɛniθɪŋ ɛls/", "bangla": "আপনার আর কিছু দরকার কি", "example": "Do you need anything else right now?", "category": "Hosting and Guests" },
+  { "id": 570, "word": "Let me show you the room", "pos": "phrase", "phonetic": "/lɛt mi ʃoʊ ju ðə ruːm/", "bangla": "আমি আপনাকে রুমটি দেখাই", "example": "Let me show you the room upstairs.", "category": "Hosting and Guests" },
+  { "id": 571, "word": "This is the guest room", "pos": "phrase", "phonetic": "/ðɪs ɪz ðə ɡɛst ruːm/", "bangla": "এটাই অতিথি কক্ষ", "example": "This is the guest room for you.", "category": "Hosting and Guests" },
+  { "id": 572, "word": "Here is a fresh towel", "pos": "phrase", "phonetic": "/hɪr ɪz ə frɛʃ taʊəl/", "bangla": "এখানে একটি পরিষ্কার তোয়ালে আছে", "example": "Here is a fresh towel for you.", "category": "Hosting and Guests" },
+  { "id": 573, "word": "The bathroom is on the right", "pos": "phrase", "phonetic": "/ðə bæθruːm ɪz ɑn ðə raɪt/", "bangla": "বাথরুম ডান পাশে", "example": "The bathroom is on the right side.", "category": "Hosting and Guests" },
+  { "id": 574, "word": "Please feel at home", "pos": "phrase", "phonetic": "/pliz fil æt hoʊm/", "bangla": "নিজের বাড়ির মতো ভাবুন", "example": "Please feel at home during your stay.", "category": "Hosting and Guests" },
+  { "id": 575, "word": "How was your journey", "pos": "phrase", "phonetic": "/haʊ wəz jɔr dʒɜrni/", "bangla": "আপনার যাত্রা কেমন ছিল", "example": "How was your journey to our city?", "category": "Hosting and Guests" },
+  { "id": 576, "word": "You must be tired", "pos": "phrase", "phonetic": "/ju mʌst bi taɪərd/", "bangla": "আপনি নিশ্চয়ই ক্লান্ত", "example": "You must be tired after travel.", "category": "Hosting and Guests" },
+  { "id": 577, "word": "Please take some rest", "pos": "phrase", "phonetic": "/pliz teɪk sʌm rɛst/", "bangla": "দয়া করে একটু বিশ্রাম নিন", "example": "Please take some rest now.", "category": "Hosting and Guests" },
+  { "id": 578, "word": "We are happy to have you", "pos": "phrase", "phonetic": "/wi ɑr hæpi tə hæv ju/", "bangla": "আপনাকে পেয়ে আমরা খুশি", "example": "We are happy to have you here.", "category": "Hosting and Guests" },
+  { "id": 579, "word": "Please stay for one more day", "pos": "phrase", "phonetic": "/pliz steɪ fɔr wʌn mɔr deɪ/", "bangla": "আর একদিন থাকুন", "example": "Please stay for one more day with us.", "category": "Hosting and Guests" },
+  { "id": 580, "word": "Come again soon", "pos": "phrase", "phonetic": "/kʌm əɡɛn suːn/", "bangla": "আবার শিগগির আসবেন", "example": "Come again soon with your family.", "category": "Hosting and Guests" }
+]

@@ -1,0 +1,22 @@
+[
+  { "id": 41, "word": "I am on my way", "pos": "phrase", "phonetic": "/aɪ æm ɑːn maɪ weɪ/", "bangla": "আমি পথে আছি", "example": "I am on my way to office.", "category": "Office" },
+  { "id": 42, "word": "I am running late", "pos": "phrase", "phonetic": "/aɪ æm ˈrʌnɪŋ leɪt/", "bangla": "আমার দেরি হচ্ছে", "example": "I am running late today.", "category": "Office" },
+  { "id": 43, "word": "Let us start the meeting", "pos": "phrase", "phonetic": "/lɛt ʌs stɑːrt ðə ˈmiːtɪŋ/", "bangla": "চলুন মিটিং শুরু করি", "example": "Let us start the meeting now.", "category": "Office" },
+  { "id": 44, "word": "Can you hear me", "pos": "phrase", "phonetic": "/kæn juː hɪr miː/", "bangla": "আপনি কি আমাকে শুনতে পাচ্ছেন", "example": "Can you hear me clearly?", "category": "Office" },
+  { "id": 45, "word": "Please share the file", "pos": "phrase", "phonetic": "/pliːz ʃer ðə faɪl/", "bangla": "ফাইলটি শেয়ার করুন", "example": "Please share the file with me.", "category": "Office" },
+  { "id": 46, "word": "I will send an email", "pos": "phrase", "phonetic": "/aɪ wɪl sɛnd ən ˈiːmeɪl/", "bangla": "আমি ইমেইল পাঠাব", "example": "I will send an email after lunch.", "category": "Office" },
+  { "id": 47, "word": "Please check your inbox", "pos": "phrase", "phonetic": "/pliːz tʃɛk jʊr ˈɪnbɑːks/", "bangla": "আপনার ইনবক্স দেখুন", "example": "Please check your inbox now.", "category": "Office" },
+  { "id": 48, "word": "This task is urgent", "pos": "phrase", "phonetic": "/ðɪs tæsk ɪz ˈɝːdʒənt/", "bangla": "এই কাজটি জরুরি", "example": "This task is urgent for today.", "category": "Office" },
+  { "id": 49, "word": "I need more time", "pos": "phrase", "phonetic": "/aɪ niːd mɔːr taɪm/", "bangla": "আমার আরও সময় দরকার", "example": "I need more time to finish.", "category": "Office" },
+  { "id": 50, "word": "The deadline is tomorrow", "pos": "phrase", "phonetic": "/ðə ˈdɛdlaɪn ɪz təˈmɔːroʊ/", "bangla": "ডেডলাইন আগামীকাল", "example": "The deadline is tomorrow morning.", "category": "Office" },
+  { "id": 51, "word": "Please review this", "pos": "phrase", "phonetic": "/pliːz rɪˈvjuː ðɪs/", "bangla": "এটা রিভিউ করুন", "example": "Please review this document.", "category": "Office" },
+  { "id": 52, "word": "I agree with you", "pos": "phrase", "phonetic": "/aɪ əˈɡriː wɪð juː/", "bangla": "আমি আপনার সাথে একমত", "example": "I agree with you on this point.", "category": "Office" },
+  { "id": 53, "word": "I have a question", "pos": "phrase", "phonetic": "/aɪ hæv ə ˈkwɛstʃən/", "bangla": "আমার একটি প্রশ্ন আছে", "example": "I have a question about the plan.", "category": "Office" },
+  { "id": 54, "word": "Could you repeat that", "pos": "phrase", "phonetic": "/kʊd juː rɪˈpiːt ðæt/", "bangla": "এটা কি আবার বলবেন", "example": "Could you repeat that, please?", "category": "Office" },
+  { "id": 55, "word": "Let us take a break", "pos": "phrase", "phonetic": "/lɛt ʌs teɪk ə breɪk/", "bangla": "চলুন বিরতি নেই", "example": "Let us take a break now.", "category": "Office" },
+  { "id": 56, "word": "I will join online", "pos": "phrase", "phonetic": "/aɪ wɪl dʒɔɪn ˌɑːnˈlaɪn/", "bangla": "আমি অনলাইনে যোগ দেব", "example": "I will join online from home.", "category": "Office" },
+  { "id": 57, "word": "Please mute your mic", "pos": "phrase", "phonetic": "/pliːz mjuːt jʊr maɪk/", "bangla": "মাইক মিউট করুন", "example": "Please mute your mic during the call.", "category": "Office" },
+  { "id": 58, "word": "We are almost done", "pos": "phrase", "phonetic": "/wiː ɑːr ˈɔːlmoʊst dʌn/", "bangla": "আমরা প্রায় শেষ", "example": "We are almost done with this task.", "category": "Office" },
+  { "id": 59, "word": "Great job everyone", "pos": "phrase", "phonetic": "/ɡreɪt dʒɑːb ˈɛvriwʌn/", "bangla": "সবার কাজ দারুণ", "example": "Great job everyone today.", "category": "Office" },
+  { "id": 60, "word": "See you tomorrow", "pos": "phrase", "phonetic": "/siː juː təˈmɔːroʊ/", "bangla": "আগামীকাল দেখা হবে", "example": "See you tomorrow at 10.", "category": "Office" }
+]

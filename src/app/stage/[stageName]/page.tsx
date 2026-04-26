@@ -2,16 +2,24 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 
-type StageName = "beginner" | "intermediate" | "advanced" | "exam";
+type StageName = "beginner" | "intermediate" | "advanced" | "exam" | "spoken";
+type PracticeMode = "typing" | "speaking" | "flashcard";
 
 const stageConfig: Record<StageName, { bengali: string; totalLevels: number }> = {
   beginner: { bengali: "শুরুর স্তর", totalLevels: 10 },
   intermediate: { bengali: "মধ্যম স্তর", totalLevels: 15 },
   advanced: { bengali: "উন্নত স্তর", totalLevels: 15 },
   exam: { bengali: "পরীক্ষার প্রস্তুতি", totalLevels: 30 },
+  spoken: { bengali: "Spoken English", totalLevels: 30 },
 };
+
+const examLevelCategories = [
+  ...Array(10).fill("GRE"),
+  ...Array(10).fill("BCS"),
+  ...Array(10).fill("Bank"),
+];
 
 function LockIcon() {
   return (
@@ -32,6 +40,7 @@ function LockIcon() {
 export default function StagePage() {
   const params = useParams<{ stageName: string }>();
   const stageName = (params?.stageName?.toLowerCase() ?? "beginner") as StageName;
+  const [selectedMode, setSelectedMode] = useState<PracticeMode>("typing");
 
   const config = stageConfig[stageName] || stageConfig.beginner;
 
@@ -43,12 +52,20 @@ export default function StagePage() {
     const completed = new Set<string>();
     for (let i = 1; i <= config.totalLevels; i++) {
       const levelId = `${stageName}-${i}`;
-      if (window.localStorage.getItem(`completed_${levelId}`) === "true") {
+      const typingCompleted = window.localStorage.getItem(`completed_${levelId}`) === "true";
+      const speakingCompleted = window.localStorage.getItem(`speak_completed_${levelId}`) === "true";
+
+      const isCompletedForMode =
+        selectedMode === "speaking"
+          ? speakingCompleted || typingCompleted
+          : typingCompleted;
+
+      if (isCompletedForMode) {
         completed.add(levelId);
       }
     }
     return completed;
-  }, [stageName, config.totalLevels]);
+  }, [stageName, config.totalLevels, selectedMode]);
 
   const unlockedLevelIds = useMemo(() => {
     const unlocked = new Set<string>();
@@ -65,6 +82,19 @@ export default function StagePage() {
     return unlocked;
   }, [stageName, config.totalLevels, completedLevelIds]);
 
+  const getModeHref = (levelId: string) => {
+    if (selectedMode === "speaking") return `/speak/${levelId}`;
+    if (selectedMode === "flashcard") return `/flashcard/${levelId}`;
+    return `/learn/${levelId}`;
+  };
+
+  const modeLabel =
+    selectedMode === "typing"
+      ? "Typing"
+      : selectedMode === "speaking"
+        ? "Speaking"
+        : "Flashcard";
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
       <div className="pointer-events-none absolute -left-20 top-12 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
@@ -72,7 +102,7 @@ export default function StagePage() {
 
       <main className="relative z-10 mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-10">
         <section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10">
-          <div className="flex items-center justify-between border-b border-white/10 pb-6">
+          <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
                 Easy Vocab
@@ -80,21 +110,62 @@ export default function StagePage() {
               <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">{config.bengali}</h1>
             </div>
 
-            <Link
-              href="/dashboard"
-              className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
-            >
-              Dashboard এ ফিরে যান
-            </Link>
+            <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3">
+              <button
+                type="button"
+                onClick={() => setSelectedMode("typing")}
+                className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                  selectedMode === "typing"
+                    ? "border border-cyan-200/40 bg-cyan-200/25 text-cyan-50"
+                    : "border border-cyan-200/30 bg-cyan-200/10 text-cyan-100 hover:bg-cyan-200/20"
+                }`}
+              >
+                📝 Typing Practice
+              </button>
+              <button
+                type="button"
+                onClick={() => setSelectedMode("speaking")}
+                className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                  selectedMode === "speaking"
+                    ? "border border-violet-300/40 bg-violet-300/25 text-violet-50"
+                    : "border border-violet-300/30 bg-violet-300/10 text-violet-200 hover:bg-violet-300/20"
+                }`}
+              >
+                🎤 Speaking Practice
+              </button>
+              <button
+                type="button"
+                onClick={() => setSelectedMode("flashcard")}
+                className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                  selectedMode === "flashcard"
+                    ? "border border-emerald-300/40 bg-emerald-300/25 text-emerald-50"
+                    : "border border-emerald-300/30 bg-emerald-300/10 text-emerald-100 hover:bg-emerald-300/20"
+                }`}
+              >
+                🎴 Flashcard Practice
+              </button>
+              <Link
+                href="/dashboard"
+                className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+              >
+                Dashboard এ ফিরে যান
+              </Link>
+            </div>
           </div>
 
           <div className="mt-8">
+            <p className="mb-3 text-sm text-slate-300">
+              Selected mode: <span className="font-semibold text-emerald-200">{modeLabel}</span> • এখন unlocked level-এ click করুন।
+            </p>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {Array.from({ length: config.totalLevels }).map((_, index) => {
                 const levelNumber = index + 1;
                 const levelId = `${stageName}-${levelNumber}`;
                 const isUnlocked = unlockedLevelIds.has(levelId);
                 const isCompleted = completedLevelIds.has(levelId);
+                const categoryLabel = stageName === "exam"
+                  ? (examLevelCategories[levelNumber - 1] ?? "General")
+                  : null;
 
                 const cardClassName = isUnlocked
                   ? "group rounded-xl border border-cyan-200/30 bg-cyan-200/10 p-4 transition hover:border-cyan-100 hover:bg-cyan-200/20"
@@ -102,6 +173,9 @@ export default function StagePage() {
 
                 const cardContent = (
                   <>
+                    {categoryLabel ? (
+                      <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-cyan-100/90">{categoryLabel}</p>
+                    ) : null}
                     <div className="flex items-center justify-between">
                       <p className="text-sm font-semibold text-slate-200">Level {levelNumber}</p>
                       {!isUnlocked ? <LockIcon /> : null}
@@ -115,7 +189,10 @@ export default function StagePage() {
 
                 if (isUnlocked) {
                   return (
-                    <div key={levelId} className={cardClassName}>
+                    <Link key={levelId} href={getModeHref(levelId)} className={cardClassName}>
+                      {categoryLabel ? (
+                        <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-cyan-100/90">{categoryLabel}</p>
+                      ) : null}
                       <div className="flex items-center justify-between">
                         <p className="text-sm font-semibold text-slate-200">Level {levelNumber}</p>
                         {isCompleted ? (
@@ -123,21 +200,10 @@ export default function StagePage() {
                         ) : null}
                       </div>
                       <p className="mt-3 text-xs text-slate-300">20 words</p>
-                      <div className="mt-4 flex items-center gap-2">
-                        <Link
-                          href={`/learn/${levelId}`}
-                          className="rounded-lg border border-cyan-200/30 bg-cyan-200/10 px-2 py-1 text-xs font-semibold text-cyan-100 transition hover:bg-cyan-200/20"
-                        >
-                          📝 Typing
-                        </Link>
-                        <Link
-                          href={`/speak/${levelId}`}
-                          className="rounded-lg border border-violet-300/30 bg-violet-300/10 px-2 py-1 text-xs font-semibold text-violet-200 transition hover:bg-violet-300/20"
-                        >
-                          🎤 Speaking
-                        </Link>
-                      </div>
-                    </div>
+                      <p className="mt-4 inline-flex rounded-lg border border-white/20 bg-white/10 px-2 py-1 text-xs font-semibold text-slate-200">
+                        Open with {modeLabel}
+                      </p>
+                    </Link>
                   );
                 }
 

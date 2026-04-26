@@ -1,0 +1,22 @@
+[
+  { "id": 481, "word": "When does the event start", "pos": "phrase", "phonetic": "/wɛn dʌz ði ɪvɛnt stɑrt/", "bangla": "অনুষ্ঠান কখন শুরু হবে", "example": "When does the event start today?", "category": "Festival and Events" },
+  { "id": 482, "word": "What is the venue", "pos": "phrase", "phonetic": "/wʌt ɪz ðə vɛnju/", "bangla": "স্থান কোথায়", "example": "What is the venue for tonight?", "category": "Festival and Events" },
+  { "id": 483, "word": "Do I need an entry pass", "pos": "phrase", "phonetic": "/du aɪ nid ən ɛntri pæs/", "bangla": "আমার কি প্রবেশ পাস লাগবে", "example": "Do I need an entry pass here?", "category": "Festival and Events" },
+  { "id": 484, "word": "Please show me my seat", "pos": "phrase", "phonetic": "/pliz ʃoʊ mi maɪ siːt/", "bangla": "আমার সিটটি দেখান", "example": "Please show me my seat number.", "category": "Festival and Events" },
+  { "id": 485, "word": "Is this seat taken", "pos": "phrase", "phonetic": "/ɪz ðɪs siːt teɪkən/", "bangla": "এই সিট কি দখল করা", "example": "Is this seat taken already?", "category": "Festival and Events" },
+  { "id": 486, "word": "Can I sit here", "pos": "phrase", "phonetic": "/kæn aɪ sɪt hɪr/", "bangla": "আমি কি এখানে বসতে পারি", "example": "Can I sit here beside you?", "category": "Festival and Events" },
+  { "id": 487, "word": "The music is amazing", "pos": "phrase", "phonetic": "/ðə mjuzɪk ɪz əmeɪzɪŋ/", "bangla": "সঙ্গীত দারুণ", "example": "The music is amazing tonight.", "category": "Festival and Events" },
+  { "id": 488, "word": "I love this performance", "pos": "phrase", "phonetic": "/aɪ lʌv ðɪs pərfɔrməns/", "bangla": "এই পারফরম্যান্স আমার খুব ভালো লাগছে", "example": "I love this performance so much.", "category": "Festival and Events" },
+  { "id": 489, "word": "Please take a photo", "pos": "phrase", "phonetic": "/pliz teɪk ə foʊtoʊ/", "bangla": "একটি ছবি তুলুন", "example": "Please take a photo of us.", "category": "Festival and Events" },
+  { "id": 490, "word": "Can you record this moment", "pos": "phrase", "phonetic": "/kæn ju rɪkɔrd ðɪs moʊmənt/", "bangla": "এই মুহূর্তটি রেকর্ড করবেন", "example": "Can you record this moment quickly?", "category": "Festival and Events" },
+  { "id": 491, "word": "Where is the washroom", "pos": "phrase", "phonetic": "/wer ɪz ðə wɑʃrum/", "bangla": "ওয়াশরুম কোথায়", "example": "Where is the washroom in this hall?", "category": "Festival and Events" },
+  { "id": 492, "word": "Where can I get water", "pos": "phrase", "phonetic": "/wer kæn aɪ ɡɛt wɔtər/", "bangla": "আমি কোথায় পানি পাব", "example": "Where can I get water nearby?", "category": "Festival and Events" },
+  { "id": 493, "word": "The crowd is huge", "pos": "phrase", "phonetic": "/ðə kraʊd ɪz hjuːdʒ/", "bangla": "ভিড় অনেক বেশি", "example": "The crowd is huge today.", "category": "Festival and Events" },
+  { "id": 494, "word": "Let us stand over there", "pos": "phrase", "phonetic": "/lɛt ʌs stænd oʊvər ðer/", "bangla": "চলুন ওদিকে দাঁড়াই", "example": "Let us stand over there for better view.", "category": "Festival and Events" },
+  { "id": 495, "word": "Please be careful", "pos": "phrase", "phonetic": "/pliz bi kɛrfəl/", "bangla": "দয়া করে সাবধান থাকুন", "example": "Please be careful in the crowd.", "category": "Festival and Events" },
+  { "id": 496, "word": "The show is about to start", "pos": "phrase", "phonetic": "/ðə ʃoʊ ɪz əbaʊt tə stɑrt/", "bangla": "শো শুরু হতে যাচ্ছে", "example": "The show is about to start now.", "category": "Festival and Events" },
+  { "id": 497, "word": "That was fantastic", "pos": "phrase", "phonetic": "/ðæt wəz fæntæstɪk/", "bangla": "ওটা দুর্দান্ত ছিল", "example": "That was fantastic performance.", "category": "Festival and Events" },
+  { "id": 498, "word": "Let us celebrate together", "pos": "phrase", "phonetic": "/lɛt ʌs sɛləbreɪt təɡɛðər/", "bangla": "চলুন একসাথে উদযাপন করি", "example": "Let us celebrate together tonight.", "category": "Festival and Events" },
+  { "id": 499, "word": "Happy festival to you", "pos": "phrase", "phonetic": "/hæpi fɛstəvəl tə ju/", "bangla": "আপনাকে উৎসবের শুভেচ্ছা", "example": "Happy festival to you and family.", "category": "Festival and Events" },
+  { "id": 500, "word": "See you at the next event", "pos": "phrase", "phonetic": "/si ju æt ðə nɛkst ɪvɛnt/", "bangla": "পরের অনুষ্ঠানে দেখা হবে", "example": "See you at the next event soon.", "category": "Festival and Events" }
+]

@@ -1,0 +1,22 @@
+[
+  { "id": 161, "word": "Can I call you later", "pos": "phrase", "phonetic": "/kæn aɪ kɔːl juː ˈleɪtər/", "bangla": "আমি কি আপনাকে পরে কল করতে পারি", "example": "Can I call you later this evening?", "category": "Phone Calls" },
+  { "id": 162, "word": "I am in a meeting", "pos": "phrase", "phonetic": "/aɪ æm ɪn ə ˈmiːtɪŋ/", "bangla": "আমি মিটিংয়ে আছি", "example": "I am in a meeting right now.", "category": "Phone Calls" },
+  { "id": 163, "word": "Please call me back", "pos": "phrase", "phonetic": "/pliːz kɔːl miː bæk/", "bangla": "আমাকে আবার কল করুন", "example": "Please call me back after 5 PM.", "category": "Phone Calls" },
+  { "id": 164, "word": "Your voice is breaking", "pos": "phrase", "phonetic": "/jʊr vɔɪs ɪz ˈbreɪkɪŋ/", "bangla": "আপনার কথা কেটে কেটে আসছে", "example": "Your voice is breaking badly.", "category": "Phone Calls" },
+  { "id": 165, "word": "I cannot hear you", "pos": "phrase", "phonetic": "/aɪ ˈkænɑːt hɪr juː/", "bangla": "আমি আপনাকে শুনতে পাচ্ছি না", "example": "I cannot hear you clearly.", "category": "Phone Calls" },
+  { "id": 166, "word": "Please speak a bit louder", "pos": "phrase", "phonetic": "/pliːz spiːk ə bɪt ˈlaʊdər/", "bangla": "একটু জোরে বলুন", "example": "Please speak a bit louder please.", "category": "Phone Calls" },
+  { "id": 167, "word": "The network is weak", "pos": "phrase", "phonetic": "/ðə ˈnɛtwɝːk ɪz wiːk/", "bangla": "নেটওয়ার্ক দুর্বল", "example": "The network is weak in this area.", "category": "Phone Calls" },
+  { "id": 168, "word": "Hold on for a second", "pos": "phrase", "phonetic": "/hoʊld ɑːn fɔːr ə ˈsɛkənd/", "bangla": "এক সেকেন্ড অপেক্ষা করুন", "example": "Hold on for a second, please.", "category": "Phone Calls" },
+  { "id": 169, "word": "I will text you", "pos": "phrase", "phonetic": "/aɪ wɪl tɛkst juː/", "bangla": "আমি আপনাকে মেসেজ করব", "example": "I will text you the details.", "category": "Phone Calls" },
+  { "id": 170, "word": "Please send your location", "pos": "phrase", "phonetic": "/pliːz sɛnd jʊr loʊˈkeɪʃən/", "bangla": "আপনার লোকেশন পাঠান", "example": "Please send your location now.", "category": "Phone Calls" },
+  { "id": 171, "word": "Are you free now", "pos": "phrase", "phonetic": "/ɑːr juː friː naʊ/", "bangla": "আপনি কি এখন ফ্রি", "example": "Are you free now for a quick call?", "category": "Phone Calls" },
+  { "id": 172, "word": "Let us talk tonight", "pos": "phrase", "phonetic": "/lɛt ʌs tɔːk təˈnaɪt/", "bangla": "চলুন আজ রাতে কথা বলি", "example": "Let us talk tonight after dinner.", "category": "Phone Calls" },
+  { "id": 173, "word": "I just reached home", "pos": "phrase", "phonetic": "/aɪ dʒʌst riːtʃt hoʊm/", "bangla": "আমি এখনই বাসায় পৌঁছালাম", "example": "I just reached home safely.", "category": "Phone Calls" },
+  { "id": 174, "word": "I am stuck in traffic", "pos": "phrase", "phonetic": "/aɪ æm stʌk ɪn ˈtræfɪk/", "bangla": "আমি ট্রাফিকে আটকে আছি", "example": "I am stuck in traffic right now.", "category": "Phone Calls" },
+  { "id": 175, "word": "Can we reschedule", "pos": "phrase", "phonetic": "/kæn wiː ˌriːˈskɛdʒuːl/", "bangla": "আমরা কি সময় বদলাতে পারি", "example": "Can we reschedule our call?", "category": "Phone Calls" },
+  { "id": 176, "word": "Please check your message", "pos": "phrase", "phonetic": "/pliːz tʃɛk jʊr ˈmɛsɪdʒ/", "bangla": "আপনার মেসেজ চেক করুন", "example": "Please check your message inbox.", "category": "Phone Calls" },
+  { "id": 177, "word": "I sent the document", "pos": "phrase", "phonetic": "/aɪ sɛnt ðə ˈdɑːkjəmənt/", "bangla": "আমি ডকুমেন্ট পাঠিয়েছি", "example": "I sent the document by email.", "category": "Phone Calls" },
+  { "id": 178, "word": "Thank you for calling", "pos": "phrase", "phonetic": "/θæŋk juː fɔːr ˈkɔːlɪŋ/", "bangla": "কল করার জন্য ধন্যবাদ", "example": "Thank you for calling me.", "category": "Phone Calls" },
+  { "id": 179, "word": "Talk to you soon", "pos": "phrase", "phonetic": "/tɔːk tə juː suːn/", "bangla": "শীঘ্রই কথা হবে", "example": "Talk to you soon, bye.", "category": "Phone Calls" },
+  { "id": 180, "word": "Have a safe trip", "pos": "phrase", "phonetic": "/hæv ə seɪf trɪp/", "bangla": "নিরাপদে যাত্রা করুন", "example": "Have a safe trip back home.", "category": "Phone Calls" }
+]

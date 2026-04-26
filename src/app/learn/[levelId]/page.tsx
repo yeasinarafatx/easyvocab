@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
 interface Word {
@@ -15,6 +15,7 @@ interface Word {
 export default function LearnLevelPage() {
   const params = useParams<{ levelId: string }>();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const levelId = params?.levelId ?? "beginner-1";
 
   const parts = levelId.split("-");
@@ -22,7 +23,8 @@ export default function LearnLevelPage() {
   const levelNumber = Number(parts[1] ?? "1");
   const file = `level_${String(Number.isFinite(levelNumber) ? levelNumber : 1).padStart(2, "0")}`;
   const isDemoLevel = stage === "demo";
-  const backHref = stage === "demo" ? "/demo" : "/dashboard";
+  const returnToDashboard = searchParams.get("from") === "dashboard";
+  const backHref = returnToDashboard ? "/dashboard" : stage === "demo" ? "/demo" : `/stage/${stage}`;
 
   const [words, setWords] = useState<Word[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -119,9 +121,9 @@ export default function LearnLevelPage() {
 
   useEffect(() => {
     if (!isDemoLevel || !isCompleted) return;
-    const t = window.setTimeout(() => router.replace("/"), 1200);
+    const t = window.setTimeout(() => router.replace(backHref), 1200);
     return () => window.clearTimeout(t);
-  }, [isDemoLevel, isCompleted, router]);
+  }, [isDemoLevel, isCompleted, router, backHref]);
 
   const handleNext = () => {
     if (isCompleted || !activeWord) return;
@@ -192,7 +194,7 @@ export default function LearnLevelPage() {
               </div>
             </div>
             <Link href={backHref} className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
-              {stage === "demo" ? "Back to Demo" : "Back to Dashboard"}
+              {stage === "demo" ? "Back to Demo" : "Back to Stage"}
             </Link>
           </div>
 
@@ -225,8 +227,8 @@ export default function LearnLevelPage() {
                   </div>
                   <button type="button" onClick={speakWord} className="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-lg transition hover:bg-white/20" aria-label="Play pronunciation">🔊</button>
                 </div>
-                <p className="mt-4 text-lg font-medium text-slate-200">{activeWord.bangla}</p>
-                <p className="mt-2 text-sm italic text-slate-300">
+                <p className="mt-4 text-3xl font-extrabold text-emerald-300">{activeWord.bangla}</p>
+                <p className="mt-2 text-sm font-bold italic text-white sm:text-base">
                   {examMode ? activeWord.example.replace(new RegExp(`\\b${activeWord.word}\\b`, "gi"), "_".repeat(activeWord.word.length)) : activeWord.example}
                 </p>
               </div>
@@ -271,7 +273,7 @@ export default function LearnLevelPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Completed</p>
               <h2 className="mt-2 text-3xl font-extrabold text-emerald-100">দারুণ! ২০টি শব্দ শেষ।</h2>
               <p className="mt-3 text-slate-200">
-                {isDemoLevel ? "Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে..." : "সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।"}
+                {isDemoLevel ? `Demo সম্পন্ন হয়েছে, ${returnToDashboard ? "dashboard" : "landing page"} এ নেওয়া হচ্ছে...` : "সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।"}
               </p>
             </div>
           )}

@@ -1,0 +1,22 @@
+[
+  { "id": 1, "word": "Hello", "pos": "phrase", "phonetic": "/həˈloʊ/", "bangla": "হ্যালো", "example": "Hello, how are you today?", "category": "Greetings" },
+  { "id": 2, "word": "Hi there", "pos": "phrase", "phonetic": "/haɪ ðer/", "bangla": "হাই", "example": "Hi there, nice to see you.", "category": "Greetings" },
+  { "id": 3, "word": "Good morning", "pos": "phrase", "phonetic": "/ɡʊd ˈmɔːrnɪŋ/", "bangla": "শুভ সকাল", "example": "Good morning, everyone.", "category": "Greetings" },
+  { "id": 4, "word": "Good afternoon", "pos": "phrase", "phonetic": "/ɡʊd ˌæftərˈnuːn/", "bangla": "শুভ অপরাহ্ন", "example": "Good afternoon, sir.", "category": "Greetings" },
+  { "id": 5, "word": "Good evening", "pos": "phrase", "phonetic": "/ɡʊd ˈiːvnɪŋ/", "bangla": "শুভ সন্ধ্যা", "example": "Good evening, madam.", "category": "Greetings" },
+  { "id": 6, "word": "How are you", "pos": "phrase", "phonetic": "/haʊ ɑːr juː/", "bangla": "আপনি কেমন আছেন", "example": "How are you today?", "category": "Greetings" },
+  { "id": 7, "word": "I am fine", "pos": "phrase", "phonetic": "/aɪ æm faɪn/", "bangla": "আমি ভালো আছি", "example": "I am fine, thank you.", "category": "Greetings" },
+  { "id": 8, "word": "Nice to meet you", "pos": "phrase", "phonetic": "/naɪs tə miːt juː/", "bangla": "আপনার সাথে পরিচিত হয়ে ভালো লাগল", "example": "Nice to meet you, I am Rafi.", "category": "Greetings" },
+  { "id": 9, "word": "What is your name", "pos": "phrase", "phonetic": "/wʌt ɪz jʊr neɪm/", "bangla": "আপনার নাম কী", "example": "What is your name, please?", "category": "Greetings" },
+  { "id": 10, "word": "My name is", "pos": "phrase", "phonetic": "/maɪ neɪm ɪz/", "bangla": "আমার নাম", "example": "My name is Amina.", "category": "Greetings" },
+  { "id": 11, "word": "Where are you from", "pos": "phrase", "phonetic": "/wer ɑːr juː frʌm/", "bangla": "আপনি কোথা থেকে এসেছেন", "example": "Where are you from originally?", "category": "Greetings" },
+  { "id": 12, "word": "I am from Bangladesh", "pos": "phrase", "phonetic": "/aɪ æm frʌm ˌbæŋɡləˈdɛʃ/", "bangla": "আমি বাংলাদেশ থেকে", "example": "I am from Bangladesh.", "category": "Greetings" },
+  { "id": 13, "word": "Please sit down", "pos": "phrase", "phonetic": "/pliːz sɪt daʊn/", "bangla": "অনুগ্রহ করে বসুন", "example": "Please sit down here.", "category": "Greetings" },
+  { "id": 14, "word": "Thank you", "pos": "phrase", "phonetic": "/θæŋk juː/", "bangla": "ধন্যবাদ", "example": "Thank you for your help.", "category": "Greetings" },
+  { "id": 15, "word": "You are welcome", "pos": "phrase", "phonetic": "/juː ɑːr ˈwɛlkəm/", "bangla": "স্বাগতম", "example": "You are welcome, no problem.", "category": "Greetings" },
+  { "id": 16, "word": "Excuse me", "pos": "phrase", "phonetic": "/ɪkˈskjuːz miː/", "bangla": "মাফ করবেন", "example": "Excuse me, can I ask something?", "category": "Greetings" },
+  { "id": 17, "word": "Sorry", "pos": "phrase", "phonetic": "/ˈsɑːri/", "bangla": "দুঃখিত", "example": "Sorry, I am late.", "category": "Greetings" },
+  { "id": 18, "word": "See you later", "pos": "phrase", "phonetic": "/siː juː ˈleɪtər/", "bangla": "পরে দেখা হবে", "example": "See you later at the office.", "category": "Greetings" },
+  { "id": 19, "word": "Take care", "pos": "phrase", "phonetic": "/teɪk ker/", "bangla": "ভালো থাকবেন", "example": "Take care on your way home.", "category": "Greetings" },
+  { "id": 20, "word": "Have a nice day", "pos": "phrase", "phonetic": "/hæv ə naɪs deɪ/", "bangla": "দিনটি ভালো কাটুক", "example": "Have a nice day at work.", "category": "Greetings" }
+]

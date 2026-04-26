@@ -1,0 +1,22 @@
+[
+  { "id": 241, "word": "How do I get to the station", "pos": "phrase", "phonetic": "/haʊ du aɪ get tu ðə steɪʃən/", "bangla": "আমি কীভাবে স্টেশনে যাব", "example": "How do I get to the station from here?", "category": "Directions" },
+  { "id": 242, "word": "Is it far from here", "pos": "phrase", "phonetic": "/iz it far frʌm hɪr/", "bangla": "এটা কি এখান থেকে দূর", "example": "Is it far from here on foot?", "category": "Directions" },
+  { "id": 243, "word": "Go straight ahead", "pos": "phrase", "phonetic": "/goʊ streɪt əhɛd/", "bangla": "সোজা সামনে যান", "example": "Go straight ahead for two blocks.", "category": "Directions" },
+  { "id": 244, "word": "Turn left at the signal", "pos": "phrase", "phonetic": "/tɜrn lɛft æt ðə sɪgnəl/", "bangla": "সিগন্যালে বামদিকে ঘুরুন", "example": "Turn left at the signal and continue.", "category": "Directions" },
+  { "id": 245, "word": "Turn right after the bridge", "pos": "phrase", "phonetic": "/tɜrn raɪt æftər ðə brɪdʒ/", "bangla": "ব্রিজের পরে ডানদিকে ঘুরুন", "example": "Turn right after the bridge please.", "category": "Directions" },
+  { "id": 246, "word": "It is next to the bank", "pos": "phrase", "phonetic": "/it iz nɛkst tu ðə bæŋk/", "bangla": "এটা ব্যাংকের পাশে", "example": "It is next to the bank building.", "category": "Directions" },
+  { "id": 247, "word": "It is opposite the park", "pos": "phrase", "phonetic": "/it iz ɑpəzɪt ðə pɑrk/", "bangla": "এটা পার্কের বিপরীতে", "example": "It is opposite the park gate.", "category": "Directions" },
+  { "id": 248, "word": "Can you show me on map", "pos": "phrase", "phonetic": "/kæn ju ʃoʊ mi ɑn mæp/", "bangla": "আপনি কি মানচিত্রে দেখাতে পারেন", "example": "Can you show me on map quickly?", "category": "Directions" },
+  { "id": 249, "word": "I think I am lost", "pos": "phrase", "phonetic": "/aɪ θɪŋk aɪ æm lɔst/", "bangla": "মনে হচ্ছে আমি পথ হারিয়েছি", "example": "I think I am lost in this area.", "category": "Directions" },
+  { "id": 250, "word": "Can I walk there", "pos": "phrase", "phonetic": "/kæn aɪ wɔk ðer/", "bangla": "আমি কি হেঁটে যেতে পারি", "example": "Can I walk there from here?", "category": "Directions" },
+  { "id": 251, "word": "Take the second left", "pos": "phrase", "phonetic": "/teɪk ðə sɛkənd lɛft/", "bangla": "দ্বিতীয় বাম পথে যান", "example": "Take the second left after the shop.", "category": "Directions" },
+  { "id": 252, "word": "Take the first right", "pos": "phrase", "phonetic": "/teɪk ðə fɜrst raɪt/", "bangla": "প্রথম ডান পথে যান", "example": "Take the first right near the school.", "category": "Directions" },
+  { "id": 253, "word": "Cross the road carefully", "pos": "phrase", "phonetic": "/krɔs ðə roʊd kɛrfəli/", "bangla": "সাবধানে রাস্তা পার হন", "example": "Cross the road carefully at the crossing.", "category": "Directions" },
+  { "id": 254, "word": "Which bus should I take", "pos": "phrase", "phonetic": "/wɪtʃ bʌs ʃʊd aɪ teɪk/", "bangla": "আমার কোন বাসে উঠা উচিত", "example": "Which bus should I take to university?", "category": "Directions" },
+  { "id": 255, "word": "Where should I get down", "pos": "phrase", "phonetic": "/wer ʃʊd aɪ get daʊn/", "bangla": "আমার কোথায় নামা উচিত", "example": "Where should I get down for the mall?", "category": "Directions" },
+  { "id": 256, "word": "Please guide me once", "pos": "phrase", "phonetic": "/pliz gaɪd mi wʌns/", "bangla": "একবার আমাকে পথ দেখান", "example": "Please guide me once, I am new.", "category": "Directions" },
+  { "id": 257, "word": "Is there a shortcut", "pos": "phrase", "phonetic": "/iz ðer ə ʃɔrtkʌt/", "bangla": "কোনো শর্টকাট আছে কি", "example": "Is there a shortcut to the market?", "category": "Directions" },
+  { "id": 258, "word": "This road is closed", "pos": "phrase", "phonetic": "/ðɪs roʊd iz kloʊzd/", "bangla": "এই রাস্তা বন্ধ", "example": "This road is closed for construction.", "category": "Directions" },
+  { "id": 259, "word": "Use the main road", "pos": "phrase", "phonetic": "/juz ðə meɪn roʊd/", "bangla": "মূল রাস্তা ব্যবহার করুন", "example": "Use the main road for faster route.", "category": "Directions" },
+  { "id": 260, "word": "Thanks for the directions", "pos": "phrase", "phonetic": "/θæŋks fɔr ðə dɪrɛkʃənz/", "bangla": "দিকনির্দেশনার জন্য ধন্যবাদ", "example": "Thanks for the directions, very helpful.", "category": "Directions" }
+]

@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 
-type StageName = "Beginner" | "Intermediate" | "Advanced" | "Exam";
+type StageName = "Beginner" | "Intermediate" | "Advanced" | "Exam" | "Spoken";
 
 type StageConfig = {
   name: StageName;
@@ -20,6 +20,7 @@ const stages: StageConfig[] = [
   { name: "Intermediate", totalWords: 300, totalLevels: 15, unlockThreshold: 5, dependsOn: "Beginner" },
   { name: "Advanced", totalWords: 300, totalLevels: 15, unlockThreshold: 0, dependsOn: "Intermediate" },
   { name: "Exam", totalWords: 600, totalLevels: 30, unlockThreshold: 0, dependsOn: null },
+  { name: "Spoken", totalWords: 600, totalLevels: 30, unlockThreshold: 0, dependsOn: null },
 ];
 
 function LockIcon() {
@@ -35,6 +36,71 @@ function LockIcon() {
       <rect x="5" y="10" width="14" height="10" rx="2" />
       <path d="M8 10V7a4 4 0 0 1 8 0v3" />
     </svg>
+  );
+}
+
+function SparkIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 text-cyan-200" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+      <path d="M12 2l1.9 5.6L20 9.5l-4.7 3.1L16.9 18 12 14.9 7.1 18l1.6-5.4L4 9.5l6.1-1.9L12 2z" />
+    </svg>
+  );
+}
+
+function FlameIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-5 w-5 text-emerald-200" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true">
+      <path d="M13.5 2.5s1.5 3.5.5 5.5c2.5-1 4.5-3 4.5-3s2 4 2 7a8.5 8.5 0 1 1-17 0c0-3.2 2.4-5.7 4.7-8.2C9 5.7 10 9 10 9s2-1 3.5-6.5z" />
+    </svg>
+  );
+}
+
+function DashboardIllustration() {
+  return (
+    <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-br from-cyan-300/10 via-white/5 to-emerald-300/10 p-3 shadow-lg shadow-black/20">
+      <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-cyan-300/20 blur-2xl" />
+      <div className="absolute -bottom-8 -left-8 h-20 w-20 rounded-full bg-emerald-300/20 blur-2xl" />
+
+      <div className="relative grid grid-cols-3 gap-2">
+        <Link
+          href="/learn/demo-1?from=dashboard"
+          className="rounded-xl border border-white/15 bg-white/10 p-3 transition hover:border-cyan-200/40 hover:bg-cyan-200/10"
+        >
+          <div className="flex items-center justify-between">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-cyan-100">Typing</span>
+            <SparkIcon />
+          </div>
+          <div className="mt-2 space-y-1.5">
+            <div className="h-1.5 w-5/6 rounded-full bg-cyan-200/70" />
+            <div className="h-1.5 w-4/6 rounded-full bg-cyan-200/35" />
+          </div>
+        </Link>
+
+        <Link
+          href="/speak/demo-1?from=dashboard"
+          className="rounded-xl border border-white/15 bg-white/10 p-3 transition hover:border-emerald-200/40 hover:bg-emerald-200/10"
+        >
+          <div className="flex items-center justify-between">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100">Voice</span>
+            <FlameIcon />
+          </div>
+          <div className="mt-2 rounded-xl border border-emerald-300/20 bg-emerald-300/10 py-2 text-center text-lg">🔊</div>
+        </Link>
+
+        <Link
+          href="/flashcard/demo-1?from=dashboard"
+          className="rounded-xl border border-white/15 bg-white/10 p-3 transition hover:border-emerald-200/40 hover:bg-emerald-200/10"
+        >
+          <div className="flex items-center justify-between">
+            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-200">Flash</span>
+            <span className="rounded-full border border-white/20 bg-white/10 px-1.5 py-0.5 text-[9px] font-semibold text-slate-200">Flip</span>
+          </div>
+          <div className="mt-2 rounded-xl border border-emerald-300/20 bg-gradient-to-r from-emerald-300/15 to-cyan-300/15 py-2 text-center text-xs font-bold text-emerald-100">
+            Word → Bangla
+          </div>
+        </Link>
+      </div>
+    </div>
   );
 }
 
@@ -93,10 +159,10 @@ export default function DashboardPage() {
 
   const [completedCount] = useState<Record<StageName, number>>(() => {
     if (typeof window === "undefined") {
-      return { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0 };
+      return { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0, Spoken: 0 };
     }
 
-    const counts: Record<StageName, number> = { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0 };
+    const counts: Record<StageName, number> = { Beginner: 0, Intermediate: 0, Advanced: 0, Exam: 0, Spoken: 0 };
     stages.forEach((stage) => {
       for (let i = 1; i <= stage.totalLevels; i++) {
         const levelId = `${stage.name.toLowerCase()}-${i}`;
@@ -113,7 +179,7 @@ export default function DashboardPage() {
       let isLocked = false;
 
       if (stage.name === "Advanced") {
-        isLocked = window.localStorage.getItem("completed_intermediate-8") !== "true";
+        isLocked = typeof window !== "undefined" && window.localStorage.getItem("completed_intermediate-8") !== "true";
       } else if (stage.dependsOn) {
         const dependency = stages.find((s) => s.name === stage.dependsOn);
         if (dependency) {
@@ -132,9 +198,23 @@ export default function DashboardPage() {
       completedCount.Beginner * 20 +
       completedCount.Intermediate * 20 +
       completedCount.Advanced * 20 +
-      completedCount.Exam * 20
+      completedCount.Exam * 20 +
+      completedCount.Spoken * 20
     );
   }, [completedCount]);
+
+  const stageLookup = useMemo(() => {
+    const lookup = {} as Record<StageName, (typeof stageStatus)[number]>;
+    stageStatus.forEach((stage) => {
+      lookup[stage.name] = stage;
+    });
+    return lookup;
+  }, [stageStatus]);
+
+  const coreCompletedLevels =
+    completedCount.Beginner + completedCount.Intermediate + completedCount.Advanced;
+  const coreTotalLevels = 10 + 15 + 15;
+  const coreProgressPercent = (coreCompletedLevels / coreTotalLevels) * 100;
 
   if (!authChecked) {
     return (
@@ -151,8 +231,8 @@ export default function DashboardPage() {
 
       <main className="relative z-10 mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-10">
         <section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10">
-          <header className="border-b border-white/10 pb-8">
-            <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+          <header className="border-b border-white/10 pb-6">
+            <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
                   Easy Vocab
@@ -178,93 +258,109 @@ export default function DashboardPage() {
                 </button>
               </div>
 
-              <div className="flex gap-3 text-center text-xs sm:text-sm">
-                <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3">
-                  <p className="text-slate-300">Words Learned</p>
-                  <p className="mt-1 text-lg font-bold text-emerald-300">{totalWordsLearned}</p>
-                </div>
-                <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3">
-                  <p className="text-slate-300">Current Streak</p>
-                  <p className="mt-1 text-lg font-bold text-cyan-200">7 দিন</p>
+              <div className="space-y-3">
+                <DashboardIllustration />
+                <div className="flex gap-3 text-center text-xs sm:text-sm">
+                  <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3">
+                    <div className="mx-auto flex items-center justify-center">
+                      <SparkIcon />
+                    </div>
+                    <p className="mt-1 text-slate-300">Words Learned</p>
+                    <p className="mt-1 text-lg font-bold text-emerald-300">{totalWordsLearned}</p>
+                  </div>
+                  <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3">
+                    <div className="mx-auto flex items-center justify-center">
+                      <FlameIcon />
+                    </div>
+                    <p className="mt-1 text-slate-300">Current Streak</p>
+                    <p className="mt-1 text-lg font-bold text-cyan-200">7 দিন</p>
+                  </div>
                 </div>
               </div>
             </div>
           </header>
 
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {stageStatus.map((stage) => {
-              const isExamStage = stage.name === "Exam";
+          <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
+            <Link
+              href="/stage/spoken"
+              className="rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-5 transition hover:border-emerald-200 hover:bg-emerald-300/20 sm:p-6"
+            >
+              <h2 className="text-2xl font-extrabold text-emerald-100">Spoken English</h2>
+              <p className="mt-1 text-sm text-slate-300">Daily conversation practice track • 600 words</p>
 
-              const buttonColor = stage.isLocked
-                ? "border border-slate-500/30 bg-slate-500/20 text-slate-400 cursor-not-allowed"
-                : isExamStage
-                  ? "border border-amber-300/30 bg-amber-300/10 text-amber-200 hover:bg-amber-300/20 transition"
-                  : "border border-cyan-200/30 bg-cyan-200/10 text-cyan-100 hover:bg-cyan-200/20 transition";
-
-              const cardOpacity = stage.isLocked ? "opacity-60" : "opacity-100";
-
-              const cardClassName = isExamStage
-                ? `rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 transition hover:border-amber-200 hover:bg-amber-300/20 sm:p-6`
-                : `rounded-2xl border border-cyan-200/30 bg-cyan-200/10 p-5 transition hover:border-cyan-100 hover:bg-cyan-200/20 sm:p-6`;
-
-              const cardContent = (
-                <>
-                  <div className="flex items-start justify-between">
-                    <div>
-                      <h2 className={`text-2xl font-extrabold ${isExamStage ? "text-amber-200" : ""}`}>
-                        {isExamStage ? "GRE • BCS • Bank" : stage.name}
-                      </h2>
-                      <p className="mt-1 text-sm text-slate-300">
-                        {isExamStage ? "পরীক্ষার প্রস্তুতি" : `${stage.totalWords} words`} • {stage.completedCount}/{stage.totalLevels} levels
-                      </p>
-                    </div>
-                    {stage.isLocked ? <LockIcon /> : null}
-                  </div>
-
-                  <div className="mt-4">
-                    <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
-                      <p>Progress</p>
-                      <p>{Math.round(stage.progressPercent)}%</p>
-                    </div>
-                    <div className="h-3 overflow-hidden rounded-full bg-white/10">
-                      <div
-                        className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all"
-                        style={{ width: `${stage.progressPercent}%` }}
-                      />
-                    </div>
-                  </div>
-
-                  <button
-                    type="button"
-                    disabled={stage.isLocked}
-                    className={`mt-5 w-full rounded-xl px-4 py-2.5 text-sm font-semibold ${buttonColor}`}
-                  >
-                    {stage.isLocked ? "🔒 Locked" : "শুরু করুন"}
-                  </button>
-                </>
-              );
-
-              if (stage.isLocked) {
-                return (
+              <div className="mt-4">
+                <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
+                  <p>Progress</p>
+                  <p>{Math.round(stageLookup.Spoken?.progressPercent ?? 0)}%</p>
+                </div>
+                <div className="h-3 overflow-hidden rounded-full bg-white/10">
                   <div
-                    key={stage.name}
-                    className={`rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-6 ${cardOpacity}`}
-                  >
-                    {cardContent}
-                  </div>
-                );
-              }
+                    className="h-full rounded-full bg-gradient-to-r from-emerald-300 to-cyan-300 transition-all"
+                    style={{ width: `${stageLookup.Spoken?.progressPercent ?? 0}%` }}
+                  />
+                </div>
+              </div>
 
-              return (
-                <Link
-                  key={stage.name}
-                  href={`/stage/${stage.name.toLowerCase()}`}
-                  className={cardClassName}
-                >
-                  {cardContent}
-                </Link>
-              );
-            })}
+              <div className="mt-5 rounded-xl border border-emerald-300/30 bg-emerald-300/10 px-4 py-2.5 text-center text-sm font-semibold text-emerald-100">
+                শুরু করুন
+              </div>
+            </Link>
+
+            <Link
+              href="/core"
+              className="rounded-2xl border border-cyan-200/30 bg-cyan-200/10 p-5 transition hover:border-cyan-100 hover:bg-cyan-200/20 sm:p-6"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h2 className="text-2xl font-extrabold">IELTS, SAT, Admission</h2>
+                  <p className="mt-1 text-sm text-slate-300">Beginner, Intermediate, Advanced • 800 words</p>
+                </div>
+                <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold text-slate-200">
+                  Open
+                </span>
+              </div>
+
+              <div className="mt-4">
+                <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
+                  <p>Progress</p>
+                  <p>{Math.round(coreProgressPercent)}%</p>
+                </div>
+                <div className="h-3 overflow-hidden rounded-full bg-white/10">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all"
+                    style={{ width: `${coreProgressPercent}%` }}
+                  />
+                </div>
+              </div>
+              <div className="mt-5 rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 text-center text-sm font-semibold text-cyan-100">
+                Open IELTS/SAT/Admission
+              </div>
+            </Link>
+
+            <Link
+              href="/stage/exam"
+              className="rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 transition hover:border-amber-200 hover:bg-amber-300/20 sm:p-6"
+            >
+              <h2 className="text-2xl font-extrabold text-amber-200">GRE • BCS • IBA</h2>
+              <p className="mt-1 text-sm text-slate-300">Competitive exam vocabulary track • 600 words</p>
+
+              <div className="mt-4">
+                <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
+                  <p>Progress</p>
+                  <p>{Math.round(stageLookup.Exam?.progressPercent ?? 0)}%</p>
+                </div>
+                <div className="h-3 overflow-hidden rounded-full bg-white/10">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-amber-300 to-emerald-300 transition-all"
+                    style={{ width: `${stageLookup.Exam?.progressPercent ?? 0}%` }}
+                  />
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-xl border border-amber-300/30 bg-amber-300/10 px-4 py-2.5 text-center text-sm font-semibold text-amber-100">
+                শুরু করুন
+              </div>
+            </Link>
           </div>
         </section>
       </main>
