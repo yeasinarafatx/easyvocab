@@ -121,9 +121,18 @@ export default function Home() {
         <section className="w-full rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-[#1a2030]/78 to-[#10262c]/74 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-12">
           <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
             <div className="space-y-6">
-              <p className="inline-flex rounded-full border border-cyan-200/35 bg-gradient-to-r from-cyan-300/16 to-emerald-300/12 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-100">
-                Easy Vocab
-              </p>
+              <div className="inline-flex">
+                <picture>
+                  <source media="(min-width: 1024px)" srcSet="/logos/easy-vocab-hero-desktop.png 1x, /logos/easy-vocab-hero-desktop@2x.png 2x" />
+                  <source media="(min-width: 640px)" srcSet="/logos/easy-vocab-hero-tablet.png 1x, /logos/easy-vocab-hero-tablet@2x.png 2x" />
+                  <img
+                    src="/logos/easy-vocab-hero-mobile.png"
+                    srcSet="/logos/easy-vocab-hero-mobile@2x.png 2x"
+                    alt="Easy Vocab Logo"
+                    className="h-auto w-32 sm:w-40 lg:w-48"
+                  />
+                </picture>
+              </div>
 
               <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
                 দ্রুত ইংরেজি শব্দ শিখুন, কার্যকরী উপায়ে

@@ -27,11 +27,17 @@ export default function AuthShell({
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
         <section className="w-full max-w-md rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
-          <Link
-            href="/"
-            className="inline-flex rounded-full border border-cyan-200/30 bg-cyan-200/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-100"
-          >
-            Easy Vocab
+          <Link href="/" className="inline-flex">
+            <picture>
+              <source media="(min-width: 1024px)" srcSet="/logos/easy-vocab-auth-desktop.png 1x, /logos/easy-vocab-auth-desktop@2x.png 2x" />
+              <source media="(min-width: 640px)" srcSet="/logos/easy-vocab-auth-tablet.png 1x, /logos/easy-vocab-auth-tablet@2x.png 2x" />
+              <img
+                src="/logos/easy-vocab-auth-mobile.png"
+                srcSet="/logos/easy-vocab-auth-mobile@2x.png 2x"
+                alt="Easy Vocab"
+                className="h-auto w-28 sm:w-36 lg:w-40"
+              />
+            </picture>
           </Link>
 
           <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-100/80">{eyebrow}</p>
