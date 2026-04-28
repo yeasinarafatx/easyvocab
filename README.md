@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Supabase Manual Payment Foundation
+
+This repository now includes a starter SQL setup for manual premium approvals (bKash/Nagad):
+
+- SQL file: `supabase/sql/001_manual_payment_foundation.sql`
+- Ops guide: `docs/manual-payment-ops.md`
+
+Run the SQL file once in Supabase SQL Editor. It creates:
+
+- `profiles`
+- `payment_requests`
+- `admin_users`
+- `admin_actions`
+- secure RLS policies
+- admin review RPC: `review_payment_request(...)`

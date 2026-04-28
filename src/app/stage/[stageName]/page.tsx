@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 
 type StageName = "beginner" | "intermediate" | "advanced" | "exam" | "spoken";
 type PracticeMode = "typing" | "speaking" | "flashcard";
@@ -41,8 +42,26 @@ export default function StagePage() {
   const params = useParams<{ stageName: string }>();
   const stageName = (params?.stageName?.toLowerCase() ?? "beginner") as StageName;
   const [selectedMode, setSelectedMode] = useState<PracticeMode>("typing");
+  const [premiumReady, setPremiumReady] = useState(false);
+  const [isPremium, setIsPremium] = useState(false);
 
   const config = stageConfig[stageName] || stageConfig.beginner;
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadPremiumState = async () => {
+      const snapshot = await fetchPremiumSnapshot();
+      if (!mounted) return;
+      setIsPremium(snapshot.isPremium);
+      setPremiumReady(true);
+    };
+
+    loadPremiumState();
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   const completedLevelIds = useMemo(() => {
     if (typeof window === "undefined") {
@@ -101,7 +120,7 @@ export default function StagePage() {
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-10">
-        <section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10">
+        <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/70 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-10">
           <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
@@ -116,8 +135,8 @@ export default function StagePage() {
                 onClick={() => setSelectedMode("typing")}
                 className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
                   selectedMode === "typing"
-                    ? "border border-cyan-200/40 bg-cyan-200/25 text-cyan-50"
-                    : "border border-cyan-200/30 bg-cyan-200/10 text-cyan-100 hover:bg-cyan-200/20"
+                    ? "border border-cyan-200/50 bg-cyan-200/30 text-cyan-50"
+                    : "border border-cyan-200/30 bg-cyan-200/12 text-cyan-100 hover:bg-cyan-200/22"
                 }`}
               >
                 📝 Typing Practice
@@ -127,8 +146,8 @@ export default function StagePage() {
                 onClick={() => setSelectedMode("speaking")}
                 className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
                   selectedMode === "speaking"
-                    ? "border border-violet-300/40 bg-violet-300/25 text-violet-50"
-                    : "border border-violet-300/30 bg-violet-300/10 text-violet-200 hover:bg-violet-300/20"
+                    ? "border border-violet-300/50 bg-violet-300/30 text-violet-50"
+                    : "border border-violet-300/30 bg-violet-300/12 text-violet-200 hover:bg-violet-300/22"
                 }`}
               >
                 🎤 Speaking Practice
@@ -138,15 +157,15 @@ export default function StagePage() {
                 onClick={() => setSelectedMode("flashcard")}
                 className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
                   selectedMode === "flashcard"
-                    ? "border border-emerald-300/40 bg-emerald-300/25 text-emerald-50"
-                    : "border border-emerald-300/30 bg-emerald-300/10 text-emerald-100 hover:bg-emerald-300/20"
+                    ? "border border-emerald-300/50 bg-emerald-300/30 text-emerald-50"
+                    : "border border-emerald-300/30 bg-emerald-300/12 text-emerald-100 hover:bg-emerald-300/22"
                 }`}
               >
                 🎴 Flashcard Practice
               </button>
               <Link
                 href="/dashboard"
-                className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+                className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
               >
                 Dashboard এ ফিরে যান
               </Link>
@@ -154,22 +173,30 @@ export default function StagePage() {
           </div>
 
           <div className="mt-8">
-            <p className="mb-3 text-sm text-slate-300">
+            <p className="mb-3 text-sm text-slate-200">
               Selected mode: <span className="font-semibold text-emerald-200">{modeLabel}</span> • এখন unlocked level-এ click করুন।
+            </p>
+            <p className="mb-4 text-xs text-cyan-100/90">
+              Level 1 সবার জন্য free। Level 2+ unlock করতে Premium payment লাগবে।
             </p>
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
               {Array.from({ length: config.totalLevels }).map((_, index) => {
                 const levelNumber = index + 1;
                 const levelId = `${stageName}-${levelNumber}`;
-                const isUnlocked = unlockedLevelIds.has(levelId);
+                const isPremiumLocked = !premiumReady
+                  ? requiresPremium(levelNumber, false)
+                  : !isPremium && requiresPremium(levelNumber, false);
+                const isUnlocked = !isPremiumLocked && unlockedLevelIds.has(levelId);
                 const isCompleted = completedLevelIds.has(levelId);
                 const categoryLabel = stageName === "exam"
                   ? (examLevelCategories[levelNumber - 1] ?? "General")
                   : null;
 
                 const cardClassName = isUnlocked
-                  ? "group rounded-xl border border-cyan-200/30 bg-cyan-200/10 p-4 transition hover:border-cyan-100 hover:bg-cyan-200/20"
-                  : "rounded-xl border border-white/10 bg-white/5 p-4 opacity-60";
+                  ? "group rounded-xl border border-cyan-200/35 bg-gradient-to-br from-cyan-300/16 to-[#2b3442]/95 p-4 shadow-lg shadow-black/20 transition hover:border-cyan-100 hover:from-cyan-300/22 hover:to-[#24384a]"
+                  : isPremiumLocked
+                    ? "rounded-xl border border-amber-200/35 bg-gradient-to-br from-amber-300/16 to-[#3c3026]/95 p-4 shadow-lg shadow-black/20 transition hover:border-amber-100 hover:from-amber-300/22 hover:to-[#4a2f20]"
+                  : "rounded-xl border border-white/15 bg-gradient-to-br from-slate-500/10 to-slate-900/75 p-4 opacity-75";
 
                 const cardContent = (
                   <>
@@ -180,7 +207,10 @@ export default function StagePage() {
                       <p className="text-sm font-semibold text-slate-200">Level {levelNumber}</p>
                       {!isUnlocked ? <LockIcon /> : null}
                     </div>
-                    <p className="mt-3 text-xs text-slate-300">20 words</p>
+                    <p className="mt-3 text-xs text-slate-200">20 words</p>
+                    {isPremiumLocked ? (
+                      <p className="mt-1 text-[11px] font-semibold text-amber-200">Premium required</p>
+                    ) : null}
                     {isCompleted ? (
                       <p className="mt-1 text-[11px] font-semibold text-emerald-300">✓ Completed</p>
                     ) : null}
@@ -199,10 +229,18 @@ export default function StagePage() {
                           <p className="text-[11px] font-semibold text-emerald-300">✓ Completed</p>
                         ) : null}
                       </div>
-                      <p className="mt-3 text-xs text-slate-300">20 words</p>
-                      <p className="mt-4 inline-flex rounded-lg border border-white/20 bg-white/10 px-2 py-1 text-xs font-semibold text-slate-200">
+                      <p className="mt-3 text-xs text-slate-200">20 words</p>
+                      <p className="mt-4 inline-flex rounded-lg border border-white/25 bg-white/15 px-2 py-1 text-xs font-semibold text-slate-100">
                         Open with {modeLabel}
                       </p>
+                    </Link>
+                  );
+                }
+
+                if (isPremiumLocked) {
+                  return (
+                    <Link key={levelId} href="/payment" className={cardClassName}>
+                      {cardContent}
                     </Link>
                   );
                 }

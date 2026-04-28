@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
+import PremiumLockedNotice from "@/components/PremiumLockedNotice";
+import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 
 interface Word {
 	word: string;
@@ -62,6 +64,9 @@ export default function SpeakLevelPage() {
 	const [attempts, setAttempts] = useState(0);
 	const [examCorrectCount, setExamCorrectCount] = useState(0);
 	const [selectedVoiceURI, setSelectedVoiceURI] = useState<string | null>(null);
+	const [accessReady, setAccessReady] = useState(false);
+	const [hasSession, setHasSession] = useState(false);
+	const [isPremium, setIsPremium] = useState(false);
 	const recognitionRef = useRef<SpeechRecognition | null>(null);
 
 	const parts = levelId.split("-");
@@ -71,6 +76,29 @@ export default function SpeakLevelPage() {
 	const isDemoLevel = stage === "demo";
 	const returnToDashboard = searchParams.get("from") === "dashboard";
 	const backHref = returnToDashboard ? "/dashboard" : stage === "demo" ? "/demo" : `/stage/${stage}`;
+	const needsPremium = requiresPremium(levelNumber, isDemoLevel);
+
+	useEffect(() => {
+		let mounted = true;
+
+		const loadPremiumState = async () => {
+			if (!needsPremium) {
+				setAccessReady(true);
+				return;
+			}
+
+			const snapshot = await fetchPremiumSnapshot();
+			if (!mounted) return;
+			setHasSession(snapshot.hasSession);
+			setIsPremium(snapshot.isPremium);
+			setAccessReady(true);
+		};
+
+		loadPremiumState();
+		return () => {
+			mounted = false;
+		};
+	}, [needsPremium]);
 
 	useEffect(() => {
 		let cancelled = false;
@@ -414,13 +442,50 @@ export default function SpeakLevelPage() {
 		);
 	}
 
+	if (needsPremium && !accessReady) {
+		return (
+			<div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+				<p className="text-sm">Checking access...</p>
+			</div>
+		);
+	}
+
+	if (needsPremium && !hasSession) {
+		return (
+			<div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
+				<main className="mx-auto flex min-h-screen w-full max-w-2xl items-center px-4 sm:px-6">
+					<section className="w-full rounded-3xl border border-cyan-200/25 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 text-center shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
+						<h1 className="text-2xl font-extrabold">Level 2+ এর জন্য Login করুন</h1>
+						<p className="mt-3 text-sm text-slate-300">এই level unlock করতে আগে account এ login করতে হবে।</p>
+						<div className="mt-6 flex justify-center gap-3">
+							<Link href="/login" className="inline-flex rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-extrabold text-[#0f0f1a]">
+								Login
+							</Link>
+							<Link href="/dashboard" className="inline-flex rounded-xl border border-white/25 bg-white/15 px-5 py-2.5 text-sm font-semibold text-slate-100">
+								Dashboard
+							</Link>
+						</div>
+					</section>
+				</main>
+			</div>
+		);
+	}
+
+	if (needsPremium && !isPremium) {
+		return (
+			<PremiumLockedNotice
+				message="এই Speak level unlock করতে payment submit করুন। Approval হলেই access পাবেন।"
+			/>
+		);
+	}
+
 	return (
 		<div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
 			<div className="pointer-events-none absolute -left-20 top-8 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
 			<div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
 			<main className="relative z-10 mx-auto w-full max-w-4xl px-3 py-4 sm:px-6 sm:py-8 lg:px-8">
-				<section className="rounded-3xl border border-white/15 bg-white/10 p-4 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
+				<section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-4 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
 					<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 						<div className="min-w-0 flex-1">
 							<div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">
@@ -429,7 +494,7 @@ export default function SpeakLevelPage() {
 									{Math.min(currentIndex + 1, totalWords)} / {totalWords}
 								</p>
 							</div>
-							<div className="h-3 overflow-hidden rounded-full bg-white/10">
+							<div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
 								<div
 									className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all"
 									style={{ width: `${progressPercent}%` }}
@@ -439,7 +504,7 @@ export default function SpeakLevelPage() {
 
 						<Link
 							href={backHref}
-							className="self-start rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+							className="self-start rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
 						>
 							{stage === "demo" ? "Back to Demo" : "Back to Stage"}
 						</Link>
@@ -451,8 +516,8 @@ export default function SpeakLevelPage() {
 							onClick={() => handleModeChange("practice")}
 							className={`rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
 								mode === "practice"
-									? "border border-cyan-200/40 bg-cyan-200/20 text-cyan-100"
-									: "border border-white/20 bg-white/10 text-slate-200 hover:bg-white/20"
+									? "border border-cyan-200/45 bg-cyan-200/28 text-cyan-100"
+									: "border border-white/25 bg-white/15 text-slate-200 hover:bg-white/20"
 							}`}
 						>
 							🎤 Practice Mode
@@ -462,8 +527,8 @@ export default function SpeakLevelPage() {
 							onClick={() => handleModeChange("exam")}
 							className={`rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
 								mode === "exam"
-									? "border border-amber-300/40 bg-amber-300/20 text-amber-100"
-									: "border border-white/20 bg-white/10 text-slate-200 hover:bg-white/20"
+									? "border border-amber-300/45 bg-amber-300/28 text-amber-100"
+									: "border border-white/25 bg-white/15 text-slate-200 hover:bg-white/20"
 							}`}
 						>
 							📋 Exam Mode
@@ -501,7 +566,7 @@ export default function SpeakLevelPage() {
 						</div>
 					) : activeWord ? (
 						<>
-							<div className="mt-6 rounded-2xl border border-white/15 bg-white/10 p-4 sm:p-6">
+							<div className="mt-6 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/12 to-[#3b3d49]/92 p-4 shadow-lg shadow-black/20 sm:p-6">
 								{mode === "practice" ? (
 									<>
 										<div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
@@ -511,14 +576,17 @@ export default function SpeakLevelPage() {
 												<p className="mt-2 text-xs text-slate-400 sm:text-sm">{activeWord.phonetic}</p>
 												<p className="mt-2 text-sm font-bold text-white sm:mt-3 sm:text-base">{activeWord.example}</p>
 											</div>
-											<button
-												type="button"
-												onClick={speakWord}
-												className="inline-flex h-12 w-12 items-center justify-center self-start rounded-2xl border border-white/20 bg-white/10 text-xl transition hover:bg-white/20 sm:h-16 sm:w-16 sm:text-3xl"
-												aria-label="Play pronunciation"
-											>
-												🔊
-											</button>
+											<div className="flex flex-col items-center gap-1 self-start">
+												<button
+													type="button"
+													onClick={speakWord}
+													className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-xl transition hover:bg-white/20 sm:h-16 sm:w-16 sm:text-3xl"
+													aria-label="Play pronunciation"
+												>
+													🔊
+												</button>
+												<p className="text-xs font-semibold text-white">শুনুন</p>
+											</div>
 										</div>
 									</>
 								) : (
@@ -530,7 +598,7 @@ export default function SpeakLevelPage() {
 								)}
 							</div>
 
-							<div className="mt-5 rounded-2xl border border-white/15 bg-white/10 p-4 sm:p-6">
+							<div className="mt-5 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-[#333845]/92 p-4 shadow-lg shadow-black/20 sm:p-6">
 								<div className="flex flex-col items-center justify-center gap-3 sm:gap-4">
 									<div className="relative flex items-center justify-center">
 										{listenState === "idle" && resultState === "none" ? (
@@ -570,7 +638,7 @@ export default function SpeakLevelPage() {
 											<button
 												type="button"
 												onClick={handleRetry}
-												className="rounded-lg border border-rose-300/30 bg-rose-300/10 px-3 py-1.5 text-xs font-semibold text-rose-200 transition hover:bg-rose-300/20"
+												className="rounded-lg border border-rose-300/40 bg-rose-300/16 px-3 py-1.5 text-xs font-semibold text-rose-100 transition hover:bg-rose-300/22"
 											>
 												Retry
 											</button>
@@ -580,7 +648,7 @@ export default function SpeakLevelPage() {
 											<button
 												type="button"
 												onClick={handleNext}
-												className="rounded-lg border border-emerald-300/30 bg-emerald-300/10 px-3 py-1.5 text-xs font-semibold text-emerald-200 transition hover:bg-emerald-300/20"
+												className="rounded-lg border border-emerald-300/40 bg-emerald-300/16 px-3 py-1.5 text-xs font-semibold text-emerald-100 transition hover:bg-emerald-300/22"
 											>
 												Next
 											</button>

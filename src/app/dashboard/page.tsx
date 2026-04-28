@@ -15,6 +15,9 @@ type StageConfig = {
   dependsOn: StageName | null;
 };
 
+type PremiumState = "loading" | "free" | "premium";
+type PaymentState = "pending" | "approved" | "rejected" | null;
+
 const stages: StageConfig[] = [
   { name: "Beginner", totalWords: 200, totalLevels: 10, unlockThreshold: 0, dependsOn: null },
   { name: "Intermediate", totalWords: 300, totalLevels: 15, unlockThreshold: 5, dependsOn: "Beginner" },
@@ -55,59 +58,41 @@ function FlameIcon() {
   );
 }
 
-function DashboardIllustration() {
-  return (
-    <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-br from-cyan-300/10 via-white/5 to-emerald-300/10 p-3 shadow-lg shadow-black/20">
-      <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-cyan-300/20 blur-2xl" />
-      <div className="absolute -bottom-8 -left-8 h-20 w-20 rounded-full bg-emerald-300/20 blur-2xl" />
-
-      <div className="relative grid grid-cols-3 gap-2">
-        <Link
-          href="/learn/demo-1?from=dashboard"
-          className="rounded-xl border border-white/15 bg-white/10 p-3 transition hover:border-cyan-200/40 hover:bg-cyan-200/10"
-        >
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-cyan-100">Typing</span>
-            <SparkIcon />
-          </div>
-          <div className="mt-2 space-y-1.5">
-            <div className="h-1.5 w-5/6 rounded-full bg-cyan-200/70" />
-            <div className="h-1.5 w-4/6 rounded-full bg-cyan-200/35" />
-          </div>
-        </Link>
-
-        <Link
-          href="/speak/demo-1?from=dashboard"
-          className="rounded-xl border border-white/15 bg-white/10 p-3 transition hover:border-emerald-200/40 hover:bg-emerald-200/10"
-        >
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-emerald-100">Voice</span>
-            <FlameIcon />
-          </div>
-          <div className="mt-2 rounded-xl border border-emerald-300/20 bg-emerald-300/10 py-2 text-center text-lg">🔊</div>
-        </Link>
-
-        <Link
-          href="/flashcard/demo-1?from=dashboard"
-          className="rounded-xl border border-white/15 bg-white/10 p-3 transition hover:border-emerald-200/40 hover:bg-emerald-200/10"
-        >
-          <div className="flex items-center justify-between">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-200">Flash</span>
-            <span className="rounded-full border border-white/20 bg-white/10 px-1.5 py-0.5 text-[9px] font-semibold text-slate-200">Flip</span>
-          </div>
-          <div className="mt-2 rounded-xl border border-emerald-300/20 bg-gradient-to-r from-emerald-300/15 to-cyan-300/15 py-2 text-center text-xs font-bold text-emerald-100">
-            Word → Bangla
-          </div>
-        </Link>
-      </div>
-    </div>
-  );
-}
-
 export default function DashboardPage() {
   const router = useRouter();
   const [authChecked, setAuthChecked] = useState(false);
   const [userName, setUserName] = useState("");
+  const [premiumState, setPremiumState] = useState<PremiumState>("loading");
+  const [latestPaymentState, setLatestPaymentState] = useState<PaymentState>(null);
+  const [latestPaymentNote, setLatestPaymentNote] = useState<string | null>(null);
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  const refreshStatus = async (userId: string) => {
+    const [{ data: profile }, { data: latestPayment }, { data: adminRow }] = await Promise.all([
+      supabase
+        .from("profiles")
+        .select("is_premium")
+        .eq("id", userId)
+        .maybeSingle(),
+      supabase
+        .from("payment_requests")
+        .select("status, review_note")
+        .eq("user_id", userId)
+        .order("created_at", { ascending: false })
+        .limit(1)
+        .maybeSingle(),
+      supabase
+        .from("admin_users")
+        .select("user_id")
+        .eq("user_id", userId)
+        .maybeSingle(),
+    ]);
+
+    setPremiumState(profile?.is_premium ? "premium" : "free");
+    setLatestPaymentState((latestPayment?.status as PaymentState) ?? null);
+    setLatestPaymentNote(latestPayment?.review_note ?? null);
+    setIsAdmin(Boolean(adminRow?.user_id));
+  };
 
   useEffect(() => {
     let mounted = true;
@@ -135,6 +120,11 @@ export default function DashboardPage() {
         "User";
 
       setUserName(profileName);
+
+      if (!mounted) return;
+
+      const userId = data.session.user.id;
+      await refreshStatus(userId);
       setAuthChecked(true);
     };
 
@@ -142,7 +132,7 @@ export default function DashboardPage() {
 
     const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
       if (event === "SIGNED_OUT" || !session) {
-        router.replace("/login");
+        router.replace("/");
       }
     });
 
@@ -152,9 +142,22 @@ export default function DashboardPage() {
     };
   }, [router]);
 
+  useEffect(() => {
+    if (!authChecked) return;
+
+    const timer = window.setInterval(async () => {
+      const { data } = await supabase.auth.getSession();
+      const userId = data.session?.user?.id;
+      if (!userId) return;
+      await refreshStatus(userId);
+    }, 15000);
+
+    return () => window.clearInterval(timer);
+  }, [authChecked]);
+
   const handleLogout = async () => {
     await supabase.auth.signOut();
-    router.replace("/login");
+    router.replace("/");
   };
 
   const [completedCount] = useState<Record<StageName, number>>(() => {
@@ -230,7 +233,7 @@ export default function DashboardPage() {
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-10">
-        <section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8 lg:p-10">
+        <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/70 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-10">
           <header className="border-b border-white/10 pb-6">
             <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
               <div>
@@ -249,6 +252,20 @@ export default function DashboardPage() {
                 >
                   Product Page
                 </Link>
+                <Link
+                  href="/payment"
+                  className="mt-4 ml-3 inline-flex rounded-lg border border-cyan-200/35 bg-cyan-200/12 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-200/20"
+                >
+                  Payment
+                </Link>
+                {isAdmin ? (
+                  <Link
+                    href="/admin/reviews"
+                    className="mt-4 ml-3 inline-flex rounded-lg border border-amber-300/35 bg-amber-300/12 px-4 py-2 text-sm font-semibold text-amber-100 transition hover:bg-amber-300/20"
+                  >
+                    Admin Review
+                  </Link>
+                ) : null}
                 <button
                   type="button"
                   onClick={handleLogout}
@@ -256,100 +273,126 @@ export default function DashboardPage() {
                 >
                   Logout
                 </button>
+
+                <div className="mt-4 flex flex-wrap items-center gap-2">
+                  <span className="rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-semibold text-slate-100">
+                    Access: {premiumState === "loading" ? "Checking..." : premiumState === "premium" ? "Premium" : "Free"}
+                  </span>
+                  {isAdmin ? (
+                    <span className="rounded-full border border-amber-300/45 bg-amber-300/15 px-3 py-1 text-xs font-semibold text-amber-100">
+                      Role: Admin
+                    </span>
+                  ) : null}
+                  {latestPaymentState ? (
+                    <span className={`rounded-full border px-3 py-1 text-xs font-semibold ${
+                      latestPaymentState === "approved"
+                        ? "border-emerald-300/45 bg-emerald-300/15 text-emerald-100"
+                        : latestPaymentState === "rejected"
+                          ? "border-rose-300/45 bg-rose-300/15 text-rose-100"
+                          : "border-amber-300/45 bg-amber-300/15 text-amber-100"
+                    }`}>
+                      Payment: {latestPaymentState === "pending" ? "Processing" : latestPaymentState}
+                    </span>
+                  ) : null}
+                </div>
               </div>
 
               <div className="space-y-3">
-                <DashboardIllustration />
-                <div className="flex gap-3 text-center text-xs sm:text-sm">
-                  <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3">
-                    <div className="mx-auto flex items-center justify-center">
-                      <SparkIcon />
+                <div className="relative overflow-hidden rounded-2xl border border-white/15 bg-gradient-to-br from-cyan-300/10 via-white/5 to-emerald-300/10 p-3 shadow-lg shadow-black/20">
+                  <div className="absolute -right-6 -top-6 h-20 w-20 rounded-full bg-cyan-300/20 blur-2xl" />
+                  <div className="absolute -bottom-8 -left-8 h-20 w-20 rounded-full bg-emerald-300/20 blur-2xl" />
+
+                  <div className="relative grid grid-cols-1 gap-3 text-center text-xs sm:grid-cols-3 sm:text-sm">
+                    <div className="rounded-xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/12 to-slate-900/65 px-4 py-3 shadow-lg shadow-black/20">
+                      <div className="mx-auto flex items-center justify-center">
+                        <SparkIcon />
+                      </div>
+                      <p className="mt-1 text-slate-200">Words Learned</p>
+                      <p className="mt-1 text-lg font-bold text-emerald-200">{totalWordsLearned}</p>
                     </div>
-                    <p className="mt-1 text-slate-300">Words Learned</p>
-                    <p className="mt-1 text-lg font-bold text-emerald-300">{totalWordsLearned}</p>
-                  </div>
-                  <div className="rounded-xl border border-white/15 bg-white/10 px-4 py-3">
-                    <div className="mx-auto flex items-center justify-center">
-                      <FlameIcon />
+                    <div className="rounded-xl border border-emerald-200/20 bg-gradient-to-br from-emerald-300/10 to-slate-900/65 px-4 py-3 shadow-lg shadow-black/20">
+                      <div className="mx-auto flex items-center justify-center">
+                        <FlameIcon />
+                      </div>
+                      <p className="mt-1 text-slate-200">Current Streak</p>
+                      <p className="mt-1 text-lg font-bold text-cyan-100">7 দিন</p>
                     </div>
-                    <p className="mt-1 text-slate-300">Current Streak</p>
-                    <p className="mt-1 text-lg font-bold text-cyan-200">7 দিন</p>
+                    <div className="rounded-xl border border-white/20 bg-gradient-to-br from-slate-200/10 to-slate-900/70 px-4 py-3 shadow-lg shadow-black/20">
+                      <p className="text-slate-200">Plan Status</p>
+                      <p className={`mt-1 text-lg font-bold ${premiumState === "premium" ? "text-emerald-200" : "text-amber-200"}`}>
+                        {premiumState === "loading" ? "Checking..." : premiumState === "premium" ? "Premium" : "Free"}
+                      </p>
+                      {latestPaymentState ? (
+                        <p className="mt-1 text-[11px] text-slate-300">
+                          Payment: {latestPaymentState === "pending" ? "Processing" : latestPaymentState}
+                        </p>
+                      ) : (
+                        <p className="mt-1 text-[11px] text-slate-300">No payment request yet</p>
+                      )}
+                      {latestPaymentNote ? <p className="mt-1 text-[10px] text-slate-400">{latestPaymentNote}</p> : null}
+                    </div>
                   </div>
                 </div>
+                {premiumState === "free" ? (
+                  <div className="rounded-xl border border-cyan-200/30 bg-cyan-300/10 px-4 py-3 text-center">
+                    <p className="text-xs text-slate-200">Level 2+ unlock করতে Premium লাগবে</p>
+                    <Link
+                      href="/payment"
+                      className="mt-2 inline-flex rounded-lg border border-cyan-200/35 bg-cyan-200/15 px-3 py-1.5 text-xs font-semibold text-cyan-100 transition hover:bg-cyan-200/24"
+                    >
+                      Go to Payment
+                    </Link>
+                  </div>
+                ) : null}
               </div>
             </div>
           </header>
 
           <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-3">
             <Link
-              href="/stage/spoken"
-              className="rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-5 transition hover:border-emerald-200 hover:bg-emerald-300/20 sm:p-6"
-            >
-              <h2 className="text-2xl font-extrabold text-emerald-100">Spoken English</h2>
-              <p className="mt-1 text-sm text-slate-300">Daily conversation practice track • 600 words</p>
-
-              <div className="mt-4">
-                <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
-                  <p>Progress</p>
-                  <p>{Math.round(stageLookup.Spoken?.progressPercent ?? 0)}%</p>
-                </div>
-                <div className="h-3 overflow-hidden rounded-full bg-white/10">
-                  <div
-                    className="h-full rounded-full bg-gradient-to-r from-emerald-300 to-cyan-300 transition-all"
-                    style={{ width: `${stageLookup.Spoken?.progressPercent ?? 0}%` }}
-                  />
-                </div>
-              </div>
-
-              <div className="mt-5 rounded-xl border border-emerald-300/30 bg-emerald-300/10 px-4 py-2.5 text-center text-sm font-semibold text-emerald-100">
-                শুরু করুন
-              </div>
-            </Link>
-
-            <Link
               href="/core"
-              className="rounded-2xl border border-cyan-200/30 bg-cyan-200/10 p-5 transition hover:border-cyan-100 hover:bg-cyan-200/20 sm:p-6"
+              className="rounded-2xl border border-cyan-200/35 bg-gradient-to-br from-cyan-300/18 via-[#2a3546]/90 to-[#1f2a38]/95 p-5 shadow-xl shadow-black/20 transition hover:border-cyan-100 hover:from-cyan-300/24 hover:to-[#24354a] sm:p-6"
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <h2 className="text-2xl font-extrabold">IELTS, SAT, Admission</h2>
-                  <p className="mt-1 text-sm text-slate-300">Beginner, Intermediate, Advanced • 800 words</p>
+                  <p className="mt-1 text-sm text-slate-200">Beginner, Intermediate, Advanced • 800 words</p>
                 </div>
-                <span className="rounded-full border border-white/15 bg-white/10 px-3 py-1 text-xs font-semibold text-slate-200">
+                <span className="rounded-full border border-white/25 bg-white/15 px-3 py-1 text-xs font-semibold text-slate-100">
                   Open
                 </span>
               </div>
 
               <div className="mt-4">
-                <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
+                <div className="mb-2 flex items-center justify-between text-xs text-slate-200">
                   <p>Progress</p>
                   <p>{Math.round(coreProgressPercent)}%</p>
                 </div>
-                <div className="h-3 overflow-hidden rounded-full bg-white/10">
+                <div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
                   <div
                     className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all"
                     style={{ width: `${coreProgressPercent}%` }}
                   />
                 </div>
               </div>
-              <div className="mt-5 rounded-xl border border-white/15 bg-white/10 px-4 py-2.5 text-center text-sm font-semibold text-cyan-100">
+              <div className="mt-5 rounded-xl border border-white/25 bg-white/15 px-4 py-2.5 text-center text-sm font-semibold text-cyan-100">
                 Open IELTS/SAT/Admission
               </div>
             </Link>
 
             <Link
               href="/stage/exam"
-              className="rounded-2xl border border-amber-300/30 bg-amber-300/10 p-5 transition hover:border-amber-200 hover:bg-amber-300/20 sm:p-6"
+              className="rounded-2xl border border-amber-300/35 bg-gradient-to-br from-amber-300/18 via-[#3d382c]/90 to-[#252a2d]/95 p-5 shadow-xl shadow-black/20 transition hover:border-amber-200 hover:from-amber-300/24 hover:to-[#2a3236] sm:p-6"
             >
               <h2 className="text-2xl font-extrabold text-amber-200">GRE • BCS • IBA</h2>
-              <p className="mt-1 text-sm text-slate-300">Competitive exam vocabulary track • 600 words</p>
+              <p className="mt-1 text-sm text-slate-200">Competitive exam vocabulary track • 600 words</p>
 
               <div className="mt-4">
-                <div className="mb-2 flex items-center justify-between text-xs text-slate-300">
+                <div className="mb-2 flex items-center justify-between text-xs text-slate-200">
                   <p>Progress</p>
                   <p>{Math.round(stageLookup.Exam?.progressPercent ?? 0)}%</p>
                 </div>
-                <div className="h-3 overflow-hidden rounded-full bg-white/10">
+                <div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
                   <div
                     className="h-full rounded-full bg-gradient-to-r from-amber-300 to-emerald-300 transition-all"
                     style={{ width: `${stageLookup.Exam?.progressPercent ?? 0}%` }}
@@ -357,7 +400,32 @@ export default function DashboardPage() {
                 </div>
               </div>
 
-              <div className="mt-5 rounded-xl border border-amber-300/30 bg-amber-300/10 px-4 py-2.5 text-center text-sm font-semibold text-amber-100">
+              <div className="mt-5 rounded-xl border border-amber-300/45 bg-amber-300/15 px-4 py-2.5 text-center text-sm font-semibold text-amber-100">
+                শুরু করুন
+              </div>
+            </Link>
+
+            <Link
+              href="/stage/spoken"
+              className="rounded-2xl border border-emerald-300/35 bg-gradient-to-br from-emerald-300/16 via-[#214044]/90 to-[#1f3837]/95 p-5 shadow-xl shadow-black/20 transition hover:border-emerald-200 hover:from-emerald-300/24 hover:to-[#214245] sm:p-6"
+            >
+              <h2 className="text-2xl font-extrabold text-emerald-100">Basic Spoken English</h2>
+              <p className="mt-1 text-sm text-slate-200">দৈনন্দিন জীবনে ব্যবহৃত 600 phrase</p>
+
+              <div className="mt-4">
+                <div className="mb-2 flex items-center justify-between text-xs text-slate-200">
+                  <p>Progress</p>
+                  <p>{Math.round(stageLookup.Spoken?.progressPercent ?? 0)}%</p>
+                </div>
+                <div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
+                  <div
+                    className="h-full rounded-full bg-gradient-to-r from-emerald-300 to-cyan-300 transition-all"
+                    style={{ width: `${stageLookup.Spoken?.progressPercent ?? 0}%` }}
+                  />
+                </div>
+              </div>
+
+              <div className="mt-5 rounded-xl border border-emerald-300/45 bg-emerald-300/15 px-4 py-2.5 text-center text-sm font-semibold text-emerald-100">
                 শুরু করুন
               </div>
             </Link>

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import PremiumLockedNotice from "@/components/PremiumLockedNotice";
+import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 
 interface Word {
   word: string;
@@ -34,6 +36,33 @@ export default function FlashcardLevelPage() {
   const [isFlipped, setIsFlipped] = useState(false);
   const [cardMode, setCardMode] = useState<CardMode>("english-to-bangla");
   const [selectedVoiceURI, setSelectedVoiceURI] = useState<string | null>(null);
+  const [accessReady, setAccessReady] = useState(false);
+  const [hasSession, setHasSession] = useState(false);
+  const [isPremium, setIsPremium] = useState(false);
+
+  const needsPremium = requiresPremium(levelNumber, isDemoLevel);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadPremiumState = async () => {
+      if (!needsPremium) {
+        setAccessReady(true);
+        return;
+      }
+
+      const snapshot = await fetchPremiumSnapshot();
+      if (!mounted) return;
+      setHasSession(snapshot.hasSession);
+      setIsPremium(snapshot.isPremium);
+      setAccessReady(true);
+    };
+
+    loadPremiumState();
+    return () => {
+      mounted = false;
+    };
+  }, [needsPremium]);
 
   useEffect(() => {
     let cancelled = false;
@@ -153,6 +182,43 @@ export default function FlashcardLevelPage() {
     );
   }
 
+  if (needsPremium && !accessReady) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+        <p className="text-sm">Checking access...</p>
+      </div>
+    );
+  }
+
+  if (needsPremium && !hasSession) {
+    return (
+      <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
+        <main className="mx-auto flex min-h-screen w-full max-w-2xl items-center px-4 sm:px-6">
+          <section className="w-full rounded-3xl border border-cyan-200/25 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 text-center shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
+            <h1 className="text-2xl font-extrabold">Level 2+ এর জন্য Login করুন</h1>
+            <p className="mt-3 text-sm text-slate-300">এই level unlock করতে আগে account এ login করতে হবে।</p>
+            <div className="mt-6 flex justify-center gap-3">
+              <Link href="/login" className="inline-flex rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-extrabold text-[#0f0f1a]">
+                Login
+              </Link>
+              <Link href="/dashboard" className="inline-flex rounded-xl border border-white/25 bg-white/15 px-5 py-2.5 text-sm font-semibold text-slate-100">
+                Dashboard
+              </Link>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+
+  if (needsPremium && !isPremium) {
+    return (
+      <PremiumLockedNotice
+        message="এই Flashcard level unlock করতে payment submit করুন। Approval হলেই access পাবেন।"
+      />
+    );
+  }
+
   if (!activeWord) {
     return (
       <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
@@ -169,12 +235,12 @@ export default function FlashcardLevelPage() {
   const backValue = cardMode === "english-to-bangla" ? activeWord.bangla : activeWord.word;
   const frontValueClass =
     cardMode === "bangla-to-english"
-      ? "mt-4 text-4xl font-extrabold text-emerald-300 sm:text-5xl"
-      : "mt-4 text-3xl font-extrabold text-slate-50 sm:text-4xl";
+      ? "mt-4 break-words text-3xl font-extrabold leading-tight text-emerald-300 sm:text-5xl"
+      : "mt-4 break-words text-2xl font-extrabold leading-tight text-slate-50 sm:text-4xl";
   const backValueClass =
     cardMode === "english-to-bangla"
-      ? "mt-4 text-4xl font-extrabold text-emerald-300 sm:text-5xl"
-      : "mt-4 text-4xl font-extrabold text-emerald-200 sm:text-5xl";
+      ? "mt-4 break-words text-3xl font-extrabold leading-tight text-emerald-300 sm:text-5xl"
+      : "mt-4 break-words text-3xl font-extrabold leading-tight text-emerald-200 sm:text-5xl";
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
@@ -182,7 +248,7 @@ export default function FlashcardLevelPage() {
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
+        <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
               <div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">
@@ -191,7 +257,7 @@ export default function FlashcardLevelPage() {
                   {Math.min(currentIndex + 1, totalWords)} / {totalWords}
                 </p>
               </div>
-              <div className="h-3 overflow-hidden rounded-full bg-white/10">
+              <div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
                 <div
                   className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all"
                   style={{ width: `${progressPercent}%` }}
@@ -201,14 +267,14 @@ export default function FlashcardLevelPage() {
 
             <Link
               href={backHref}
-              className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+              className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
             >
               {stage === "demo" ? "Back to Demo" : "Back to Stage"}
             </Link>
           </div>
 
           <div className="mt-6 flex flex-wrap items-center justify-between gap-3">
-            <div className="flex items-center gap-2 rounded-xl border border-white/15 bg-white/5 p-1">
+            <div className="flex items-center gap-2 rounded-xl border border-white/20 bg-white/10 p-1">
               <button
                 type="button"
                 onClick={() => {
@@ -218,7 +284,7 @@ export default function FlashcardLevelPage() {
                 className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
                   cardMode === "english-to-bangla"
                     ? "bg-cyan-300/25 text-cyan-100"
-                    : "text-slate-300 hover:bg-white/10"
+                    : "text-slate-200 hover:bg-white/12"
                 }`}
               >
                 EN → BN
@@ -232,24 +298,27 @@ export default function FlashcardLevelPage() {
                 className={`rounded-lg px-3 py-1.5 text-xs font-semibold transition ${
                   cardMode === "bangla-to-english"
                     ? "bg-emerald-300/25 text-emerald-100"
-                    : "text-slate-300 hover:bg-white/10"
+                    : "text-slate-200 hover:bg-white/12"
                 }`}
               >
                 BN → EN
               </button>
             </div>
-            <button
-              type="button"
-              onClick={speakWord}
-              className="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-lg transition hover:bg-white/20"
-              aria-label="Play pronunciation"
-            >
-              🔊
-            </button>
+            <div className="flex flex-col items-center gap-1">
+              <button
+                type="button"
+                onClick={speakWord}
+                className="rounded-xl border border-white/25 bg-white/15 px-3 py-2 text-lg transition hover:bg-white/20"
+                aria-label="Play pronunciation"
+              >
+                🔊
+              </button>
+              <p className="text-xs font-semibold text-white">শুনুন</p>
+            </div>
           </div>
 
           <div className="mt-6 cursor-pointer" onClick={() => setIsFlipped((prev) => !prev)}>
-            <div className="relative h-72 w-full rounded-3xl border border-emerald-300/30 bg-gradient-to-br from-emerald-400/15 to-cyan-400/15 p-6 shadow-xl transition-transform duration-300">
+            <div className="relative h-72 w-full rounded-3xl border border-emerald-300/35 bg-gradient-to-br from-emerald-300/24 via-[#244a4f]/92 to-cyan-300/22 p-6 shadow-xl shadow-black/20 transition-transform duration-300">
               <div className="flex h-full flex-col items-center justify-center text-center">
                 {!isFlipped ? (
                   <>
@@ -279,7 +348,7 @@ export default function FlashcardLevelPage() {
                 setCurrentIndex((prev) => Math.max(prev - 1, 0));
                 setIsFlipped(false);
               }}
-              className="rounded-xl border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-xl border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20 disabled:cursor-not-allowed disabled:opacity-50"
             >
               ← Previous
             </button>
@@ -291,7 +360,7 @@ export default function FlashcardLevelPage() {
                 setCurrentIndex((prev) => Math.min(prev + 1, totalWords));
                 setIsFlipped(false);
               }}
-              className="rounded-xl border border-emerald-300/30 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-300/20 disabled:cursor-not-allowed disabled:opacity-50"
+              className="rounded-xl border border-emerald-300/40 bg-emerald-300/16 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-300/22 disabled:cursor-not-allowed disabled:opacity-50"
             >
               Next →
             </button>
