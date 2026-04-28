@@ -28,17 +28,12 @@ export default function AuthShell({
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
         <section className="w-full max-w-md rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
           <Link href="/" className="mx-auto mb-6 flex w-fit justify-center">
-            <div className="flex items-center justify-center rounded-[20px] bg-white p-4 sm:p-6 lg:p-8 shadow-lg">
-              <picture>
-                <source media="(min-width: 1024px)" srcSet="/logos/easy-vocab-auth-desktop.png 1x, /logos/easy-vocab-auth-desktop@2x.png 2x" />
-                <source media="(min-width: 640px)" srcSet="/logos/easy-vocab-auth-tablet.png 1x, /logos/easy-vocab-auth-tablet@2x.png 2x" />
-                <img
-                  src="/logos/easy-vocab-auth-mobile.png"
-                  srcSet="/logos/easy-vocab-auth-mobile@2x.png 2x"
-                  alt="Easy Vocab"
-                  className="h-auto w-24 sm:w-32 lg:w-40"
-                />
-              </picture>
+            <div className="flex items-center justify-center rounded-[20px] border border-white/10 bg-gradient-to-br from-slate-950/75 via-slate-900/55 to-cyan-400/10 px-3 py-2 shadow-[0_18px_50px_rgba(0,0,0,0.35)] backdrop-blur-md sm:px-4 sm:py-3">
+              <img
+                src="/og/og-image.png"
+                alt="Easy Vocab"
+                className="h-auto w-[180px] max-w-none sm:w-[210px] lg:w-[240px]"
+              />
             </div>
           </Link>
 
