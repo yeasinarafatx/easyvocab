@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 
 interface Resource {
@@ -15,8 +16,10 @@ interface Resource {
 }
 
 export default function AdminResourcesPage() {
+  const router = useRouter();
   const [resources, setResources] = useState<Resource[]>([]);
   const [loading, setLoading] = useState(true);
+  const [authenticated, setAuthenticated] = useState(false);
   const [form, setForm] = useState({
     title: "",
     is_free: true,
@@ -28,8 +31,23 @@ export default function AdminResourcesPage() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
-    fetchResources();
+    checkAuth();
   }, []);
+
+  const checkAuth = async () => {
+    try {
+      const { data: { session }, error } = await supabase.auth.getSession();
+      if (error || !session?.user) {
+        router.push("/login");
+        return;
+      }
+      setAuthenticated(true);
+      fetchResources();
+    } catch (err) {
+      console.error("Auth error:", err);
+      router.push("/login");
+    }
+  };
 
   const fetchResources = async () => {
     try {
