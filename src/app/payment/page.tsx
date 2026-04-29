@@ -44,6 +44,8 @@ const paymentLogoMap: Record<
   },
 };
 
+const whatsappSupportUrl = "https://wa.me/message/GEWPOC6N6XFQC1";
+
 export default function PaymentPage() {
   const [sessionReady, setSessionReady] = useState(false);
   const [hasSession, setHasSession] = useState(false);
@@ -170,7 +172,7 @@ export default function PaymentPage() {
 
   if (!sessionReady) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
         <p className="text-sm">Loading...</p>
       </div>
     );
@@ -212,7 +214,7 @@ export default function PaymentPage() {
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <form onSubmit={handleSubmit} className="rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-[#2f3a44]/92 p-5">
-              <p className="text-sm font-semibold text-slate-200">Payment Amount: <span className="text-emerald-300">৳{amount}</span></p>
+              <p className="text-sm font-semibold text-slate-100">Payment Amount: <span className="text-emerald-300">৳{amount}</span></p>
 
               <div className="mt-4 rounded-xl border border-white/20 bg-white/10 p-3">
                 <p className="mb-3 text-sm font-bold text-slate-100">নির্বাচন করুন</p>
@@ -272,15 +274,19 @@ export default function PaymentPage() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-slate-300">How To Pay</p>
                 {method === "bkash" ? (
                   <ul className="mt-2 space-y-1 text-xs text-slate-200 sm:text-sm">
-                    <li>1. bKash app এ Merchant Pay খুলুন।</li>
-                    <li>2. আমাদের bKash merchant number এ ৳{amount} পাঠান।</li>
-                    <li>3. সফল payment এর TRX ID কপি করে এখানে দিন।</li>
+                    <li>1. bKash app থেকে Send Money অপশন নির্বাচন করুন।</li>
+                    <li>
+                      2. নাম্বার <span className="text-base font-extrabold text-emerald-200 sm:text-lg">01540568375</span> এ ৳{amount} পাঠান (Personal Number)।
+                    </li>
+                    <li>3. Payment সম্পন্ন হলে TRX ID কপি করে নিচের ফর্মে দিন।</li>
                   </ul>
                 ) : (
                   <ul className="mt-2 space-y-1 text-xs text-slate-200 sm:text-sm">
-                    <li>1. Nagad app এ Merchant Pay খুলুন।</li>
-                    <li>2. আমাদের Nagad merchant number এ ৳{amount} পাঠান।</li>
-                    <li>3. সফল payment এর TRX ID কপি করে এখানে দিন।</li>
+                    <li>1. Nagad app থেকে Send Money অপশন নির্বাচন করুন।</li>
+                    <li>
+                      2. নাম্বার <span className="text-base font-extrabold text-emerald-200 sm:text-lg">01540568375</span> এ ৳{amount} পাঠান (Personal Number)।
+                    </li>
+                    <li>3. Payment সম্পন্ন হলে TRX ID কপি করে নিচের ফর্মে দিন।</li>
                   </ul>
                 )}
               </div>
@@ -318,7 +324,7 @@ export default function PaymentPage() {
               {!latestRequest ? (
                 <p className="mt-3 text-sm text-slate-300">এখনও কোনো request submit হয়নি।</p>
               ) : (
-                <div className="mt-4 space-y-2 text-sm text-slate-200">
+                <div className="mt-4 space-y-2 text-sm text-slate-100">
                   <p>Method: <span className="font-semibold uppercase">{latestRequest.method}</span></p>
                   <p>TRX ID: <span className="font-semibold">{latestRequest.trx_id}</span></p>
                   <p>Amount: <span className="font-semibold">৳{latestRequest.amount}</span></p>
@@ -330,6 +336,37 @@ export default function PaymentPage() {
               <p className="mt-5 rounded-xl border border-white/15 bg-white/5 px-3 py-2 text-xs text-slate-300">
                 Payment send করার পর ১৫-৩০ মিনিটের মধ্যে admin review করা হবে।
               </p>
+
+              <div className="mt-4 rounded-2xl border border-emerald-300/25 bg-emerald-300/10 p-4">
+                <div className="flex items-center gap-3">
+                  <a
+                    href={whatsappSupportUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex h-12 w-12 items-center justify-center transition hover:scale-105"
+                    aria-label="WhatsApp support"
+                  >
+                    <img
+                      src="/logos/social/whatsapp.svg"
+                      alt="WhatsApp"
+                      className="h-8 w-8 object-contain"
+                    />
+                  </a>
+                  <div className="min-w-0">
+                    <p className="text-sm font-bold text-slate-100">কোনো সমস্যা হলে WhatsApp support</p>
+                    <p className="mt-1 text-xs text-slate-300">Payment নিয়ে confusion হলে support team-এর সাথে সরাসরি কথা বলুন।</p>
+                  </div>
+                </div>
+
+                <a
+                  href={whatsappSupportUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-3 inline-flex w-full items-center justify-center rounded-xl bg-white px-4 py-2.5 text-sm font-extrabold text-[#0f0f1a] transition hover:bg-slate-100"
+                >
+                  WhatsApp-এ যোগাযোগ করুন
+                </a>
+              </div>
             </div>
           </div>
         </section>

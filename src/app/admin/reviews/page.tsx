@@ -131,7 +131,7 @@ export default function AdminReviewsPage() {
 
   if (!ready) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
         <p className="text-sm">Loading admin panel...</p>
       </div>
     );
@@ -180,7 +180,7 @@ export default function AdminReviewsPage() {
             </div>
           </div>
 
-          <div className="mt-5 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-slate-200">
+          <div className="mt-5 rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm text-slate-100">
             Pending: <span className="font-bold text-amber-200">{pendingRows.length}</span>
             {loadingRows ? <span className="ml-2 text-slate-400">Refreshing...</span> : null}
           </div>

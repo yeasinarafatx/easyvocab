@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Easy Vocab - Master English Vocabulary",
+  title: "Vocab Speak - Master English Vocabulary",
   description: "Learn English words fast with Interactive spelling, voice pronunciation, and flashcard practice",
   icons: {
     icon: [
@@ -24,16 +24,16 @@ export const metadata: Metadata = {
     apple: "/favicon/apple-touch-icon.png",
   },
   openGraph: {
-    title: "Easy Vocab - Master English Vocabulary",
+    title: "Vocab Speak - Master English Vocabulary",
     description: "Learn English words fast with Interactive spelling, voice pronunciation, and flashcard practice",
     url: "https://easyvocab.com",
-    siteName: "Easy Vocab",
+    siteName: "Vocab Speak",
     images: [
       {
         url: "/og/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Easy Vocab Logo",
+        alt: "Vocab Speak Logo",
       },
     ],
     type: "website",

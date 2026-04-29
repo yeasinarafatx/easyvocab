@@ -184,7 +184,7 @@ export default function FlashcardLevelPage() {
 
   if (needsPremium && !accessReady) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
         <p className="text-sm">Checking access...</p>
       </div>
     );
@@ -311,7 +311,7 @@ export default function FlashcardLevelPage() {
                 className="rounded-xl border border-white/25 bg-white/15 px-3 py-2 text-lg transition hover:bg-white/20"
                 aria-label="Play pronunciation"
               >
-                🔊
+                <img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-5 w-5" />
               </button>
               <p className="text-xs font-semibold text-white">শুনুন</p>
             </div>

@@ -5,7 +5,7 @@ export default function VerifyEmailPage() {
   return (
     <Suspense
       fallback={
-        <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+        <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
           <p className="text-sm">Loading...</p>
         </div>
       }

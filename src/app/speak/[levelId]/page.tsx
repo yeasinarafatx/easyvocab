@@ -444,7 +444,7 @@ export default function SpeakLevelPage() {
 
 	if (needsPremium && !accessReady) {
 		return (
-			<div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+			<div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
 				<p className="text-sm">Checking access...</p>
 			</div>
 		);
@@ -520,7 +520,10 @@ export default function SpeakLevelPage() {
 									: "border border-white/25 bg-white/15 text-slate-200 hover:bg-white/20"
 							}`}
 						>
-							🎤 Practice Mode
+							<span className="inline-flex items-center gap-2">
+								<img src="/icons/premium/megaphone-front-premium.svg" alt="Practice" className="h-5 w-5" />
+								Practice Mode
+							</span>
 						</button>
 						<button
 							type="button"
@@ -531,7 +534,10 @@ export default function SpeakLevelPage() {
 									: "border border-white/25 bg-white/15 text-slate-200 hover:bg-white/20"
 							}`}
 						>
-							📋 Exam Mode
+							<span className="inline-flex items-center gap-2">
+								<img src="/icons/premium/medal-front-color.svg" alt="Exam" className="h-5 w-5" />
+								Exam Mode
+							</span>
 						</button>
 					</div>
 
@@ -544,8 +550,8 @@ export default function SpeakLevelPage() {
 							<h2 className="text-3xl font-extrabold text-emerald-100">🎉 সব শব্দ শেষ!</h2>
 							{mode === "exam" ? (
 								<>
-									<p className="mt-3 text-slate-200">সঠিক: {examCorrectCount} / {totalWords}</p>
-									<p className="mt-1 text-slate-200">Accuracy: {examAccuracyPercent}%</p>
+									<p className="mt-3 text-slate-100">সঠিক: {examCorrectCount} / {totalWords}</p>
+									<p className="mt-1 text-slate-100">Accuracy: {examAccuracyPercent}%</p>
 									<p className={`mt-3 font-semibold ${examPassed ? "text-emerald-300" : "text-rose-300"}`}>
 										{examPassed
 											? `Pass (${examPassThreshold}+ লাগবে) - Next level unlock হয়েছে`
@@ -554,7 +560,7 @@ export default function SpeakLevelPage() {
 								</>
 							) : null}
 							{isDemoLevel ? (
-								<p className="mt-3 text-slate-200">Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে...</p>
+								<p className="mt-3 text-slate-100">Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে...</p>
 							) : (
 								<Link
 									href={`/stage/${stage}`}
@@ -583,7 +589,7 @@ export default function SpeakLevelPage() {
 													className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-xl transition hover:bg-white/20 sm:h-16 sm:w-16 sm:text-3xl"
 													aria-label="Play pronunciation"
 												>
-													🔊
+													<img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-6 w-6 sm:h-8 sm:w-8" />
 												</button>
 												<p className="text-xs font-semibold text-white">শুনুন</p>
 											</div>

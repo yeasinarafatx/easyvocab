@@ -105,7 +105,7 @@ export default function VerifyEmailClient() {
     >
       <form onSubmit={handleVerify} className="space-y-4">
         <div>
-          <label htmlFor="verify-email" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="verify-email" className="mb-1 block text-sm font-semibold text-slate-100">
             Email
           </label>
           <input
@@ -121,7 +121,7 @@ export default function VerifyEmailClient() {
         </div>
 
         <div>
-          <label htmlFor="code" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="code" className="mb-1 block text-sm font-semibold text-slate-100">
             Verification Code
           </label>
           <input

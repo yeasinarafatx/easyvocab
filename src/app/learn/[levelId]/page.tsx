@@ -164,9 +164,21 @@ export default function LearnLevelPage() {
     const nextIndex = currentIndex + 1;
     if (examMode && nextIndex >= totalWords) {
       if (!isDemoLevel && typeof window !== "undefined") {
+        // Set completion timestamp
+        const now = new Date().getTime();
+        window.localStorage.setItem(`study_timestamp_${levelId}`, now.toString());
         window.localStorage.setItem(`completed_${levelId}`, "true");
+        
+        // Track exam attempt as correct
+        const attemptKey = `exam_attempt_${Date.now()}`;
+        window.localStorage.setItem(attemptKey, JSON.stringify({ correct: true, timestamp: now }));
+        
         setShowSuccessModal(true);
       }
+    } else if (!examMode && nextIndex >= totalWords && !isDemoLevel && typeof window !== "undefined") {
+      // Also track for regular practice mode
+      const now = new Date().getTime();
+      window.localStorage.setItem(`study_timestamp_${levelId}`, now.toString());
     }
 
     setTypedValue("");
@@ -197,7 +209,7 @@ export default function LearnLevelPage() {
 
   if (needsPremium && !accessReady) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-200">
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
         <p className="text-sm">Checking access...</p>
       </div>
     );
@@ -266,7 +278,10 @@ export default function LearnLevelPage() {
 
           <div className="mt-4 flex justify-end gap-2">
             <button type="button" onClick={() => setSpeechRate((prev) => (prev === 1 ? 0.7 : 1))} className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
-              {speechRate === 0.7 ? "🐢 Slow" : "⚡ Normal"}
+              <span className="inline-flex items-center gap-2">
+                <img src="/icons/premium/clock-front-premium.svg" alt="Speed" className="h-4 w-4" />
+                {speechRate === 0.7 ? "Slow" : "Normal"}
+              </span>
             </button>
             <button type="button" onClick={toggleExamMode} className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${examMode ? "border border-rose-300/45 bg-rose-300/25 text-rose-100 hover:bg-rose-300/30" : "border border-cyan-200/35 bg-cyan-200/18 text-cyan-100 hover:bg-cyan-200/24"}`}>
               {examMode ? "Exam Mode: ON" : "Exam Mode"}
@@ -292,7 +307,9 @@ export default function LearnLevelPage() {
                     </div>
                   </div>
                   <div className="flex flex-col items-center gap-1">
-                    <button type="button" onClick={speakWord} className="rounded-xl border border-white/25 bg-white/15 px-3 py-2 text-lg transition hover:bg-white/20" aria-label="Play pronunciation">🔊</button>
+                    <button type="button" onClick={speakWord} className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-white/25 bg-white/15 transition hover:bg-white/20" aria-label="Play pronunciation">
+                      <img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-6 w-6" />
+                    </button>
                     <p className="text-xs font-semibold text-white">শুনুন</p>
                   </div>
                 </div>
@@ -303,6 +320,7 @@ export default function LearnLevelPage() {
               </div>
 
               <div className="mt-6 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-[#323744]/92 p-5 shadow-lg shadow-black/20 sm:p-6">
+                <p className="mb-3 text-sm font-semibold text-slate-100">শব্দটি লিখুন:</p>
                 <div className="flex flex-wrap gap-2">
                   {activeWord.word.split("").map((char: string, index: number) => {
                     const typedChar = normalizedTyped[index];
@@ -341,7 +359,7 @@ export default function LearnLevelPage() {
             <div className="mt-8 rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-6 text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Completed</p>
               <h2 className="mt-2 text-3xl font-extrabold text-emerald-100">দারুণ! ২০টি শব্দ শেষ।</h2>
-              <p className="mt-3 text-slate-200">
+              <p className="mt-3 text-slate-100">
                 {isDemoLevel ? `Demo সম্পন্ন হয়েছে, ${returnToDashboard ? "dashboard" : "landing page"} এ নেওয়া হচ্ছে...` : "সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।"}
               </p>
             </div>

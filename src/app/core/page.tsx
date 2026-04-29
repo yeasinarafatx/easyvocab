@@ -84,9 +84,9 @@ export default function CorePage() {
         <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/70 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-10">
           <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">Easy Vocab</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">Vocab Speak</p>
               <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">IELTS, SAT, Admission</h1>
-              <p className="mt-2 text-sm text-slate-200">Beginner, Intermediate, Advanced আলাদা clean page</p>
+              <p className="mt-2 text-sm text-slate-100">Beginner, Intermediate, Advanced আলাদা clean page</p>
             </div>
 
             <Link

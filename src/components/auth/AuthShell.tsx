@@ -28,13 +28,12 @@ export default function AuthShell({
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl items-center justify-center px-4 py-10 sm:px-6 lg:px-8">
         <section className="w-full max-w-md rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
           <Link href="/" className="mx-auto mb-6 flex w-fit justify-center">
-            <div className="flex items-center justify-center rounded-[20px] border border-white/10 bg-gradient-to-br from-slate-950/75 via-slate-900/55 to-cyan-400/10 px-3 py-2 shadow-[0_18px_50px_rgba(0,0,0,0.35)] backdrop-blur-md sm:px-4 sm:py-3">
-              <img
-                src="/og/og-image.png"
-                alt="Easy Vocab"
-                className="h-auto w-[180px] max-w-none sm:w-[210px] lg:w-[240px]"
-              />
-            </div>
+            <img
+              src="/logos/easy-vocab-auth-desktop.png"
+              alt="Vocab Speak"
+              className="h-auto w-20 sm:w-14 md:w-16 lg:w-20"
+              style={{ filter: 'drop-shadow(0 0 14px rgba(99, 179, 237, 0.25))' }}
+            />
           </Link>
 
           <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-100/80">{eyebrow}</p>

@@ -75,7 +75,7 @@ export default function SignupPage() {
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="name" className="mb-1 block text-sm font-semibold text-slate-100">
             Full Name
           </label>
           <input
@@ -91,7 +91,7 @@ export default function SignupPage() {
         </div>
 
         <div>
-          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-slate-100">
             Email
           </label>
           <input
@@ -107,7 +107,7 @@ export default function SignupPage() {
         </div>
 
         <div>
-          <label htmlFor="password" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="password" className="mb-1 block text-sm font-semibold text-slate-100">
             Password
           </label>
           <input

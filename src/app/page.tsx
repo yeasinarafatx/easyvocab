@@ -72,10 +72,13 @@ export default function Home() {
 
   const examBadges = ["IELTS", "GRE", "SAT", "IBA"];
   const examCategories = [
-    { name: "IELTS", count: "1200+ words" },
-    { name: "GRE", count: "1800+ words" },
-    { name: "SAT", count: "1500+ words" },
-    { name: "IBA", count: "1000+ words" },
+    { name: "IELTS" },
+    { name: "GRE" },
+    { name: "SAT" },
+    { name: "IBA" },
+    { name: "Admission" },
+    { name: "BCS" },
+    { name: "Bank" },
   ];
   const faqItems = [
     {
@@ -84,10 +87,10 @@ export default function Home() {
     },
     {
       question: "পেমেন্ট করার পদ্ধতি কী?",
-      answer: "বিকাশ বা নগদের 'Merchant Pay' অপশন ব্যবহার করে নিরাপদে পেমেন্ট করতে পারবেন।",
+      answer: "বিকাশ বা নগদের 'Send Money' অপশন ব্যবহার করে নিরাপদে পেমেন্ট করতে পারবেন।",
     },
     {
-      question: "৩৪৯ টাকা কি প্রতি মাসে দিতে হবে?",
+      question: "৩৯৯ টাকা কি প্রতি মাসে দিতে হবে?",
       answer: "না, এটি এককালীন পেমেন্ট। একবার কিনলে লাইফটাইম অ্যাক্সেস পাবেন।",
     },
     {
@@ -99,7 +102,7 @@ export default function Home() {
       answer: "ডিজিটাল প্রোডাক্ট হওয়ায় কোনো রিফান্ড নেই। কেনার আগে ফ্রি লেভেলগুলো ট্রাই করে নিন।",
     },
     {
-      question: "৩৪৯ টাকার অফারটি কতদিন থাকবে?",
+      question: "৩৯৯ টাকার অফারটি কতদিন থাকবে?",
       answer: "এটি সীমিত সময়ের 'Early Bird' অফার। অফার শেষ হলে মূল্য আবার ৳৯৯৯ হবে।",
     },
   ];
@@ -117,31 +120,33 @@ export default function Home() {
       <div className="pointer-events-none absolute -left-20 top-12 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
-      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl items-start px-4 py-8 sm:px-6 sm:py-10 lg:items-center lg:px-10">
+      <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl items-start px-4 py-8 sm:px-6 sm:py-12 lg:items-start lg:px-10">
         <section className="w-full rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-[#1a2030]/78 to-[#10262c]/74 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-12">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="space-y-6">
-              <div className="mx-auto flex w-fit items-center justify-center rounded-[20px] border border-white/10 bg-gradient-to-br from-slate-950/75 via-slate-900/55 to-cyan-400/10 px-3 py-2 shadow-[0_18px_50px_rgba(0,0,0,0.35)] backdrop-blur-md sm:px-4 sm:py-3">
+          <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
+            <div className="space-y-2">
+              <div className="flex justify-center" style={{ paddingTop: '15px' }}>
                 <img
                   src="/og/og-image.png"
-                  alt="Easy Vocab"
-                  className="h-auto w-[240px] max-w-none sm:w-[300px] lg:w-[360px]"
+                  alt="Vocab Speak"
+                  className="h-auto"
+                  style={{ maxWidth: '240px', width: 'auto', filter: 'drop-shadow(0 0 20px rgba(99, 179, 237, 0.25))' }}
                 />
               </div>
+              <div className="mt-2 h-px w-28 mx-auto" style={{ background: 'rgba(255,255,255,0.06)' }} />
 
-              <h1 className="text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+              <h1 className="mt-1 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
                 দ্রুত ইংরেজি শব্দ শিখুন, কার্যকরী উপায়ে
               </h1>
 
-              <p className="max-w-xl text-sm leading-7 text-slate-200/90 sm:text-base">
-                Type করে spelling শিখুন আর ভুলবেন না। সঠিক উচ্চারণের জন্য Voice Mode ব্যবহার করুন, এবং Active Recall গড়ে তুলতে Flashcards ব্যবহার করুন — দ্রুত ও আত্মবিশ্বাসী প্রস্তুতির জন্য।
+              <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-slate-100 sm:text-base sm:leading-8">
+                যেকোনো প্রতিযোগিতা মূলক পরীক্ষার প্রস্তুতির জন্য দ্রুত ও বিশ্বস্ত সহায়ক - Type করে বানান শিখুন আর ভুলবেন না, সঠিক উচ্চারণের জন্য Voice Mode ব্যবহার করুন, ফ্লাশকার্ড দিয়ে মেমরি অ্যাক্টিভ করুন!
               </p>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="mt-5 flex flex-wrap gap-3">
                 {examBadges.map((badge) => (
                   <span
                     key={badge}
-                    className="rounded-full border border-white/25 bg-white/12 px-3 py-1 text-xs font-semibold tracking-wide text-slate-100"
+                    className="rounded-full border border-white/25 bg-white/12 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-slate-100"
                   >
                     {badge}
                   </span>
@@ -154,9 +159,9 @@ export default function Home() {
 
               <div className="mt-3 flex flex-wrap items-end gap-2.5 sm:gap-3">
                 <span className="text-xl text-slate-300 line-through">৳৯৯৯</span>
-                <span className="text-3xl font-extrabold text-emerald-300 sm:text-4xl">৳৩৪৯</span>
+                <span className="text-3xl font-extrabold text-emerald-300 sm:text-4xl">৳৩৯৯</span>
                 <span className="mb-1 whitespace-nowrap rounded-md bg-emerald-300/20 px-2 py-1 text-xs font-bold text-emerald-200">
-                  সীমিত সময়ের ৬৫% ছাড়
+                  সীমিত সময়ের ৬০% ছাড়
                 </span>
               </div>
 
@@ -203,7 +208,7 @@ export default function Home() {
                   type="button"
                   className="w-full rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-4 py-3 text-sm font-extrabold text-[#0f0f1a] transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0f1a] sm:px-5 sm:text-base"
                 >
-                  {sessionReady && displayName ? "Continue to Dashboard" : "এখনই শুরু করুন - ৬৫% ছাড়ে!"}
+                  {sessionReady && displayName ? "Continue to Dashboard" : "এখনই শুরু করুন - ৬০% ছাড়ে!"}
                 </button>
               </Link>
 
@@ -213,13 +218,13 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 grid gap-3 border-t border-white/10 pt-6 text-center text-xs text-slate-200 sm:grid-cols-3 sm:text-sm">
+          <div className="mt-10 grid gap-3 border-t border-white/10 pt-8 text-center text-xs text-slate-200 sm:grid-cols-3 sm:text-sm">
             <p>৫০,০০০+ শিক্ষার্থী শব্দভান্ডার বাড়িয়েছে</p>
             <p>৭ দিনের রিভিশন সাইকেল</p>
             <p>মক টেস্টে গড় স্কোর ২x উন্নতি</p>
           </div>
 
-          <section className="mt-8 rounded-[1.75rem] border border-cyan-200/25 bg-gradient-to-r from-cyan-300/14 via-[#25303d]/90 to-emerald-300/14 px-5 py-5 shadow-2xl shadow-black/25 backdrop-blur-xl sm:px-6 sm:py-6">
+          <section className="mt-12 rounded-[1.75rem] border border-cyan-200/25 bg-gradient-to-r from-cyan-300/14 via-[#25303d]/90 to-emerald-300/14 px-5 py-6 shadow-2xl shadow-black/25 backdrop-blur-xl sm:px-7 sm:py-8">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
               <div className="max-w-2xl">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-100/80">Try Demo</p>
@@ -239,7 +244,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-10 border-t border-white/10 pt-8">
+          <section className="hidden border-t border-white/10 pt-8 sm:block sm:mt-10">
             <div className="mx-auto max-w-3xl rounded-[2rem] border border-cyan-200/28 bg-gradient-to-br from-cyan-300/18 via-[#2a3340]/88 to-emerald-300/16 p-5 text-slate-100 shadow-2xl shadow-black/30 backdrop-blur-sm sm:p-6 sm:backdrop-blur-xl lg:p-7">
               <div className="flex items-start gap-3 border-b border-cyan-100/15 pb-5 sm:gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-cyan-200/30 bg-cyan-200/15 text-sm font-black text-cyan-100">
@@ -247,11 +252,11 @@ export default function Home() {
                 </div>
                 <div className="min-w-0">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan-100/80 sm:text-xs sm:tracking-[0.22em]">
-                    Easy Vocab এ যা আছে
+                    Vocab Speak এ যা আছে
                   </p>
                   <h2 className="mt-2 max-w-xl text-[1.95rem] font-extrabold leading-[1.12] tracking-tight text-slate-100 sm:text-[2rem] sm:leading-tight">
                     <span className="block">সবকিছু এক জায়গায়:</span>
-                    <span className="mt-1 block text-[1.55rem] leading-[1.16] sm:text-[2rem]">Smart Spelling, Correct Pronunciation, Flashcard Active Recall</span>
+                    <span className="mt-1 block text-[1.55rem] leading-[1.16] sm:text-[2rem]">বানান শিখুন ,উচ্চারণ করুন , মনে রাখুন !</span>
                   </h2>
                 </div>
               </div>
@@ -267,7 +272,7 @@ export default function Home() {
                 </li>
                 <li className="flex gap-2 rounded-2xl border border-cyan-100/15 bg-gradient-to-r from-cyan-300/10 to-emerald-300/6 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
                   <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
-                  <span>Smart Spelling Practice, Correct Pronunciation Practice, এবং Flashcard Active Recall - শব্দ দীর্ঘদিন মনে রাখার জন্য সবচেয়ে কার্যকর practice flow</span>
+                  <span>বানান লেখা, উচ্চারণ শোনা এবং ফ্ল্যাশকার্ডে মনে রাখা - শব্দ দীর্ঘদিন মনে রাখার জন্য সবচেয়ে কার্যকর practice flow</span>
                 </li>
                 <li className="flex gap-2 rounded-2xl border border-cyan-100/15 bg-gradient-to-r from-cyan-300/10 to-emerald-300/6 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
                   <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
@@ -294,16 +299,18 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-10 border-t border-white/10 pt-8">
+          <section className="hidden border-t border-white/10 pt-8 sm:block sm:mt-10">
             <h2 className="text-center text-2xl font-bold sm:text-3xl">Exam Categories</h2>
             <div className="mt-6 flex justify-center">
-              <div className="grid w-full max-w-6xl grid-cols-4 gap-3">
+              <div className="grid w-full max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
                 {examCategories.map((exam) => (
                   <div
                     key={exam.name}
-                    className="rounded-xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/14 to-[#2f3a44]/92 px-3 py-3 text-center text-slate-100 shadow-lg shadow-black/20 backdrop-blur-sm sm:backdrop-blur-xl"
+                    className="flex min-h-[90px] flex-col items-center justify-center rounded-xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/14 to-[#2f3a44]/92 px-3 py-3 text-center text-slate-100 shadow-lg shadow-black/20 backdrop-blur-sm transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-[100px] sm:backdrop-blur-xl"
                   >
-                    <p className="text-base font-extrabold text-cyan-100">{exam.name}</p>
+                    <p className="text-sm font-extrabold tracking-[0.08em] text-cyan-100 sm:text-base">
+                      {exam.name}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -357,8 +364,72 @@ export default function Home() {
           </section>
 
           <footer className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-300/90">
-            <p className="font-semibold text-slate-100">Easy Vocab</p>
-            <p className="mt-1">© 2026 Easy Vocab. All rights reserved.</p>
+            <p className="text-sm font-semibold leading-normal text-cyan-100/90 sm:text-base">
+              কাস্টমার সাপোর্টের জন্য
+            </p>
+
+            <div className="mx-auto mt-4 flex max-w-md flex-wrap items-center justify-center gap-3 sm:gap-4">
+              {[
+                { name: "Facebook", src: "/logos/social/facebook.svg" },
+                { name: "Instagram", src: "/logos/social/instagram.svg" },
+                { name: "WhatsApp", src: "/logos/social/whatsapp.svg", href: "https://wa.me/message/GEWPOC6N6XFQC1" },
+                { name: "YouTube", src: "/logos/social/youtube.svg" },
+              ].map((item) => (
+                item.name === "WhatsApp" ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center justify-center transition hover:scale-105"
+                  >
+                    <img
+                      src={item.src}
+                      alt={`${item.name} icon`}
+                      className="h-10 w-10 object-contain sm:h-11 sm:w-11 md:h-12 md:w-12"
+                    />
+                  </a>
+                ) : (
+                  <div key={item.name} className="flex items-center justify-center">
+                    <img
+                      src={item.src}
+                      alt={`${item.name} icon`}
+                      className="h-10 w-10 object-contain sm:h-11 sm:w-11 md:h-12 md:w-12"
+                    />
+                  </div>
+                )
+              ))}
+            </div>
+
+            <p className="mt-5 font-semibold text-slate-100">Vocab Speak</p>
+            <p className="mt-1">© 2026 Vocab Speak. All rights reserved.</p>
+
+            <div className="mx-auto mt-4 max-w-xl rounded-3xl border border-white/10 bg-white/5 px-4 py-4 shadow-lg shadow-black/15 sm:px-6 sm:py-5">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-cyan-100/90 sm:text-xs">
+                  Verified payment via
+                </p>
+                <img src="/icons/premium/medal-front-color.svg" alt="Verified" className="h-7 w-7" />
+              </div>
+
+              <div className="mt-3 grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="flex min-h-16 items-center justify-center rounded-2xl bg-white px-3 py-2 shadow-md shadow-black/10 sm:min-h-20 sm:px-4 sm:py-3">
+                  <img
+                    src="/logos/payments/bkash-logo.png"
+                    alt="bKash logo"
+                    className="h-7 w-auto max-w-full object-contain sm:h-8"
+                  />
+                </div>
+
+                <div className="flex min-h-16 items-center justify-center rounded-2xl bg-white px-3 py-2 shadow-md shadow-black/10 sm:min-h-20 sm:px-4 sm:py-3">
+                  <img
+                    src="/logos/payments/nagad-logo.png"
+                    alt="Nagad logo"
+                    className="h-7 w-auto max-w-full object-contain sm:h-8"
+                  />
+                </div>
+              </div>
+            </div>
           </footer>
         </section>
       </main>
