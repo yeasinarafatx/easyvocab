@@ -50,7 +50,20 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <header className="w-full border-b border-white/6 bg-transparent">
+          <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+            <div className="flex items-center gap-4">
+              <a href="/" className="text-xl font-bold text-slate-100">VocabSpeak</a>
+            </div>
+            <nav className="flex items-center gap-3">
+              <a href="/resources/free" className="rounded-md px-3 py-2 text-sm font-medium text-slate-100 hover:bg-white/6">Free PDF/Ebooks</a>
+              <a href="/resources/paid" className="rounded-md px-3 py-2 text-sm font-medium text-slate-100 hover:bg-white/6">Paid PDF/Ebooks</a>
+            </nav>
+          </div>
+        </header>
+        <main className="flex-1">{children}</main>
+      </body>
     </html>
   );
 }
