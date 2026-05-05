@@ -1,0 +1,68 @@
+name: easy-vocab
+services:
+  - name: app
+    github:
+      repo: your-github-username/easy-vocab
+      branch: main
+      deploy_on_push: true
+    build_command: npm ci && npm run build
+    run_command: node server.js
+    envs:
+      # Supabase Configuration
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        scope: RUN_TIME
+        value: ${DB_SUPABASE_URL}
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        scope: RUN_TIME
+        value: ${DB_SUPABASE_ANON_KEY}
+      
+      # Cloudflare R2 Configuration
+      - key: R2_ACCOUNT_ID
+        scope: RUN_TIME
+        value: ${R2_ACCOUNT_ID}
+      - key: R2_ACCESS_KEY_ID
+        scope: RUN_TIME
+        value: ${R2_ACCESS_KEY_ID}
+      - key: R2_SECRET_ACCESS_KEY
+        scope: RUN_TIME
+        value: ${R2_SECRET_ACCESS_KEY}
+      - key: R2_BUCKET_NAME
+        scope: RUN_TIME
+        value: ${R2_BUCKET_NAME}
+      
+      # Optional Meta Pixel
+      - key: NEXT_PUBLIC_META_PIXEL_ID
+        scope: RUN_TIME
+        value: "980999427776233"
+      
+      # Site Configuration
+      - key: NEXT_PUBLIC_SITE_URL
+        scope: RUN_TIME
+        value: ${APP_DOMAIN}
+      
+      # Node Environment
+      - key: NODE_ENV
+        value: production
+    http_port: 3000
+    health_check:
+      http_path: /
+      initial_delay_seconds: 5
+      period_seconds: 10
+      timeout_seconds: 3
+      success_threshold: 1
+      failure_threshold: 3
+    http_routes:
+      - path: /
+        preserve_path_prefix: true
+    output_dir: .next/standalone
+    source_dir: ./
+    upgrade_policy:
+      - type: automated
+        auto_deploy: true
+    resource_requests:
+      cpus: "512m"
+      memory: "512Mi"
+
+static_sites: []
+jobs: []
+databases: []

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "res-1",
+    "title": "Quick Vocab List - 200 words",
+    "file": "/resources/sample1.pdf",
+    "is_free": true,
+    "visible": true,
+    "order": 1,
+    "size_bytes": 10234
+  },
+  {
+    "id": "res-2",
+    "title": "Spoken Phrases Short Ebook",
+    "file": "/resources/sample2.pdf",
+    "is_free": true,
+    "visible": true,
+    "order": 2,
+    "size_bytes": 8543
+  },
+  {
+    "id": "res-3",
+    "title": "IELTS Practice Pack",
+    "file": "/resources/sample3.pdf",
+    "is_free": false,
+    "visible": true,
+    "order": 1,
+    "size_bytes": 15234
+  }
+]

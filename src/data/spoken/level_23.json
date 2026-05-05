@@ -1,0 +1,22 @@
+[
+  { "id": 441, "word": "Can you reduce the price", "pos": "phrase", "phonetic": "/kæn ju rɪduːs ðə praɪs/", "bangla": "আপনি কি দাম কমাবেন", "example": "Can you reduce the price a little?", "category": "Shopping and Bargaining" },
+  { "id": 442, "word": "This price is too high", "pos": "phrase", "phonetic": "/ðɪs praɪs ɪz tuː haɪ/", "bangla": "এই দাম খুব বেশি", "example": "This price is too high for me.", "category": "Shopping and Bargaining" },
+  { "id": 443, "word": "What is your best price", "pos": "phrase", "phonetic": "/wʌt ɪz jʊr bɛst praɪs/", "bangla": "আপনার শেষ দাম কত", "example": "What is your best price today?", "category": "Shopping and Bargaining" },
+  { "id": 444, "word": "Give me final price", "pos": "phrase", "phonetic": "/ɡɪv mi faɪnəl praɪs/", "bangla": "আমাকে চূড়ান্ত দাম বলুন", "example": "Give me final price for this item.", "category": "Shopping and Bargaining" },
+  { "id": 445, "word": "Can I get two for less", "pos": "phrase", "phonetic": "/kæn aɪ ɡɛt tuː fɔːr lɛs/", "bangla": "দুটি নিলে কি কম হবে", "example": "Can I get two for less price?", "category": "Shopping and Bargaining" },
+  { "id": 446, "word": "I am buying in bulk", "pos": "phrase", "phonetic": "/aɪ æm baɪɪŋ ɪn bʌlk/", "bangla": "আমি বেশি পরিমাণে কিনছি", "example": "I am buying in bulk today.", "category": "Shopping and Bargaining" },
+  { "id": 447, "word": "Do you have a cheaper one", "pos": "phrase", "phonetic": "/duː ju hæv ə tʃiːpər wʌn/", "bangla": "আপনাদের কি কম দামেরটা আছে", "example": "Do you have a cheaper one in this color?", "category": "Shopping and Bargaining" },
+  { "id": 448, "word": "Show me another design", "pos": "phrase", "phonetic": "/ʃoʊ mi ənʌðər dɪzaɪn/", "bangla": "আরেকটা ডিজাইন দেখান", "example": "Show me another design please.", "category": "Shopping and Bargaining" },
+  { "id": 449, "word": "I like this color", "pos": "phrase", "phonetic": "/aɪ laɪk ðɪs kʌlər/", "bangla": "এই রংটি আমার পছন্দ", "example": "I like this color very much.", "category": "Shopping and Bargaining" },
+  { "id": 450, "word": "Do you have my size", "pos": "phrase", "phonetic": "/duː ju hæv maɪ saɪz/", "bangla": "আমার সাইজ আছে কি", "example": "Do you have my size in stock?", "category": "Shopping and Bargaining" },
+  { "id": 451, "word": "Can I try this on", "pos": "phrase", "phonetic": "/kæn aɪ traɪ ðɪs ɑːn/", "bangla": "আমি কি এটা পরে দেখতে পারি", "example": "Can I try this on first?", "category": "Shopping and Bargaining" },
+  { "id": 452, "word": "It does not fit me", "pos": "phrase", "phonetic": "/ɪt dʌz nɑːt fɪt miː/", "bangla": "এটা আমার গায়ে ঠিক হচ্ছে না", "example": "It does not fit me properly.", "category": "Shopping and Bargaining" },
+  { "id": 453, "word": "Can you pack this gift", "pos": "phrase", "phonetic": "/kæn ju pæk ðɪs ɡɪft/", "bangla": "এটা কি গিফট প্যাক করবেন", "example": "Can you pack this gift nicely?", "category": "Shopping and Bargaining" },
+  { "id": 454, "word": "I will take this one", "pos": "phrase", "phonetic": "/aɪ wɪl teɪk ðɪs wʌn/", "bangla": "আমি এটা নেব", "example": "I will take this one now.", "category": "Shopping and Bargaining" },
+  { "id": 455, "word": "Please give me a receipt", "pos": "phrase", "phonetic": "/pliːz ɡɪv mi ə rɪsiːt/", "bangla": "আমাকে রসিদ দিন", "example": "Please give me a receipt for this.", "category": "Shopping and Bargaining" },
+  { "id": 456, "word": "Can I return this later", "pos": "phrase", "phonetic": "/kæn aɪ rɪtɜːrn ðɪs leɪtər/", "bangla": "আমি কি পরে এটা ফেরত দিতে পারব", "example": "Can I return this later if needed?", "category": "Shopping and Bargaining" },
+  { "id": 457, "word": "What is your return policy", "pos": "phrase", "phonetic": "/wʌt ɪz jʊr rɪtɜːrn pɑːlɪsi/", "bangla": "আপনাদের রিটার্ন নীতি কী", "example": "What is your return policy here?", "category": "Shopping and Bargaining" },
+  { "id": 458, "word": "Please keep this for me", "pos": "phrase", "phonetic": "/pliːz kiːp ðɪs fɔːr miː/", "bangla": "এটা আমার জন্য রেখে দিন", "example": "Please keep this for me until evening.", "category": "Shopping and Bargaining" },
+  { "id": 459, "word": "I will come back later", "pos": "phrase", "phonetic": "/aɪ wɪl kʌm bæk leɪtər/", "bangla": "আমি পরে আবার আসব", "example": "I will come back later today.", "category": "Shopping and Bargaining" },
+  { "id": 460, "word": "Thanks for the good deal", "pos": "phrase", "phonetic": "/θæŋks fɔːr ðə ɡʊd diːl/", "bangla": "ভালো দামের জন্য ধন্যবাদ", "example": "Thanks for the good deal today.", "category": "Shopping and Bargaining" }
+]

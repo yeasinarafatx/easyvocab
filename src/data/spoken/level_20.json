@@ -1,0 +1,22 @@
+[
+  { "id": 381, "word": "I am going home now", "pos": "phrase", "phonetic": "/aɪ æm ɡoʊɪŋ hoʊm naʊ/", "bangla": "আমি এখন বাসায় যাচ্ছি", "example": "I am going home now after office.", "category": "Family and Home" },
+  { "id": 382, "word": "Did you eat lunch", "pos": "phrase", "phonetic": "/dɪd ju it lʌntʃ/", "bangla": "তুমি কি দুপুরের খাবার খেয়েছ", "example": "Did you eat lunch already?", "category": "Family and Home" },
+  { "id": 383, "word": "Please come home early", "pos": "phrase", "phonetic": "/pliz kʌm hoʊm ɜrli/", "bangla": "দয়া করে তাড়াতাড়ি বাসায় আসো", "example": "Please come home early today.", "category": "Family and Home" },
+  { "id": 384, "word": "I am cooking dinner", "pos": "phrase", "phonetic": "/aɪ æm kʊkɪŋ dɪnər/", "bangla": "আমি রাতের খাবার রান্না করছি", "example": "I am cooking dinner in the kitchen.", "category": "Family and Home" },
+  { "id": 385, "word": "Set the table please", "pos": "phrase", "phonetic": "/sɛt ðə teɪbəl pliz/", "bangla": "টেবিল সাজাও", "example": "Set the table please for everyone.", "category": "Family and Home" },
+  { "id": 386, "word": "Dinner is ready", "pos": "phrase", "phonetic": "/dɪnər iz rɛdi/", "bangla": "রাতের খাবার প্রস্তুত", "example": "Dinner is ready, please come.", "category": "Family and Home" },
+  { "id": 387, "word": "Please wash your hands", "pos": "phrase", "phonetic": "/pliz wɑʃ jɔr hændz/", "bangla": "দয়া করে হাত ধোও", "example": "Please wash your hands before eating.", "category": "Family and Home" },
+  { "id": 388, "word": "Can you help me", "pos": "phrase", "phonetic": "/kæn ju hɛlp mi/", "bangla": "তুমি কি আমাকে সাহায্য করবে", "example": "Can you help me with this bag?", "category": "Family and Home" },
+  { "id": 389, "word": "Please clean your room", "pos": "phrase", "phonetic": "/pliz klin jɔr rum/", "bangla": "তোমার রুম পরিষ্কার করো", "example": "Please clean your room today.", "category": "Family and Home" },
+  { "id": 390, "word": "Do your homework first", "pos": "phrase", "phonetic": "/du jɔr hoʊmwɜrk fɜrst/", "bangla": "আগে হোমওয়ার্ক করো", "example": "Do your homework first, then play.", "category": "Family and Home" },
+  { "id": 391, "word": "Let us watch a movie", "pos": "phrase", "phonetic": "/lɛt ʌs wɑtʃ ə muvi/", "bangla": "চলুন সিনেমা দেখি", "example": "Let us watch a movie tonight.", "category": "Family and Home" },
+  { "id": 392, "word": "Please lower the volume", "pos": "phrase", "phonetic": "/pliz loʊər ðə vɑljum/", "bangla": "দয়া করে শব্দ কমাও", "example": "Please lower the volume a little.", "category": "Family and Home" },
+  { "id": 393, "word": "I am tired today", "pos": "phrase", "phonetic": "/aɪ æm taɪərd tədeɪ/", "bangla": "আমি আজ ক্লান্ত", "example": "I am tired today after work.", "category": "Family and Home" },
+  { "id": 394, "word": "Take some rest", "pos": "phrase", "phonetic": "/teɪk sʌm rɛst/", "bangla": "একটু বিশ্রাম নাও", "example": "Take some rest before dinner.", "category": "Family and Home" },
+  { "id": 395, "word": "Do not worry", "pos": "phrase", "phonetic": "/du nɑt wɜri/", "bangla": "চিন্তা করো না", "example": "Do not worry, everything is fine.", "category": "Family and Home" },
+  { "id": 396, "word": "I will handle it", "pos": "phrase", "phonetic": "/aɪ wɪl hændəl ɪt/", "bangla": "আমি সামলে নেব", "example": "I will handle it, no problem.", "category": "Family and Home" },
+  { "id": 397, "word": "Please lock the gate", "pos": "phrase", "phonetic": "/pliz lɑk ðə ɡeɪt/", "bangla": "দয়া করে গেট তালা দাও", "example": "Please lock the gate before sleep.", "category": "Family and Home" },
+  { "id": 398, "word": "Turn off the lights", "pos": "phrase", "phonetic": "/tɜrn ɔf ðə laɪts/", "bangla": "লাইট বন্ধ করো", "example": "Turn off the lights in the hall.", "category": "Family and Home" },
+  { "id": 399, "word": "Good night everyone", "pos": "phrase", "phonetic": "/ɡʊd naɪt ɛvrɪwʌn/", "bangla": "সবাইকে শুভরাত্রি", "example": "Good night everyone, sleep well.", "category": "Family and Home" },
+  { "id": 400, "word": "See you in the morning", "pos": "phrase", "phonetic": "/si ju ɪn ðə mɔrnɪŋ/", "bangla": "সকালে দেখা হবে", "example": "See you in the morning at breakfast.", "category": "Family and Home" }
+]

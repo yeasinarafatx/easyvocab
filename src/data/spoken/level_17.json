@@ -1,0 +1,22 @@
+[
+  { "id": 321, "word": "Where is the police station", "pos": "phrase", "phonetic": "/wer ɪz ðə pəlis steɪʃən/", "bangla": "পুলিশ স্টেশন কোথায়", "example": "Where is the police station nearby?", "category": "Public Services" },
+  { "id": 322, "word": "I need to file a complaint", "pos": "phrase", "phonetic": "/aɪ nid tə faɪl ə kəmpleɪnt/", "bangla": "আমি একটি অভিযোগ দায়ের করতে চাই", "example": "I need to file a complaint today.", "category": "Public Services" },
+  { "id": 323, "word": "Please verify my identity", "pos": "phrase", "phonetic": "/pliz vɛrəfaɪ maɪ aɪdɛntəti/", "bangla": "দয়া করে আমার পরিচয় যাচাই করুন", "example": "Please verify my identity document.", "category": "Public Services" },
+  { "id": 324, "word": "I need this document attested", "pos": "phrase", "phonetic": "/aɪ nid ðɪs dɑkjumɛnt ətɛstɪd/", "bangla": "আমার এই নথি সত্যায়িত করতে হবে", "example": "I need this document attested urgently.", "category": "Public Services" },
+  { "id": 325, "word": "Where can I get this form", "pos": "phrase", "phonetic": "/wer kæn aɪ ɡɛt ðɪs fɔrm/", "bangla": "আমি কোথায় এই ফর্ম পাব", "example": "Where can I get this form for application?", "category": "Public Services" },
+  { "id": 326, "word": "How long is the process", "pos": "phrase", "phonetic": "/haʊ lɔŋ ɪz ðə prɑsɛs/", "bangla": "প্রক্রিয়াটি কতক্ষণ লাগে", "example": "How long is the process usually?", "category": "Public Services" },
+  { "id": 327, "word": "Is there an online option", "pos": "phrase", "phonetic": "/ɪz ðer ən ɑnlaɪn ɑpʃən/", "bangla": "অনলাইনে করার সুযোগ আছে কি", "example": "Is there an online option for this service?", "category": "Public Services" },
+  { "id": 328, "word": "Please give me token number", "pos": "phrase", "phonetic": "/pliz ɡɪv mi toʊkən nʌmbər/", "bangla": "আমাকে টোকেন নম্বর দিন", "example": "Please give me token number for queue.", "category": "Public Services" },
+  { "id": 329, "word": "I have all required papers", "pos": "phrase", "phonetic": "/aɪ hæv ɔl rɪkwaɪərd peɪpərz/", "bangla": "আমার সব প্রয়োজনীয় কাগজপত্র আছে", "example": "I have all required papers with me.", "category": "Public Services" },
+  { "id": 330, "word": "Can you check my application", "pos": "phrase", "phonetic": "/kæn ju tʃɛk maɪ æplɪkeɪʃən/", "bangla": "আপনি কি আমার আবেদনটি চেক করবেন", "example": "Can you check my application status?", "category": "Public Services" },
+  { "id": 331, "word": "My application is pending", "pos": "phrase", "phonetic": "/maɪ æplɪkeɪʃən ɪz pɛndɪŋ/", "bangla": "আমার আবেদনটি মুলতুবি রয়েছে", "example": "My application is pending for two weeks.", "category": "Public Services" },
+  { "id": 332, "word": "I need an update", "pos": "phrase", "phonetic": "/aɪ nid ən ʌpdeɪt/", "bangla": "আমার একটি আপডেট দরকার", "example": "I need an update on my case.", "category": "Public Services" },
+  { "id": 333, "word": "Please sign here", "pos": "phrase", "phonetic": "/pliz saɪn hɪr/", "bangla": "এখানে স্বাক্ষর করুন", "example": "Please sign here on this line.", "category": "Public Services" },
+  { "id": 334, "word": "Where should I submit this", "pos": "phrase", "phonetic": "/wer ʃʊd aɪ səbmɪt ðɪs/", "bangla": "আমি এটি কোথায় জমা দেব", "example": "Where should I submit this file?", "category": "Public Services" },
+  { "id": 335, "word": "When will it be ready", "pos": "phrase", "phonetic": "/wɛn wɪl ɪt bi rɛdi/", "bangla": "এটি কবে প্রস্তুত হবে", "example": "When will it be ready for collection?", "category": "Public Services" },
+  { "id": 336, "word": "Can I collect it tomorrow", "pos": "phrase", "phonetic": "/kæn aɪ kəlɛkt ɪt təmɔroʊ/", "bangla": "আমি কি এটি আগামীকাল নিতে পারি", "example": "Can I collect it tomorrow afternoon?", "category": "Public Services" },
+  { "id": 337, "word": "Please issue a receipt", "pos": "phrase", "phonetic": "/pliz ɪʃu ə rɪsit/", "bangla": "রসিদ দিন", "example": "Please issue a receipt for payment.", "category": "Public Services" },
+  { "id": 338, "word": "I paid the fee online", "pos": "phrase", "phonetic": "/aɪ peɪd ðə fi ɑnlaɪn/", "bangla": "আমি ফি অনলাইনে পরিশোধ করেছি", "example": "I paid the fee online yesterday.", "category": "Public Services" },
+  { "id": 339, "word": "Thank you for the assistance", "pos": "phrase", "phonetic": "/θæŋk ju fɔr ði əsɪstəns/", "bangla": "সহায়তার জন্য ধন্যবাদ", "example": "Thank you for the assistance today.", "category": "Public Services" },
+  { "id": 340, "word": "Have a good day", "pos": "phrase", "phonetic": "/hæv ə ɡʊd deɪ/", "bangla": "দিন ভালো কাটুক", "example": "Have a good day, sir.", "category": "Public Services" }
+]

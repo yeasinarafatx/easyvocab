@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
+import PremiumLockedNotice from "@/components/PremiumLockedNotice";
+import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 
 interface Word {
 	word: string;
@@ -14,6 +16,7 @@ interface Word {
 
 interface SpeechRecognitionResultItem {
 	transcript: string;
+	confidence?: number;
 }
 
 interface SpeechRecognitionEvent {
@@ -49,6 +52,7 @@ type ResultState = "none" | "correct" | "wrong";
 export default function SpeakLevelPage() {
 	const params = useParams<{ levelId: string }>();
 	const router = useRouter();
+	const searchParams = useSearchParams();
 	const levelId = params?.levelId ?? "beginner-1";
 	const [mode, setMode] = useState<Mode>("practice");
 	const [words, setWords] = useState<Word[]>([]);
@@ -58,8 +62,11 @@ export default function SpeakLevelPage() {
 	const [listenState, setListenState] = useState<ListenState>("idle");
 	const [resultState, setResultState] = useState<ResultState>("none");
 	const [attempts, setAttempts] = useState(0);
-	const [showEnglish, setShowEnglish] = useState(false);
+	const [examCorrectCount, setExamCorrectCount] = useState(0);
 	const [selectedVoiceURI, setSelectedVoiceURI] = useState<string | null>(null);
+	const [accessReady, setAccessReady] = useState(false);
+	const [hasSession, setHasSession] = useState(false);
+	const [isPremium, setIsPremium] = useState(false);
 	const recognitionRef = useRef<SpeechRecognition | null>(null);
 
 	const parts = levelId.split("-");
@@ -67,7 +74,31 @@ export default function SpeakLevelPage() {
 	const levelNumber = Number(parts[1] ?? "1");
 	const file = `level_${String(Number.isFinite(levelNumber) ? levelNumber : 1).padStart(2, "0")}`;
 	const isDemoLevel = stage === "demo";
-	const backHref = stage === "demo" ? "/demo" : `/stage/${stage}`;
+	const returnToDashboard = searchParams.get("from") === "dashboard";
+	const backHref = returnToDashboard ? "/dashboard" : stage === "demo" ? "/demo" : `/stage/${stage}`;
+	const needsPremium = requiresPremium(levelNumber, isDemoLevel);
+
+	useEffect(() => {
+		let mounted = true;
+
+		const loadPremiumState = async () => {
+			if (!needsPremium) {
+				setAccessReady(true);
+				return;
+			}
+
+			const snapshot = await fetchPremiumSnapshot();
+			if (!mounted) return;
+			setHasSession(snapshot.hasSession);
+			setIsPremium(snapshot.isPremium);
+			setAccessReady(true);
+		};
+
+		loadPremiumState();
+		return () => {
+			mounted = false;
+		};
+	}, [needsPremium]);
 
 	useEffect(() => {
 		let cancelled = false;
@@ -143,6 +174,9 @@ export default function SpeakLevelPage() {
 	const totalWords = words.length;
 	const isCompleted = totalWords > 0 && currentIndex >= totalWords;
 	const activeWord = !isCompleted ? words[currentIndex] : undefined;
+	const examPassThreshold = Math.min(14, totalWords || 14);
+	const examAccuracyPercent = totalWords > 0 ? Math.round((examCorrectCount / totalWords) * 100) : 0;
+	const examPassed = examCorrectCount >= examPassThreshold;
 	const supportsSpeechRecognition =
 		typeof window !== "undefined" &&
 		("SpeechRecognition" in window || "webkitSpeechRecognition" in window);
@@ -156,16 +190,18 @@ export default function SpeakLevelPage() {
 	}, [currentIndex, totalWords]);
 
 	useEffect(() => {
-		if (!isCompleted || mode !== "exam" || typeof window === "undefined") {
+		if (!isCompleted || mode !== "exam" || typeof window === "undefined" || isDemoLevel) {
 			return;
 		}
 
-		if (isDemoLevel) {
-			return;
+		if (examPassed) {
+			window.localStorage.setItem(`completed_${levelId}`, "true");
+			window.localStorage.setItem(`speak_completed_${levelId}`, "true");
+		} else {
+			window.localStorage.removeItem(`completed_${levelId}`);
+			window.localStorage.removeItem(`speak_completed_${levelId}`);
 		}
-
-		window.localStorage.setItem(`speak_completed_${levelId}`, "true");
-	}, [isCompleted, levelId, mode, isDemoLevel]);
+	}, [isCompleted, levelId, mode, isDemoLevel, examPassed]);
 
 	useEffect(() => {
 		if (!isDemoLevel || typeof window === "undefined") {
@@ -181,20 +217,20 @@ export default function SpeakLevelPage() {
 			return;
 		}
 
-		const t = window.setTimeout(() => router.replace("/"), 1200);
+		const t = window.setTimeout(() => router.replace(backHref), 1200);
 		return () => window.clearTimeout(t);
-	}, [isDemoLevel, isCompleted, router]);
+	}, [isDemoLevel, isCompleted, router, backHref]);
 
 	const resetWordState = () => {
 		setListenState("idle");
 		setResultState("none");
 		setAttempts(0);
-		setShowEnglish(false);
 	};
 
 	const handleModeChange = (nextMode: Mode) => {
 		setMode(nextMode);
 		setCurrentIndex(0);
+		setExamCorrectCount(0);
 		resetWordState();
 	};
 
@@ -222,26 +258,74 @@ export default function SpeakLevelPage() {
 
 	const finalizeWrongAttempt = () => {
 		setResultState("wrong");
-		setAttempts((prev) => {
-			const next = prev + 1;
-			if (next >= 3) {
-				setShowEnglish(true);
-			}
-			return next;
-		});
+		setAttempts((prev) => prev + 1);
 	};
+
+		const normalizeForCompare = (value: string) => {
+			return value
+				.toLowerCase()
+				.trim()
+				.replace(/^["'`]+|["'`]+$/g, "")
+				.replace(/[^a-z0-9\s'-]/g, "")
+				.replace(/\s+/g, " ")
+				.replace(/^(a|an|the)\s+/, "");
+		};
+
+		const compactForm = (value: string) => value.replace(/[\s'-]/g, "");
+
+		const levenshteinDistance = (a: string, b: string) => {
+			if (a === b) return 0;
+			if (!a.length) return b.length;
+			if (!b.length) return a.length;
+
+			const matrix: number[][] = Array.from({ length: a.length + 1 }, () => Array(b.length + 1).fill(0));
+			for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
+			for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
+
+			for (let i = 1; i <= a.length; i++) {
+				for (let j = 1; j <= b.length; j++) {
+					const cost = a[i - 1] === b[j - 1] ? 0 : 1;
+					matrix[i][j] = Math.min(
+						matrix[i - 1][j] + 1,
+						matrix[i][j - 1] + 1,
+						matrix[i - 1][j - 1] + cost,
+					);
+				}
+			}
+
+			return matrix[a.length][b.length];
+		};
+
+		const isTranscriptMatch = (transcript: string, targetWord: string) => {
+			const normalizedTranscript = normalizeForCompare(transcript);
+			const normalizedTarget = normalizeForCompare(targetWord);
+
+			if (!normalizedTranscript || !normalizedTarget) return false;
+
+			if (normalizedTranscript === normalizedTarget) return true;
+
+			const compactTranscript = compactForm(normalizedTranscript);
+			const compactTarget = compactForm(normalizedTarget);
+			if (compactTranscript === compactTarget) return true;
+
+			if (normalizedTranscript.includes(normalizedTarget)) return true;
+
+			const distance = levenshteinDistance(compactTranscript, compactTarget);
+			const maxLen = Math.max(compactTranscript.length, compactTarget.length);
+			const dynamicLimit = Math.max(1, Math.min(5, Math.ceil(maxLen * 0.28)));
+
+			if (maxLen <= 5) return distance <= 1;
+			if (maxLen <= 9) return distance <= 2;
+			return distance <= dynamicLimit;
+		};
 
 	const handleRecognitionResult = (transcript: string) => {
 		if (!activeWord) {
 			return;
 		}
 
-		const normalizedTranscript = transcript.trim().toLowerCase();
-		const normalizedWord = activeWord.word.trim().toLowerCase();
-
-		if (normalizedTranscript === normalizedWord) {
+			if (isTranscriptMatch(transcript, activeWord.word)) {
 			setResultState("correct");
-			setShowEnglish(true);
 			return;
 		}
 
@@ -267,8 +351,19 @@ export default function SpeakLevelPage() {
 		recognition.interimResults = false;
 
 		recognition.onresult = (event: SpeechRecognitionEvent) => {
-			const transcript = event.results[0]?.[0]?.transcript ?? "";
-			handleRecognitionResult(transcript);
+			const alternatives: string[] = [];
+			for (let resultIndex = 0; resultIndex < event.results.length; resultIndex++) {
+				const result = event.results[resultIndex];
+				for (let altIndex = 0; altIndex < (result?.length ?? 0); altIndex++) {
+					const transcript = result[altIndex]?.transcript?.trim();
+					if (transcript) alternatives.push(transcript);
+				}
+			}
+
+			const selectedTranscript = alternatives[0] ?? "";
+			const matchedTranscript = alternatives.find((t) => isTranscriptMatch(t, activeWord.word));
+
+			handleRecognitionResult(matchedTranscript ?? selectedTranscript);
 		};
 
 		recognition.onerror = (event: { error: string }) => {
@@ -305,21 +400,25 @@ export default function SpeakLevelPage() {
 			return;
 		}
 
+		if (mode === "exam" && resultState === "correct") {
+			setExamCorrectCount((prev) => prev + 1);
+		}
+
 		setCurrentIndex((prev) => prev + 1);
 		resetWordState();
 	};
 
-	const showHint = attempts >= 3 && resultState === "wrong";
+	const showHint = mode !== "exam" && attempts >= 3 && resultState === "wrong";
 	const showNext = resultState === "correct" || attempts >= 3;
 
 	const micButtonClass =
 		resultState === "correct"
-			? "w-24 h-24 bg-emerald-500/30 border-2 border-emerald-400/50 text-4xl"
+			? "h-20 w-20 bg-emerald-500/30 border-2 border-emerald-400/50 text-3xl sm:h-24 sm:w-24 sm:text-4xl"
 			: resultState === "wrong"
-				? "w-24 h-24 bg-rose-500/20 border-2 border-rose-300/40 text-4xl"
+				? "h-20 w-20 bg-rose-500/20 border-2 border-rose-300/40 text-3xl sm:h-24 sm:w-24 sm:text-4xl"
 				: listenState === "listening"
-					? "w-24 h-24 bg-rose-500/30 border-2 border-rose-400/60 animate-pulse text-4xl"
-					: "w-24 h-24 bg-violet-500/30 border-2 border-violet-400/50 shadow-lg shadow-violet-500/20 text-4xl";
+					? "h-20 w-20 bg-rose-500/30 border-2 border-rose-400/60 animate-pulse text-3xl sm:h-24 sm:w-24 sm:text-4xl"
+					: "h-20 w-20 bg-violet-500/30 border-2 border-violet-400/50 shadow-lg shadow-violet-500/20 text-3xl sm:h-24 sm:w-24 sm:text-4xl";
 
 	if (isLoading) {
 		return (
@@ -343,22 +442,59 @@ export default function SpeakLevelPage() {
 		);
 	}
 
+	if (needsPremium && !accessReady) {
+		return (
+			<div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
+				<p className="text-sm">Checking access...</p>
+			</div>
+		);
+	}
+
+	if (needsPremium && !hasSession) {
+		return (
+			<div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
+				<main className="mx-auto flex min-h-screen w-full max-w-2xl items-center px-4 sm:px-6">
+					<section className="w-full rounded-3xl border border-cyan-200/25 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 text-center shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
+						<h1 className="text-2xl font-extrabold">Level 2+ এর জন্য Login করুন</h1>
+						<p className="mt-3 text-sm text-slate-300">এই level unlock করতে আগে account এ login করতে হবে।</p>
+						<div className="mt-6 flex justify-center gap-3">
+							<Link href="/login" className="inline-flex rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-extrabold text-[#0f0f1a]">
+								Login
+							</Link>
+							<Link href="/dashboard" className="inline-flex rounded-xl border border-white/25 bg-white/15 px-5 py-2.5 text-sm font-semibold text-slate-100">
+								Dashboard
+							</Link>
+						</div>
+					</section>
+				</main>
+			</div>
+		);
+	}
+
+	if (needsPremium && !isPremium) {
+		return (
+			<PremiumLockedNotice
+				message="এই Speak level unlock করতে payment submit করুন। Approval হলেই access পাবেন।"
+			/>
+		);
+	}
+
 	return (
 		<div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
 			<div className="pointer-events-none absolute -left-20 top-8 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
 			<div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
-			<main className="relative z-10 mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-				<section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
-					<div className="flex flex-wrap items-center justify-between gap-4">
-						<div className="min-w-[220px] flex-1">
+			<main className="relative z-10 mx-auto w-full max-w-4xl px-3 py-4 sm:px-6 sm:py-8 lg:px-8">
+				<section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-4 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
+					<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+						<div className="min-w-0 flex-1">
 							<div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">
 								<p>Progress</p>
 								<p>
 									{Math.min(currentIndex + 1, totalWords)} / {totalWords}
 								</p>
 							</div>
-							<div className="h-3 overflow-hidden rounded-full bg-white/10">
+							<div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
 								<div
 									className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all"
 									style={{ width: `${progressPercent}%` }}
@@ -368,34 +504,40 @@ export default function SpeakLevelPage() {
 
 						<Link
 							href={backHref}
-							className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+							className="self-start rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
 						>
 							{stage === "demo" ? "Back to Demo" : "Back to Stage"}
 						</Link>
 					</div>
 
-					<div className="mt-5 flex flex-wrap gap-2">
+					<div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
 						<button
 							type="button"
 							onClick={() => handleModeChange("practice")}
-							className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+							className={`rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
 								mode === "practice"
-									? "border border-cyan-200/40 bg-cyan-200/20 text-cyan-100"
-									: "border border-white/20 bg-white/10 text-slate-200 hover:bg-white/20"
+									? "border border-cyan-200/45 bg-cyan-200/28 text-cyan-100"
+									: "border border-white/25 bg-white/15 text-slate-200 hover:bg-white/20"
 							}`}
 						>
-							🎤 Practice Mode
+							<span className="inline-flex items-center gap-2">
+								<img src="/icons/premium/megaphone-front-premium.svg" alt="Practice" className="h-5 w-5" />
+								Practice Mode
+							</span>
 						</button>
 						<button
 							type="button"
 							onClick={() => handleModeChange("exam")}
-							className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+							className={`rounded-lg px-4 py-2.5 text-sm font-semibold transition ${
 								mode === "exam"
-									? "border border-amber-300/40 bg-amber-300/20 text-amber-100"
-									: "border border-white/20 bg-white/10 text-slate-200 hover:bg-white/20"
+									? "border border-amber-300/45 bg-amber-300/28 text-amber-100"
+									: "border border-white/25 bg-white/15 text-slate-200 hover:bg-white/20"
 							}`}
 						>
-							📋 Exam Mode
+							<span className="inline-flex items-center gap-2">
+								<img src="/icons/premium/medal-front-color.svg" alt="Exam" className="h-5 w-5" />
+								Exam Mode
+							</span>
 						</button>
 					</div>
 
@@ -406,8 +548,19 @@ export default function SpeakLevelPage() {
 					{isCompleted ? (
 						<div className="mt-8 rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-6 text-center">
 							<h2 className="text-3xl font-extrabold text-emerald-100">🎉 সব শব্দ শেষ!</h2>
+							{mode === "exam" ? (
+								<>
+									<p className="mt-3 text-slate-100">সঠিক: {examCorrectCount} / {totalWords}</p>
+									<p className="mt-1 text-slate-100">Accuracy: {examAccuracyPercent}%</p>
+									<p className={`mt-3 font-semibold ${examPassed ? "text-emerald-300" : "text-rose-300"}`}>
+										{examPassed
+											? `Pass (${examPassThreshold}+ লাগবে) - Next level unlock হয়েছে`
+											: `Fail (${examPassThreshold}+ লাগবে) - এই level আবার দিন`}
+									</p>
+								</>
+							) : null}
 							{isDemoLevel ? (
-								<p className="mt-3 text-slate-200">Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে...</p>
+								<p className="mt-3 text-slate-100">Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে...</p>
 							) : (
 								<Link
 									href={`/stage/${stage}`}
@@ -419,45 +572,43 @@ export default function SpeakLevelPage() {
 						</div>
 					) : activeWord ? (
 						<>
-							<div className="mt-7 rounded-2xl border border-white/15 bg-white/10 p-5 sm:p-6">
+							<div className="mt-6 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/12 to-[#3b3d49]/92 p-4 shadow-lg shadow-black/20 sm:p-6">
 								{mode === "practice" ? (
 									<>
-										<div className="flex items-start justify-between gap-3">
-											<h1 className="text-5xl font-extrabold tracking-wide text-slate-100">{activeWord.word}</h1>
-											<button
-												type="button"
-												onClick={speakWord}
-												className="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-lg transition hover:bg-white/20"
-												aria-label="Play pronunciation"
-											>
-												🔊
-											</button>
+										<div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+											<div className="min-w-0 flex-1">
+												<h1 className="text-3xl font-extrabold tracking-wide text-slate-100 sm:text-5xl">{activeWord.word}</h1>
+												<p className="mt-3 text-xl font-extrabold text-emerald-300 sm:text-3xl">{activeWord.bangla}</p>
+												<p className="mt-2 text-xs text-slate-400 sm:text-sm">{activeWord.phonetic}</p>
+												<p className="mt-2 text-sm font-bold text-white sm:mt-3 sm:text-base">{activeWord.example}</p>
+											</div>
+											<div className="flex flex-col items-center gap-1 self-start">
+												<button
+													type="button"
+													onClick={speakWord}
+													className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-xl transition hover:bg-white/20 sm:h-16 sm:w-16 sm:text-3xl"
+													aria-label="Play pronunciation"
+												>
+													<img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-6 w-6 sm:h-8 sm:w-8" />
+												</button>
+												<p className="text-xs font-semibold text-white">শুনুন</p>
+											</div>
 										</div>
-										<p className="mt-4 text-xl text-slate-200">{activeWord.bangla}</p>
-										<p className="mt-2 text-sm text-slate-400">{activeWord.phonetic}</p>
 									</>
 								) : (
 									<>
 										<p className="text-sm uppercase tracking-[0.2em] text-slate-400">বাংলা অর্থ</p>
-										<h1 className="mt-2 text-4xl font-bold text-amber-200">{activeWord.bangla}</h1>
-										{showEnglish ? (
-											<p
-												className={`mt-4 text-2xl font-extrabold ${
-													resultState === "correct" ? "text-emerald-300" : "text-rose-300"
-												}`}
-											>
-												{activeWord.word}
-											</p>
-										) : null}
+										<h1 className="mt-2 text-3xl font-bold text-emerald-300 sm:text-4xl">{activeWord.bangla}</h1>
+										<p className="mt-3 text-sm font-semibold text-slate-300">ইংরেজি phrase নিজে বলুন, hint দেখানো হবে না।</p>
 									</>
 								)}
 							</div>
 
-							<div className="mt-6 rounded-2xl border border-white/15 bg-white/10 p-6">
-								<div className="flex flex-col items-center justify-center gap-4">
+							<div className="mt-5 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-[#333845]/92 p-4 shadow-lg shadow-black/20 sm:p-6">
+								<div className="flex flex-col items-center justify-center gap-3 sm:gap-4">
 									<div className="relative flex items-center justify-center">
 										{listenState === "idle" && resultState === "none" ? (
-											<div className="absolute h-24 w-24 rounded-full bg-violet-400/10 animate-ping" />
+											<div className="absolute h-20 w-20 rounded-full bg-violet-400/10 animate-ping sm:h-24 sm:w-24" />
 										) : null}
 										<button
 											type="button"
@@ -493,7 +644,7 @@ export default function SpeakLevelPage() {
 											<button
 												type="button"
 												onClick={handleRetry}
-												className="rounded-lg border border-rose-300/30 bg-rose-300/10 px-3 py-1.5 text-xs font-semibold text-rose-200 transition hover:bg-rose-300/20"
+												className="rounded-lg border border-rose-300/40 bg-rose-300/16 px-3 py-1.5 text-xs font-semibold text-rose-100 transition hover:bg-rose-300/22"
 											>
 												Retry
 											</button>
@@ -503,7 +654,7 @@ export default function SpeakLevelPage() {
 											<button
 												type="button"
 												onClick={handleNext}
-												className="rounded-lg border border-emerald-300/30 bg-emerald-300/10 px-3 py-1.5 text-xs font-semibold text-emerald-200 transition hover:bg-emerald-300/20"
+												className="rounded-lg border border-emerald-300/40 bg-emerald-300/16 px-3 py-1.5 text-xs font-semibold text-emerald-100 transition hover:bg-emerald-300/22"
 											>
 												Next
 											</button>

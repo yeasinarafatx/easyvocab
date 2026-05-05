@@ -1,0 +1,22 @@
+[
+  { "id": 261, "word": "I have a booking", "pos": "phrase", "phonetic": "/aɪ hæv ə bʊkɪŋ/", "bangla": "আমার একটি বুকিং আছে", "example": "I have a booking under my name.", "category": "Hotel" },
+  { "id": 262, "word": "I would like to check in", "pos": "phrase", "phonetic": "/aɪ wʊd laɪk tə tʃɛk ɪn/", "bangla": "আমি চেক-ইন করতে চাই", "example": "I would like to check in now.", "category": "Hotel" },
+  { "id": 263, "word": "Can I see the room first", "pos": "phrase", "phonetic": "/kæn aɪ si ðə rum fɜrst/", "bangla": "আমি কি আগে রুম দেখতে পারি", "example": "Can I see the room first please?", "category": "Hotel" },
+  { "id": 264, "word": "Is breakfast included", "pos": "phrase", "phonetic": "/iz brɛkfəst ɪnkludɪd/", "bangla": "ব্রেকফাস্ট কি অন্তর্ভুক্ত", "example": "Is breakfast included in this price?", "category": "Hotel" },
+  { "id": 265, "word": "I need a quiet room", "pos": "phrase", "phonetic": "/aɪ nid ə kwaɪət rum/", "bangla": "আমার একটি শান্ত রুম দরকার", "example": "I need a quiet room on upper floor.", "category": "Hotel" },
+  { "id": 266, "word": "Can I get a non smoking room", "pos": "phrase", "phonetic": "/kæn aɪ gɛt ə nɑn smoʊkɪŋ rum/", "bangla": "আমি কি নন-স্মোকিং রুম পেতে পারি", "example": "Can I get a non smoking room tonight?", "category": "Hotel" },
+  { "id": 267, "word": "What is the wifi password", "pos": "phrase", "phonetic": "/wʌt iz ðə waɪfaɪ pæswɜrd/", "bangla": "ওয়াইফাই পাসওয়ার্ড কী", "example": "What is the wifi password for this floor?", "category": "Hotel" },
+  { "id": 268, "word": "The AC is not working", "pos": "phrase", "phonetic": "/ði eɪsi iz nɑt wɜrkɪŋ/", "bangla": "এসি কাজ করছে না", "example": "The AC is not working in my room.", "category": "Hotel" },
+  { "id": 269, "word": "Please send housekeeping", "pos": "phrase", "phonetic": "/pliz sɛnd haʊskiːpɪŋ/", "bangla": "হাউসকিপিং পাঠান", "example": "Please send housekeeping to room 305.", "category": "Hotel" },
+  { "id": 270, "word": "I need fresh towels", "pos": "phrase", "phonetic": "/aɪ nid frɛʃ taʊəlz/", "bangla": "আমার নতুন তোয়ালে দরকার", "example": "I need fresh towels please.", "category": "Hotel" },
+  { "id": 271, "word": "Can you clean the room", "pos": "phrase", "phonetic": "/kæn ju klin ðə rum/", "bangla": "রুমটা পরিষ্কার করবেন", "example": "Can you clean the room now?", "category": "Hotel" },
+  { "id": 272, "word": "I lost my room key", "pos": "phrase", "phonetic": "/aɪ lɔst maɪ rum ki/", "bangla": "আমি রুমের চাবি হারিয়েছি", "example": "I lost my room key downstairs.", "category": "Hotel" },
+  { "id": 273, "word": "Please issue a new key", "pos": "phrase", "phonetic": "/pliz ɪʃu ə nu ki/", "bangla": "নতুন চাবি দিন", "example": "Please issue a new key card.", "category": "Hotel" },
+  { "id": 274, "word": "Can I get room service", "pos": "phrase", "phonetic": "/kæn aɪ gɛt rum sɜrvɪs/", "bangla": "আমি কি রুম সার্ভিস পেতে পারি", "example": "Can I get room service for dinner?", "category": "Hotel" },
+  { "id": 275, "word": "Please wake me up at six", "pos": "phrase", "phonetic": "/pliz weɪk mi ʌp æt sɪks/", "bangla": "আমাকে ছয়টায় জাগিয়ে দিন", "example": "Please wake me up at six tomorrow.", "category": "Hotel" },
+  { "id": 276, "word": "I would like late checkout", "pos": "phrase", "phonetic": "/aɪ wʊd laɪk leɪt tʃɛkaʊt/", "bangla": "আমি লেট চেকআউট চাই", "example": "I would like late checkout if available.", "category": "Hotel" },
+  { "id": 277, "word": "Can you keep my luggage", "pos": "phrase", "phonetic": "/kæn ju kip maɪ lʌgɪdʒ/", "bangla": "আপনি কি আমার লাগেজ রাখবেন", "example": "Can you keep my luggage for two hours?", "category": "Hotel" },
+  { "id": 278, "word": "I want to check out", "pos": "phrase", "phonetic": "/aɪ wɑnt tə tʃɛk aʊt/", "bangla": "আমি চেকআউট করতে চাই", "example": "I want to check out now.", "category": "Hotel" },
+  { "id": 279, "word": "Please prepare the bill", "pos": "phrase", "phonetic": "/pliz prɪpɛr ðə bɪl/", "bangla": "বিল প্রস্তুত করুন", "example": "Please prepare the bill quickly.", "category": "Hotel" },
+  { "id": 280, "word": "Thank you for your hospitality", "pos": "phrase", "phonetic": "/θæŋk ju fɔr jʊr hɑspɪtælɪti/", "bangla": "আপনাদের আতিথেয়তার জন্য ধন্যবাদ", "example": "Thank you for your hospitality here.", "category": "Hotel" }
+]

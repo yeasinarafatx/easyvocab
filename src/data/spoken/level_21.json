@@ -1,0 +1,22 @@
+[
+  { "id": 401, "word": "Could you help me with this", "pos": "phrase", "phonetic": "/kʊd ju hɛlp mi wɪð ðɪs/", "bangla": "আপনি কি আমাকে এতে সাহায্য করতে পারেন", "example": "Could you help me with this task?", "category": "Polite Requests" },
+  { "id": 402, "word": "Would you mind waiting", "pos": "phrase", "phonetic": "/wʊd ju maɪnd weɪtɪŋ/", "bangla": "আপনি কি একটু অপেক্ষা করবেন", "example": "Would you mind waiting for two minutes?", "category": "Polite Requests" },
+  { "id": 403, "word": "Can you please repeat", "pos": "phrase", "phonetic": "/kæn ju pliz rɪpit/", "bangla": "আপনি কি দয়া করে আবার বলবেন", "example": "Can you please repeat the last line?", "category": "Polite Requests" },
+  { "id": 404, "word": "Could you speak slowly", "pos": "phrase", "phonetic": "/kʊd ju spik sloʊli/", "bangla": "আপনি কি আস্তে কথা বলবেন", "example": "Could you speak slowly for me?", "category": "Polite Requests" },
+  { "id": 405, "word": "May I ask something", "pos": "phrase", "phonetic": "/meɪ aɪ æsk sʌmθɪŋ/", "bangla": "আমি কি কিছু জিজ্ঞেস করতে পারি", "example": "May I ask something important?", "category": "Polite Requests" },
+  { "id": 406, "word": "Could I use your phone", "pos": "phrase", "phonetic": "/kʊd aɪ juz jɔr foʊn/", "bangla": "আমি কি আপনার ফোন ব্যবহার করতে পারি", "example": "Could I use your phone for a call?", "category": "Polite Requests" },
+  { "id": 407, "word": "Please give me a moment", "pos": "phrase", "phonetic": "/pliz ɡɪv mi ə moʊmənt/", "bangla": "আমাকে একটু সময় দিন", "example": "Please give me a moment to check.", "category": "Polite Requests" },
+  { "id": 408, "word": "Could you write it down", "pos": "phrase", "phonetic": "/kʊd ju raɪt ɪt daʊn/", "bangla": "আপনি কি এটা লিখে দেবেন", "example": "Could you write it down for me?", "category": "Polite Requests" },
+  { "id": 409, "word": "Can I borrow your pen", "pos": "phrase", "phonetic": "/kæn aɪ bɑroʊ jɔr pɛn/", "bangla": "আমি কি আপনার কলমটি ধার নিতে পারি", "example": "Can I borrow your pen please?", "category": "Polite Requests" },
+  { "id": 410, "word": "Would you open the door", "pos": "phrase", "phonetic": "/wʊd ju oʊpən ðə dɔr/", "bangla": "আপনি কি দরজাটি খুলবেন", "example": "Would you open the door for me?", "category": "Polite Requests" },
+  { "id": 411, "word": "Could you close the window", "pos": "phrase", "phonetic": "/kʊd ju kloʊz ðə wɪndoʊ/", "bangla": "আপনি কি জানালাটি বন্ধ করবেন", "example": "Could you close the window please?", "category": "Polite Requests" },
+  { "id": 412, "word": "Please pass me the salt", "pos": "phrase", "phonetic": "/pliz pæs mi ðə sɔlt/", "bangla": "দয়া করে আমাকে লবণটা দিন", "example": "Please pass me the salt at dinner.", "category": "Polite Requests" },
+  { "id": 413, "word": "Could you check this once", "pos": "phrase", "phonetic": "/kʊd ju tʃɛk ðɪs wʌns/", "bangla": "আপনি কি একবার এটা দেখে দেবেন", "example": "Could you check this once quickly?", "category": "Polite Requests" },
+  { "id": 414, "word": "May I sit here", "pos": "phrase", "phonetic": "/meɪ aɪ sɪt hɪr/", "bangla": "আমি কি এখানে বসতে পারি", "example": "May I sit here beside you?", "category": "Polite Requests" },
+  { "id": 415, "word": "Would you mind moving aside", "pos": "phrase", "phonetic": "/wʊd ju maɪnd muvɪŋ əsaɪd/", "bangla": "আপনি কি একটু সরে দাঁড়াবেন", "example": "Would you mind moving aside a little?", "category": "Polite Requests" },
+  { "id": 416, "word": "Please let me know", "pos": "phrase", "phonetic": "/pliz lɛt mi noʊ/", "bangla": "দয়া করে আমাকে জানান", "example": "Please let me know your decision.", "category": "Polite Requests" },
+  { "id": 417, "word": "Could you send me details", "pos": "phrase", "phonetic": "/kʊd ju sɛnd mi ditelz/", "bangla": "আপনি কি আমাকে বিস্তারিত পাঠাবেন", "example": "Could you send me details by email?", "category": "Polite Requests" },
+  { "id": 418, "word": "Can we discuss this later", "pos": "phrase", "phonetic": "/kæn wi dɪskʌs ðɪs leɪtər/", "bangla": "আমরা কি এটা পরে আলোচনা করতে পারি", "example": "Can we discuss this later tonight?", "category": "Polite Requests" },
+  { "id": 419, "word": "Thank you for understanding", "pos": "phrase", "phonetic": "/θæŋk ju fɔr ʌndərstændɪŋ/", "bangla": "বুঝার জন্য ধন্যবাদ", "example": "Thank you for understanding my situation.", "category": "Polite Requests" },
+  { "id": 420, "word": "I really appreciate it", "pos": "phrase", "phonetic": "/aɪ rili əpriʃieɪt ɪt/", "bangla": "আমি সত্যিই কৃতজ্ঞ", "example": "I really appreciate it, thank you.", "category": "Polite Requests" }
+]

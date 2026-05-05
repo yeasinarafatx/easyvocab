@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import PremiumLockedNotice from "@/components/PremiumLockedNotice";
+import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 
 interface Word {
   word: string;
@@ -15,6 +17,7 @@ interface Word {
 export default function LearnLevelPage() {
   const params = useParams<{ levelId: string }>();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const levelId = params?.levelId ?? "beginner-1";
 
   const parts = levelId.split("-");
@@ -22,7 +25,8 @@ export default function LearnLevelPage() {
   const levelNumber = Number(parts[1] ?? "1");
   const file = `level_${String(Number.isFinite(levelNumber) ? levelNumber : 1).padStart(2, "0")}`;
   const isDemoLevel = stage === "demo";
-  const backHref = stage === "demo" ? "/demo" : "/dashboard";
+  const returnToDashboard = searchParams.get("from") === "dashboard";
+  const backHref = returnToDashboard ? "/dashboard" : stage === "demo" ? "/demo" : `/stage/${stage}`;
 
   const [words, setWords] = useState<Word[]>([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +37,33 @@ export default function LearnLevelPage() {
   const [showSuccessModal, setShowSuccessModal] = useState(false);
   const [speechRate, setSpeechRate] = useState<0.7 | 1>(1);
   const [selectedVoiceURI, setSelectedVoiceURI] = useState<string | null>(null);
+  const [accessReady, setAccessReady] = useState(false);
+  const [hasSession, setHasSession] = useState(false);
+  const [isPremium, setIsPremium] = useState(false);
+
+  const needsPremium = requiresPremium(levelNumber, isDemoLevel);
+
+  useEffect(() => {
+    let mounted = true;
+
+    const loadPremiumState = async () => {
+      if (!needsPremium) {
+        setAccessReady(true);
+        return;
+      }
+
+      const snapshot = await fetchPremiumSnapshot();
+      if (!mounted) return;
+      setHasSession(snapshot.hasSession);
+      setIsPremium(snapshot.isPremium);
+      setAccessReady(true);
+    };
+
+    loadPremiumState();
+    return () => {
+      mounted = false;
+    };
+  }, [needsPremium]);
 
   useEffect(() => {
     let cancelled = false;
@@ -119,9 +150,9 @@ export default function LearnLevelPage() {
 
   useEffect(() => {
     if (!isDemoLevel || !isCompleted) return;
-    const t = window.setTimeout(() => router.replace("/"), 1200);
+    const t = window.setTimeout(() => router.replace(backHref), 1200);
     return () => window.clearTimeout(t);
-  }, [isDemoLevel, isCompleted, router]);
+  }, [isDemoLevel, isCompleted, router, backHref]);
 
   const handleNext = () => {
     if (isCompleted || !activeWord) return;
@@ -133,9 +164,21 @@ export default function LearnLevelPage() {
     const nextIndex = currentIndex + 1;
     if (examMode && nextIndex >= totalWords) {
       if (!isDemoLevel && typeof window !== "undefined") {
+        // Set completion timestamp
+        const now = new Date().getTime();
+        window.localStorage.setItem(`study_timestamp_${levelId}`, now.toString());
         window.localStorage.setItem(`completed_${levelId}`, "true");
+        
+        // Track exam attempt as correct
+        const attemptKey = `exam_attempt_${Date.now()}`;
+        window.localStorage.setItem(attemptKey, JSON.stringify({ correct: true, timestamp: now }));
+        
         setShowSuccessModal(true);
       }
+    } else if (!examMode && nextIndex >= totalWords && !isDemoLevel && typeof window !== "undefined") {
+      // Also track for regular practice mode
+      const now = new Date().getTime();
+      window.localStorage.setItem(`study_timestamp_${levelId}`, now.toString());
     }
 
     setTypedValue("");
@@ -164,6 +207,43 @@ export default function LearnLevelPage() {
     );
   }
 
+  if (needsPremium && !accessReady) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#0f0f1a] text-slate-100">
+        <p className="text-sm">Checking access...</p>
+      </div>
+    );
+  }
+
+  if (needsPremium && !hasSession) {
+    return (
+      <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
+        <main className="mx-auto flex min-h-screen w-full max-w-2xl items-center px-4 sm:px-6">
+          <section className="w-full rounded-3xl border border-cyan-200/25 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 text-center shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
+            <h1 className="text-2xl font-extrabold">Level 2+ এর জন্য Login করুন</h1>
+            <p className="mt-3 text-sm text-slate-300">এই level unlock করতে আগে account এ login করতে হবে।</p>
+            <div className="mt-6 flex justify-center gap-3">
+              <Link href="/login" className="inline-flex rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-extrabold text-[#0f0f1a]">
+                Login
+              </Link>
+              <Link href="/dashboard" className="inline-flex rounded-xl border border-white/25 bg-white/15 px-5 py-2.5 text-sm font-semibold text-slate-100">
+                Dashboard
+              </Link>
+            </div>
+          </section>
+        </main>
+      </div>
+    );
+  }
+
+  if (needsPremium && !isPremium) {
+    return (
+      <PremiumLockedNotice
+        message="এই Learn level unlock করতে payment submit করুন। Approval হলেই access পাবেন।"
+      />
+    );
+  }
+
   if (!activeWord) {
     return (
       <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
@@ -180,27 +260,30 @@ export default function LearnLevelPage() {
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
-        <section className="rounded-3xl border border-white/15 bg-white/10 p-6 shadow-2xl shadow-black/30 backdrop-blur-xl sm:p-8">
+        <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
               <div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">
                 <p>Progress</p>
                 <p>{Math.min(currentIndex + 1, totalWords)} / {totalWords}</p>
               </div>
-              <div className="h-3 overflow-hidden rounded-full bg-white/10">
+              <div className="h-3 overflow-hidden rounded-full bg-slate-200/15">
                 <div className="h-full rounded-full bg-gradient-to-r from-cyan-300 to-emerald-300 transition-all" style={{ width: `${progressPercent}%` }} />
               </div>
             </div>
-            <Link href={backHref} className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
-              {stage === "demo" ? "Back to Demo" : "Back to Dashboard"}
+            <Link href={backHref} className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
+              {stage === "demo" ? "Back to Demo" : "Back to Stage"}
             </Link>
           </div>
 
           <div className="mt-4 flex justify-end gap-2">
-            <button type="button" onClick={() => setSpeechRate((prev) => (prev === 1 ? 0.7 : 1))} className="rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
-              {speechRate === 0.7 ? "🐢 Slow" : "⚡ Normal"}
+            <button type="button" onClick={() => setSpeechRate((prev) => (prev === 1 ? 0.7 : 1))} className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
+              <span className="inline-flex items-center gap-2">
+                <img src="/icons/premium/clock-front-premium.svg" alt="Speed" className="h-4 w-4" />
+                {speechRate === 0.7 ? "Slow" : "Normal"}
+              </span>
             </button>
-            <button type="button" onClick={toggleExamMode} className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${examMode ? "border border-rose-300/40 bg-rose-300/20 text-rose-100 hover:bg-rose-300/30" : "border border-cyan-200/30 bg-cyan-200/10 text-cyan-100 hover:bg-cyan-200/20"}`}>
+            <button type="button" onClick={toggleExamMode} className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${examMode ? "border border-rose-300/45 bg-rose-300/25 text-rose-100 hover:bg-rose-300/30" : "border border-cyan-200/35 bg-cyan-200/18 text-cyan-100 hover:bg-cyan-200/24"}`}>
               {examMode ? "Exam Mode: ON" : "Exam Mode"}
             </button>
           </div>
@@ -210,7 +293,7 @@ export default function LearnLevelPage() {
 
           {!isCompleted ? (
             <>
-              <div className="mt-7 rounded-2xl border border-white/15 bg-white/10 p-5 sm:p-6">
+              <div className="mt-7 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/14 to-[#3a3d49]/92 p-5 shadow-lg shadow-black/20 sm:p-6">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     {!examMode ? (
@@ -219,23 +302,29 @@ export default function LearnLevelPage() {
                       <div className="h-12 sm:h-14" />
                     )}
                     <div className="mt-3 flex flex-wrap items-center gap-2">
-                      <span className="rounded-full border border-cyan-200/30 bg-cyan-200/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-100">{activeWord.pos}</span>
+                      <span className="rounded-full border border-cyan-200/35 bg-cyan-200/18 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-100">{activeWord.pos}</span>
                       {!examMode && <span className="text-sm text-slate-300">{activeWord.phonetic}</span>}
                     </div>
                   </div>
-                  <button type="button" onClick={speakWord} className="rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-lg transition hover:bg-white/20" aria-label="Play pronunciation">🔊</button>
+                  <div className="flex flex-col items-center gap-1">
+                    <button type="button" onClick={speakWord} className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-white/25 bg-white/15 transition hover:bg-white/20" aria-label="Play pronunciation">
+                      <img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-6 w-6" />
+                    </button>
+                    <p className="text-xs font-semibold text-white">শুনুন</p>
+                  </div>
                 </div>
-                <p className="mt-4 text-lg font-medium text-slate-200">{activeWord.bangla}</p>
-                <p className="mt-2 text-sm italic text-slate-300">
+                <p className="mt-4 text-3xl font-extrabold text-emerald-300">{activeWord.bangla}</p>
+                <p className="mt-2 text-sm font-bold italic text-white sm:text-base">
                   {examMode ? activeWord.example.replace(new RegExp(`\\b${activeWord.word}\\b`, "gi"), "_".repeat(activeWord.word.length)) : activeWord.example}
                 </p>
               </div>
 
-              <div className="mt-6 rounded-2xl border border-white/15 bg-white/10 p-5 sm:p-6">
+              <div className="mt-6 rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-[#323744]/92 p-5 shadow-lg shadow-black/20 sm:p-6">
+                <p className="mb-3 text-sm font-semibold text-slate-100">শব্দটি লিখুন:</p>
                 <div className="flex flex-wrap gap-2">
                   {activeWord.word.split("").map((char: string, index: number) => {
                     const typedChar = normalizedTyped[index];
-                    let boxClass = "border-white/15 bg-white/5 text-slate-400";
+                    let boxClass = "border-white/20 bg-white/10 text-slate-300";
                     if (typedChar !== undefined) {
                       boxClass = typedChar === char.toLowerCase()
                         ? "border-emerald-300/40 bg-emerald-300/20 text-emerald-100"
@@ -254,14 +343,14 @@ export default function LearnLevelPage() {
                   onChange={(e) => setTypedValue(e.target.value)}
                   autoComplete="off"
                   spellCheck={false}
-                  className="mt-5 w-full rounded-xl border border-white/20 bg-[#131326] px-4 py-3 text-center text-xl tracking-[0.2em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60"
+                  className="mt-5 w-full rounded-xl border border-white/25 bg-[#0f1730] px-4 py-3 text-center text-xl tracking-[0.2em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60"
                   placeholder="Type here"
                 />
               </div>
 
               <div className="mt-6 flex items-center justify-end gap-3">
                 {!examMode && (
-                  <button type="button" onClick={handleRetry} className="rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-slate-100 transition hover:bg-white/20">Retry</button>
+                  <button type="button" onClick={handleRetry} className="rounded-xl border border-white/25 bg-white/15 px-5 py-2.5 text-sm font-semibold text-slate-100 transition hover:bg-white/20">Retry</button>
                 )}
                 <button type="button" onClick={handleNext} disabled={!isCorrect} className="rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-bold text-[#0f0f1a] transition enabled:hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-40">Next</button>
               </div>
@@ -270,8 +359,8 @@ export default function LearnLevelPage() {
             <div className="mt-8 rounded-2xl border border-emerald-300/30 bg-emerald-300/10 p-6 text-center">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">Completed</p>
               <h2 className="mt-2 text-3xl font-extrabold text-emerald-100">দারুণ! ২০টি শব্দ শেষ।</h2>
-              <p className="mt-3 text-slate-200">
-                {isDemoLevel ? "Demo সম্পন্ন হয়েছে, landing page এ নেওয়া হচ্ছে..." : "সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।"}
+              <p className="mt-3 text-slate-100">
+                {isDemoLevel ? `Demo সম্পন্ন হয়েছে, ${returnToDashboard ? "dashboard" : "landing page"} এ নেওয়া হচ্ছে...` : "সবগুলো ধাপ সফলভাবে সম্পন্ন হয়েছে।"}
               </p>
             </div>
           )}

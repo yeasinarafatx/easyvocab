@@ -1,0 +1,22 @@
+[
+  { "id": 201, "word": "Help me please", "pos": "phrase", "phonetic": "/hɛlp miː pliːz/", "bangla": "দয়া করে আমাকে সাহায্য করুন", "example": "Help me please, I fell down.", "category": "Emergencies" },
+  { "id": 202, "word": "Call the police", "pos": "phrase", "phonetic": "/kɔːl ðə pəˈliːs/", "bangla": "পুলিশকে কল করুন", "example": "Call the police right now.", "category": "Emergencies" },
+  { "id": 203, "word": "Call an ambulance now", "pos": "phrase", "phonetic": "/kɔːl ən ˈæmbjələns naʊ/", "bangla": "এখনই অ্যাম্বুলেন্স ডাকুন", "example": "Call an ambulance now, quickly.", "category": "Emergencies" },
+  { "id": 204, "word": "There is a fire", "pos": "phrase", "phonetic": "/ðer ɪz ə faɪr/", "bangla": "আগুন লেগেছে", "example": "There is a fire in the kitchen.", "category": "Emergencies" },
+  { "id": 205, "word": "Please stay calm", "pos": "phrase", "phonetic": "/pliːz steɪ kɑːm/", "bangla": "অনুগ্রহ করে শান্ত থাকুন", "example": "Please stay calm and follow me.", "category": "Emergencies" },
+  { "id": 206, "word": "Do not panic", "pos": "phrase", "phonetic": "/duː nɑːt ˈpænɪk/", "bangla": "ভয় পাবেন না", "example": "Do not panic, help is coming.", "category": "Emergencies" },
+  { "id": 207, "word": "Are you hurt", "pos": "phrase", "phonetic": "/ɑːr juː hɝːt/", "bangla": "আপনি কি আঘাত পেয়েছেন", "example": "Are you hurt anywhere?", "category": "Emergencies" },
+  { "id": 208, "word": "I cannot breathe", "pos": "phrase", "phonetic": "/aɪ ˈkænɑːt briːð/", "bangla": "আমি শ্বাস নিতে পারছি না", "example": "I cannot breathe properly.", "category": "Emergencies" },
+  { "id": 209, "word": "I feel very weak", "pos": "phrase", "phonetic": "/aɪ fiːl ˈvɛri wiːk/", "bangla": "আমি খুব দুর্বল লাগছে", "example": "I feel very weak suddenly.", "category": "Emergencies" },
+  { "id": 210, "word": "I lost my child", "pos": "phrase", "phonetic": "/aɪ lɔːst maɪ tʃaɪld/", "bangla": "আমার বাচ্চাকে খুঁজে পাচ্ছি না", "example": "I lost my child in the crowd.", "category": "Emergencies" },
+  { "id": 211, "word": "I lost my phone", "pos": "phrase", "phonetic": "/aɪ lɔːst maɪ foʊn/", "bangla": "আমার ফোন হারিয়ে গেছে", "example": "I lost my phone on the bus.", "category": "Emergencies" },
+  { "id": 212, "word": "My bag was stolen", "pos": "phrase", "phonetic": "/maɪ bæɡ wəz ˈstoʊlən/", "bangla": "আমার ব্যাগ চুরি হয়েছে", "example": "My bag was stolen near the gate.", "category": "Emergencies" },
+  { "id": 213, "word": "Please lock the door", "pos": "phrase", "phonetic": "/pliːz lɑːk ðə dɔːr/", "bangla": "দয়া করে দরজা বন্ধ করুন", "example": "Please lock the door immediately.", "category": "Emergencies" },
+  { "id": 214, "word": "Turn off the power", "pos": "phrase", "phonetic": "/tɝːn ɔːf ðə ˈpaʊər/", "bangla": "বিদ্যুৎ বন্ধ করুন", "example": "Turn off the power now.", "category": "Emergencies" },
+  { "id": 215, "word": "Where is the nearest exit", "pos": "phrase", "phonetic": "/wer ɪz ðə ˈnɪrɪst ˈɛɡzɪt/", "bangla": "সবচেয়ে কাছের বের হওয়ার পথ কোথায়", "example": "Where is the nearest exit from here?", "category": "Emergencies" },
+  { "id": 216, "word": "Please call my family now", "pos": "phrase", "phonetic": "/pliːz kɔːl maɪ ˈfæməli naʊ/", "bangla": "এখনই আমার পরিবারকে কল করুন", "example": "Please call my family now please.", "category": "Emergencies" },
+  { "id": 217, "word": "Send your live location", "pos": "phrase", "phonetic": "/sɛnd jʊr laɪv loʊˈkeɪʃən/", "bangla": "আপনার লাইভ লোকেশন পাঠান", "example": "Send your live location quickly.", "category": "Emergencies" },
+  { "id": 218, "word": "Stay where you are", "pos": "phrase", "phonetic": "/steɪ wer juː ɑːr/", "bangla": "আপনি যেখানে আছেন সেখানেই থাকুন", "example": "Stay where you are, I am coming.", "category": "Emergencies" },
+  { "id": 219, "word": "I am safe now", "pos": "phrase", "phonetic": "/aɪ æm seɪf naʊ/", "bangla": "আমি এখন নিরাপদ", "example": "I am safe now, do not worry.", "category": "Emergencies" },
+  { "id": 220, "word": "Thank you for helping me", "pos": "phrase", "phonetic": "/θæŋk juː fɔːr ˈhɛlpɪŋ miː/", "bangla": "আমাকে সাহায্য করার জন্য ধন্যবাদ", "example": "Thank you for helping me today.", "category": "Emergencies" }
+]

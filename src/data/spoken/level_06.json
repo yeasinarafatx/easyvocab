@@ -1,0 +1,22 @@
+[
+  { "id": 101, "word": "I need to see a doctor", "pos": "phrase", "phonetic": "/aɪ niːd tə siː ə ˈdɑːktər/", "bangla": "আমার ডাক্তারের সাথে দেখা করতে হবে", "example": "I need to see a doctor now.", "category": "Hospital" },
+  { "id": 102, "word": "I have a fever", "pos": "phrase", "phonetic": "/aɪ hæv ə ˈfiːvər/", "bangla": "আমার জ্বর", "example": "I have a fever since morning.", "category": "Hospital" },
+  { "id": 103, "word": "I have a headache", "pos": "phrase", "phonetic": "/aɪ hæv ə ˈhɛdeɪk/", "bangla": "আমার মাথা ব্যথা", "example": "I have a headache today.", "category": "Hospital" },
+  { "id": 104, "word": "My throat hurts", "pos": "phrase", "phonetic": "/maɪ θroʊt hɝːts/", "bangla": "আমার গলা ব্যথা", "example": "My throat hurts when I speak.", "category": "Hospital" },
+  { "id": 105, "word": "I feel dizzy", "pos": "phrase", "phonetic": "/aɪ fiːl ˈdɪzi/", "bangla": "আমার মাথা ঘোরে", "example": "I feel dizzy after standing.", "category": "Hospital" },
+  { "id": 106, "word": "I have an appointment", "pos": "phrase", "phonetic": "/aɪ hæv ən əˈpɔɪntmənt/", "bangla": "আমার অ্যাপয়েন্টমেন্ট আছে", "example": "I have an appointment at 5 PM.", "category": "Hospital" },
+  { "id": 107, "word": "Please check my blood pressure", "pos": "phrase", "phonetic": "/pliːz tʃɛk maɪ blʌd ˈprɛʃər/", "bangla": "আমার রক্তচাপ পরীক্ষা করুন", "example": "Please check my blood pressure once.", "category": "Hospital" },
+  { "id": 108, "word": "Where is the emergency room", "pos": "phrase", "phonetic": "/wer ɪz ði ɪˈmɝːdʒənsi ruːm/", "bangla": "ইমার্জেন্সি রুম কোথায়", "example": "Where is the emergency room here?", "category": "Hospital" },
+  { "id": 109, "word": "I need medicine", "pos": "phrase", "phonetic": "/aɪ niːd ˈmɛdɪsɪn/", "bangla": "আমার ওষুধ দরকার", "example": "I need medicine for pain.", "category": "Hospital" },
+  { "id": 110, "word": "How many times a day", "pos": "phrase", "phonetic": "/haʊ ˈmɛni taɪmz ə deɪ/", "bangla": "দিনে কয়বার", "example": "How many times a day should I take it?", "category": "Hospital" },
+  { "id": 111, "word": "Should I take this after food", "pos": "phrase", "phonetic": "/ʃʊd aɪ teɪk ðɪs ˈæftər fuːd/", "bangla": "এটা কি খাবারের পরে খাব", "example": "Should I take this after food?", "category": "Hospital" },
+  { "id": 112, "word": "I am allergic to this", "pos": "phrase", "phonetic": "/aɪ æm əˈlɝːdʒɪk tə ðɪs/", "bangla": "এতে আমার অ্যালার্জি আছে", "example": "I am allergic to this medicine.", "category": "Hospital" },
+  { "id": 113, "word": "Can you write the prescription", "pos": "phrase", "phonetic": "/kæn juː raɪt ðə prɪˈskrɪpʃən/", "bangla": "আপনি কি প্রেসক্রিপশন লিখে দিতে পারেন", "example": "Can you write the prescription clearly?", "category": "Hospital" },
+  { "id": 114, "word": "When will I feel better", "pos": "phrase", "phonetic": "/wɛn wɪl aɪ fiːl ˈbɛtər/", "bangla": "আমি কবে ভালো অনুভব করব", "example": "When will I feel better doctor?", "category": "Hospital" },
+  { "id": 115, "word": "I need a medical report", "pos": "phrase", "phonetic": "/aɪ niːd ə ˈmɛdɪkəl rɪˈpɔːrt/", "bangla": "আমার একটি মেডিকেল রিপোর্ট দরকার", "example": "I need a medical report for office.", "category": "Hospital" },
+  { "id": 116, "word": "Please call my family", "pos": "phrase", "phonetic": "/pliːz kɔːl maɪ ˈfæməli/", "bangla": "আমার পরিবারকে কল করুন", "example": "Please call my family now.", "category": "Hospital" },
+  { "id": 117, "word": "I need an ambulance", "pos": "phrase", "phonetic": "/aɪ niːd æn ˈæmbjələns/", "bangla": "আমার একটি অ্যাম্বুলেন্স দরকার", "example": "I need an ambulance immediately.", "category": "Hospital" },
+  { "id": 118, "word": "Where is the pharmacy", "pos": "phrase", "phonetic": "/wer ɪz ðə ˈfɑːrməsi/", "bangla": "ফার্মেসি কোথায়", "example": "Where is the pharmacy counter?", "category": "Hospital" },
+  { "id": 119, "word": "Can I drink water now", "pos": "phrase", "phonetic": "/kæn aɪ drɪŋk ˈwɔːtər naʊ/", "bangla": "আমি কি এখন পানি খেতে পারি", "example": "Can I drink water now doctor?", "category": "Hospital" },
+  { "id": 120, "word": "Thank you doctor", "pos": "phrase", "phonetic": "/θæŋk juː ˈdɑːktər/", "bangla": "ধন্যবাদ ডাক্তার", "example": "Thank you doctor for your support.", "category": "Hospital" }
+]

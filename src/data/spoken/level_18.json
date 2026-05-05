@@ -1,0 +1,22 @@
+[
+  { "id": 341, "word": "How is your day going", "pos": "phrase", "phonetic": "/haʊ ɪz jɔr deɪ ɡoʊɪŋ/", "bangla": "আপনার দিন কেমন যাচ্ছে", "example": "How is your day going so far?", "category": "Social Conversation" },
+  { "id": 342, "word": "What are you doing now", "pos": "phrase", "phonetic": "/wʌt ɑr ju duɪŋ naʊ/", "bangla": "আপনি এখন কী করছেন", "example": "What are you doing now at home?", "category": "Social Conversation" },
+  { "id": 343, "word": "Long time no see", "pos": "phrase", "phonetic": "/lɔŋ taɪm noʊ si/", "bangla": "অনেকদিন পর দেখা", "example": "Long time no see, how have you been?", "category": "Social Conversation" },
+  { "id": 344, "word": "It is nice to see you", "pos": "phrase", "phonetic": "/ɪt ɪz naɪs tə si ju/", "bangla": "আপনাকে দেখে ভালো লাগছে", "example": "It is nice to see you again.", "category": "Social Conversation" },
+  { "id": 345, "word": "How was your weekend", "pos": "phrase", "phonetic": "/haʊ wəz jɔr wikɛnd/", "bangla": "আপনার সপ্তাহান্ত কেমন কেটেছে", "example": "How was your weekend trip?", "category": "Social Conversation" },
+  { "id": 346, "word": "I had a busy day", "pos": "phrase", "phonetic": "/aɪ hæd ə bɪzi deɪ/", "bangla": "আমার ব্যস্ত দিন গেছে", "example": "I had a busy day at work.", "category": "Social Conversation" },
+  { "id": 347, "word": "I am feeling better today", "pos": "phrase", "phonetic": "/aɪ æm filɪŋ bɛtər tədeɪ/", "bangla": "আমি আজ ভালো অনুভব করছি", "example": "I am feeling better today, thanks.", "category": "Social Conversation" },
+  { "id": 348, "word": "Can we meet this weekend", "pos": "phrase", "phonetic": "/kæn wi mit ðɪs wikɛnd/", "bangla": "আমরা কি এই সপ্তাহান্তে দেখা করতে পারি", "example": "Can we meet this weekend for coffee?", "category": "Social Conversation" },
+  { "id": 349, "word": "Let us catch up soon", "pos": "phrase", "phonetic": "/lɛt ʌs kætʃ ʌp sun/", "bangla": "চলুন শীঘ্রই আড্ডা দিই", "example": "Let us catch up soon in person.", "category": "Social Conversation" },
+  { "id": 350, "word": "I like your idea", "pos": "phrase", "phonetic": "/aɪ laɪk jɔr aɪdiə/", "bangla": "আপনার আইডিয়াটি আমার ভালো লেগেছে", "example": "I like your idea for the event.", "category": "Social Conversation" },
+  { "id": 351, "word": "That sounds great", "pos": "phrase", "phonetic": "/ðæt saʊndz ɡreɪt/", "bangla": "শুনতে দারুণ লাগছে", "example": "That sounds great to me.", "category": "Social Conversation" },
+  { "id": 352, "word": "I totally agree", "pos": "phrase", "phonetic": "/aɪ toʊtəli əɡri/", "bangla": "আমি পুরোপুরি একমত", "example": "I totally agree with your point.", "category": "Social Conversation" },
+  { "id": 353, "word": "I am not sure", "pos": "phrase", "phonetic": "/aɪ æm nɑt ʃʊr/", "bangla": "আমি নিশ্চিত নই", "example": "I am not sure about that plan.", "category": "Social Conversation" },
+  { "id": 354, "word": "Can you explain that", "pos": "phrase", "phonetic": "/kæn ju ɪkspleɪn ðæt/", "bangla": "আপনি কি এটা ব্যাখ্যা করবেন", "example": "Can you explain that once more?", "category": "Social Conversation" },
+  { "id": 355, "word": "I am sorry to hear that", "pos": "phrase", "phonetic": "/aɪ æm sɑri tə hɪr ðæt/", "bangla": "এটা শুনে খারাপ লাগলো", "example": "I am sorry to hear that news.", "category": "Social Conversation" },
+  { "id": 356, "word": "Congratulations on your success", "pos": "phrase", "phonetic": "/kənɡrætʃəleɪʃənz ɑn jɔr səksɛs/", "bangla": "আপনার সাফল্যে অভিনন্দন", "example": "Congratulations on your success in exam.", "category": "Social Conversation" },
+  { "id": 357, "word": "Please keep in touch", "pos": "phrase", "phonetic": "/pliz kip ɪn tʌtʃ/", "bangla": "যোগাযোগ রাখবেন", "example": "Please keep in touch with me.", "category": "Social Conversation" },
+  { "id": 358, "word": "Take care of yourself", "pos": "phrase", "phonetic": "/teɪk kɛr əv jɔrˈsɛlf/", "bangla": "নিজের যত্ন নিন", "example": "Take care of yourself and rest.", "category": "Social Conversation" },
+  { "id": 359, "word": "See you around", "pos": "phrase", "phonetic": "/si ju əraʊnd/", "bangla": "আবার দেখা হবে", "example": "See you around next week.", "category": "Social Conversation" },
+  { "id": 360, "word": "Have a wonderful evening", "pos": "phrase", "phonetic": "/hæv ə wʌndərfəl ivnɪŋ/", "bangla": "সুন্দর সন্ধ্যা কাটুক", "example": "Have a wonderful evening ahead.", "category": "Social Conversation" }
+]

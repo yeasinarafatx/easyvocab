@@ -1,0 +1,22 @@
+[
+  { "id": 21, "word": "I need a basket", "pos": "phrase", "phonetic": "/aɪ niːd ə ˈbæskɪt/", "bangla": "আমার একটি ঝুড়ি দরকার", "example": "I need a basket for shopping.", "category": "Supermarket" },
+  { "id": 22, "word": "Where is the milk", "pos": "phrase", "phonetic": "/wer ɪz ðə mɪlk/", "bangla": "দুধ কোথায়", "example": "Where is the milk section?", "category": "Supermarket" },
+  { "id": 23, "word": "How much is this", "pos": "phrase", "phonetic": "/haʊ mʌtʃ ɪz ðɪs/", "bangla": "এটার দাম কত", "example": "How much is this bottle?", "category": "Supermarket" },
+  { "id": 24, "word": "It is too expensive", "pos": "phrase", "phonetic": "/ɪt ɪz tuː ɪkˈspɛnsɪv/", "bangla": "এটা অনেক দামি", "example": "It is too expensive for me.", "category": "Supermarket" },
+  { "id": 25, "word": "Do you have a discount", "pos": "phrase", "phonetic": "/duː juː hæv ə ˈdɪskaʊnt/", "bangla": "কোনো ছাড় আছে", "example": "Do you have a discount today?", "category": "Supermarket" },
+  { "id": 26, "word": "I want one kilo", "pos": "phrase", "phonetic": "/aɪ wɑːnt wʌn ˈkiːloʊ/", "bangla": "আমি এক কেজি চাই", "example": "I want one kilo of apples.", "category": "Supermarket" },
+  { "id": 27, "word": "Please weigh this", "pos": "phrase", "phonetic": "/pliːz weɪ ðɪs/", "bangla": "এটা ওজন করে দিন", "example": "Please weigh this for me.", "category": "Supermarket" },
+  { "id": 28, "word": "I will take this", "pos": "phrase", "phonetic": "/aɪ wɪl teɪk ðɪs/", "bangla": "আমি এটা নেব", "example": "I will take this pack.", "category": "Supermarket" },
+  { "id": 29, "word": "I do not need a bag", "pos": "phrase", "phonetic": "/aɪ duː nɑːt niːd ə bæɡ/", "bangla": "আমার ব্যাগ লাগবে না", "example": "I do not need a bag, thanks.", "category": "Supermarket" },
+  { "id": 30, "word": "Please give me a bag", "pos": "phrase", "phonetic": "/pliːz ɡɪv miː ə bæɡ/", "bangla": "আমাকে একটি ব্যাগ দিন", "example": "Please give me a bag.", "category": "Supermarket" },
+  { "id": 31, "word": "Can I pay by card", "pos": "phrase", "phonetic": "/kæn aɪ peɪ baɪ kɑːrd/", "bangla": "আমি কি কার্ডে পেমেন্ট করতে পারি", "example": "Can I pay by card here?", "category": "Supermarket" },
+  { "id": 32, "word": "I will pay in cash", "pos": "phrase", "phonetic": "/aɪ wɪl peɪ ɪn kæʃ/", "bangla": "আমি নগদে পেমেন্ট করব", "example": "I will pay in cash today.", "category": "Supermarket" },
+  { "id": 33, "word": "Please scan this item", "pos": "phrase", "phonetic": "/pliːz skæn ðɪs ˈaɪtəm/", "bangla": "এই পণ্যটি স্ক্যান করুন", "example": "Please scan this item first.", "category": "Supermarket" },
+  { "id": 34, "word": "The line is long", "pos": "phrase", "phonetic": "/ðə laɪn ɪz lɔːŋ/", "bangla": "লাইন বড়", "example": "The line is long today.", "category": "Supermarket" },
+  { "id": 35, "word": "Where is the checkout", "pos": "phrase", "phonetic": "/wer ɪz ðə ˈtʃɛkaʊt/", "bangla": "চেকআউট কোথায়", "example": "Where is the checkout counter?", "category": "Supermarket" },
+  { "id": 36, "word": "I forgot my wallet", "pos": "phrase", "phonetic": "/aɪ fərˈɡɑːt maɪ ˈwɑːlɪt/", "bangla": "আমি মানিব্যাগ ভুলে গেছি", "example": "I forgot my wallet at home.", "category": "Supermarket" },
+  { "id": 37, "word": "Please keep this aside", "pos": "phrase", "phonetic": "/pliːz kiːp ðɪs əˈsaɪd/", "bangla": "এটা আলাদা করে রাখুন", "example": "Please keep this aside for me.", "category": "Supermarket" },
+  { "id": 38, "word": "I need fresh vegetables", "pos": "phrase", "phonetic": "/aɪ niːd frɛʃ ˈvɛdʒtəbəlz/", "bangla": "আমার টাটকা সবজি দরকার", "example": "I need fresh vegetables today.", "category": "Supermarket" },
+  { "id": 39, "word": "This is out of stock", "pos": "phrase", "phonetic": "/ðɪs ɪz aʊt əv stɑːk/", "bangla": "এটা স্টকে নেই", "example": "This is out of stock now.", "category": "Supermarket" },
+  { "id": 40, "word": "Thank you cashier", "pos": "phrase", "phonetic": "/θæŋk juː kæˈʃɪr/", "bangla": "ধন্যবাদ ক্যাশিয়ার", "example": "Thank you cashier, bye.", "category": "Supermarket" }
+]

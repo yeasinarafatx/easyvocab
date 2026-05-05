@@ -1,0 +1,22 @@
+[
+  { "id": 421, "word": "What time is the meeting", "pos": "phrase", "phonetic": "/wʌt taɪm ɪz ðə miːtɪŋ/", "bangla": "মিটিং কখন", "example": "What time is the meeting today?", "category": "Time and Scheduling" },
+  { "id": 422, "word": "Please be on time", "pos": "phrase", "phonetic": "/pliːz bi ɑːn taɪm/", "bangla": "সময়মতো আসবেন", "example": "Please be on time tomorrow.", "category": "Time and Scheduling" },
+  { "id": 423, "word": "I am five minutes away", "pos": "phrase", "phonetic": "/aɪ æm faɪv mɪnɪts əweɪ/", "bangla": "আমি পাঁচ মিনিট দূরে", "example": "I am five minutes away from office.", "category": "Time and Scheduling" },
+  { "id": 424, "word": "Can we start now", "pos": "phrase", "phonetic": "/kæn wi stɑːrt naʊ/", "bangla": "আমরা কি এখন শুরু করতে পারি", "example": "Can we start now everyone is here?", "category": "Time and Scheduling" },
+  { "id": 425, "word": "Let us finish by noon", "pos": "phrase", "phonetic": "/lɛt ʌs fɪnɪʃ baɪ nuːn/", "bangla": "চলুন দুপুরের মধ্যে শেষ করি", "example": "Let us finish by noon if possible.", "category": "Time and Scheduling" },
+  { "id": 426, "word": "I need extra time", "pos": "phrase", "phonetic": "/aɪ niːd ɛkstrə taɪm/", "bangla": "আমার অতিরিক্ত সময় দরকার", "example": "I need extra time for this report.", "category": "Time and Scheduling" },
+  { "id": 427, "word": "Can we postpone this", "pos": "phrase", "phonetic": "/kæn wi poʊstpoʊn ðɪs/", "bangla": "আমরা কি এটা পিছিয়ে দিতে পারি", "example": "Can we postpone this discussion?", "category": "Time and Scheduling" },
+  { "id": 428, "word": "Let us move it to tomorrow", "pos": "phrase", "phonetic": "/lɛt ʌs muːv ɪt tə təmɑːroʊ/", "bangla": "চলুন এটা আগামীকাল করি", "example": "Let us move it to tomorrow morning.", "category": "Time and Scheduling" },
+  { "id": 429, "word": "I am free after lunch", "pos": "phrase", "phonetic": "/aɪ æm friː æftər lʌntʃ/", "bangla": "আমি দুপুরের পর ফ্রি", "example": "I am free after lunch today.", "category": "Time and Scheduling" },
+  { "id": 430, "word": "Are you available this evening", "pos": "phrase", "phonetic": "/ɑːr ju əveɪləbl ðɪs iːvnɪŋ/", "bangla": "আপনি কি আজ সন্ধ্যায় ফ্রি", "example": "Are you available this evening for a call?", "category": "Time and Scheduling" },
+  { "id": 431, "word": "I will send calendar invite", "pos": "phrase", "phonetic": "/aɪ wɪl sɛnd kæləndər ɪnvaɪt/", "bangla": "আমি ক্যালেন্ডার ইনভাইট পাঠাব", "example": "I will send calendar invite shortly.", "category": "Time and Scheduling" },
+  { "id": 432, "word": "Please remind me at six", "pos": "phrase", "phonetic": "/pliːz rɪmaɪnd mi æt sɪks/", "bangla": "আমাকে ছয়টায় মনে করিয়ে দিও", "example": "Please remind me at six PM.", "category": "Time and Scheduling" },
+  { "id": 433, "word": "I forgot the schedule", "pos": "phrase", "phonetic": "/aɪ fərɡɑːt ðə skɛdʒuːl/", "bangla": "আমি সময়সূচি ভুলে গেছি", "example": "I forgot the schedule for today.", "category": "Time and Scheduling" },
+  { "id": 434, "word": "When is the deadline", "pos": "phrase", "phonetic": "/wɛn ɪz ðə dɛdlaɪn/", "bangla": "ডেডলাইন কখন", "example": "When is the deadline for submission?", "category": "Time and Scheduling" },
+  { "id": 435, "word": "Deadline is next Monday", "pos": "phrase", "phonetic": "/dɛdlaɪn ɪz nɛkst mʌndeɪ/", "bangla": "ডেডলাইন আগামী সোমবার", "example": "Deadline is next Monday afternoon.", "category": "Time and Scheduling" },
+  { "id": 436, "word": "Let us take ten minutes", "pos": "phrase", "phonetic": "/lɛt ʌs teɪk tɛn mɪnɪts/", "bangla": "চলুন দশ মিনিট নিই", "example": "Let us take ten minutes break.", "category": "Time and Scheduling" },
+  { "id": 437, "word": "We are running out of time", "pos": "phrase", "phonetic": "/wi ɑːr rʌnɪŋ aʊt əv taɪm/", "bangla": "আমাদের সময় শেষ হয়ে যাচ্ছে", "example": "We are running out of time now.", "category": "Time and Scheduling" },
+  { "id": 438, "word": "Please join on time", "pos": "phrase", "phonetic": "/pliːz dʒɔɪn ɑːn taɪm/", "bangla": "সময়মতো যোগ দিন", "example": "Please join on time in Zoom.", "category": "Time and Scheduling" },
+  { "id": 439, "word": "See you at eight", "pos": "phrase", "phonetic": "/siː ju æt eɪt/", "bangla": "আটটায় দেখা হবে", "example": "See you at eight near the gate.", "category": "Time and Scheduling" },
+  { "id": 440, "word": "Thanks for being punctual", "pos": "phrase", "phonetic": "/θæŋks fɔːr biːɪŋ pʌŋktʃuəl/", "bangla": "সময়মতো আসার জন্য ধন্যবাদ", "example": "Thanks for being punctual today.", "category": "Time and Scheduling" }
+]

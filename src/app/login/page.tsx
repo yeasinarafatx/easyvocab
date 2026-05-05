@@ -14,10 +14,19 @@ export default function LoginPage() {
   const [showResendVerification, setShowResendVerification] = useState(false);
   const [resendCooldown, setResendCooldown] = useState(0);
   const [loading, setLoading] = useState(false);
+  const [redirectPath, setRedirectPath] = useState("/dashboard");
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectParam = params.get("redirect") ?? "";
+    if (redirectParam.startsWith("/") && !redirectParam.startsWith("//")) {
+      setRedirectPath(redirectParam);
+    }
+  }, []);
 
   useEffect(() => {
     if (resendCooldown <= 0) return;
@@ -49,9 +58,9 @@ export default function LoginPage() {
       if (signInError) throw signInError;
 
       if (data?.user) {
-        setMessage("✓ Login successful! Redirecting to dashboard...");
+        setMessage("✓ Login successful! Redirecting...");
         setTimeout(() => {
-          router.push("/dashboard");
+          router.push(redirectPath);
         }, 1000);
       }
     } catch (err: unknown) {
@@ -63,7 +72,8 @@ export default function LoginPage() {
         const email = encodeURIComponent(formData.email.trim().toLowerCase());
         setMessage("Verification code page-এ নিয়ে যাওয়া হচ্ছে...");
         setTimeout(() => {
-          router.push(`/verify-email?email=${email}`);
+          const redirect = encodeURIComponent(redirectPath);
+          router.push(`/verify-email?email=${email}&redirect=${redirect}`);
         }, 800);
       }
     } finally {
@@ -102,11 +112,11 @@ export default function LoginPage() {
       subtitle="অ্যাকাউন্টে ঢুকে আপনার progress, stages এবং premium access দেখুন।"
       footerText="নতুন ব্যবহারকারী?"
       footerLinkLabel="Create Account"
-      footerLinkHref="/signup"
+      footerLinkHref={`/signup?redirect=${encodeURIComponent(redirectPath)}`}
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="email" className="mb-1 block text-sm font-semibold text-slate-100">
             Email
           </label>
           <input
@@ -122,7 +132,7 @@ export default function LoginPage() {
         </div>
 
         <div>
-          <label htmlFor="password" className="mb-1 block text-sm font-semibold text-slate-200">
+          <label htmlFor="password" className="mb-1 block text-sm font-semibold text-slate-100">
             Password
           </label>
           <input
