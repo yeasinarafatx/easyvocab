@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
+import { trackMetaEvent } from "@/lib/metaPixel";
 
 type StageName = "beginner" | "intermediate" | "advanced" | "exam" | "spoken";
 type PracticeMode = "typing" | "speaking" | "flashcard";
@@ -281,7 +282,12 @@ export default function StagePage() {
 
                 if (isPremiumLocked) {
                   return (
-                    <Link key={levelId} href="/payment" className={cardClassName}>
+                    <Link
+                      key={levelId}
+                      href="/payment"
+                      onClick={() => trackMetaEvent("Lead", { content_name: `Locked Stage ${levelId}` })}
+                      className={cardClassName}
+                    >
                       {cardContent}
                     </Link>
                   );

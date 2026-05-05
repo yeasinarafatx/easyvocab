@@ -11,6 +11,7 @@ const coreLevels: Array<{
   description: string;
   href: string;
   totalLevels: number;
+  unlockText: string;
   accent: string;
 }> = [
   {
@@ -19,6 +20,7 @@ const coreLevels: Array<{
     description: "Daily words and easy core practice",
     href: "/stage/beginner",
     totalLevels: 10,
+    unlockText: "এই module open করতে কিছু unlock লাগবে না",
     accent: "from-cyan-300 to-emerald-300",
   },
   {
@@ -27,6 +29,7 @@ const coreLevels: Array<{
     description: "Build confidence with stronger lessons",
     href: "/stage/intermediate",
     totalLevels: 15,
+    unlockText: "Beginner-এর 5টি level complete করলে unlock হবে",
     accent: "from-cyan-300 to-sky-300",
   },
   {
@@ -35,6 +38,7 @@ const coreLevels: Array<{
     description: "Complete the final core English track",
     href: "/stage/advanced",
     totalLevels: 15,
+    unlockText: "Intermediate-এর 8টি level complete করলে unlock হবে",
     accent: "from-cyan-300 to-violet-300",
   },
 ];
@@ -131,9 +135,7 @@ export default function CorePage() {
                     <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-slate-300">Core Track</p>
                     <h2 className="mt-3 text-xl font-extrabold text-slate-100 sm:text-2xl">{level.title}</h2>
                     <p className="mt-2 text-xs text-slate-300 sm:text-sm">{level.description}</p>
-                    <p className="mt-3 text-xs text-slate-400">
-                      Unlock করতে আগের level complete করুন
-                    </p>
+                    <p className="mt-3 text-xs text-slate-300">{level.unlockText}</p>
                     <div className="mt-4 rounded-xl border border-white/20 bg-white/10 px-4 py-2.5 text-center text-sm font-semibold text-slate-300">
                       Locked
                     </div>

@@ -1,8 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/lib/supabase";
+import { trackMetaEvent } from "@/lib/metaPixel";
 
 type PaymentMethod = "bkash" | "nagad";
 type RequestStatus = "pending" | "approved" | "rejected";
@@ -47,13 +49,14 @@ const paymentLogoMap: Record<
 const whatsappSupportUrl = "https://wa.me/message/GEWPOC6N6XFQC1";
 
 export default function PaymentPage() {
+  const router = useRouter();
   const [sessionReady, setSessionReady] = useState(false);
   const [hasSession, setHasSession] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
   const [method, setMethod] = useState<PaymentMethod>("bkash");
   const [senderMobile, setSenderMobile] = useState("");
   const [trxId, setTrxId] = useState("");
-  const [amount] = useState(399);
+  const [amount] = useState(499);
   const [latestRequest, setLatestRequest] = useState<LatestRequest | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -62,6 +65,7 @@ export default function PaymentPage() {
     bkash: false,
     nagad: false,
   });
+  const paymentNumber = "01540568375";
 
   const loadLatestRequest = async (currentUserId: string) => {
     const { data: req } = await supabase
@@ -76,6 +80,17 @@ export default function PaymentPage() {
   };
 
   const hasPending = latestRequest?.status === "pending";
+
+  const handleCopyPaymentNumber = async () => {
+    try {
+      await navigator.clipboard.writeText(paymentNumber);
+      setNotice("Payment number copied successfully.");
+      setError(null);
+    } catch (copyError) {
+      console.error("Copy failed:", copyError);
+      setError("Could not copy the payment number. Please copy it manually.");
+    }
+  };
 
   const statusBadge = useMemo(() => {
     if (!latestRequest) return null;
@@ -98,6 +113,17 @@ export default function PaymentPage() {
 
       if (!user) return;
 
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("is_premium")
+        .eq("id", user.id)
+        .maybeSingle();
+
+      if (profile?.is_premium) {
+        router.replace("/dashboard");
+        return;
+      }
+
       if (mounted) {
         await loadLatestRequest(user.id);
       }
@@ -107,7 +133,11 @@ export default function PaymentPage() {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [router]);
+
+  useEffect(() => {
+    trackMetaEvent("InitiateCheckout", { content_name: "Manual Payment Page", value: amount, currency: "BDT" });
+  }, [amount]);
 
   useEffect(() => {
     if (!userId) return;
@@ -139,6 +169,17 @@ export default function PaymentPage() {
       return;
     }
 
+    // Rate limiting: Allow only 1 request per 60 seconds
+    const lastSubmitKey = `payment_submit_${userId}`;
+    const lastSubmitTime = parseInt(localStorage.getItem(lastSubmitKey) || "0");
+    const secondsSinceLastSubmit = (Date.now() - lastSubmitTime) / 1000;
+
+    if (secondsSinceLastSubmit < 60 && lastSubmitTime > 0) {
+      const secondsToWait = Math.ceil(60 - secondsSinceLastSubmit);
+      setError(`আরও ${secondsToWait} সেকেন্ড পরে চেষ্টা করুন।`);
+      return;
+    }
+
     setSubmitting(true);
     const { data, error: insertError } = await supabase
       .from("payment_requests")
@@ -163,6 +204,11 @@ export default function PaymentPage() {
       setError(insertError.message);
       return;
     }
+
+    trackMetaEvent("Lead", { content_name: "Payment Request Submitted", value: amount, currency: "BDT" });
+
+    // Record submission time for rate limiting
+    localStorage.setItem(lastSubmitKey, Date.now().toString());
 
     setLatestRequest(data as LatestRequest);
     setSenderMobile("");
@@ -276,7 +322,7 @@ export default function PaymentPage() {
                   <ul className="mt-2 space-y-1 text-xs text-slate-200 sm:text-sm">
                     <li>1. bKash app থেকে Send Money অপশন নির্বাচন করুন।</li>
                     <li>
-                      2. নাম্বার <span className="text-base font-extrabold text-emerald-200 sm:text-lg">01540568375</span> এ ৳{amount} পাঠান (Personal Number)।
+                      2. নাম্বার <span className="text-base font-extrabold text-emerald-200 sm:text-lg">{paymentNumber}</span> এ ৳{amount} পাঠান (Personal Number)।
                     </li>
                     <li>3. Payment সম্পন্ন হলে TRX ID কপি করে নিচের ফর্মে দিন।</li>
                   </ul>
@@ -284,11 +330,18 @@ export default function PaymentPage() {
                   <ul className="mt-2 space-y-1 text-xs text-slate-200 sm:text-sm">
                     <li>1. Nagad app থেকে Send Money অপশন নির্বাচন করুন।</li>
                     <li>
-                      2. নাম্বার <span className="text-base font-extrabold text-emerald-200 sm:text-lg">01540568375</span> এ ৳{amount} পাঠান (Personal Number)।
+                      2. নাম্বার <span className="text-base font-extrabold text-emerald-200 sm:text-lg">{paymentNumber}</span> এ ৳{amount} পাঠান (Personal Number)।
                     </li>
                     <li>3. Payment সম্পন্ন হলে TRX ID কপি করে নিচের ফর্মে দিন।</li>
                   </ul>
                 )}
+                <button
+                  type="button"
+                  onClick={handleCopyPaymentNumber}
+                  className="mt-3 inline-flex items-center gap-2 rounded-lg border border-emerald-300/35 bg-emerald-300/12 px-3 py-2 text-xs font-semibold text-emerald-100 transition hover:bg-emerald-300/20"
+                >
+                  📋 Copy Payment Number
+                </button>
               </div>
 
               <label className="mt-4 block text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">Sender Mobile</label>
@@ -314,6 +367,13 @@ export default function PaymentPage() {
               >
                 {submitting ? "Submitting..." : hasPending ? "Already Processing" : "Submit Payment Request"}
               </button>
+
+              <Link
+                href="/dashboard"
+                className="mt-3 inline-flex w-full items-center justify-center rounded-xl border border-cyan-200/35 bg-[#0f1730]/55 px-5 py-3 text-sm font-extrabold text-cyan-100 transition hover:bg-[#162346]"
+              >
+                শেখা শুরু করুন
+              </Link>
 
               {notice ? <p className="mt-3 text-sm text-emerald-200">{notice}</p> : null}
               {error ? <p className="mt-3 text-sm text-rose-300">{error}</p> : null}

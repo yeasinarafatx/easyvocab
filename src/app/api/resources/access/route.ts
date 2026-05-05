@@ -1,11 +1,21 @@
-import { supabase } from "@/lib/supabase";
+import { createSupabaseTokenClient } from "@/lib/supabaseServer";
 
 export async function GET(request: Request) {
   try {
-    // Get user session
-    const { data: { session }, error: authError } = await supabase.auth.getSession();
+    const authHeader = request.headers.get("authorization") || "";
+    const token = authHeader.toLowerCase().startsWith("bearer ") ? authHeader.slice(7) : "";
 
-    if (authError || !session?.user) {
+    if (!token) {
+      return new Response(
+        JSON.stringify({ error: "Unauthorized", canAccess: false }),
+        { status: 401, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
+    const tokenSupabase = createSupabaseTokenClient(token);
+    const { data: { user }, error: userError } = await tokenSupabase.auth.getUser();
+
+    if (userError || !user) {
       return new Response(
         JSON.stringify({ error: "Unauthorized", canAccess: false }),
         { status: 401, headers: { "Content-Type": "application/json" } }
@@ -13,10 +23,10 @@ export async function GET(request: Request) {
     }
 
     // Check if user is premium
-    const { data: profile, error: profileError } = await supabase
+    const { data: profile, error: profileError } = await tokenSupabase
       .from("profiles")
       .select("is_premium")
-      .eq("id", session.user.id)
+      .eq("id", user.id)
       .single();
 
     const isPremium = !profileError && Boolean(profile?.is_premium);
@@ -25,7 +35,7 @@ export async function GET(request: Request) {
       JSON.stringify({ 
         canAccess: isPremium, 
         isPremium, 
-        userId: session.user.id 
+        userId: user.id 
       }),
       { status: 200, headers: { "Content-Type": "application/json" } }
     );

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
+import { trackMetaEvent } from "@/lib/metaPixel";
 
 type StageName = "Beginner" | "Intermediate" | "Advanced" | "Exam" | "Spoken";
 
@@ -38,30 +39,63 @@ export default function DashboardPage() {
   const [accuracyPercent, setAccuracyPercent] = useState<number | null>(null);
 
   const refreshStatus = async (userId: string) => {
-    const [{ data: profile }, { data: latestPayment }, { data: adminRow }] = await Promise.all([
-      supabase
-        .from("profiles")
-        .select("is_premium")
-        .eq("id", userId)
-        .maybeSingle(),
-      supabase
-        .from("payment_requests")
-        .select("status, review_note")
-        .eq("user_id", userId)
-        .order("created_at", { ascending: false })
-        .limit(1)
-        .maybeSingle(),
-      supabase
-        .from("admin_users")
-        .select("user_id")
-        .eq("user_id", userId)
-        .maybeSingle(),
-    ]);
+    try {
+      // Add timeout to prevent hanging requests
+      const timeoutPromise = new Promise((_, reject) =>
+        setTimeout(() => reject(new Error("Query timeout")), 10000)
+      );
 
-    setPremiumState(profile?.is_premium ? "premium" : "free");
-    setLatestPaymentState((latestPayment?.status as PaymentState) ?? null);
-    setLatestPaymentNote(latestPayment?.review_note ?? null);
-    setIsAdmin(Boolean(adminRow?.user_id));
+      const queryPromise = Promise.all([
+        supabase
+          .from("profiles")
+          .select("is_premium")
+          .eq("id", userId)
+          .maybeSingle(),
+        supabase
+          .from("payment_requests")
+          .select("status, review_note")
+          .eq("user_id", userId)
+          .order("created_at", { ascending: false })
+          .limit(1)
+          .maybeSingle(),
+        supabase
+          .from("admin_users")
+          .select("user_id")
+          .eq("user_id", userId)
+          .maybeSingle(),
+      ]);
+
+      const [{ data: profile, error: profileError }, { data: latestPayment, error: paymentError }, { data: adminRow, error: adminError }] = await Promise.race([
+        queryPromise,
+        timeoutPromise,
+      ]) as any;
+
+      // Handle errors gracefully
+      if (profileError) {
+        console.error("Profile error:", profileError);
+        setPremiumState("free");
+      } else {
+        setPremiumState(profile?.is_premium ? "premium" : "free");
+      }
+
+      if (paymentError) {
+        console.error("Payment error:", paymentError);
+        setLatestPaymentState(null);
+      } else {
+        setLatestPaymentState((latestPayment?.status as PaymentState) ?? null);
+        setLatestPaymentNote(latestPayment?.review_note ?? null);
+      }
+
+      if (adminError) {
+        console.error("Admin error:", adminError);
+        setIsAdmin(false);
+      } else {
+        setIsAdmin(Boolean(adminRow?.user_id));
+      }
+    } catch (error) {
+      console.error("Error refreshing status:", error);
+      // Keep existing state on error
+    }
   };
 
   useEffect(() => {
@@ -120,7 +154,7 @@ export default function DashboardPage() {
       const userId = data.session?.user?.id;
       if (!userId) return;
       await refreshStatus(userId);
-    }, 15000);
+    }, 30000); // Increased from 15000 to 30000 to reduce server load on free tier
 
     return () => window.clearInterval(timer);
   }, [authChecked]);
@@ -257,14 +291,8 @@ export default function DashboardPage() {
           <header className="border-b border-white/10 pb-6">
             <div className="grid gap-4 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
-                  Vocab Speak
-                </p>
-                <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">
-                  <span className="block text-sm font-semibold uppercase tracking-[0.2em] text-slate-300">
-                    Welcome back
-                  </span>
-                  <span className="mt-1 block text-emerald-300">{userName}</span>
+                <h1 className="mt-0 text-3xl font-extrabold leading-tight sm:text-4xl">
+                  <span className="mt-0 block text-emerald-300">{userName}</span>
                 </h1>
 
                 <p className="mt-4 inline-flex rounded-full border border-cyan-200/25 bg-cyan-300/10 px-4 py-1.5 text-sm font-semibold text-cyan-100 sm:text-base">
@@ -280,6 +308,7 @@ export default function DashboardPage() {
                   </Link>
                   <Link
                     href="/payment"
+                    onClick={() => trackMetaEvent("Lead", { content_name: "Dashboard Payment CTA" })}
                     className="inline-flex rounded-lg border border-cyan-200/35 bg-cyan-200/12 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-200/20"
                   >
                     Payment
@@ -374,6 +403,7 @@ export default function DashboardPage() {
                     <p className="text-xs text-slate-100">Level 2+ unlock করতে Premium লাগবে</p>
                     <Link
                       href="/payment"
+                      onClick={() => trackMetaEvent("Lead", { content_name: "Dashboard Go To Payment" })}
                       className="mt-2 inline-flex rounded-lg border border-cyan-200/35 bg-cyan-200/15 px-3 py-1.5 text-xs font-semibold text-cyan-100 transition hover:bg-cyan-200/24"
                     >
                       Go to Payment
@@ -483,6 +513,55 @@ export default function DashboardPage() {
                 শুরু করুন
               </div>
             </Link>
+          </div>
+
+          <div className="mt-8 border-t border-white/10 pt-8">
+            <div className="mb-4 flex items-center justify-between">
+              <h3 className="text-lg font-semibold text-slate-100">📚 Resources</h3>
+              <div className="flex items-center gap-3">
+                <a
+                  href="https://www.facebook.com/share/17SRhrV411/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Share on Facebook"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-sm text-slate-100 hover:bg-white/10 transition"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                    <path d="M22 12C22 6.477 17.523 2 12 2S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.877v-6.99H7.898v-2.887h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.242 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.887h-2.33V21.88C18.343 21.128 22 16.991 22 12z" fill="currentColor"/>
+                  </svg>
+                  <span>Share</span>
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+              <Link
+                href="/resources/free"
+                className="rounded-2xl border border-cyan-300/35 bg-gradient-to-br from-cyan-300/18 via-[#2a3546]/90 to-[#1f2a38]/95 p-5 shadow-xl shadow-black/20 transition hover:border-cyan-100 hover:from-cyan-300/24 hover:to-[#24354a]"
+              >
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-300/35 bg-cyan-300/12 shadow-lg shadow-cyan-300/10">
+                  <img src="/icons/premium/fav-folder-front-premium.svg" alt="Free Resources" className="h-7 w-7" />
+                </div>
+                <h3 className="text-xl font-bold text-cyan-200">🎁 Free Resources</h3>
+                <p className="mt-2 text-sm text-slate-300">বিনামূল্যে PDF এবং ebook সংগ্রহ</p>
+                <div className="mt-4 rounded-lg border border-cyan-300/45 bg-cyan-300/15 px-4 py-2.5 text-center text-sm font-semibold text-cyan-100">
+                  Download Now
+                </div>
+              </Link>
+
+              <Link
+                href="/resources/paid"
+                className="rounded-2xl border border-amber-300/35 bg-gradient-to-br from-amber-300/18 via-[#3d382c]/90 to-[#252a2d]/95 p-5 shadow-xl shadow-black/20 transition hover:border-amber-200 hover:from-amber-300/24 hover:to-[#2a3236]"
+              >
+                <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-300/35 bg-amber-300/12 shadow-lg shadow-amber-300/10">
+                  <img src="/icons/premium/trophy-front-premium.svg" alt="Premium Resources" className="h-7 w-7" />
+                </div>
+                <h3 className="text-xl font-bold text-amber-200">Premium Resources</h3>
+                <p className="mt-2 text-sm text-slate-300">প্রিমিয়াম সদস্যদের জন্য বিশেষ সামগ্রী</p>
+                <div className="mt-4 rounded-lg border border-amber-300/45 bg-amber-300/15 px-4 py-2.5 text-center text-sm font-semibold text-amber-100">
+                  {premiumState === "premium" ? "Access Now" : "Upgrade for Access"}
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
       </main>

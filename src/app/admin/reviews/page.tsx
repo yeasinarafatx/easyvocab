@@ -174,6 +174,9 @@ export default function AdminReviewsPage() {
               >
                 Refresh
               </button>
+              <Link href="/admin/resources" className="rounded-lg border border-cyan-200/35 bg-cyan-200/12 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-200/20">
+                📂 Upload Resources
+              </Link>
               <Link href="/dashboard" className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
                 Dashboard
               </Link>

@@ -17,6 +17,10 @@ export default function VerifyEmailClient() {
   const [loading, setLoading] = useState(false);
   const [resendCooldown, setResendCooldown] = useState(0);
 
+  const redirectParam = searchParams.get("redirect") ?? "";
+  const redirectPath =
+    redirectParam.startsWith("/") && !redirectParam.startsWith("//") ? redirectParam : "/dashboard";
+
   useEffect(() => {
     if (resendCooldown <= 0) return;
     const timer = window.setInterval(() => {
@@ -52,16 +56,16 @@ export default function VerifyEmailClient() {
       if (verifyError) throw verifyError;
 
       if (data.session) {
-        setMessage("✓ Email verified! আপনাকে dashboard-এ নেওয়া হচ্ছে...");
+        setMessage("✓ Email verified! আপনাকে পরের পেজে নেওয়া হচ্ছে...");
         setTimeout(() => {
-          router.push("/dashboard");
+          router.push(redirectPath);
         }, 900);
         return;
       }
 
       setMessage("✓ Email verified. এখন login করুন।");
       setTimeout(() => {
-        router.push("/login");
+        router.push(`/login?redirect=${encodeURIComponent(redirectPath)}`);
       }, 900);
     } catch (err: unknown) {
       setError(getFriendlyAuthError(err));
@@ -101,7 +105,7 @@ export default function VerifyEmailClient() {
       subtitle="ইমেইলে পাওয়া 6-digit code দিন। verified হলে account access চালু হবে।"
       footerText="Already verified?"
       footerLinkLabel="Login"
-      footerLinkHref="/login"
+      footerLinkHref={`/login?redirect=${encodeURIComponent(redirectPath)}`}
     >
       <form onSubmit={handleVerify} className="space-y-4">
         <div>
@@ -158,7 +162,7 @@ export default function VerifyEmailClient() {
           : "Code আবার পাঠান"}
       </button>
 
-      <Link href="/login" className="mt-3 inline-flex text-sm font-semibold text-cyan-200 hover:text-cyan-100">
+      <Link href={`/login?redirect=${encodeURIComponent(redirectPath)}`} className="mt-3 inline-flex text-sm font-semibold text-cyan-200 hover:text-cyan-100">
         Back to Login
       </Link>
 

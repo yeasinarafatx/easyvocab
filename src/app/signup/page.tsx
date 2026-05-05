@@ -1,9 +1,10 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import AuthShell from "@/components/auth/AuthShell";
 import { getFriendlyAuthError } from "@/lib/authErrors";
+import { trackMetaEvent } from "@/lib/metaPixel";
 import { supabase } from "@/lib/supabase";
 
 export default function SignupPage() {
@@ -11,6 +12,7 @@ export default function SignupPage() {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
+  const [redirectPath, setRedirectPath] = useState("/dashboard");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,6 +23,14 @@ export default function SignupPage() {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
   };
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirectParam = params.get("redirect") ?? "";
+    if (redirectParam.startsWith("/") && !redirectParam.startsWith("//")) {
+      setRedirectPath(redirectParam);
+    }
+  }, []);
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -46,15 +56,18 @@ export default function SignupPage() {
         if (!data.session) {
           setMessage("✓ অ্যাকাউন্ট তৈরি হয়েছে। এখন verification code দিন।");
           setTimeout(() => {
+            trackMetaEvent("CompleteRegistration", { method: "email" });
             const email = encodeURIComponent(formData.email.trim().toLowerCase());
-            router.push(`/verify-email?email=${email}`);
+            const redirect = encodeURIComponent(redirectPath);
+            router.push(`/verify-email?email=${email}&redirect=${redirect}`);
           }, 700);
           return;
         }
 
-        setMessage("✓ Account created successfully! আপনাকে dashboard-এ নেওয়া হচ্ছে...");
+        setMessage("✓ Account created successfully! আপনাকে পরের পেজে নেওয়া হচ্ছে...");
         setTimeout(() => {
-          router.push("/dashboard");
+          trackMetaEvent("CompleteRegistration", { method: "email" });
+          router.push(redirectPath);
         }, 1000);
       }
     } catch (err: unknown) {
@@ -71,7 +84,7 @@ export default function SignupPage() {
       subtitle="একটি অ্যাকাউন্ট খুলে আপনার learning progress save করুন এবং premium access নিন।"
       footerText="অ্যাকাউন্ট আছে?"
       footerLinkLabel="Login"
-      footerLinkHref="/login"
+      footerLinkHref={`/login?redirect=${encodeURIComponent(redirectPath)}`}
     >
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
