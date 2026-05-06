@@ -5,6 +5,7 @@ import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import PremiumLockedNotice from "@/components/PremiumLockedNotice";
 import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
+import { useWordData } from "@/lib/useWordData";
 
 interface Word {
   word: string;
@@ -28,8 +29,6 @@ export default function LearnLevelPage() {
   const returnToDashboard = searchParams.get("from") === "dashboard";
   const backHref = returnToDashboard ? "/dashboard" : stage === "demo" ? "/demo" : `/stage/${stage}`;
 
-  const [words, setWords] = useState<Word[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [typedValue, setTypedValue] = useState("");
   const [examMode, setExamMode] = useState(false);
@@ -42,6 +41,7 @@ export default function LearnLevelPage() {
   const [isPremium, setIsPremium] = useState(false);
 
   const needsPremium = requiresPremium(levelNumber, isDemoLevel);
+  const { words, isLoading, error, retry, isOnline, isCached } = useWordData(stage, file);
 
   useEffect(() => {
     let mounted = true;
@@ -64,23 +64,6 @@ export default function LearnLevelPage() {
       mounted = false;
     };
   }, [needsPremium]);
-
-  useEffect(() => {
-    let cancelled = false;
-    const loadWords = async () => {
-      try {
-        setIsLoading(true);
-        const data = await import(`@/data/${stage}/${file}.json`);
-        if (!cancelled) setWords((data.default ?? []) as Word[]);
-      } catch {
-        if (!cancelled) setWords([]);
-      } finally {
-        if (!cancelled) setIsLoading(false);
-      }
-    };
-    loadWords();
-    return () => { cancelled = true; };
-  }, [stage, file]);
 
   const totalWords = words.length;
   const isCompleted = currentIndex >= totalWords && totalWords > 0;
@@ -144,25 +127,37 @@ export default function LearnLevelPage() {
 
   useEffect(() => {
     if (!isDemoLevel || typeof window === "undefined") return;
-    window.localStorage.removeItem(`completed_${levelId}`);
-    window.localStorage.removeItem(`speak_completed_${levelId}`);
+    try {
+      window.localStorage.removeItem(`completed_${levelId}`);
+      window.localStorage.removeItem(`speak_completed_${levelId}`);
+    } catch (e) {
+      console.warn("localStorage cleanup error", e);
+    }
   }, [isDemoLevel, levelId]);
 
   useEffect(() => {
     if (!isDemoLevel || !isCompleted) return;
-    const t = window.setTimeout(() => router.replace(backHref), 1200);
-    return () => window.clearTimeout(t);
+    let mounted = true;
+    const t = window.setTimeout(() => {
+      if (mounted) router.replace(backHref);
+    }, 1200);
+    return () => {
+      mounted = false;
+      window.clearTimeout(t);
+    };
   }, [isDemoLevel, isCompleted, router, backHref]);
 
   const handleNext = () => {
-    if (isCompleted || !activeWord) return;
+    if (!activeWord) return;
     if (!isCorrect) {
       if (examMode) { setCurrentIndex(0); setTypedValue(""); setRestartNotice(true); }
       return;
     }
 
     const nextIndex = currentIndex + 1;
-    if (examMode && nextIndex >= totalWords) {
+    const isLevelComplete = nextIndex >= totalWords;
+
+    if (isLevelComplete && examMode) {
       if (!isDemoLevel && typeof window !== "undefined") {
         // Set completion timestamp
         const now = new Date().getTime();
@@ -172,20 +167,40 @@ export default function LearnLevelPage() {
         // Track exam attempt as correct
         const attemptKey = `exam_attempt_${Date.now()}`;
         window.localStorage.setItem(attemptKey, JSON.stringify({ correct: true, timestamp: now }));
-        
-        setShowSuccessModal(true);
       }
-    } else if (!examMode && nextIndex >= totalWords && !isDemoLevel && typeof window !== "undefined") {
-      // Also track for regular practice mode
+      // Show success modal and update index
+      setShowSuccessModal(true);
+      setCurrentIndex(nextIndex);
+      setTypedValue("");
+    } else if (isLevelComplete && !examMode && !isDemoLevel && typeof window !== "undefined") {
+      // Track for regular practice mode
       const now = new Date().getTime();
       window.localStorage.setItem(`study_timestamp_${levelId}`, now.toString());
+      setTypedValue("");
+      setCurrentIndex(nextIndex);
+    } else {
+      // Normal progression
+      setTypedValue("");
+      setCurrentIndex(nextIndex);
     }
+  };
 
-    setTypedValue("");
-    setCurrentIndex(nextIndex);
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && isCorrect && !isCompleted) {
+      e.preventDefault();
+      handleNext();
+    }
   };
 
   const handleRetry = () => { if (!examMode) setTypedValue(""); };
+
+  const showOfflineBanner = !isOnline || isCached;
+
+  const handleGoToNextLevel = () => {
+    const nextLevelNumber = levelNumber + 1;
+    const nextLevelId = `${stage}-${nextLevelNumber}`;
+    router.push(`/learn/${nextLevelId}`);
+  };
 
   const toggleExamMode = () => {
     setExamMode((prev) => !prev);
@@ -202,6 +217,27 @@ export default function LearnLevelPage() {
         <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
         <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-4xl items-center justify-center">
           <p className="text-slate-300">Loading words...</p>
+        </main>
+      </div>
+    );
+  }
+
+  if (error && words.length === 0) {
+    return (
+      <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
+        <div className="pointer-events-none absolute -left-20 top-8 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
+        <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-4xl items-center justify-center px-4">
+          <div className="rounded-2xl border border-rose-300/30 bg-rose-300/10 p-6 text-center">
+            <p className="text-rose-100">{error}</p>
+            <button
+              type="button"
+              onClick={retry}
+              className="mt-4 rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100"
+            >
+              Retry
+            </button>
+          </div>
         </main>
       </div>
     );
@@ -263,6 +299,11 @@ export default function LearnLevelPage() {
         <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
+              {showOfflineBanner ? (
+                <div className="mb-3 inline-flex rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-100">
+                  Offline cache active - network ফিরলে auto sync হবে
+                </div>
+              ) : null}
               <div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">
                 <p>Progress</p>
                 <p>{Math.min(currentIndex + 1, totalWords)} / {totalWords}</p>
@@ -276,8 +317,8 @@ export default function LearnLevelPage() {
             </Link>
           </div>
 
-          <div className="mt-4 flex justify-end gap-2">
-            <button type="button" onClick={() => setSpeechRate((prev) => (prev === 1 ? 0.7 : 1))} className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20">
+          <div className="mt-4 flex flex-wrap justify-end gap-2">
+            <button type="button" onClick={() => setSpeechRate((prev) => (prev === 1 ? 0.7 : 1))} className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20" title="আওয়াজের গতি পরিবর্তন করুন (Slow/Normal)">
               <span className="inline-flex items-center gap-2">
                 <img src="/icons/premium/clock-front-premium.svg" alt="Speed" className="h-4 w-4" />
                 {speechRate === 0.7 ? "Slow" : "Normal"}
@@ -341,6 +382,7 @@ export default function LearnLevelPage() {
                   type="text"
                   value={typedValue}
                   onChange={(e) => setTypedValue(e.target.value)}
+                  onKeyPress={handleKeyPress}
                   autoComplete="off"
                   spellCheck={false}
                   className="mt-5 w-full rounded-xl border border-white/25 bg-[#0f1730] px-4 py-3 text-center text-xl tracking-[0.2em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60"
@@ -369,12 +411,26 @@ export default function LearnLevelPage() {
 
       {showSuccessModal && (
         <div className="fixed inset-0 z-20 flex items-center justify-center bg-black/60 px-4">
-          <div className="w-full max-w-md rounded-2xl border border-white/20 bg-[#16162a]/90 p-6 text-center shadow-2xl backdrop-blur-xl">
-            <h3 className="text-2xl font-extrabold text-emerald-200">অভিনন্দন! পরের লেভেল আনলক হয়েছে 🎉</h3>
-            <p className="mt-3 text-sm text-slate-300">আপনি Exam Mode সফলভাবে পাস করেছেন।</p>
-            <Link href="/dashboard" className="mt-6 inline-flex rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-bold text-[#0f0f1a] transition hover:brightness-110">
-              Dashboard এ ফিরে যাও
-            </Link>
+          <div className="w-full max-w-md rounded-3xl border border-emerald-300/40 bg-gradient-to-br from-emerald-500/15 to-[#16162a]/95 p-8 text-center shadow-2xl backdrop-blur-xl">
+            <div className="text-5xl mb-4">🎉</div>
+            <h3 className="text-3xl font-extrabold text-emerald-200">অভিনন্দন!</h3>
+            <p className="mt-3 text-lg font-semibold text-emerald-100">পরের লেভেল আনলক হয়েছে</p>
+            <p className="mt-2 text-sm text-slate-300">আপনি Exam Mode সফলভাবে পাস করেছেন।</p>
+            <div className="mt-6 flex flex-col gap-3">
+              <button
+                type="button"
+                onClick={handleGoToNextLevel}
+                className="w-full rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 px-5 py-3 text-sm font-bold text-[#0f0f1a] transition hover:brightness-110"
+              >
+                পরের লেভেল শুরু করুন →
+              </button>
+              <Link
+                href="/dashboard"
+                className="w-full rounded-xl border border-white/25 bg-white/15 px-5 py-3 text-sm font-semibold text-slate-100 transition hover:bg-white/20 inline-block"
+              >
+                Dashboard এ ফিরে যান
+              </Link>
+            </div>
           </div>
         </div>
       )}

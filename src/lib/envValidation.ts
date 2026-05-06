@@ -51,13 +51,19 @@ export function validateEnvironment(): EnvConfig {
   };
 }
 
-// Validate on app startup
+// Validate on app startup.
+// Fail fast in production so missing secrets do not surface as random runtime crashes.
 if (typeof window === "undefined") {
-  // Server-side only
   try {
     validateEnvironment();
     console.log("✅ Environment variables validated successfully");
   } catch (error) {
-    console.error(error instanceof Error ? error.message : String(error));
+    const message = error instanceof Error ? error.message : String(error);
+
+    if (process.env.NODE_ENV === "production") {
+      throw new Error(message);
+    }
+
+    console.error(message);
   }
 }

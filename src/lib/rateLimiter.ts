@@ -13,15 +13,11 @@ class RateLimiter {
   private store: Map<string, RateLimitEntry> = new Map();
   private readonly windowMs: number;
   private readonly maxRequests: number;
+  private cleanupScheduled = false;
 
   constructor(windowMs: number = 60000, maxRequests: number = 10) {
     this.windowMs = windowMs;
     this.maxRequests = maxRequests;
-
-    // Clean up old entries every 5 minutes
-    setInterval(() => {
-      this.cleanup();
-    }, 5 * 60 * 1000);
   }
 
   /**
@@ -31,6 +27,7 @@ class RateLimiter {
    */
   isAllowed(key: string): boolean {
     const now = Date.now();
+    this.scheduleCleanup();
     const entry = this.store.get(key);
 
     if (!entry || now > entry.resetTime) {
@@ -91,8 +88,18 @@ class RateLimiter {
     entriesToDelete.forEach((key) => {
       this.store.delete(key);
     });
+  }
 
-    console.log(`[RateLimiter] Cleaned up ${entriesToDelete.length} entries`);
+  private scheduleCleanup(): void {
+    if (this.cleanupScheduled) {
+      return;
+    }
+
+    this.cleanupScheduled = true;
+    setTimeout(() => {
+      this.cleanupScheduled = false;
+      this.cleanup();
+    }, 5 * 60 * 1000);
   }
 
   /**

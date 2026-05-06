@@ -172,11 +172,11 @@ export default function Home() {
               </div>
               <div className="mt-2 h-px w-28 mx-auto" style={{ background: 'rgba(255,255,255,0.06)' }} />
               <h1 className="mt-1 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
-                ইংরেজি vocabulary app for IELTS, GRE, SAT, BCS & Admission
+                ইংরেজি Vocabulary-তে Master হও, প্রতিটা Exam Crack করো।
               </h1>
 
               <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-slate-100 sm:text-base sm:leading-8">
-                যেকোনো প্রতিযোগিতা মূলক পরীক্ষার জন্য designed English vocabulary app — Type করে বানান শিখুন, Voice Mode-এ pronunciation practice করুন, আর Flashcard দিয়ে long-term memory build করুন।
+                IELTS, GRE, SAT, BCS বা Admission — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে সত্যিকারের ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
               </p>
 
               <div className="mt-5 flex flex-wrap gap-3">

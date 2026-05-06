@@ -20,6 +20,10 @@ interface DataLoadResult {
   fromCache: boolean;
 }
 
+interface LoadOptions {
+  forceRefresh?: boolean;
+}
+
 class DataLoader {
   private cache: Map<string, Word[]> = new Map();
   private cacheExpiry: Map<string, number> = new Map();
@@ -28,12 +32,13 @@ class DataLoader {
   /**
    * Safely load word data from JSON
    */
-  async loadData(stage: string, file: string): Promise<DataLoadResult> {
+  async loadData(stage: string, file: string, options: LoadOptions = {}): Promise<DataLoadResult> {
     const cacheKey = `${stage}/${file}`;
+    const shouldUseCache = !options.forceRefresh;
 
-    // Check in-memory cache first
-    const cachedData = this.cache.get(cacheKey);
-    const cacheTime = this.cacheExpiry.get(cacheKey) ?? 0;
+    // Check in-memory cache first unless caller explicitly asked for a refresh
+    const cachedData = shouldUseCache ? this.cache.get(cacheKey) : undefined;
+    const cacheTime = shouldUseCache ? (this.cacheExpiry.get(cacheKey) ?? 0) : 0;
 
     if (cachedData && cacheTime > Date.now()) {
       errorLogger.info(`📦 Loaded from in-memory cache: ${cacheKey}`);
@@ -45,35 +50,37 @@ class DataLoader {
       };
     }
 
-    // Check localStorage cache
-    const storageKey = `word_data_${cacheKey}`;
-    const storageCacheMeta = typeof window !== "undefined"
-      ? window.localStorage.getItem(`${storageKey}_meta`)
-      : null;
+    // Check localStorage cache unless caller explicitly asked for a refresh
+    if (shouldUseCache) {
+      const storageKey = `word_data_${cacheKey}`;
+      const storageCacheMeta = typeof window !== "undefined"
+        ? window.localStorage.getItem(`${storageKey}_meta`)
+        : null;
 
-    if (storageCacheMeta) {
-      try {
-        const meta = JSON.parse(storageCacheMeta);
-        if (meta.expiry > Date.now()) {
-          const stored = typeof window !== "undefined"
-            ? window.localStorage.getItem(storageKey)
-            : null;
+      if (storageCacheMeta) {
+        try {
+          const meta = JSON.parse(storageCacheMeta);
+          if (meta.expiry > Date.now()) {
+            const stored = typeof window !== "undefined"
+              ? window.localStorage.getItem(storageKey)
+              : null;
 
-          if (stored) {
-            const data = JSON.parse(stored) as Word[];
-            // Restore to in-memory cache
-            this.setCache(cacheKey, data);
-            errorLogger.info(`💾 Loaded from localStorage cache: ${cacheKey}`);
-            return {
-              success: true,
-              data,
-              error: null,
-              fromCache: true,
-            };
+            if (stored) {
+              const data = JSON.parse(stored) as Word[];
+              // Restore to in-memory cache
+              this.setCache(cacheKey, data);
+              errorLogger.info(`💾 Loaded from localStorage cache: ${cacheKey}`);
+              return {
+                success: true,
+                data,
+                error: null,
+                fromCache: true,
+              };
+            }
           }
+        } catch (err) {
+          errorLogger.warn(`Could not restore localStorage cache for ${cacheKey}`);
         }
-      } catch (err) {
-        errorLogger.warn(`Could not restore localStorage cache for ${cacheKey}`);
       }
     }
 
@@ -98,7 +105,7 @@ class DataLoader {
 
       // Cache the data
       this.setCache(cacheKey, words);
-      this.setCacheStorage(storageKey, words);
+      this.setCacheStorage(`word_data_${cacheKey}`, words);
 
       return {
         success: true,

@@ -36,7 +36,6 @@ export default function DashboardPage() {
   const [latestPaymentNote, setLatestPaymentNote] = useState<string | null>(null);
   const [isAdmin, setIsAdmin] = useState(false);
   const [lastStudiedTime, setLastStudiedTime] = useState<string | null>(null);
-  const [accuracyPercent, setAccuracyPercent] = useState<number | null>(null);
 
   const refreshStatus = async (userId: string) => {
     try {
@@ -190,23 +189,6 @@ export default function DashboardPage() {
 
       setLastStudiedTime(timeStr);
     }
-
-    // Calculate Accuracy Percentage from exam attempts
-    let totalAttempts = 0;
-    let correctAttempts = 0;
-    for (let i = 0; i < window.localStorage.length; i++) {
-      const key = window.localStorage.key(i);
-      if (key?.startsWith("exam_attempt_")) {
-        const attempt = JSON.parse(window.localStorage.getItem(key) || "{}");
-        totalAttempts++;
-        if (attempt.correct) correctAttempts++;
-      }
-    }
-
-    if (totalAttempts > 0) {
-      const accuracy = Math.round((correctAttempts / totalAttempts) * 100);
-      setAccuracyPercent(accuracy);
-    }
   }, [authChecked]);
 
   const handleLogout = async () => {
@@ -259,6 +241,21 @@ export default function DashboardPage() {
       completedCount.Spoken * 20
     );
   }, [completedCount]);
+
+  const totalWordsTarget = useMemo(() => {
+    return stages.reduce((sum, stage) => sum + stage.totalWords, 0);
+  }, []);
+
+  const unlockedBadgeCount = useMemo(() => {
+    if (totalWordsTarget <= 0) return 0;
+    return Math.min(10, Math.floor((totalWordsLearned / totalWordsTarget) * 10));
+  }, [totalWordsLearned, totalWordsTarget]);
+
+  const nextBadgeWordsNeeded = useMemo(() => {
+    if (unlockedBadgeCount >= 10) return 0;
+    const nextThreshold = Math.ceil(((unlockedBadgeCount + 1) / 10) * totalWordsTarget);
+    return Math.max(0, nextThreshold - totalWordsLearned);
+  }, [unlockedBadgeCount, totalWordsLearned, totalWordsTarget]);
 
   const stageLookup = useMemo(() => {
     const lookup = {} as Record<StageName, (typeof stageStatus)[number]>;
@@ -389,13 +386,14 @@ export default function DashboardPage() {
                       <p className="mt-1 text-slate-100">Last Studied</p>
                       <p className="mt-1 text-sm font-bold text-violet-100 sm:text-lg">{lastStudiedTime ?? "Never"}</p>
                     </div>
-                    <div className="rounded-xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/12 to-slate-900/65 px-2 py-2 shadow-lg shadow-black/20 sm:px-3 sm:py-3">
+                    <Link href="/badges" className="rounded-xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/12 to-slate-900/65 px-2 py-2 shadow-lg shadow-black/20 transition hover:border-cyan-100 hover:from-cyan-300/20 sm:px-3 sm:py-3">
                       <div className="mx-auto flex items-center justify-center">
-                        <img src="/icons/premium/trophy-front-premium.svg" alt="Accuracy" className="h-5 w-5" />
+                        <img src="/icons/premium/trophy-front-premium.svg" alt="Badges" className="h-5 w-5" />
                       </div>
-                      <p className="mt-1 text-slate-100">Accuracy</p>
-                      <p className="mt-1 text-sm font-bold text-amber-100 sm:text-lg">{accuracyPercent !== null ? `${accuracyPercent}%` : "N/A"}</p>
-                    </div>
+                      <p className="mt-1 text-slate-100">Badges</p>
+                      <p className="mt-1 text-sm font-bold text-amber-100 sm:text-lg">{unlockedBadgeCount}/10</p>
+                      <p className="mt-1 text-[10px] text-slate-300">{nextBadgeWordsNeeded > 0 ? `${nextBadgeWordsNeeded} words left` : "All unlocked"}</p>
+                    </Link>
                   </div>
                 </div>
                 {premiumState === "free" ? (

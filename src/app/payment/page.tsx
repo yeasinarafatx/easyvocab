@@ -142,11 +142,17 @@ export default function PaymentPage() {
   useEffect(() => {
     if (!userId) return;
 
+    let mounted = true;
     const timer = window.setInterval(() => {
-      void loadLatestRequest(userId);
+      if (mounted) {
+        void loadLatestRequest(userId);
+      }
     }, 10000);
 
-    return () => window.clearInterval(timer);
+    return () => {
+      mounted = false;
+      window.clearInterval(timer);
+    };
   }, [userId]);
 
   const handleSubmit = async (event: React.FormEvent) => {
