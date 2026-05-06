@@ -66,6 +66,8 @@ export default function StagePage() {
   const [selectedMode, setSelectedMode] = useState<PracticeMode>("typing");
   const [premiumReady, setPremiumReady] = useState(false);
   const [isPremium, setIsPremium] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+  const [completedLevelIds, setCompletedLevelIds] = useState<Set<string>>(new Set());
 
   const config = stageConfig[stageName] || stageConfig.beginner;
 
@@ -85,10 +87,21 @@ export default function StagePage() {
     };
   }, []);
 
-  const completedLevelIds = useMemo(() => {
-    if (typeof window === "undefined") {
-      return new Set<string>();
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  // Set default mode based on stage
+  useEffect(() => {
+    if (stageName === "spoken") {
+      setSelectedMode("speaking");
+    } else {
+      setSelectedMode("typing");
     }
+  }, [stageName]);
+
+  useEffect(() => {
+    if (!isMounted) return;
 
     const completed = new Set<string>();
     for (let i = 1; i <= config.totalLevels; i++) {
@@ -105,8 +118,8 @@ export default function StagePage() {
         completed.add(levelId);
       }
     }
-    return completed;
-  }, [stageName, config.totalLevels, selectedMode]);
+    setCompletedLevelIds(completed);
+  }, [isMounted, stageName, config.totalLevels, selectedMode]);
 
   const unlockedLevelIds = useMemo(() => {
     const unlocked = new Set<string>();
@@ -121,7 +134,9 @@ export default function StagePage() {
     }
 
     return unlocked;
-  }, [stageName, config.totalLevels, completedLevelIds]);
+  }, [stageName, config.totalLevels, completedLevelIds])
+
+  const shouldShowCompleted = isMounted && completedLevelIds.size > 0;
 
   const getModeHref = (levelId: string) => {
     if (selectedMode === "speaking") return `/speak/${levelId}`;
@@ -168,49 +183,98 @@ export default function StagePage() {
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex flex-wrap gap-2 sm:gap-3">
-                  <button
-                    type="button"
-                    onClick={() => setSelectedMode("typing")}
-                    className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
-                      selectedMode === "typing"
-                        ? "border border-cyan-200/50 bg-cyan-200/30 text-cyan-50"
-                        : "border border-cyan-200/30 bg-cyan-200/12 text-cyan-100 hover:bg-cyan-200/22"
-                    }`}
-                  >
-                    <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
-                      <img src="/icons/premium/pencil-front-premium.svg" alt="Typing" className="h-5 w-5" />
-                      টাইপিং
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setSelectedMode("speaking")}
-                    className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
-                      selectedMode === "speaking"
-                        ? "border border-violet-300/50 bg-violet-300/30 text-violet-50"
-                        : "border border-violet-300/30 bg-violet-300/12 text-violet-200 hover:bg-violet-300/22"
-                    }`}
-                  >
-                    <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
-                      <img src="/icons/premium/megaphone-front-premium.svg" alt="Speaking" className="h-5 w-5" />
-                      স্পিকিং
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setSelectedMode("flashcard")}
-                    className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
-                      selectedMode === "flashcard"
-                        ? "border border-emerald-300/50 bg-emerald-300/30 text-emerald-50"
-                        : "border border-emerald-300/30 bg-emerald-300/12 text-emerald-100 hover:bg-emerald-300/22"
-                    }`}
-                  >
-                    <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
-                      <img src="/icons/premium/fav-folder-front-premium.svg" alt="Flashcard" className="h-5 w-5" />
-                      ফ্ল্যাশকার্ড
-                    </span>
-                  </button>
-                </div>
+                {stageName === "spoken" ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMode("speaking")}
+                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                        selectedMode === "speaking"
+                          ? "border border-violet-300/50 bg-violet-300/30 text-violet-50"
+                          : "border border-violet-300/30 bg-violet-300/12 text-violet-200 hover:bg-violet-300/22"
+                      }`}
+                    >
+                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                        <img src="/icons/premium/megaphone-front-premium.svg" alt="Speaking" className="h-5 w-5" />
+                        স্পিকিং
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMode("flashcard")}
+                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                        selectedMode === "flashcard"
+                          ? "border border-emerald-300/50 bg-emerald-300/30 text-emerald-50"
+                          : "border border-emerald-300/30 bg-emerald-300/12 text-emerald-100 hover:bg-emerald-300/22"
+                      }`}
+                    >
+                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                        <img src="/icons/premium/fav-folder-front-premium.svg" alt="Flashcard" className="h-5 w-5" />
+                        ফ্ল্যাশকার্ড
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMode("typing")}
+                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                        selectedMode === "typing"
+                          ? "border border-cyan-200/50 bg-cyan-200/30 text-cyan-50"
+                          : "border border-cyan-200/30 bg-cyan-200/12 text-cyan-100 hover:bg-cyan-200/22"
+                      }`}
+                    >
+                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                        <img src="/icons/premium/pencil-front-premium.svg" alt="Typing" className="h-5 w-5" />
+                        টাইপিং
+                      </span>
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMode("typing")}
+                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                        selectedMode === "typing"
+                          ? "border border-cyan-200/50 bg-cyan-200/30 text-cyan-50"
+                          : "border border-cyan-200/30 bg-cyan-200/12 text-cyan-100 hover:bg-cyan-200/22"
+                      }`}
+                    >
+                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                        <img src="/icons/premium/pencil-front-premium.svg" alt="Typing" className="h-5 w-5" />
+                        টাইপিং
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMode("speaking")}
+                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                        selectedMode === "speaking"
+                          ? "border border-violet-300/50 bg-violet-300/30 text-violet-50"
+                          : "border border-violet-300/30 bg-violet-300/12 text-violet-200 hover:bg-violet-300/22"
+                      }`}
+                    >
+                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                        <img src="/icons/premium/megaphone-front-premium.svg" alt="Speaking" className="h-5 w-5" />
+                        স্পিকিং
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setSelectedMode("flashcard")}
+                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                        selectedMode === "flashcard"
+                          ? "border border-emerald-300/50 bg-emerald-300/30 text-emerald-50"
+                          : "border border-emerald-300/30 bg-emerald-300/12 text-emerald-100 hover:bg-emerald-300/22"
+                      }`}
+                    >
+                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                        <img src="/icons/premium/fav-folder-front-premium.svg" alt="Flashcard" className="h-5 w-5" />
+                        ফ্ল্যাশকার্ড
+                      </span>
+                    </button>
+                  </>
+                )}
+              </div>
                 <Link
                   href={backHref}
                   className="rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20 whitespace-nowrap"
@@ -268,7 +332,7 @@ export default function StagePage() {
                       ) : null}
                       <div className="flex items-center justify-between">
                         <p className="text-sm font-semibold text-slate-100">Level {levelNumber}</p>
-                        {isCompleted ? (
+                        {shouldShowCompleted && isCompleted ? (
                           <p className="text-[11px] font-semibold text-emerald-300">✓ Completed</p>
                         ) : null}
                       </div>

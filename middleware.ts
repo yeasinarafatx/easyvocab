@@ -3,6 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 const PRIVATE_PATHS = [
   "/admin",
   "/api",
+  "/badges",
   "/dashboard",
   "/forgot-password",
   "/login",

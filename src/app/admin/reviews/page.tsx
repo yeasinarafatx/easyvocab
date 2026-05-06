@@ -98,11 +98,17 @@ export default function AdminReviewsPage() {
   useEffect(() => {
     if (!ready || !isAdmin) return;
 
+    let mounted = true;
     const timer = window.setInterval(() => {
-      void loadRows();
+      if (mounted) {
+        void loadRows();
+      }
     }, 12000);
 
-    return () => window.clearInterval(timer);
+    return () => {
+      mounted = false;
+      window.clearInterval(timer);
+    };
   }, [ready, isAdmin]);
 
   const review = async (requestId: number, decision: "approved" | "rejected") => {

@@ -23,10 +23,16 @@ export default function VerifyEmailClient() {
 
   useEffect(() => {
     if (resendCooldown <= 0) return;
+    let mounted = true;
     const timer = window.setInterval(() => {
-      setResendCooldown((current) => Math.max(current - 1, 0));
+      if (mounted) {
+        setResendCooldown((current) => Math.max(current - 1, 0));
+      }
     }, 1000);
-    return () => window.clearInterval(timer);
+    return () => {
+      mounted = false;
+      window.clearInterval(timer);
+    };
   }, [resendCooldown]);
 
   const handleVerify = async (event: FormEvent<HTMLFormElement>) => {

@@ -5,6 +5,7 @@ import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import PremiumLockedNotice from "@/components/PremiumLockedNotice";
 import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
+import { useWordData } from "@/lib/useWordData";
 
 interface Word {
   word: string;
@@ -30,8 +31,6 @@ export default function FlashcardLevelPage() {
   const returnToDashboard = searchParams.get("from") === "dashboard";
   const backHref = returnToDashboard ? "/dashboard" : stage === "demo" ? "/demo" : `/stage/${stage}`;
 
-  const [words, setWords] = useState<Word[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
   const [cardMode, setCardMode] = useState<CardMode>("english-to-bangla");
@@ -41,6 +40,7 @@ export default function FlashcardLevelPage() {
   const [isPremium, setIsPremium] = useState(false);
 
   const needsPremium = requiresPremium(levelNumber, isDemoLevel);
+  const { words, isLoading, error, retry, isOnline, isCached } = useWordData(stage, file);
 
   useEffect(() => {
     let mounted = true;
@@ -63,28 +63,6 @@ export default function FlashcardLevelPage() {
       mounted = false;
     };
   }, [needsPremium]);
-
-  useEffect(() => {
-    let cancelled = false;
-
-    const loadWords = async () => {
-      try {
-        setIsLoading(true);
-        const data = await import(`@/data/${stage}/${file}.json`);
-        if (!cancelled) setWords((data.default ?? []) as Word[]);
-      } catch {
-        if (!cancelled) setWords([]);
-      } finally {
-        if (!cancelled) setIsLoading(false);
-      }
-    };
-
-    loadWords();
-
-    return () => {
-      cancelled = true;
-    };
-  }, [stage, file]);
 
   useEffect(() => {
     if (typeof window === "undefined" || !("speechSynthesis" in window)) {
@@ -136,7 +114,11 @@ export default function FlashcardLevelPage() {
       return;
     }
 
-    window.localStorage.removeItem(`completed_${levelId}`);
+    try {
+      window.localStorage.removeItem(`completed_${levelId}`);
+    } catch (e) {
+      console.warn("localStorage cleanup error", e);
+    }
   }, [isDemoLevel, levelId]);
 
   useEffect(() => {
@@ -144,8 +126,14 @@ export default function FlashcardLevelPage() {
       return;
     }
 
-    const t = window.setTimeout(() => router.replace(backHref), 1200);
-    return () => window.clearTimeout(t);
+    let mounted = true;
+    const t = window.setTimeout(() => {
+      if (mounted) router.replace(backHref);
+    }, 1200);
+    return () => {
+      mounted = false;
+      window.clearTimeout(t);
+    };
   }, [isDemoLevel, isCompleted, router, backHref]);
 
   const speakWord = () => {
@@ -177,6 +165,27 @@ export default function FlashcardLevelPage() {
         <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
         <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-4xl items-center justify-center">
           <p className="text-slate-300">Loading flashcards...</p>
+        </main>
+      </div>
+    );
+  }
+
+  if (error && words.length === 0) {
+    return (
+      <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
+        <div className="pointer-events-none absolute -left-20 top-8 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
+        <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
+        <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-4xl items-center justify-center px-4">
+          <div className="rounded-2xl border border-rose-300/30 bg-rose-300/10 p-6 text-center">
+            <p className="text-rose-100">{error}</p>
+            <button
+              type="button"
+              onClick={retry}
+              className="mt-4 rounded-lg border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-slate-100"
+            >
+              Retry
+            </button>
+          </div>
         </main>
       </div>
     );
@@ -249,6 +258,11 @@ export default function FlashcardLevelPage() {
 
       <main className="relative z-10 mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
+          {(!isOnline || isCached) ? (
+            <div className="mb-4 inline-flex rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-100">
+              Offline cache active - network ফিরলে auto sync হবে
+            </div>
+          ) : null}
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
               <div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">

@@ -152,6 +152,17 @@ export default function RootLayout({
             </noscript>
           </>
         ) : null}
+        <Script id="register-service-worker" strategy="afterInteractive">
+          {`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js').catch(function (error) {
+                  console.warn('Service worker registration failed:', error);
+                });
+              });
+            }
+          `}
+        </Script>
         <ErrorBoundary>
           <main className="flex-1">{children}</main>
         </ErrorBoundary>
