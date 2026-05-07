@@ -504,7 +504,7 @@ export default function SpeakLevelPage() {
 
 						<Link
 							href={backHref}
-							className="self-start rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+							className="self-start rounded-lg border border-white/25 bg-white/15 px-4 py-2 text-sm font-semibold text-slate-100 transition-all duration-200 hover:bg-white/20 active:scale-95 active:bg-white/25 cursor-pointer"
 						>
 							{stage === "demo" ? "Back to Demo" : "Back to Stage"}
 						</Link>
@@ -558,7 +558,7 @@ export default function SpeakLevelPage() {
 							) : (
 								<Link
 									href={`/stage/${stage}`}
-									className="mt-5 inline-flex rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-slate-100 transition hover:bg-white/20"
+									className="inline-flex rounded-xl border border-white/20 bg-white/10 px-5 py-2.5 text-sm font-semibold text-slate-100 transition-all duration-200 hover:bg-white/20 active:scale-95 active:bg-white/25 cursor-pointer"
 								>
 									স্টেজে ফিরে যান
 								</Link>
@@ -580,10 +580,10 @@ export default function SpeakLevelPage() {
 												<button
 													type="button"
 													onClick={speakWord}
-													className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 text-xl transition hover:bg-white/20 sm:h-16 sm:w-16 sm:text-3xl"
+													className="inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-white/25 bg-white/15 transition hover:bg-white/20 active:scale-95 active:bg-white/25 cursor-pointer sm:h-16 sm:w-16 sm:hover:scale-105 sm:active:scale-95"
 													aria-label="Play pronunciation"
 												>
-													🔊
+													<img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-6 w-6 sm:h-8 sm:w-8" />
 												</button>
 												<p className="text-xs font-semibold text-white">শুনুন</p>
 											</div>
@@ -608,10 +608,10 @@ export default function SpeakLevelPage() {
 											type="button"
 											onClick={startListening}
 											disabled={!supportsSpeechRecognition || listenState === "listening" || attempts >= 3}
-											className={`relative z-10 flex items-center justify-center rounded-full border transition disabled:cursor-not-allowed disabled:opacity-40 ${micButtonClass}`}
+											className={`relative z-10 flex items-center justify-center rounded-full border transition disabled:cursor-not-allowed disabled:opacity-40 active:scale-95 active:bg-opacity-90 cursor-pointer sm:hover:scale-105 sm:active:scale-95 ${micButtonClass}`}
 											aria-label="Start speaking"
 										>
-											{resultState === "correct" ? "✅" : resultState === "wrong" ? "❌" : listenState === "listening" ? "🔴" : "🎤"}
+											{resultState === "correct" ? "✅" : resultState === "wrong" ? "❌" : listenState === "listening" ? "🔴" : <img src="/icons/premium/megaphone-front-premium.svg" alt="Microphone" className="h-6 w-6 sm:h-8 sm:w-8" />}
 										</button>
 									</div>
 
@@ -638,7 +638,7 @@ export default function SpeakLevelPage() {
 											<button
 												type="button"
 												onClick={handleRetry}
-												className="rounded-lg border border-rose-300/40 bg-rose-300/16 px-3 py-1.5 text-xs font-semibold text-rose-100 transition hover:bg-rose-300/22"
+												className="rounded-lg border border-rose-300/40 bg-rose-300/16 px-3 py-1.5 text-xs font-semibold text-rose-100 transition-all duration-200 hover:bg-rose-300/22 active:scale-95 cursor-pointer"
 											>
 												Retry
 											</button>
@@ -648,7 +648,7 @@ export default function SpeakLevelPage() {
 											<button
 												type="button"
 												onClick={handleNext}
-												className="rounded-lg border border-emerald-300/40 bg-emerald-300/16 px-3 py-1.5 text-xs font-semibold text-emerald-100 transition hover:bg-emerald-300/22"
+												className="rounded-lg border border-emerald-300/40 bg-emerald-300/16 px-3 py-1.5 text-xs font-semibold text-emerald-100 transition-all duration-200 hover:bg-emerald-300/22 active:scale-95 cursor-pointer"
 											>
 												Next
 											</button>

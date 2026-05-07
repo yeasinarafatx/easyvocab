@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/lib/supabase";
 import { trackMetaEvent } from "@/lib/metaPixel";
@@ -49,7 +48,6 @@ const paymentLogoMap: Record<
 const whatsappSupportUrl = "https://wa.me/message/GEWPOC6N6XFQC1";
 
 export default function PaymentPage() {
-  const router = useRouter();
   const [sessionReady, setSessionReady] = useState(false);
   const [hasSession, setHasSession] = useState(false);
   const [userId, setUserId] = useState<string | null>(null);
@@ -119,11 +117,6 @@ export default function PaymentPage() {
         .eq("id", user.id)
         .maybeSingle();
 
-      if (profile?.is_premium) {
-        router.replace("/dashboard");
-        return;
-      }
-
       if (mounted) {
         await loadLatestRequest(user.id);
       }
@@ -133,7 +126,7 @@ export default function PaymentPage() {
     return () => {
       mounted = false;
     };
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     trackMetaEvent("InitiateCheckout", { content_name: "Manual Payment Page", value: amount, currency: "BDT" });

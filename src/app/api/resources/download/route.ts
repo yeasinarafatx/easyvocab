@@ -21,7 +21,7 @@ export async function GET(request: Request) {
         const tokenSupabase = createSupabaseTokenClient(token);
         const { data: { user } } = await tokenSupabase.auth.getUser();
         userId = user?.id;
-      } catch (e) {
+      } catch {
         // Continue even if we can't get user ID
       }
     }

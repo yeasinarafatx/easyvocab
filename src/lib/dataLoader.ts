@@ -78,7 +78,7 @@ class DataLoader {
               };
             }
           }
-        } catch (err) {
+        } catch {
           errorLogger.warn(`Could not restore localStorage cache for ${cacheKey}`);
         }
       }
@@ -161,7 +161,7 @@ class DataLoader {
         `${key}_meta`,
         JSON.stringify({ expiry: Date.now() + this.cacheTTL })
       );
-    } catch (error) {
+    } catch {
       errorLogger.warn(`Could not save to localStorage: ${key}`);
     }
   }

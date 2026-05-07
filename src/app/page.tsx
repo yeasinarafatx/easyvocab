@@ -146,13 +146,11 @@ export default function Home() {
 
   const primaryHref = !sessionReady
     ? "/signup?redirect=%2Fpayment"
-    : userTier === "premium"
-      ? "/dashboard"
-      : userTier === "free"
-        ? "/payment"
-        : "/signup?redirect=%2Fpayment";
+    : userTier === "guest"
+      ? "/signup?redirect=%2Fpayment"
+      : "/dashboard";
 
-  const primaryLabel = userTier === "premium" ? "এখনই App এ যান" : "এখনই শুরু করুন ৫০% ছাড়ে";
+  const primaryLabel = userTier === "guest" ? "এখনই শুরু করুন ৫০% ছাড়ে" : "এখনই App এ যান";
 
   return (
     <div className="relative min-h-screen overflow-x-hidden bg-[#0f0f1a] text-slate-100">
@@ -176,7 +174,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-slate-100 sm:text-base sm:leading-8">
-                IELTS, GRE, SAT, BCS বা Admission — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে সত্যিকারের ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
+                IELTS, GRE, SAT, BCS বা Admission — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে Perfectly ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
               </p>
 
               <div className="mt-5 flex flex-wrap gap-3">

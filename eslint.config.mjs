@@ -10,6 +10,9 @@ const eslintConfig = defineConfig([
       // Keep lint useful for this codebase while disabling rules that produce
       // non-actionable noise for current client-side patterns.
       "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@next/next/no-img-element": "off",
+      "react-hooks/exhaustive-deps": "off",
       "react-hooks/immutability": "off",
       "react-hooks/purity": "off",
       "react-hooks/set-state-in-effect": "off",

@@ -70,6 +70,7 @@ export default function StagePage() {
   const [completedLevelIds, setCompletedLevelIds] = useState<Set<string>>(new Set());
 
   const config = stageConfig[stageName] || stageConfig.beginner;
+  const showFreeNotice = premiumReady && !isPremium;
 
   useEffect(() => {
     let mounted = true;
@@ -286,9 +287,11 @@ export default function StagePage() {
           </div>
 
           <div className="mt-10">
-            <p className="mb-4 text-xs text-cyan-100/90">
-              Level 1 সবার জন্য free। Level 2+ unlock করতে Premium payment লাগবে।
-            </p>
+            {showFreeNotice ? (
+              <p className="mb-4 text-xs text-cyan-100/90">
+                Level 1 সবার জন্য free। Level 2+ unlock করতে Premium payment লাগবে।
+              </p>
+            ) : null}
             <div className="mt-2 grid grid-cols-2 gap-4 sm:gap-5 sm:grid-cols-3 lg:gap-6 lg:grid-cols-5">
               {Array.from({ length: config.totalLevels }).map((_, index) => {
                 const levelNumber = index + 1;

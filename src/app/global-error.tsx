@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function GlobalError({
   error,
   reset,
@@ -34,12 +36,12 @@ export default function GlobalError({
               >
                 আবার চেষ্টা করুন
               </button>
-              <a
+              <Link
                 href="/"
                 className="flex-1 rounded-xl bg-slate-500/20 px-4 py-3 text-center text-sm font-semibold text-slate-100 transition hover:bg-slate-500/30"
               >
                 Home এ যান
-              </a>
+              </Link>
             </div>
           </div>
         </div>

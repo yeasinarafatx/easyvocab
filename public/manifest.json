@@ -2,7 +2,7 @@
   "name": "Vocab Speak - Master English Vocabulary",
   "short_name": "Vocab Speak",
   "description": "Learn English words fast with Interactive spelling, voice pronunciation, and flashcard practice",
-  "start_url": "/",
+  "start_url": "/dashboard",
   "scope": "/",
   "display": "standalone",
   "background_color": "#0f0f1a",

@@ -40,7 +40,7 @@ export default function FlashcardLevelPage() {
   const [isPremium, setIsPremium] = useState(false);
 
   const needsPremium = requiresPremium(levelNumber, isDemoLevel);
-  const { words, isLoading, error, retry, isOnline, isCached } = useWordData(stage, file);
+  const { words, isLoading, error, retry } = useWordData(stage, file);
 
   useEffect(() => {
     let mounted = true;
@@ -258,11 +258,6 @@ export default function FlashcardLevelPage() {
 
       <main className="relative z-10 mx-auto w-full max-w-4xl px-4 py-8 sm:px-6 lg:px-8">
         <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
-          {(!isOnline || isCached) ? (
-            <div className="mb-4 inline-flex rounded-full border border-amber-300/40 bg-amber-300/10 px-3 py-1 text-xs font-semibold text-amber-100">
-              Offline cache active - network ফিরলে auto sync হবে
-            </div>
-          ) : null}
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
               <div className="mb-2 flex items-center justify-between text-xs text-slate-300 sm:text-sm">
@@ -322,7 +317,7 @@ export default function FlashcardLevelPage() {
               <button
                 type="button"
                 onClick={speakWord}
-                className="rounded-xl border border-white/25 bg-white/15 px-3 py-2 text-lg transition hover:bg-white/20"
+                className="rounded-xl border border-white/25 bg-white/15 px-3 py-2 text-lg transition-all duration-200 hover:bg-white/20 active:scale-95 active:bg-white/25 cursor-pointer sm:hover:scale-105 sm:active:scale-95 touch-feedback"
                 aria-label="Play pronunciation"
               >
                 <img src="/icons/premium/megaphone-front-premium.svg" alt="Pronunciation" className="h-5 w-5" />
