@@ -35,7 +35,8 @@ export async function GET(request: NextRequest) {
 
     if (!error) {
       if (type === "recovery") {
-        return NextResponse.redirect(`${origin}/reset-password?token_hash=${token_hash}&type=${type}`);
+        const encodedTokenHash = encodeURIComponent(token_hash);
+        return NextResponse.redirect(`${origin}/reset-password?token_hash=${encodedTokenHash}&type=${type}`);
       }
       return NextResponse.redirect(`${origin}${next}`);
     }
