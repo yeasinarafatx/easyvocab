@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import AuthShell from "@/components/auth/AuthShell";
 import { getFriendlyAuthError } from "@/lib/authErrors";
 import { supabase } from "@/lib/supabase";
+import { absoluteUrl } from "@/lib/site";
 
 export default function ForgotPasswordPage() {
   const [message, setMessage] = useState("");
@@ -19,7 +20,7 @@ export default function ForgotPasswordPage() {
 
     try {
       const { error: resetError } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: `${window.location.origin}/reset-password`,
+        redirectTo: absoluteUrl("/reset-password"),
       });
 
       if (resetError) throw resetError;
