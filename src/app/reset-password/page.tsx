@@ -23,21 +23,41 @@ export default function ResetPasswordPage() {
     let mounted = true;
 
     const initializeRecovery = async () => {
-      const token_hash = searchParams.get("token_hash");
+      let token_hash = searchParams.get("token_hash");
       const type = searchParams.get("type");
 
+      // Fallback: some email clients strip query params — check both `token` and URL hash
+      if (!token_hash) token_hash = searchParams.get("token");
+      if (!token_hash) {
+        try {
+          const hash = window.location.hash?.replace(/^#/, "");
+          if (hash) {
+            // allow formats like token_hash=... or just the token
+            const params = new URLSearchParams(hash);
+            token_hash = params.get("token_hash") || params.get("token") || decodeURIComponent(hash || "");
+          }
+        } catch (e) {
+          // ignore — we'll handle verify failure below
+        }
+      }
+
       if (token_hash && type === "recovery") {
-        const { error: verifyError } = await supabase.auth.verifyOtp({
-          type: "recovery",
-          token_hash,
-        });
+        try {
+          const decoded = decodeURIComponent(token_hash);
+          const { error: verifyError } = await supabase.auth.verifyOtp({
+            type: "recovery",
+            token_hash: decoded,
+          });
 
-        if (!mounted) return;
+          if (!mounted) return;
 
-        if (!verifyError) {
-          setIsRecoveryReady(true);
-          setError("");
-          return;
+          if (!verifyError) {
+            setIsRecoveryReady(true);
+            setError("");
+            return;
+          }
+        } catch (err) {
+          // verification attempt failed — fall through to session check
         }
       }
 
