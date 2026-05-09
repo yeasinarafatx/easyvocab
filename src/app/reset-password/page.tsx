@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import AuthShell from "@/components/auth/AuthShell";
 import { getFriendlyAuthError } from "@/lib/authErrors";
@@ -8,6 +9,7 @@ import { supabase } from "@/lib/supabase";
 
 export default function ResetPasswordPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
@@ -21,6 +23,24 @@ export default function ResetPasswordPage() {
     let mounted = true;
 
     const initializeRecovery = async () => {
+      const token_hash = searchParams.get("token_hash");
+      const type = searchParams.get("type");
+
+      if (token_hash && type === "recovery") {
+        const { error: verifyError } = await supabase.auth.verifyOtp({
+          type: "recovery",
+          token_hash,
+        });
+
+        if (!mounted) return;
+
+        if (!verifyError) {
+          setIsRecoveryReady(true);
+          setError("");
+          return;
+        }
+      }
+
       const { data } = await supabase.auth.getSession();
       if (!mounted) return;
 
@@ -44,7 +64,7 @@ export default function ResetPasswordPage() {
       mounted = false;
       authListener.subscription.unsubscribe();
     };
-  }, []);
+  }, [searchParams]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
