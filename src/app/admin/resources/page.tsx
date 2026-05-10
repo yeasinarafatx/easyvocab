@@ -203,8 +203,8 @@ export default function AdminResourcesPage() {
       <div className="pointer-events-none absolute -left-20 top-12 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
-      <main className="relative z-10 mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 lg:px-8">
-        <div className="rounded-3xl border border-amber-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/70 to-[#1a2a21]/70 p-8 shadow-2xl shadow-black/35 backdrop-blur-xl">
+      <main className="relative z-10 mx-auto w-full max-w-7xl px-3 py-4 sm:px-4 sm:py-8 lg:px-8">
+        <div className="rounded-3xl border border-amber-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/70 to-[#1a2a21]/70 p-4 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-6 lg:p-8">
           <div className="mb-8 border-b border-white/10 pb-6">
             <button
               onClick={() => router.push("/dashboard")}
@@ -213,7 +213,7 @@ export default function AdminResourcesPage() {
               ← Back to Dashboard
             </button>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-200">Admin Panel</p>
-            <h1 className="mt-2 text-4xl font-extrabold text-amber-100">📂 Manage Resources</h1>
+            <h1 className="mt-2 text-3xl font-extrabold text-amber-100 sm:text-4xl">📂 Manage Resources</h1>
             <p className="mt-3 text-slate-300">Upload PDFs/Ebooks, set access rules, control visibility, and organize your resource library.</p>
           </div>
 
@@ -228,14 +228,14 @@ export default function AdminResourcesPage() {
           )}
 
           {/* Stats Grid */}
-          <div className="mb-8 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
             {[
               { label: "TOTAL", value: stats.total, icon: "📊" },
               { label: "FREE", value: stats.free, icon: "🆓" },
               { label: "PREMIUM", value: stats.paid, icon: "👑" },
               { label: "VISIBLE", value: stats.visible, icon: "👁️" },
             ].map(stat => (
-              <div key={stat.label} className="rounded-lg border border-white/10 bg-white/5 p-4">
+              <div key={stat.label} className="rounded-lg border border-white/10 bg-white/5 p-3 sm:p-4">
                 <p className="text-xs font-semibold uppercase text-slate-400">{stat.label}</p>
                 <p className="mt-2 text-3xl font-bold text-cyan-200">{stat.value}</p>
                 <p className="mt-1 text-sm text-slate-400">{stat.icon}</p>
@@ -245,11 +245,11 @@ export default function AdminResourcesPage() {
 
           {/* Upload Form */}
           <div className="mb-8 grid gap-6 lg:grid-cols-2">
-            <div className="rounded-lg border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-transparent p-6">
+            <div className="rounded-lg border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-transparent p-4 sm:p-6">
               <h2 className="text-xl font-bold text-cyan-100">⬆️ Upload New Resource</h2>
               <p className="mt-2 text-sm text-slate-300">Add a new PDF, ebook, or document to the library.</p>
 
-              <form onSubmit={handleSubmit} className="mt-4 space-y-4">
+              <form onSubmit={handleSubmit} className="mt-4 space-y-3 sm:space-y-4">
                 <div>
                   <label className="block text-sm font-semibold text-slate-200">Title</label>
                   <input
@@ -273,12 +273,12 @@ export default function AdminResourcesPage() {
                   <p className="mt-1 text-xs text-slate-400">PDF, EPUB, DOC or DOCX accepted.</p>
                 </div>
 
-                <div className="flex gap-4">
-                  <label className="flex items-center gap-2 text-slate-200 cursor-pointer">
+                <div className="flex flex-col gap-3 sm:flex-row sm:gap-4">
+                  <label className="flex items-center gap-2 cursor-pointer text-slate-200">
                     <input type="checkbox" checked={form.is_free} onChange={(e) => setForm((previous) => ({ ...previous, is_free: e.target.checked }))} className="w-4 h-4" />
                     <span className="text-sm">Free</span>
                   </label>
-                  <label className="flex items-center gap-2 text-slate-200 cursor-pointer">
+                  <label className="flex items-center gap-2 cursor-pointer text-slate-200">
                     <input type="checkbox" checked={form.visible} onChange={(e) => setForm((previous) => ({ ...previous, visible: e.target.checked }))} className="w-4 h-4" />
                     <span className="text-sm">Visible</span>
                   </label>
@@ -297,7 +297,7 @@ export default function AdminResourcesPage() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="w-full rounded-lg bg-gradient-to-r from-cyan-300 to-emerald-300 px-4 py-2.5 font-semibold text-[#0f0f1a] hover:brightness-110 disabled:opacity-50 transition"
+                  className="w-full rounded-lg bg-gradient-to-r from-cyan-300 to-emerald-300 px-4 py-3 font-semibold text-[#0f0f1a] transition hover:brightness-110 disabled:opacity-50"
                 >
                   {submitting ? "Uploading..." : "⬆️ Upload Resource"}
                 </button>
@@ -305,32 +305,32 @@ export default function AdminResourcesPage() {
             </div>
 
             {/* Resources List */}
-            <div className="rounded-lg border border-emerald-200/20 bg-gradient-to-br from-emerald-300/10 to-transparent p-6">
+            <div className="rounded-lg border border-emerald-200/20 bg-gradient-to-br from-emerald-300/10 to-transparent p-4 sm:p-6">
               <h2 className="text-xl font-bold text-emerald-100">📚 Resources ({resources.length})</h2>
               <p className="mt-2 text-sm text-slate-300">Manage upload visibility and release order.</p>
 
-              <div className="mt-4 max-h-96 space-y-2 overflow-y-auto">
+              <div className="mt-4 max-h-[32rem] space-y-2 overflow-y-auto pr-1">
                 {resources.length === 0 ? (
                   <p className="text-sm text-slate-400">No resources uploaded yet.</p>
                 ) : (
                   resources.map((r) => (
-                    <div key={r.id} className="flex items-center justify-between rounded-lg border border-white/10 bg-white/5 p-3 text-sm">
-                      <div className="flex-1 min-w-0">
-                        <p className="font-semibold text-slate-100 truncate">{r.title}</p>
+                    <div key={r.id} className="flex flex-col gap-3 rounded-lg border border-white/10 bg-white/5 p-3 text-sm sm:flex-row sm:items-center sm:justify-between">
+                      <div className="min-w-0 flex-1">
+                        <p className="break-words font-semibold text-slate-100">{r.title}</p>
                         <p className="text-xs text-slate-400 mt-0.5">
                           {r.is_free ? "🆓 Free" : "👑 Premium"} • {r.visible ? "👁️ Visible" : "🔒 Hidden"} • {r.order}
                         </p>
                       </div>
-                      <div className="flex gap-1 ml-2">
+                      <div className="flex w-full gap-2 sm:ml-2 sm:w-auto sm:gap-1">
                         <button
                           onClick={() => handleToggleVisible(r.id, r.visible)}
-                          className="text-xs rounded px-2 py-1 bg-white/10 text-slate-100 hover:bg-white/20 whitespace-nowrap"
+                          className="w-full whitespace-nowrap rounded bg-white/10 px-2 py-2 text-xs text-slate-100 hover:bg-white/20 sm:w-auto sm:py-1"
                         >
                           {r.visible ? "Hide" : "Show"}
                         </button>
                         <button
                           onClick={() => handleDelete(r.id)}
-                          className="text-xs rounded px-2 py-1 bg-red-500/20 text-red-200 hover:bg-red-500/30"
+                          className="w-full rounded bg-red-500/20 px-2 py-2 text-xs text-red-200 hover:bg-red-500/30 sm:w-auto sm:py-1"
                         >
                           Delete
                         </button>

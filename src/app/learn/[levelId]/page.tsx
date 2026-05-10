@@ -103,7 +103,17 @@ export default function LearnLevelPage() {
       const matchedVoice = window.speechSynthesis.getVoices().find((v) => v.voiceURI === selectedVoiceURI);
       if (matchedVoice) utterance.voice = matchedVoice;
     }
+    // Refocus input after speech ends to keep keyboard open
+    utterance.onend = () => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    };
     window.speechSynthesis.speak(utterance);
+    // Immediately refocus to prevent keyboard dismissal
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   };
 
   useEffect(() => {
@@ -432,6 +442,8 @@ export default function LearnLevelPage() {
                   enterKeyHint="done"
                   autoComplete="off"
                   spellCheck={false}
+                  autoCorrect="off"
+                  autoCapitalize="off"
                   className="mt-4 w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
                   placeholder="Type here"
                 />
