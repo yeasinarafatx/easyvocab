@@ -337,28 +337,28 @@ export default function Home() {
               </div>
 
               <ul className="mt-5 space-y-2 text-sm leading-6 text-slate-100/90 sm:space-y-3 sm:text-base sm:leading-7">
-                <li className="flex gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
+                <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
+                  <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
                   <span>Beginner, Intermediate, Advanced, Exam এবং Demo section সহ structured vocabulary journey</span>
                 </li>
-                <li className="flex gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
+                <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
+                  <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
                   <span>প্রতি level-এ ২০টি word, fill-in-the-blank example, meaning আর pronunciation guide</span>
                 </li>
-                <li className="flex gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
+                <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
+                  <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
                   <span>বানান লেখা, উচ্চারণ শোনা এবং ফ্ল্যাশকার্ডে মনে রাখা - শব্দ দীর্ঘদিন মনে রাখার জন্য সবচেয়ে কার্যকর practice flow</span>
                 </li>
-                <li className="flex gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
+                <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
+                  <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
                   <span>IELTS, GRE, SAT, IBA, BCS, Bank exam-oriented শব্দ, যাতে real exam context-এর সাথে match করে</span>
                 </li>
-                <li className="flex gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
+                <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
+                  <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
                   <span>Unlock-based progress, dashboard tracking, আর smooth stage navigation</span>
                 </li>
-                <li className="flex gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <span className="mt-0.5 shrink-0 text-emerald-300">✓</span>
+                <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
+                  <img src="/icons/premium/star-front-premium.svg" alt="Star" className="h-4 w-4 shrink-0 self-center" />
                   <span>Free demo দিয়ে শুরু করে আগে দেখতে পারবেন কিভাবে appটা কাজ করে</span>
                 </li>
               </ul>
