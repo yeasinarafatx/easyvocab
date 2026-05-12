@@ -358,7 +358,7 @@ export default function Home() {
                   <span>Unlock-based progress, dashboard tracking, আর smooth stage navigation</span>
                 </li>
                 <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
-                  <img src="/icons/premium/star-front-premium.svg" alt="Star" className="h-4 w-4 shrink-0 self-center" />
+                  <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0 self-center" />
                   <span>Free demo দিয়ে শুরু করে আগে দেখতে পারবেন কিভাবে appটা কাজ করে</span>
                 </li>
               </ul>
