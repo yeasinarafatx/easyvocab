@@ -41,13 +41,24 @@ export default function LearnLevelPage() {
   const [accessReady, setAccessReady] = useState(false);
   const [hasSession, setHasSession] = useState(false);
   const [isPremium, setIsPremium] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (window.matchMedia("(pointer: coarse)").matches) {
-      setShowCustomKeyboard(true);
+    const media = window.matchMedia("(pointer: coarse), (hover: none)");
+    const update = () => setIsTouchDevice(media.matches);
+    update();
+    if (typeof media.addEventListener === "function") {
+      media.addEventListener("change", update);
+      return () => media.removeEventListener("change", update);
     }
   }, []);
+
+  useEffect(() => {
+    if (!isTouchDevice) {
+      setShowCustomKeyboard(false);
+    }
+  }, [isTouchDevice]);
 
   const needsPremium = requiresPremium(levelNumber, isDemoLevel);
   const { words, isLoading, error, retry } = useWordData(stage, file);
@@ -467,26 +478,45 @@ export default function LearnLevelPage() {
                   })}
                 </div>
 
-                <div className="relative mt-4">
+                {isTouchDevice ? (
+                  <div className="relative mt-4">
+                    <input
+                      ref={inputRef}
+                      type="text"
+                      value={typedValue}
+                      readOnly
+                      inputMode="none"
+                      className="absolute inset-0 h-full w-full opacity-0 pointer-events-none"
+                      aria-hidden="true"
+                      tabIndex={-1}
+                    />
+                    <button
+                      type="button"
+                      onPointerDown={() => setShowCustomKeyboard(true)}
+                      onClick={() => setShowCustomKeyboard(true)}
+                      onTouchStart={() => setShowCustomKeyboard(true)}
+                      className="w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
+                    >
+                      {typedValue ? typedValue.toUpperCase() : "Type here"}
+                    </button>
+                  </div>
+                ) : (
                   <input
                     ref={inputRef}
                     type="text"
                     value={typedValue}
-                    readOnly
-                    inputMode="none"
-                    className="absolute inset-0 h-full w-full opacity-0"
-                    aria-hidden="true"
-                    tabIndex={-1}
+                    onChange={(e) => setTypedValue(e.target.value)}
+                    onKeyPress={handleKeyPress}
+                    inputMode="text"
+                    enterKeyHint="done"
+                    autoComplete="off"
+                    spellCheck={false}
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    className="mt-4 w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
+                    placeholder="Type here"
                   />
-                  <button
-                    type="button"
-                    onClick={() => setShowCustomKeyboard(true)}
-                    onTouchStart={() => setShowCustomKeyboard(true)}
-                    className="w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
-                  >
-                    {typedValue ? typedValue.toUpperCase() : "Type here"}
-                  </button>
-                </div>
+                )}
               </div>
 
               <div className="mt-4 flex items-center justify-end gap-3 sm:mt-6">
@@ -508,7 +538,7 @@ export default function LearnLevelPage() {
         </section>
       </main>
 
-      {showCustomKeyboard && (
+      {isTouchDevice && showCustomKeyboard && (
         <CustomKeyboard
           onKeyPress={handleCustomKeyPress}
           onBackspace={handleCustomBackspace}
