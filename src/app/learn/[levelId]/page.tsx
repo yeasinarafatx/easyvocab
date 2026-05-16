@@ -470,13 +470,6 @@ export default function LearnLevelPage() {
                   className="mt-4 w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
                   placeholder="Type here"
                 />
-
-                <div className="mt-4 flex items-center justify-end gap-3 sm:mt-6">
-                  {!examMode && (
-                    <button type="button" onClick={handleRetry} className="rounded-xl border border-white/25 bg-white/15 px-5 py-2.5 text-sm font-semibold text-slate-100 transition-all duration-200 hover:bg-white/20 active:scale-95 active:bg-white/25 cursor-pointer">Retry</button>
-                  )}
-                  <button type="button" onClick={handleNext} disabled={!isCorrect} className="rounded-xl bg-gradient-to-r from-cyan-300 to-emerald-300 px-5 py-2.5 text-sm font-bold text-[#0f0f1a] transition-all duration-200 enabled:hover:brightness-110 enabled:active:scale-95 enabled:cursor-pointer disabled:cursor-not-allowed disabled:opacity-40">Next</button>
-                </div>
               </div>
 
               <div className="mt-4 flex items-center justify-end gap-3 sm:mt-6">
