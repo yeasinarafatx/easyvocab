@@ -163,6 +163,17 @@ export default function LearnLevelPage() {
       if (examMode) { setCurrentIndex(0); setTypedValue(""); setRestartNotice(true); }
       return;
     }
+    // Record a study timestamp whenever the user answers correctly (counts as practice).
+    // Do not record for demo levels. This ensures "Last Studied" reflects actual practice,
+    // not just opening/unlocking a level.
+    if (!isDemoLevel && typeof window !== "undefined") {
+      try {
+        const now = new Date().getTime();
+        window.localStorage.setItem(`study_timestamp_${levelId}`, now.toString());
+      } catch (e) {
+        console.warn("Could not write study timestamp", e);
+      }
+    }
 
     const nextIndex = currentIndex + 1;
     const isLevelComplete = nextIndex >= totalWords;
