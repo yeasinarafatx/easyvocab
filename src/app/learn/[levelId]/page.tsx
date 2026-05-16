@@ -42,6 +42,13 @@ export default function LearnLevelPage() {
   const [hasSession, setHasSession] = useState(false);
   const [isPremium, setIsPremium] = useState(false);
 
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (window.matchMedia("(pointer: coarse)").matches) {
+      setShowCustomKeyboard(true);
+    }
+  }, []);
+
   const needsPremium = requiresPremium(levelNumber, isDemoLevel);
   const { words, isLoading, error, retry } = useWordData(stage, file);
 
@@ -373,7 +380,7 @@ export default function LearnLevelPage() {
       <div className="pointer-events-none absolute -left-20 top-8 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
-      <main ref={mainRef} className="relative z-10 mx-auto w-full max-w-4xl px-3 py-4 pb-48 sm:px-6 sm:py-8">
+      <main ref={mainRef} className="relative z-10 mx-auto w-full max-w-4xl px-3 py-4 pb-[calc(env(safe-area-inset-bottom)+14rem)] sm:px-6 sm:py-8 lg:px-8">
         <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-4 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
@@ -460,16 +467,26 @@ export default function LearnLevelPage() {
                   })}
                 </div>
 
-                <input
-                  ref={inputRef}
-                  type="text"
-                  value={typedValue}
-                  readOnly // Prevent native keyboard
-                  onFocus={() => setShowCustomKeyboard(true)}
-                  inputMode="none" // Try to prevent keyboard
-                  className="mt-4 w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none caret-transparent placeholder:text-slate-500 focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
-                  placeholder="Type here"
-                />
+                <div className="relative mt-4">
+                  <input
+                    ref={inputRef}
+                    type="text"
+                    value={typedValue}
+                    readOnly
+                    inputMode="none"
+                    className="absolute inset-0 h-full w-full opacity-0"
+                    aria-hidden="true"
+                    tabIndex={-1}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowCustomKeyboard(true)}
+                    onTouchStart={() => setShowCustomKeyboard(true)}
+                    className="w-full rounded-xl border border-white/25 bg-[#0f1730] px-3 py-3 text-center text-base tracking-[0.12em] text-slate-100 outline-none focus:border-cyan-200/60 sm:px-4 sm:text-xl sm:tracking-[0.2em]"
+                  >
+                    {typedValue ? typedValue.toUpperCase() : "Type here"}
+                  </button>
+                </div>
               </div>
 
               <div className="mt-4 flex items-center justify-end gap-3 sm:mt-6">
