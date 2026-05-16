@@ -14,33 +14,34 @@ const CustomKeyboard: React.FC<CustomKeyboardProps> = ({ onKeyPress, onBackspace
   ];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-200 p-2 dark:bg-gray-800">
-      <div className="flex flex-col items-center space-y-1">
+    <div className="fixed bottom-0 left-0 right-0 bg-gray-900/50 p-1 backdrop-blur-sm sm:p-2">
+      <div className="mx-auto flex max-w-lg flex-col items-center space-y-1.5">
         {keys.map((row, rowIndex) => (
-          <div key={rowIndex} className="flex space-x-1">
+          <div key={rowIndex} className="flex w-full flex-wrap justify-center gap-1.5">
             {row.map((key) => (
               <button
                 key={key}
                 onClick={() => onKeyPress(key)}
-                className="flex h-12 w-8 items-center justify-center rounded bg-white text-xl font-bold text-gray-800 dark:bg-gray-600 dark:text-white sm:w-10"
+                className="flex h-11 flex-1 items-center justify-center rounded-md bg-white/20 text-lg font-bold text-white transition-all active:scale-95 active:bg-white/30 sm:h-12 sm:rounded-lg"
+                style={{ minWidth: '2rem' }}
               >
                 {key.toUpperCase()}
               </button>
             ))}
           </div>
         ))}
-        <div className="flex space-x-1">
+        <div className="flex w-full gap-1.5">
           <button
             onClick={onBackspace}
-            className="flex h-12 w-16 items-center justify-center rounded bg-white text-xl font-bold text-gray-800 dark:bg-gray-600 dark:text-white"
+            className="flex h-12 flex-[1.5] items-center justify-center rounded-md bg-white/20 text-sm font-bold text-white active:scale-95 active:bg-white/30 sm:rounded-lg"
           >
-            Bksp
+            BKSP
           </button>
           <button
             onClick={onEnter}
-            className="flex h-12 w-16 items-center justify-center rounded bg-white text-xl font-bold text-gray-800 dark:bg-gray-600 dark:text-white"
+            className="flex h-12 flex-[1.5] items-center justify-center rounded-md bg-white/20 text-sm font-bold text-white active:scale-95 active:bg-white/30 sm:rounded-lg"
           >
-            Enter
+            ENTER
           </button>
         </div>
       </div>

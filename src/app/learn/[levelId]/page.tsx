@@ -373,7 +373,7 @@ export default function LearnLevelPage() {
       <div className="pointer-events-none absolute -left-20 top-8 h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
-      <main ref={mainRef} className="relative z-10 mx-auto w-full max-w-4xl px-3 py-4 pb-[calc(env(safe-area-inset-bottom)+1.25rem)] sm:px-6 sm:py-8 lg:px-8">
+      <main ref={mainRef} className="relative z-10 mx-auto w-full max-w-4xl px-3 py-4 pb-48 sm:px-6 sm:py-8">
         <section className="rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-slate-900/72 to-[#122531]/70 p-4 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8">
           <div className="flex flex-wrap items-center justify-between gap-4">
             <div className="min-w-[220px] flex-1">
