@@ -155,11 +155,26 @@ export default function RootLayout({
         <Script id="register-service-worker" strategy="afterInteractive">
           {`
             if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function () {
-                navigator.serviceWorker.register('/sw.js').catch(function (error) {
-                  console.warn('Service worker registration failed:', error);
+              const isLocalHost =
+                window.location.hostname === 'localhost' ||
+                window.location.hostname === '127.0.0.1';
+
+              if (isLocalHost) {
+                // In local dev, stale SW caches can serve old chunks and break hydration.
+                window.addEventListener('load', function () {
+                  navigator.serviceWorker.getRegistrations().then(function (registrations) {
+                    registrations.forEach(function (registration) {
+                      registration.unregister();
+                    });
+                  });
                 });
-              });
+              } else {
+                window.addEventListener('load', function () {
+                  navigator.serviceWorker.register('/sw.js').catch(function (error) {
+                    console.warn('Service worker registration failed:', error);
+                  });
+                });
+              }
             }
           `}
         </Script>

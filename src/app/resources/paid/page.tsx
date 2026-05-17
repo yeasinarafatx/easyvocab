@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
-import { trackMetaEvent } from "@/lib/metaPixel";
 
 interface Resource {
   id: string;
@@ -30,14 +29,26 @@ export default function PaidResourcesPage() {
       
       if (!session?.user) {
         setIsPremium(false);
+        setResources([]);
+        setLoading(false);
+        router.replace("/payment?redirect=%2Fresources%2Fpaid");
+        return;
       } else {
         const { data: profile } = await supabase
           .from("profiles")
           .select("is_premium")
           .eq("id", session.user.id)
           .single();
-        
-        setIsPremium(Boolean(profile?.is_premium));
+
+        const premium = Boolean(profile?.is_premium);
+        setIsPremium(premium);
+
+        if (!premium) {
+          setResources([]);
+          setLoading(false);
+          router.replace("/payment?redirect=%2Fresources%2Fpaid");
+          return;
+        }
       }
 
       // Check cache first (5 minutes validity)
@@ -178,6 +189,10 @@ export default function PaidResourcesPage() {
     </div>
   );
 
+  if (!isPremium) {
+    return null;
+  }
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-[#0f0f1a] text-slate-100">
       <div className="pointer-events-none absolute -left-20 top-12 h-72 w-72 rounded-full bg-amber-400/20 blur-3xl" />
@@ -197,24 +212,6 @@ export default function PaidResourcesPage() {
             </div>
           )}
 
-          {!isPremium && (
-            <div className="mb-6 rounded-lg border border-amber-300/35 bg-amber-300/15 p-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-semibold text-amber-100">প্রিমিয়াম সাবস্ক্রিপশন প্রয়োজন</p>
-                  <p className="mt-1 text-sm text-amber-200/80">এই সামগ্রী অ্যাক্সেস করতে আপনাকে প্রিমিয়াম সদস্য হতে হবে।</p>
-                </div>
-                <Link
-                  href="/payment"
-                  onClick={() => trackMetaEvent("Lead", { content_name: "Paid Resources Upgrade CTA" })}
-                  className="ml-4 rounded-lg bg-gradient-to-r from-amber-300 to-amber-400 px-6 py-2.5 text-sm font-semibold text-[#0f0f1a] transition hover:brightness-110 whitespace-nowrap"
-                >
-                  Upgrade Now →
-                </Link>
-              </div>
-            </div>
-          )}
-
           {resources.length === 0 ? (
             <div className="rounded-lg border border-white/10 bg-white/5 p-12 text-center">
               <p className="text-slate-300">কোনো প্রিমিয়াম সামগ্রী পাওয়া যায়নি।</p>
@@ -222,79 +219,42 @@ export default function PaidResourcesPage() {
           ) : (
             <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-2">
               {resources.map((item) => (
-                isPremium ? (
-                  <div
-                    key={item.id}
-                    className="group relative overflow-hidden rounded-2xl border border-amber-300/35 bg-gradient-to-br from-amber-400/12 via-slate-900/60 to-slate-900/40 shadow-xl shadow-amber-400/15 transition-all duration-300 hover:-translate-y-1 hover:border-amber-300/60 hover:shadow-2xl hover:shadow-amber-400/25"
-                  >
-                    <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-amber-400/20 to-orange-400/10 opacity-0 blur-xl transition-all duration-300 group-hover:opacity-100 -z-10" />
+                <div
+                  key={item.id}
+                  className="group relative overflow-hidden rounded-2xl border border-amber-300/35 bg-gradient-to-br from-amber-400/12 via-slate-900/60 to-slate-900/40 shadow-xl shadow-amber-400/15 transition-all duration-300 hover:-translate-y-1 hover:border-amber-300/60 hover:shadow-2xl hover:shadow-amber-400/25"
+                >
+                  <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-amber-400/20 to-orange-400/10 opacity-0 blur-xl transition-all duration-300 group-hover:opacity-100 -z-10" />
 
-                    <div className="relative z-10 p-5 md:p-6">
-                      <div className="mb-4 flex items-start justify-between gap-4">
-                        <img
-                          src="/icons/premium/trophy-front-premium.svg"
-                          alt="Unlocked premium resource"
-                          className="h-7 w-7 flex-shrink-0"
-                        />
+                  <div className="relative z-10 p-5 md:p-6">
+                    <div className="mb-4 flex items-start justify-between gap-4">
+                      <img
+                        src="/icons/premium/trophy-front-premium.svg"
+                        alt="Unlocked premium resource"
+                        className="h-7 w-7 flex-shrink-0"
+                      />
 
-                        <span className="inline-block flex-shrink-0 whitespace-nowrap rounded-full border border-emerald-300/50 bg-emerald-400/25 px-2.5 py-0.5 text-xs font-bold text-emerald-200">
-                          ✓ Unlocked
-                        </span>
-                      </div>
-
-                      <h3 className="mb-1.5 line-clamp-2 text-base font-bold text-amber-50 transition group-hover:text-amber-100 md:text-lg">
-                        {item.title}
-                      </h3>
-
-                      <p className="mb-3.5 text-xs text-slate-400">
-                        {item.size_bytes ? `${(item.size_bytes / 1024 / 1024).toFixed(2)} MB` : "Size unknown"}
-                      </p>
-
-                      <button
-                        onClick={() => handleDownload(item.id, item.title)}
-                        className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-400 to-orange-400 px-3 py-2 text-xs font-bold text-[#0f0f1a] shadow-lg shadow-amber-400/30 transition-all duration-300 hover:brightness-110 hover:shadow-xl hover:shadow-amber-300/40"
-                      >
-                        <span>⬇️</span>
-                        <span>Download</span>
-                      </button>
+                      <span className="inline-block flex-shrink-0 whitespace-nowrap rounded-full border border-emerald-300/50 bg-emerald-400/25 px-2.5 py-0.5 text-xs font-bold text-emerald-200">
+                        ✓ Unlocked
+                      </span>
                     </div>
+
+                    <h3 className="mb-1.5 line-clamp-2 text-base font-bold text-amber-50 transition group-hover:text-amber-100 md:text-lg">
+                      {item.title}
+                    </h3>
+
+                    <p className="mb-3.5 text-xs text-slate-400">
+                      {item.size_bytes ? `${(item.size_bytes / 1024 / 1024).toFixed(2)} MB` : "Size unknown"}
+                    </p>
+
+                    <button
+                      onClick={() => handleDownload(item.id, item.title)}
+                      className="flex w-full items-center justify-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-400 to-orange-400 px-3 py-2 text-xs font-bold text-[#0f0f1a] shadow-lg shadow-amber-400/30 transition-all duration-300 hover:brightness-110 hover:shadow-xl hover:shadow-amber-300/40"
+                    >
+                      <span>⬇️</span>
+                      <span>Download</span>
+                    </button>
                   </div>
-                ) : (
-                  <Link
-                    key={item.id}
-                    href="/payment"
-                    onClick={() => trackMetaEvent("Lead", { content_name: "Locked Premium Resource CTA" })}
-                    className="group relative overflow-hidden rounded-2xl border border-slate-700/40 bg-gradient-to-br from-slate-800/30 via-slate-900/60 to-slate-900/50 p-5 shadow-lg shadow-black/20 transition-all duration-300 hover:-translate-y-0.5 hover:border-amber-300/35 hover:bg-gradient-to-br hover:from-slate-800/45 hover:via-slate-900/70 hover:to-slate-900/55"
-                  >
-                    <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-amber-400/10 to-cyan-400/8 opacity-0 blur-xl transition-all duration-300 group-hover:opacity-100 -z-10" />
-
-                    <div className="relative z-10">
-                      <div className="mb-4 flex items-start justify-between gap-4">
-                        <img
-                          src="/icons/premium/lock-front-color.svg"
-                          alt="Locked premium resource"
-                          className="h-7 w-7 flex-shrink-0"
-                        />
-
-                        <span className="inline-block flex-shrink-0 whitespace-nowrap rounded-full border border-slate-600/40 bg-slate-700/50 px-2.5 py-0.5 text-xs font-bold text-slate-400">
-                          🔒 Locked
-                        </span>
-                      </div>
-
-                      <h3 className="mb-1.5 line-clamp-2 text-base font-bold text-slate-400 md:text-lg">
-                        Premium Resource
-                      </h3>
-
-                      <p className="mb-4 text-xs text-slate-500">
-                        Premium content is hidden for free users.
-                      </p>
-
-                      <div className="flex w-full items-center justify-center rounded-lg bg-gradient-to-r from-cyan-400 to-emerald-400 px-3 py-2 text-xs font-bold text-[#0f0f1a] transition-all duration-300 group-hover:brightness-110">
-                        Unlock →
-                      </div>
-                    </div>
-                  </Link>
-                )
+                </div>
               ))}
             </div>
           )}

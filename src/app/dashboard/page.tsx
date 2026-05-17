@@ -547,7 +547,12 @@ export default function DashboardPage() {
               </Link>
 
               <Link
-                href="/resources/paid"
+                href={premiumState === "premium" ? "/resources/paid" : "/payment?redirect=%2Fresources%2Fpaid"}
+                onClick={() => {
+                  if (premiumState !== "premium") {
+                    trackMetaEvent("Lead", { content_name: "Dashboard Paid Resources Redirect to Payment" });
+                  }
+                }}
                 className="rounded-2xl border border-amber-300/35 bg-gradient-to-br from-amber-300/18 via-[#3d382c]/90 to-[#252a2d]/95 p-5 shadow-xl shadow-black/20 transition hover:border-amber-200 hover:from-amber-300/24 hover:to-[#2a3236]"
               >
                 <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-2xl border border-amber-300/35 bg-amber-300/12 shadow-lg shadow-amber-300/10">
