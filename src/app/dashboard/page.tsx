@@ -105,7 +105,12 @@ export default function DashboardPage() {
       if (!mounted) return;
 
       if (!data.session) {
-        router.replace("/login");
+        setUserName("Guest");
+        setPremiumState("free");
+        setLatestPaymentState(null);
+        setLatestPaymentNote(null);
+        setIsAdmin(false);
+        setAuthChecked(true);
         return;
       }
 
