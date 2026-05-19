@@ -451,7 +451,7 @@ export default function Home() {
                 { name: "Facebook", src: "/logos/social/facebook.svg", href: "https://www.facebook.com/share/17SRhrV411/" },
                 { name: "Instagram", src: "/logos/social/instagram.svg", href: "https://www.instagram.com/vocabspeakapp?igsh=ZnJidG5pem04eG9t" },
                 { name: "WhatsApp", src: "/logos/social/whatsapp.svg", href: "https://wa.me/message/GEWPOC6N6XFQC1" },
-                { name: "YouTube", src: "/logos/social/youtube.svg" },
+                { name: "YouTube", src: "/logos/social/youtube.svg", href: "https://www.youtube.com/@VocabSpeak" },
               ].map((item) => (
                 item.href ? (
                   <a
