@@ -21,6 +21,32 @@ export function middleware(request: NextRequest) {
     response.headers.set("X-Robots-Tag", "noindex, nofollow, noimageindex");
   }
 
+  // --- Added: protected-route redirect for unauthenticated users ---
+  // Do not modify existing logic above — only add checks here.
+  const PROTECTED_PREFIXES = [
+    "/learn",
+    "/stage",
+    "/flashcard",
+    "/speak",
+    "/core",
+    "/resources",
+  ];
+
+  const matchesProtected = PROTECTED_PREFIXES.some(
+    (p) => pathname === p || pathname.startsWith(`${p}/`)
+  );
+
+  if (matchesProtected) {
+    const isAuthenticated = !!request.cookies.get("sb-zdbjsqfdymhlfwywpucs-auth-token")?.value;
+
+    // If not authenticated, redirect to landing page `/`
+    if (!isAuthenticated) {
+      const redirectUrl = new URL("/", request.url);
+      return NextResponse.redirect(redirectUrl);
+    }
+  }
+  // --- end added logic ---
+
   return response;
 }
 
