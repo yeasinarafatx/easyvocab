@@ -22,7 +22,7 @@ export default function DemoPage() {
           </h1>
 
           <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-200/90 sm:text-base">
-            এখানে IELTS, GRE, BCS, IBA, Bank পরীক্ষায় সাধারণত দেখা যায় এমন ২০টি
+            এখানে IELTS, GRE, BCS, ADMISSION, Bank পরীক্ষায় সাধারণত দেখা যায় এমন ২০টি
             unique শব্দ আছে। Beginner/Intermediate এর একই structure এ data রাখা হয়েছে,
             তাই Typing, Speaking এবং Flashcard তিনটাই directly test করতে পারবেন।
           </p>

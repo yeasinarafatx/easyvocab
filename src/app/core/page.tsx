@@ -89,7 +89,7 @@ export default function CorePage() {
           <div className="flex flex-col gap-4 border-b border-white/10 pb-6 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">Vocab Speak</p>
-              <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">IELTS, SAT, Admission</h1>
+              <h1 className="mt-2 text-3xl font-extrabold leading-tight sm:text-4xl">IELTS, SAT, ADMISSION</h1>
               <p className="mt-2 text-sm text-slate-100">Beginner, Intermediate, Advanced আলাদা clean page</p>
             </div>
 

@@ -435,7 +435,7 @@ export default function DashboardPage() {
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h2 className="text-2xl font-extrabold">IELTS, SAT, Admission</h2>
+                  <h2 className="text-2xl font-extrabold">IELTS, SAT, ADMISSION</h2>
                   <p className="mt-1 text-sm text-slate-100">Beginner, Intermediate, Advanced • 800 words</p>
                 </div>
                 <span className="rounded-full border border-white/25 bg-white/15 px-3 py-1 text-xs font-semibold text-slate-100">
@@ -456,7 +456,7 @@ export default function DashboardPage() {
                 </div>
               </div>
               <div className="mt-5 rounded-xl border border-white/25 bg-white/15 px-4 py-2.5 text-center text-sm font-semibold text-cyan-100">
-                Open IELTS/SAT/Admission
+                Open IELTS/SAT/ADMISSION
               </div>
             </Link>
 
@@ -464,7 +464,7 @@ export default function DashboardPage() {
               href="/stage/exam"
               className="rounded-2xl border border-amber-300/35 bg-gradient-to-br from-amber-300/18 via-[#3d382c]/90 to-[#252a2d]/95 p-5 shadow-xl shadow-black/20 transition hover:border-amber-200 hover:from-amber-300/24 hover:to-[#2a3236] sm:p-6"
             >
-              <h2 className="text-2xl font-extrabold text-amber-200">GRE • BCS • IBA</h2>
+              <h2 className="text-2xl font-extrabold text-amber-200">GRE • BCS • ADMISSION</h2>
               <p className="mt-1 text-sm text-slate-100">Competitive exam vocabulary track • 600 words</p>
 
               <div className="mt-4">
