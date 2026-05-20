@@ -93,7 +93,6 @@ export default function Home() {
     { name: "GRE" },
     { name: "SAT" },
     { name: "ADMISSION" },
-    { name: "ADMISSION" },
     { name: "BCS" },
     { name: "Bank" },
   ];
