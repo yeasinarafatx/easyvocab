@@ -386,15 +386,15 @@ export default function Home() {
                 </div>
 
                 <div className="mt-6 flex justify-center">
-                  <div className="grid w-full max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+                  <div className="grid w-full max-w-5xl grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-5 lg:grid-cols-3 lg:gap-6">
                     {examCategories.map((exam, idx) => (
                       <div
                         key={`${exam.name}-${idx}`}
-                        className="group relative flex min-h-[96px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-cyan-200/16 bg-white/[0.03] px-3 py-3 text-center text-slate-100 shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.06] hover:shadow-[0_18px_36px_rgba(0,0,0,0.28)] sm:min-h-[106px]"
+                        className="group relative flex min-h-[108px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-cyan-200/16 bg-white/[0.03] px-4 py-4 text-center text-slate-100 shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.06] hover:shadow-[0_18px_36px_rgba(0,0,0,0.28)] sm:min-h-[116px] sm:px-5"
                       >
                         <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-200/55 to-transparent opacity-70" />
                         <span className="pointer-events-none absolute -left-8 -top-8 h-20 w-20 rounded-full bg-cyan-300/10 blur-2xl transition-opacity duration-300 group-hover:opacity-80" />
-                        <p className="text-sm font-extrabold tracking-[0.14em] text-cyan-100 sm:text-base">{exam.name}</p>
+                        <p className="text-sm font-extrabold tracking-[0.12em] text-cyan-100 sm:text-base lg:text-[1.05rem]">{exam.name}</p>
                       </div>
                     ))}
                   </div>
