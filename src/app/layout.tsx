@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "GRE vocabulary",
     "SAT vocabulary",
     "BCS vocabulary",
-    "Admission vocabulary",
+    "ADMISSION vocabulary",
     "spoken English practice",
     "flashcard app",
   ],

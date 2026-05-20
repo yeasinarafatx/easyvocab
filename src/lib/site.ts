@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Vocab Speak",
   shortName: "Vocab Speak",
   description:
-    "Learn English vocabulary fast with interactive spelling, voice pronunciation, flashcards, and exam-focused practice for IELTS, GRE, SAT, BCS, and Admission.",
+    "Learn English vocabulary fast with interactive spelling, voice pronunciation, flashcards, and exam-focused practice for IELTS, GRE, SAT, BCS, and ADMISSION.",
   url: normalizeSiteUrl(process.env.NEXT_PUBLIC_SITE_URL || "https://vocabspeak.me"),
   locale: "en_US",
   defaultImage: "/og/og-image.png",

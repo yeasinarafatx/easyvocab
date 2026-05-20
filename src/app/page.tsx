@@ -87,13 +87,13 @@ export default function Home() {
     };
   }, [countdownCycleMs, countdownStartIso]);
 
-  const examBadges = ["IELTS", "GRE", "SAT", "IBA"];
+  const examBadges = ["IELTS", "GRE", "SAT", "ADMISSION"];
   const examCategories = [
     { name: "IELTS" },
     { name: "GRE" },
     { name: "SAT" },
-    { name: "IBA" },
-    { name: "Admission" },
+    { name: "ADMISSION" },
+    { name: "ADMISSION" },
     { name: "BCS" },
     { name: "Bank" },
   ];
@@ -174,7 +174,7 @@ export default function Home() {
               </h1>
 
               <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-slate-100 sm:text-base sm:leading-8">
-                IELTS, GRE, SAT, BCS বা Admission — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে Perfectly ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
+                IELTS, GRE, SAT, BCS বা ADMISSION — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে Perfectly ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
               </p>
 
               <div className="mt-5 flex flex-wrap gap-3">
@@ -201,7 +201,7 @@ export default function Home() {
               </div>
 
               <p className="mt-4 text-sm leading-6 text-slate-200/90 [word-break:break-word]">
-                এককালীন পেমেন্টে আজই পুরো কোর্স, প্র্যাকটিস সেট এবং স্টেজ-ভিত্তিক লার্নিং আনলক করুন — সাথে পাচ্ছেন IELTS, GRE ও TOEFL-এর Premium Strategy Book Bundle এবং Advanced PDF Collection, যার বাজারমূল্য ৫০০০ টাকা। একবার কিনলেই সবকিছুতে লাইফটাইম অ্যাক্সেস পাবেন।
+                এককালীন পেমেন্টে আজই পুরো কোর্স, প্র্যাকটিস সেট এবং স্টেজ-ভিত্তিক লার্নিং আনলক করুন — সাথে পাচ্ছেন IELTS, GRE ও TOEFL-এর Premium Strategy Book Bundle এবং <span className="font-bold text-amber-300" style={{ textShadow: '0 0 12px rgba(250,204,21,0.45)' }}>IELTS Complete Course Access</span> একসাথে, যার বাজারমূল্য ৫০০০ টাকা। একবার কিনলেই সবকিছুতে লাইফটাইম অ্যাক্সেস পাবেন।
               </p>
 
               <div className="mt-5 rounded-2xl border border-amber-300/40 bg-gradient-to-br from-amber-400/15 via-slate-900/60 to-slate-900/40 p-3 shadow-2xl shadow-amber-400/20 backdrop-blur-xl sm:p-4">
@@ -307,7 +307,7 @@ export default function Home() {
                   ২০টি Exam Word দিয়ে Live Typing + Speaking + Flashcard Demo
                 </h2>
                 <p className="mt-3 max-w-xl text-sm leading-6 text-slate-200/85 sm:text-[0.98rem]">
-                  IELTS, GRE, BCS, IBA, Bank mix থেকে নেওয়া ২০টি unique শব্দ দিয়ে এক জায়গায় তিন ধরনের practice করুন।
+                  IELTS, GRE, BCS, ADMISSION, Bank mix থেকে নেওয়া ২০টি unique শব্দ দিয়ে এক জায়গায় তিন ধরনের practice করুন।
                 </p>
               </div>
               <Link
@@ -351,7 +351,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
                   <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
-                  <span>IELTS, GRE, SAT, IBA, BCS, Bank exam-oriented শব্দ, যাতে real exam context-এর সাথে match করে</span>
+                  <span>IELTS, GRE, SAT, ADMISSION, BCS, Bank exam-oriented শব্দ, যাতে real exam context-এর সাথে match করে</span>
                 </li>
                 <li className="flex items-center gap-2 rounded-2xl border border-cyan-100/12 bg-gradient-to-r from-slate-800/55 to-[#17363d]/38 px-3 py-2.5 sm:gap-3 sm:px-4 sm:py-3.5">
                   <img src="/icons/premium/star-small-premium.svg" alt="Star" width={16} height={16} className="h-4 w-4 shrink-0" />
@@ -378,9 +378,9 @@ export default function Home() {
             <h2 className="text-center text-2xl font-bold sm:text-3xl">Exam Categories</h2>
             <div className="mt-6 flex justify-center">
               <div className="grid w-full max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-                {examCategories.map((exam) => (
+                {examCategories.map((exam, idx) => (
                   <div
-                    key={exam.name}
+                    key={`${exam.name}-${idx}`}
                     className="flex min-h-[90px] flex-col items-center justify-center rounded-xl border border-cyan-200/18 bg-gradient-to-br from-slate-900/74 to-[#223140]/92 px-3 py-3 text-center text-slate-100 shadow-lg shadow-black/30 backdrop-blur-sm transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-[100px] sm:backdrop-blur-xl"
                   >
                     <p className="text-sm font-extrabold tracking-[0.08em] text-cyan-100 sm:text-base">
