@@ -1,11 +1,6 @@
 const EMAIL_NOT_CONFIRMED = "email not confirmed";
 const RATE_LIMIT = "email rate limit exceeded";
 
-export function isEmailNotConfirmedError(error: unknown): boolean {
-  if (!(error instanceof Error)) return false;
-  return error.message.toLowerCase().includes(EMAIL_NOT_CONFIRMED);
-}
-
 export function getFriendlyAuthError(error: unknown): string {
   if (!(error instanceof Error)) {
     return "কিছু একটা ভুল হয়েছে। আবার চেষ্টা করুন।";
@@ -18,7 +13,7 @@ export function getFriendlyAuthError(error: unknown): string {
   }
 
   if (message.includes(EMAIL_NOT_CONFIRMED)) {
-    return "আপনার ইমেইল এখনো verify হয়নি। email-এর verification code দিয়ে verify করুন।";
+    return "এই অ্যাকাউন্টে login করা যাচ্ছে না। email/password ঠিক আছে কি না দেখুন, দরকার হলে Forgot Password ব্যবহার করুন।";
   }
 
   if (message.includes("invalid login credentials")) {

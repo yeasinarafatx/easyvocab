@@ -114,13 +114,6 @@ export default function DashboardPage() {
         return;
       }
 
-      if (!data.session.user.email_confirmed_at) {
-        const email = encodeURIComponent(data.session.user.email ?? "");
-        await supabase.auth.signOut();
-        router.replace(`/verify-email?email=${email}`);
-        return;
-      }
-
       const profileName =
         (data.session.user.user_metadata?.full_name as string | undefined)?.trim() ||
         (data.session.user.user_metadata?.name as string | undefined)?.trim() ||

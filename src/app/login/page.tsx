@@ -4,15 +4,13 @@ import { FormEvent, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import AuthShell from "@/components/auth/AuthShell";
-import { getFriendlyAuthError, isEmailNotConfirmedError } from "@/lib/authErrors";
+import { getFriendlyAuthError } from "@/lib/authErrors";
 import { supabase } from "@/lib/supabase";
 
 export default function LoginPage() {
   const router = useRouter();
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
-  const [showResendVerification, setShowResendVerification] = useState(false);
-  const [resendCooldown, setResendCooldown] = useState(0);
   const [loading, setLoading] = useState(false);
   const [redirectPath, setRedirectPath] = useState("/dashboard");
   const [formData, setFormData] = useState({
@@ -28,14 +26,6 @@ export default function LoginPage() {
     }
   }, []);
 
-  useEffect(() => {
-    if (resendCooldown <= 0) return;
-    const timer = window.setInterval(() => {
-      setResendCooldown((current) => Math.max(current - 1, 0));
-    }, 1000);
-    return () => window.clearInterval(timer);
-  }, [resendCooldown]);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
@@ -45,7 +35,6 @@ export default function LoginPage() {
     event.preventDefault();
     setError("");
     setMessage("");
-    setShowResendVerification(false);
     setLoading(true);
 
     try {
@@ -63,41 +52,6 @@ export default function LoginPage() {
           router.push(redirectPath);
         }, 1000);
       }
-    } catch (err: unknown) {
-      const isUnverified = isEmailNotConfirmedError(err);
-      setShowResendVerification(isUnverified);
-      setError(getFriendlyAuthError(err));
-
-      if (isUnverified) {
-        const email = encodeURIComponent(formData.email.trim().toLowerCase());
-        setMessage("Verification code page-এ নিয়ে যাওয়া হচ্ছে...");
-        setTimeout(() => {
-          const redirect = encodeURIComponent(redirectPath);
-          router.push(`/verify-email?email=${email}&redirect=${redirect}`);
-        }, 800);
-      }
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleResendVerification = async () => {
-    if (!formData.email || resendCooldown > 0) return;
-
-    setError("");
-    setMessage("");
-    setLoading(true);
-
-    try {
-      const { error: resendError } = await supabase.auth.resend({
-        type: "signup",
-        email: formData.email.trim().toLowerCase(),
-      });
-
-      if (resendError) throw resendError;
-
-      setMessage("Verification email আবার পাঠানো হয়েছে। inbox/spam চেক করুন।");
-      setResendCooldown(60);
     } catch (err: unknown) {
       setError(getFriendlyAuthError(err));
     } finally {
@@ -161,19 +115,6 @@ export default function LoginPage() {
           {loading ? "Logging in..." : "Login করুন"}
         </button>
       </form>
-
-      {showResendVerification ? (
-        <button
-          type="button"
-          onClick={handleResendVerification}
-          disabled={loading || resendCooldown > 0}
-          className="mt-4 w-full rounded-xl border border-cyan-200/30 bg-cyan-200/10 px-4 py-2.5 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-200/20 disabled:opacity-50"
-        >
-          {resendCooldown > 0
-            ? `Verification আবার পাঠানো যাবে ${resendCooldown}s পরে`
-            : "Verification Email আবার পাঠান"}
-        </button>
-      ) : null}
 
       {error ? <p className="mt-4 text-sm text-red-300">{error}</p> : null}
       {message ? <p className="mt-4 text-sm text-emerald-200">{message}</p> : null}

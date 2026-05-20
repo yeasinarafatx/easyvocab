@@ -52,18 +52,6 @@ export default function SignupPage() {
       if (signUpError) throw signUpError;
 
       if (data?.user) {
-        // Supabase may return user with no session when email confirmation is required.
-        if (!data.session) {
-          setMessage("✓ অ্যাকাউন্ট তৈরি হয়েছে। এখন verification code দিন।");
-          setTimeout(() => {
-            trackMetaEvent("CompleteRegistration", { method: "email" });
-            const email = encodeURIComponent(formData.email.trim().toLowerCase());
-            const redirect = encodeURIComponent(redirectPath);
-            router.push(`/verify-email?email=${email}&redirect=${redirect}`);
-          }, 700);
-          return;
-        }
-
         setMessage("✓ Account created successfully! আপনাকে পরের পেজে নেওয়া হচ্ছে...");
         setTimeout(() => {
           trackMetaEvent("CompleteRegistration", { method: "email" });
