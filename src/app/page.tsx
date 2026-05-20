@@ -373,20 +373,32 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="hidden border-t border-white/10 pt-8 sm:block sm:mt-10">
-            <h2 className="text-center text-2xl font-bold sm:text-3xl">Exam Categories</h2>
-            <div className="mt-6 flex justify-center">
-              <div className="grid w-full max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
-                {examCategories.map((exam, idx) => (
-                  <div
-                    key={`${exam.name}-${idx}`}
-                    className="flex min-h-[90px] flex-col items-center justify-center rounded-xl border border-cyan-200/18 bg-gradient-to-br from-slate-900/74 to-[#223140]/92 px-3 py-3 text-center text-slate-100 shadow-lg shadow-black/30 backdrop-blur-sm transition-transform duration-300 hover:-translate-y-0.5 sm:min-h-[100px] sm:backdrop-blur-xl"
-                  >
-                    <p className="text-sm font-extrabold tracking-[0.08em] text-cyan-100 sm:text-base">
-                      {exam.name}
-                    </p>
+          <section className="hidden border-t border-white/10 pt-8 sm:mt-10 sm:block">
+            <div className="relative overflow-hidden rounded-[2rem] border border-cyan-200/18 bg-gradient-to-br from-slate-900/80 via-[#182433]/88 to-[#10292f]/82 px-5 py-7 shadow-2xl shadow-black/30 backdrop-blur-xl sm:px-6 sm:py-8 lg:px-8">
+              <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.14),transparent_42%)]" />
+              <div className="relative">
+                <div className="mx-auto max-w-2xl text-center">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-100/75 sm:text-xs">Browse by goal</p>
+                  <h2 className="mt-2 text-2xl font-extrabold tracking-tight text-slate-100 sm:text-3xl">Exam Categories</h2>
+                  <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-slate-300 sm:text-base">
+                    IELTS, GRE, SAT, ADMISSION, BCS আর Bank অনুযায়ী আলাদা learning path - দ্রুত নিজের target track খুঁজে নিন।
+                  </p>
+                </div>
+
+                <div className="mt-6 flex justify-center">
+                  <div className="grid w-full max-w-6xl grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7">
+                    {examCategories.map((exam, idx) => (
+                      <div
+                        key={`${exam.name}-${idx}`}
+                        className="group relative flex min-h-[96px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-cyan-200/16 bg-white/[0.03] px-3 py-3 text-center text-slate-100 shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.06] hover:shadow-[0_18px_36px_rgba(0,0,0,0.28)] sm:min-h-[106px]"
+                      >
+                        <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-200/55 to-transparent opacity-70" />
+                        <span className="pointer-events-none absolute -left-8 -top-8 h-20 w-20 rounded-full bg-cyan-300/10 blur-2xl transition-opacity duration-300 group-hover:opacity-80" />
+                        <p className="text-sm font-extrabold tracking-[0.14em] text-cyan-100 sm:text-base">{exam.name}</p>
+                      </div>
+                    ))}
                   </div>
-                ))}
+                </div>
               </div>
             </div>
           </section>
