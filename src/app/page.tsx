@@ -4,6 +4,7 @@ import Link from "next/link";
 import Script from "next/script";
 import type { User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
+import LandingVideo from "@/components/LandingVideo";
 import { supabase } from "@/lib/supabase";
 import { trackMetaEvent } from "@/lib/metaPixel";
 
@@ -157,26 +158,29 @@ export default function Home() {
       <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl items-start px-4 py-8 sm:px-6 sm:py-12 lg:items-start lg:px-10">
-        <section className="w-full rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-[#1a2030]/78 to-[#10262c]/74 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-12">
-          <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="space-y-2">              <div className="flex justify-center" style={{ paddingTop: '15px' }}>
-                <img
-                  src="/og/og-image.png"
-                  alt="Vocab Speak"
-                  className="h-auto"
-                  style={{ maxWidth: '240px', width: 'auto', filter: 'drop-shadow(0 0 20px rgba(99, 179, 237, 0.25))' }}
-                />
-              </div>
-              <div className="mt-2 h-px w-28 mx-auto" style={{ background: 'rgba(255,255,255,0.06)' }} />
-              <h1 className="mt-1 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+        <section className="w-full rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-[#1a2030]/78 to-[#10262c]/74 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-10">
+          {/* logo: show on mobile here (hidden on lg); desktop logo is inside pricing card */}
+          <div className="mb-4 flex justify-center sm:mb-6 lg:mb-8 lg:hidden">
+            <img
+              src="/og/og-image.png"
+              alt="Vocab Speak"
+              className="block h-auto"
+              style={{ maxWidth: '210px', width: 'auto', filter: 'drop-shadow(0 0 20px rgba(99, 179, 237, 0.28))' }}
+            />
+          </div>
+
+          <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
+            <div className="space-y-4 lg:pr-4 h-full flex flex-col">
+              <div className="mt-1 h-px w-24 mx-auto" style={{ background: 'rgba(255,255,255,0.06)' }} />
+              <h1 className="mt-0 text-3xl font-extrabold leading-[1.06] sm:text-4xl sm:leading-[1.08] lg:text-5xl lg:leading-[1.05]">
                 ইংরেজি Vocabulary-তে Master হও, প্রতিটা Exam Crack করো।
               </h1>
 
-              <p className="mt-4 max-w-xl text-sm font-medium leading-8 text-slate-100 sm:text-base sm:leading-8">
+              <p className="mt-3 max-w-xl text-sm font-medium leading-7 text-slate-100 sm:text-base sm:leading-7 lg:leading-8">
                 IELTS, GRE, SAT, BCS বা ADMISSION — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে Perfectly ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
               </p>
 
-              <div className="mt-5 flex flex-wrap gap-3">
+              <div className="mt-4 flex flex-wrap gap-2.5 sm:gap-3">
                 {examBadges.map((badge) => (
                   <span
                     key={badge}
@@ -186,12 +190,24 @@ export default function Home() {
                   </span>
                 ))}
               </div>
+
+              <div className="flex-1 min-h-4" />
+
+              <LandingVideo videoId="1mu-9UXh1mg" className="lg:max-w-[88%] lg:mx-auto" />
             </div>
 
-            <div className="rounded-2xl border border-cyan-200/30 bg-gradient-to-b from-slate-900/85 via-slate-900/75 to-slate-950/85 p-4 shadow-[0_14px_40px_rgba(8,145,178,0.18)] backdrop-blur-xl sm:p-8">
-              <p className="text-sm font-bold text-white">Early Bird Offer</p>
+            <div className="rounded-2xl border border-cyan-200/30 bg-gradient-to-b from-slate-900/85 via-slate-900/75 to-slate-950/85 pt-5 px-4 shadow-[0_14px_40px_rgba(8,145,178,0.18)] backdrop-blur-xl sm:pt-5 sm:px-8 h-full flex flex-col justify-start">
+                <div className="hidden lg:flex justify-center mb-3">
+                <img
+                  src="/og/og-image.png"
+                  alt="Vocab Speak"
+                  className="block h-auto"
+                  style={{ maxWidth: '160px', width: 'auto', filter: 'drop-shadow(0 0 12px rgba(99, 179, 237, 0.22))' }}
+                />
+              </div>
+              <p className="text-sm font-bold text-white leading-none">Early Bird Offer</p>
 
-              <div className="mt-3 flex flex-wrap items-end gap-2.5 sm:gap-3">
+              <div className="mt-2 flex flex-wrap items-end gap-1.5 sm:gap-2">
                 <span className="text-xl font-bold text-red-400/80 line-through">৳৯৯৯</span>
                 <span className="text-3xl font-extrabold text-amber-300 sm:text-4xl">৳৪৯৯</span>
                 <span className="mb-1 whitespace-nowrap rounded-md bg-amber-300/25 px-2 py-1 text-xs font-bold text-amber-200">
@@ -199,11 +215,11 @@ export default function Home() {
                 </span>
               </div>
 
-              <p className="mt-4 text-sm leading-6 text-slate-200/90 [word-break:break-word]">
+              <p className="mt-2.5 text-sm leading-6 text-slate-200/90 [word-break:break-word] lg:leading-7">
                 এককালীন পেমেন্টে আজই পুরো কোর্স, প্র্যাকটিস সেট এবং স্টেজ-ভিত্তিক লার্নিং আনলক করুন — সাথে পাচ্ছেন IELTS, GRE ও TOEFL-এর Premium Strategy Book Bundle এবং <span className="font-bold text-amber-300" style={{ textShadow: '0 0 12px rgba(250,204,21,0.45)' }}>IELTS Complete Course Access</span> একসাথে, যার বাজারমূল্য ৫০০০ টাকা। একবার কিনলেই সবকিছুতে লাইফটাইম অ্যাক্সেস পাবেন।
               </p>
 
-              <div className="mt-5 rounded-2xl border border-amber-300/40 bg-gradient-to-br from-amber-400/15 via-slate-900/60 to-slate-900/40 p-3 shadow-2xl shadow-amber-400/20 backdrop-blur-xl sm:p-4">
+              <div className="mt-4 rounded-2xl border border-amber-300/40 bg-gradient-to-br from-amber-400/15 via-slate-900/60 to-slate-900/40 p-4 shadow-2xl shadow-amber-400/20 backdrop-blur-xl sm:p-5">
                 <div className="flex items-center justify-between gap-3">
                   <p className="text-[10px] font-semibold uppercase tracking-[0.1em] text-amber-100/80 sm:text-xs sm:tracking-[0.16em]">Offer Ends In</p>
                   <span className="inline-flex h-2.5 w-2.5 animate-pulse rounded-full bg-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.9)]" />
@@ -231,13 +247,13 @@ export default function Home() {
               </div>
 
               {sessionReady && displayName ? (
-                <div className="mt-4 rounded-2xl border border-cyan-200/18 bg-gradient-to-br from-slate-900/78 via-[#162430]/88 to-[#102c31]/72 px-4 py-3.5 text-sm text-slate-100 shadow-lg shadow-black/20 backdrop-blur-sm">
+                <div className="mt-3 rounded-2xl border border-cyan-200/18 bg-gradient-to-br from-slate-900/78 via-[#162430]/88 to-[#102c31]/72 px-4 py-2.5 text-sm text-slate-100 shadow-lg shadow-black/20 backdrop-blur-sm">
                   <p className="text-xs uppercase tracking-[0.2em] text-cyan-100/78">Signed in as</p>
-                  <p className="mt-1 break-words text-base font-bold leading-tight text-amber-100">{displayName}</p>
+                  <p className="mt-0.5 break-words text-base font-bold leading-tight text-amber-100">{displayName}</p>
                 </div>
               ) : null}
 
-              <Link href={primaryHref} className="mt-5 block">
+              <Link href={primaryHref} className="mt-3.5 block">
                 <button
                   type="button"
                   onClick={() =>
@@ -250,15 +266,14 @@ export default function Home() {
                   {primaryLabel}
                 </button>
               </Link>
-
               <Link
                 href={sessionReady && displayName ? "/dashboard" : "/signup?redirect=%2Fdashboard"}
-                className="mt-2 inline-flex w-full items-center justify-center rounded-lg border border-cyan-200/35 bg-white/5 px-4 py-2 text-xs font-semibold text-cyan-100 transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0f1a] sm:text-sm"
+                className="mt-2.5 inline-flex w-full items-center justify-center rounded-lg border border-cyan-200/35 bg-white/5 px-4 py-2 text-xs font-semibold text-cyan-100 transition hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-200 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0f0f1a] sm:text-sm"
               >
                 Try for Free
               </Link>
 
-              <p className="mt-3 px-1 text-center text-[11px] leading-5 text-slate-300/85 [word-break:break-word] sm:text-xs">
+              <p className="mt-2.5 px-1 text-center text-[11px] leading-5 text-slate-300/85 [word-break:break-word] sm:text-xs">
                 Secure checkout এবং easy access - পেমেন্টের পরই শুরু করতে পারবেন।
               </p>
             </div>
@@ -322,7 +337,7 @@ export default function Home() {
             <div className="mx-auto max-w-3xl rounded-[2rem] border border-cyan-200/22 bg-gradient-to-br from-slate-900/78 via-[#202b38]/92 to-[#123238]/80 p-5 text-slate-100 shadow-2xl shadow-black/35 backdrop-blur-sm sm:p-6 sm:backdrop-blur-xl lg:p-7">
               <div className="flex items-start gap-3 border-b border-cyan-100/15 pb-5 sm:gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-cyan-200/30 bg-cyan-200/15 text-sm font-black text-cyan-100">
-                  EV
+                  VS
                 </div>
                 <div className="min-w-0">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-cyan-100/80 sm:text-xs sm:tracking-[0.22em]">
