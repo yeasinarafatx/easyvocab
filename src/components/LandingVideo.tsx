@@ -9,7 +9,7 @@ type LandingVideoProps = {
 };
 
 export default function LandingVideo({
-  videoId = "1mu-9UXh1mg",
+  videoId = "bNAsFteCeJE",
   title = "বিস্তারিত জানতে ভিডিওটি দেখুন",
   className = "",
 }: LandingVideoProps) {

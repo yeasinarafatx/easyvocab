@@ -193,7 +193,7 @@ export default function Home() {
 
               <div className="flex-1 min-h-4" />
 
-              <LandingVideo videoId="1mu-9UXh1mg" className="lg:max-w-[88%] lg:mx-auto" />
+              <LandingVideo videoId="bNAsFteCeJE" className="lg:max-w-[88%] lg:mx-auto" />
             </div>
 
             <div className="rounded-2xl border border-cyan-200/30 bg-gradient-to-b from-slate-900/85 via-slate-900/75 to-slate-950/85 pt-5 px-4 shadow-[0_14px_40px_rgba(8,145,178,0.18)] backdrop-blur-xl sm:pt-5 sm:px-8 h-full flex flex-col justify-start">
