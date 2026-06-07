@@ -190,6 +190,9 @@ export default function DashboardPage() {
   }, [authChecked]);
 
   const handleLogout = async () => {
+    const confirmed = window.confirm("আপনি কি লগআউট করতে চান?");
+    if (!confirmed) return;
+
     await supabase.auth.signOut();
     router.replace("/");
   };
@@ -309,12 +312,20 @@ export default function DashboardPage() {
                     Payment
                   </Link>
                   {isAdmin ? (
-                    <Link
-                      href="/admin/reviews"
-                      className="inline-flex rounded-lg border border-amber-300/35 bg-amber-300/12 px-4 py-2 text-sm font-semibold text-amber-100 transition hover:bg-amber-300/20"
-                    >
-                      Admin Review
-                    </Link>
+                    <>
+                      <Link
+                        href="/admin/reviews"
+                        className="inline-flex rounded-lg border border-amber-300/35 bg-amber-300/12 px-4 py-2 text-sm font-semibold text-amber-100 transition hover:bg-amber-300/20"
+                      >
+                        Admin Review
+                      </Link>
+                      <Link
+                        href="/admin/referrals"
+                        className="inline-flex rounded-lg border border-emerald-300/35 bg-emerald-300/12 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-300/20"
+                      >
+                        Referral Monitor
+                      </Link>
+                    </>
                   ) : null}
                   <button
                     type="button"

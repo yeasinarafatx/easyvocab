@@ -180,6 +180,9 @@ export default function AdminReviewsPage() {
               >
                 Refresh
               </button>
+              <Link href="/admin/referrals" className="rounded-lg border border-emerald-300/35 bg-emerald-300/12 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:bg-emerald-300/20">
+                Referral Monitor
+              </Link>
               <Link href="/admin/resources" className="rounded-lg border border-cyan-200/35 bg-cyan-200/12 px-4 py-2 text-sm font-semibold text-cyan-100 transition hover:bg-cyan-200/20">
                 📂 Upload Resources
               </Link>

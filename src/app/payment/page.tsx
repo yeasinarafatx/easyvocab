@@ -13,6 +13,7 @@ type LatestRequest = {
   method: PaymentMethod;
   sender_mobile: string;
   trx_id: string;
+  referral_code: string | null;
   amount: number;
   status: RequestStatus;
   review_note: string | null;
@@ -54,6 +55,7 @@ export default function PaymentPage() {
   const [method, setMethod] = useState<PaymentMethod>("bkash");
   const [senderMobile, setSenderMobile] = useState("");
   const [trxId, setTrxId] = useState("");
+  const [referralCode, setReferralCode] = useState("");
   const [amount] = useState(499);
   const [latestRequest, setLatestRequest] = useState<LatestRequest | null>(null);
   const [submitting, setSubmitting] = useState(false);
@@ -68,7 +70,7 @@ export default function PaymentPage() {
   const loadLatestRequest = async (currentUserId: string) => {
     const { data: req } = await supabase
       .from("payment_requests")
-      .select("id, method, sender_mobile, trx_id, amount, status, review_note, created_at")
+      .select("id, method, sender_mobile, trx_id, referral_code, amount, status, review_note, created_at")
       .eq("user_id", currentUserId)
       .order("created_at", { ascending: false })
       .limit(1)
@@ -180,6 +182,20 @@ export default function PaymentPage() {
     }
 
     setSubmitting(true);
+
+    let referralCreatorId: string | null = null;
+    const normalizedReferralCode = referralCode.trim();
+
+    if (normalizedReferralCode) {
+      const { data: resolvedReferralCreatorId } = await supabase.rpc("resolve_referral_code", {
+        p_referral_code: normalizedReferralCode,
+      });
+
+      if (typeof resolvedReferralCreatorId === "string" && resolvedReferralCreatorId.length > 0) {
+        referralCreatorId = resolvedReferralCreatorId;
+      }
+    }
+
     const { data, error: insertError } = await supabase
       .from("payment_requests")
       .insert({
@@ -187,10 +203,12 @@ export default function PaymentPage() {
         method,
         sender_mobile: senderMobile.trim(),
         trx_id: trxId.trim(),
+        referral_code: normalizedReferralCode || null,
+        referral_code_id: referralCreatorId,
         amount,
         status: "pending",
       })
-      .select("id, method, sender_mobile, trx_id, amount, status, review_note, created_at")
+      .select("id, method, sender_mobile, trx_id, referral_code, amount, status, review_note, created_at")
       .single();
 
     setSubmitting(false);
@@ -212,6 +230,7 @@ export default function PaymentPage() {
     setLatestRequest(data as LatestRequest);
     setSenderMobile("");
     setTrxId("");
+    setReferralCode("");
     setNotice("Request submitted. Status: Processing");
   };
 
@@ -359,6 +378,15 @@ export default function PaymentPage() {
                 className="mt-2 w-full rounded-xl border border-white/25 bg-[#111a2e] px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-cyan-200/60"
               />
 
+              <label className="mt-4 block text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">Referral Code <span className="text-slate-500">(optional)</span></label>
+              <input
+                value={referralCode}
+                onChange={(e) => setReferralCode(e.target.value)}
+                placeholder="VOCAB10"
+                className="mt-2 w-full rounded-xl border border-white/25 bg-[#111a2e] px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-cyan-200/60"
+              />
+              <p className="mt-2 text-xs text-slate-400">Influencer/creator code থাকলে এখানে দিন। না দিলেও payment submit হবে।</p>
+
               <button
                 type="submit"
                 disabled={submitting || hasPending}
@@ -386,6 +414,7 @@ export default function PaymentPage() {
                 <div className="mt-4 space-y-2 text-sm text-slate-100">
                   <p>Method: <span className="font-semibold uppercase">{latestRequest.method}</span></p>
                   <p>TRX ID: <span className="font-semibold">{latestRequest.trx_id}</span></p>
+                  {latestRequest.referral_code ? <p>Referral Code: <span className="font-semibold">{latestRequest.referral_code}</span></p> : null}
                   <p>Amount: <span className="font-semibold">৳{latestRequest.amount}</span></p>
                   <p>Status: <span className={`font-semibold ${latestRequest.status === "approved" ? "text-emerald-300" : latestRequest.status === "rejected" ? "text-rose-300" : "text-amber-300"}`}>{statusBadge}</span></p>
                   {latestRequest.review_note ? <p>Note: {latestRequest.review_note}</p> : null}

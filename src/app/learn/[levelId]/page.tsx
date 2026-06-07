@@ -263,6 +263,40 @@ export default function LearnLevelPage() {
     setShowSuccessModal(false);
   };
 
+  useEffect(() => {
+    if (!examMode || typeof window === "undefined") return;
+
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault();
+      event.returnValue = "";
+    };
+
+    const handleClickCapture = (event: MouseEvent) => {
+      const target = event.target as HTMLElement | null;
+      const anchor = target?.closest("a");
+
+      if (!anchor) return;
+
+      event.preventDefault();
+
+      const confirmed = window.confirm("আপনি কি পরীক্ষাটি ছেড়ে যেতে চান? আপনার progress হারাতে পারেন.");
+      if (!confirmed) return;
+
+      const href = anchor.getAttribute("href");
+      if (href) {
+        router.push(href);
+      }
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    document.addEventListener("click", handleClickCapture, true);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      document.removeEventListener("click", handleClickCapture, true);
+    };
+  }, [examMode, router]);
+
   // Refs and handlers to make the input keyboard-safe on mobile.
   const inputRef = useRef<HTMLInputElement | null>(null);
   const mainRef = useRef<HTMLElement | null>(null);
