@@ -45,7 +45,7 @@ export default function LearnLevelPage() {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const media = window.matchMedia("(pointer: coarse), (hover: none)");
+    const media = window.matchMedia("(pointer: coarse) and (max-width: 767px)");
     const update = () => setIsTouchDevice(media.matches);
     update();
     if (typeof media.addEventListener === "function") {
