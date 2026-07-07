@@ -5,19 +5,19 @@ import Script from "next/script";
 import type { User } from "@supabase/supabase-js";
 import { useEffect, useState } from "react";
 import LandingVideo from "@/components/LandingVideo";
+import TrustStrip from "@/components/TrustStrip";
 import { supabase } from "@/lib/supabase";
 import { trackMetaEvent } from "@/lib/metaPixel";
+
+// iOS Safari only applies :active styles when the element has a touch handler.
+const handleTapActivate = () => {
+  /* no-op: attaching this enables tap/press feedback on touch devices */
+};
 
 export default function Home() {
   const [sessionReady, setSessionReady] = useState(false);
   const [displayName, setDisplayName] = useState("");
   const [userTier, setUserTier] = useState<"guest" | "free" | "premium">("guest");
-  const [remainingMs, setRemainingMs] = useState<number | null>(null);
-
-  const countdownStartIso = "2026-04-26T00:00:00+06:00";
-  const countdownCycleMs = 7 * 24 * 60 * 60 * 1000;
-
-  const formatUnit = (value: number) => String(value).padStart(2, "0");
 
   useEffect(() => {
     let mounted = true;
@@ -69,25 +69,6 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    const startTs = new Date(countdownStartIso).getTime();
-
-    const updateCountdown = () => {
-      const now = Date.now();
-      const elapsed = Math.max(0, now - startTs);
-      const remainder = elapsed % countdownCycleMs;
-      const nextRemaining = remainder === 0 ? countdownCycleMs : countdownCycleMs - remainder;
-      setRemainingMs(nextRemaining);
-    };
-
-    updateCountdown();
-    const timer = window.setInterval(updateCountdown, 1000);
-
-    return () => {
-      window.clearInterval(timer);
-    };
-  }, [countdownCycleMs, countdownStartIso]);
-
   const examBadges = ["IELTS", "GRE", "SAT", "ADMISSION"];
   const examCategories = [
     { name: "IELTS" },
@@ -137,13 +118,6 @@ export default function Home() {
     })),
   };
 
-  const countdownDays = remainingMs === null ? "--" : formatUnit(Math.floor(remainingMs / (24 * 60 * 60 * 1000)));
-  const countdownHours =
-    remainingMs === null ? "--" : formatUnit(Math.floor((remainingMs % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000)));
-  const countdownMinutes =
-    remainingMs === null ? "--" : formatUnit(Math.floor((remainingMs % (60 * 60 * 1000)) / (60 * 1000)));
-  const countdownSeconds = remainingMs === null ? "--" : formatUnit(Math.floor((remainingMs % (60 * 1000)) / 1000));
-
   const primaryHref = !sessionReady
     ? "/signup?redirect=%2Fpayment"
     : userTier === "guest"
@@ -158,7 +132,7 @@ export default function Home() {
       <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-emerald-300/15 blur-3xl" />
 
       <main className="relative z-10 mx-auto flex min-h-screen w-full max-w-6xl items-start px-4 py-8 sm:px-6 sm:py-12 lg:items-start lg:px-10">
-        <section className="w-full rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-[#1a2030]/78 to-[#10262c]/74 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-10">
+        <section className="w-full min-w-0 rounded-3xl border border-cyan-200/20 bg-gradient-to-br from-slate-900/80 via-[#1a2030]/78 to-[#10262c]/74 p-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:p-8 lg:p-10">
           {/* logo: show on mobile here (hidden on lg); desktop logo is inside pricing card */}
           <div className="mb-4 flex justify-center sm:mb-6 lg:mb-8 lg:hidden">
             <img
@@ -169,34 +143,31 @@ export default function Home() {
             />
           </div>
 
-          <div className="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-10">
-            <div className="space-y-4 lg:pr-4 h-full flex flex-col">
-              <div className="mt-1 h-px w-24 mx-auto" style={{ background: 'rgba(255,255,255,0.06)' }} />
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2 lg:gap-10">
+            <div className="min-w-0 lg:pr-4">
               <h1 className="mt-0 text-3xl font-extrabold leading-[1.06] sm:text-4xl sm:leading-[1.08] lg:text-5xl lg:leading-[1.05]">
                 ইংরেজি Vocabulary-তে Master হও, প্রতিটা Exam Crack করো।
               </h1>
 
-              <p className="mt-3 max-w-xl text-sm font-medium leading-7 text-slate-100 sm:text-base sm:leading-7 lg:leading-8">
+              <p className="mt-4 max-w-xl text-sm font-medium leading-7 text-slate-200 sm:text-base sm:leading-7 lg:leading-8">
                 IELTS, GRE, SAT, BCS বা ADMISSION — যেকোনো exam-এর জন্য VocabSpeak তোমাকে করবে Perfectly ready। Type করে spelling শেখো, Voice Mode-এ pronunciation perfect করো, আর Flashcard দিয়ে words মনে রাখো — একটাই app, সব solution।
               </p>
 
-              <div className="mt-4 flex flex-wrap gap-2.5 sm:gap-3">
+              <div className="mt-6 flex flex-wrap gap-2.5 sm:gap-3">
                 {examBadges.map((badge) => (
                   <span
                     key={badge}
-                    className="rounded-full border border-white/25 bg-white/12 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-slate-100"
+                    className="rounded-full border border-white/15 bg-white/[0.05] px-4 py-2 text-xs font-semibold tracking-[0.08em] text-slate-200 transition-colors duration-200 hover:border-cyan-200/40 hover:bg-white/[0.09]"
                   >
                     {badge}
                   </span>
                 ))}
               </div>
 
-              <div className="flex-1 min-h-4" />
-
-              <LandingVideo videoId="bNAsFteCeJE" className="lg:max-w-[88%] lg:mx-auto" />
+              <LandingVideo videoId="bNAsFteCeJE" className="mt-8 lg:max-w-full" />
             </div>
 
-            <div className="rounded-2xl border border-cyan-200/30 bg-gradient-to-b from-slate-900/85 via-slate-900/75 to-slate-950/85 pt-5 px-4 shadow-[0_14px_40px_rgba(8,145,178,0.18)] backdrop-blur-xl sm:pt-5 sm:px-8 h-full flex flex-col justify-start">
+            <div className="flex min-w-0 flex-col rounded-2xl border border-cyan-200/30 bg-gradient-to-b from-slate-900/85 via-slate-900/75 to-slate-950/85 px-4 pb-6 pt-6 shadow-[0_14px_40px_rgba(8,145,178,0.18)] backdrop-blur-xl sm:px-8 sm:pb-8 sm:pt-7">
                 <div className="hidden lg:flex justify-center mb-3">
                 <img
                   src="/og/og-image.png"
@@ -218,33 +189,6 @@ export default function Home() {
               <p className="mt-2.5 text-sm leading-6 text-slate-200/90 [word-break:break-word] lg:leading-7">
                 এককালীন পেমেন্টে আজই পুরো কোর্স, প্র্যাকটিস সেট এবং স্টেজ-ভিত্তিক লার্নিং আনলক করুন — সাথে পাচ্ছেন IELTS, GRE ও TOEFL-এর Premium Strategy Book Bundle এবং <span className="font-bold text-amber-300" style={{ textShadow: '0 0 12px rgba(250,204,21,0.45)' }}>IELTS Complete Course Access</span> একসাথে, যার বাজারমূল্য ৫০০০ টাকা। একবার কিনলেই সবকিছুতে লাইফটাইম অ্যাক্সেস পাবেন।
               </p>
-
-              <div className="mt-4 rounded-2xl border border-amber-300/40 bg-gradient-to-br from-amber-400/15 via-slate-900/60 to-slate-900/40 p-4 shadow-2xl shadow-amber-400/20 backdrop-blur-xl sm:p-5">
-                <div className="flex items-center justify-between gap-3">
-                  <p className="text-[10px] font-semibold uppercase tracking-[0.1em] text-amber-100/80 sm:text-xs sm:tracking-[0.16em]">Offer Ends In</p>
-                  <span className="inline-flex h-2.5 w-2.5 animate-pulse rounded-full bg-amber-400 shadow-[0_0_10px_rgba(251,191,36,0.9)]" />
-                </div>
-
-                <div className="mt-3 grid grid-cols-4 gap-1.5 sm:gap-3">
-                  <div className="min-w-0 rounded-xl border border-amber-300/30 bg-slate-900/45 px-1.5 py-2 text-center sm:px-3 sm:py-2.5">
-                    <p className="text-base font-extrabold leading-none text-amber-100 sm:text-xl">{countdownDays}</p>
-                    <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.06em] text-slate-300 sm:text-[10px] sm:tracking-[0.16em]"><span className="sm:hidden">D</span><span className="hidden sm:inline">Days</span></p>
-                  </div>
-                  <div className="min-w-0 rounded-xl border border-amber-300/30 bg-slate-900/45 px-1.5 py-2 text-center sm:px-3 sm:py-2.5">
-                    <p className="text-base font-extrabold leading-none text-amber-100 sm:text-xl">{countdownHours}</p>
-                    <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.06em] text-slate-300 sm:text-[10px] sm:tracking-[0.16em]"><span className="sm:hidden">H</span><span className="hidden sm:inline">Hours</span></p>
-                  </div>
-                  <div className="min-w-0 rounded-xl border border-amber-300/30 bg-slate-900/45 px-1.5 py-2 text-center sm:px-3 sm:py-2.5">
-                    <p className="text-base font-extrabold leading-none text-amber-100 sm:text-xl">{countdownMinutes}</p>
-                    <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.06em] text-slate-300 sm:text-[10px] sm:tracking-[0.16em]"><span className="sm:hidden">M</span><span className="hidden sm:inline">Minutes</span></p>
-                  </div>
-                  <div className="min-w-0 rounded-xl border border-amber-300/30 bg-slate-900/45 px-1.5 py-2 text-center sm:px-3 sm:py-2.5">
-                    <p className="text-base font-extrabold leading-none text-amber-100 sm:text-xl">{countdownSeconds}</p>
-                    <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.06em] text-slate-300 sm:text-[10px] sm:tracking-[0.16em]"><span className="sm:hidden">S</span><span className="hidden sm:inline">Seconds</span></p>
-                  </div>
-                </div>
-
-              </div>
 
               {sessionReady && displayName ? (
                 <div className="mt-3 rounded-2xl border border-cyan-200/18 bg-gradient-to-br from-slate-900/78 via-[#162430]/88 to-[#102c31]/72 px-4 py-2.5 text-sm text-slate-100 shadow-lg shadow-black/20 backdrop-blur-sm">
@@ -276,10 +220,12 @@ export default function Home() {
               <p className="mt-2.5 px-1 text-center text-[11px] leading-5 text-slate-300/85 [word-break:break-word] sm:text-xs">
                 Secure checkout এবং easy access - পেমেন্টের পরই শুরু করতে পারবেন।
               </p>
+
+              <TrustStrip />
             </div>
           </div>
 
-          <div className="mt-10 rounded-3xl border border-amber-300/40 bg-gradient-to-br from-amber-400/15 via-slate-900/60 to-slate-900/40 p-6 shadow-2xl shadow-amber-400/20 backdrop-blur-xl sm:p-8">
+          <div className="mt-14 rounded-3xl border border-amber-300/40 bg-gradient-to-br from-amber-400/15 via-slate-900/60 to-slate-900/40 p-6 shadow-2xl shadow-amber-400/20 backdrop-blur-xl sm:mt-16 sm:p-8">
             <div className="flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="max-w-2xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-amber-100/80">Exclusive Resource</p>
@@ -313,7 +259,7 @@ export default function Home() {
             </div>
           </div>
 
-          <section className="mt-12 rounded-[1.75rem] border border-cyan-200/20 bg-gradient-to-r from-slate-900/78 via-[#1f2a36]/92 to-[#102c31]/78 px-5 py-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:px-7 sm:py-8">
+          <section className="mt-14 rounded-[1.75rem] border border-cyan-200/20 bg-gradient-to-r from-slate-900/78 via-[#1f2a36]/92 to-[#102c31]/78 px-5 py-6 shadow-2xl shadow-black/35 backdrop-blur-xl sm:mt-16 sm:px-7 sm:py-8">
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
               <div className="max-w-2xl">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-cyan-100/80">Try Demo</p>
@@ -333,7 +279,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-10 border-t border-white/10 pt-8">
+          <section className="mt-14 border-t border-white/10 pt-10 sm:mt-16 sm:pt-12">
             <div className="mx-auto max-w-3xl rounded-[2rem] border border-cyan-200/22 bg-gradient-to-br from-slate-900/78 via-[#202b38]/92 to-[#123238]/80 p-5 text-slate-100 shadow-2xl shadow-black/35 backdrop-blur-sm sm:p-6 sm:backdrop-blur-xl lg:p-7">
               <div className="flex items-start gap-3 border-b border-cyan-100/15 pb-5 sm:gap-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-cyan-200/30 bg-cyan-200/15 text-sm font-black text-cyan-100">
@@ -388,7 +334,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="hidden border-t border-white/10 pt-8 sm:mt-10 sm:block">
+          <section className="mt-14 border-t border-white/10 pt-10 sm:mt-16 sm:pt-12">
             <div className="relative overflow-hidden rounded-[2rem] border border-cyan-200/18 bg-gradient-to-br from-slate-900/80 via-[#182433]/88 to-[#10292f]/82 px-5 py-7 shadow-2xl shadow-black/30 backdrop-blur-xl sm:px-6 sm:py-8 lg:px-8">
               <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.14),transparent_42%)]" />
               <div className="relative">
@@ -405,10 +351,11 @@ export default function Home() {
                     {examCategories.map((exam, idx) => (
                       <div
                         key={`${exam.name}-${idx}`}
-                        className="group relative flex min-h-[108px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-cyan-200/16 bg-white/[0.03] px-4 py-4 text-center text-slate-100 shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-all duration-300 hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.06] hover:shadow-[0_18px_36px_rgba(0,0,0,0.28)] sm:min-h-[116px] sm:px-5"
+                        onTouchStart={handleTapActivate}
+                        className="group relative flex min-h-[108px] cursor-pointer select-none flex-col items-center justify-center overflow-hidden rounded-2xl border border-cyan-200/16 bg-white/[0.03] px-4 py-4 text-center text-slate-100 shadow-[0_12px_30px_rgba(0,0,0,0.22)] transition-all duration-300 [-webkit-tap-highlight-color:transparent] hover:-translate-y-1 hover:border-cyan-200/30 hover:bg-white/[0.06] hover:shadow-[0_18px_36px_rgba(0,0,0,0.28)] active:scale-[0.97] active:border-cyan-200/50 active:bg-white/[0.08] active:shadow-[0_10px_26px_rgba(34,211,238,0.20)] sm:min-h-[116px] sm:px-5"
                       >
                         <span className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-cyan-200/55 to-transparent opacity-70" />
-                        <span className="pointer-events-none absolute -left-8 -top-8 h-20 w-20 rounded-full bg-cyan-300/10 blur-2xl transition-opacity duration-300 group-hover:opacity-80" />
+                        <span className="pointer-events-none absolute -left-8 -top-8 h-20 w-20 rounded-full bg-cyan-300/10 blur-2xl transition-opacity duration-300 group-hover:opacity-80 group-active:opacity-80" />
                         <p className="text-sm font-extrabold tracking-[0.12em] text-cyan-100 sm:text-base lg:text-[1.05rem]">{exam.name}</p>
                       </div>
                     ))}
@@ -418,7 +365,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-10 border-t border-white/10 pt-8">
+          <section className="mt-14 border-t border-white/10 pt-10 sm:mt-16 sm:pt-12">
             <div className="mx-auto w-full max-w-4xl">
               <h2 className="text-center text-2xl font-bold text-slate-100 sm:text-3xl">সাধারণ জিজ্ঞাসা (FAQ)</h2>
               <Script id="homepage-faq-schema" type="application/ld+json" strategy="afterInteractive">
@@ -467,7 +414,7 @@ export default function Home() {
             </div>
           </section>
 
-          <footer className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-slate-300/90">
+          <footer className="mt-14 border-t border-white/10 pt-8 text-center text-sm text-slate-300/90 sm:mt-16 sm:pt-10">
             <p className="text-sm font-semibold leading-normal text-cyan-100/90 sm:text-base">
               কাস্টমার সাপোর্টের জন্য
             </p>

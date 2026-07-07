@@ -4,6 +4,7 @@ const nextConfig = {
   turbopack: {
     root: __dirname,
   },
+  allowedDevOrigins: ['*.trycloudflare.com', '192.168.0.102'],
 };
 
 module.exports = nextConfig;
