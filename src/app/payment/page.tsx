@@ -48,6 +48,9 @@ const paymentLogoMap: Record<
 
 const whatsappSupportUrl = "https://wa.me/message/GEWPOC6N6XFQC1";
 
+const BASE_AMOUNT = 499;
+const REFERRAL_DISCOUNT = 50;
+
 export default function PaymentPage() {
   const [sessionReady, setSessionReady] = useState(false);
   const [hasSession, setHasSession] = useState(false);
@@ -56,7 +59,10 @@ export default function PaymentPage() {
   const [senderMobile, setSenderMobile] = useState("");
   const [trxId, setTrxId] = useState("");
   const [referralCode, setReferralCode] = useState("");
-  const [amount] = useState(499);
+  const [appliedReferral, setAppliedReferral] = useState<{ code: string; creatorId: string } | null>(null);
+  const [applyingReferral, setApplyingReferral] = useState(false);
+  const [referralError, setReferralError] = useState<string | null>(null);
+  const amount = appliedReferral ? BASE_AMOUNT - REFERRAL_DISCOUNT : BASE_AMOUNT;
   const [latestRequest, setLatestRequest] = useState<LatestRequest | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
@@ -90,6 +96,48 @@ export default function PaymentPage() {
       console.error("Copy failed:", copyError);
       setError("Could not copy the payment number. Please copy it manually.");
     }
+  };
+
+  const handleReferralChange = (value: string) => {
+    setReferralCode(value);
+    setReferralError(null);
+    if (appliedReferral && value.trim() !== appliedReferral.code) {
+      setAppliedReferral(null);
+    }
+  };
+
+  const handleApplyReferral = async () => {
+    const code = referralCode.trim();
+    setReferralError(null);
+
+    if (!code) {
+      setReferralError("Referral code দিন।");
+      return;
+    }
+
+    setApplyingReferral(true);
+    const { data, error: rpcError } = await supabase.rpc("resolve_referral_code", {
+      p_referral_code: code,
+    });
+    setApplyingReferral(false);
+
+    if (rpcError) {
+      setReferralError("Code check করা গেল না। আবার চেষ্টা করুন।");
+      return;
+    }
+
+    if (typeof data === "string" && data.length > 0) {
+      setAppliedReferral({ code, creatorId: data });
+    } else {
+      setAppliedReferral(null);
+      setReferralError("এই referral code টি valid নয়।");
+    }
+  };
+
+  const handleRemoveReferral = () => {
+    setAppliedReferral(null);
+    setReferralCode("");
+    setReferralError(null);
   };
 
   const statusBadge = useMemo(() => {
@@ -165,6 +213,11 @@ export default function PaymentPage() {
       return;
     }
 
+    if (referralCode.trim() && !appliedReferral) {
+      setError("Referral code দিয়েছেন — 'Apply' চাপুন অথবা field খালি করুন।");
+      return;
+    }
+
     if (hasPending) {
       setError("আপনার একটি request already processing এ আছে।");
       return;
@@ -183,18 +236,8 @@ export default function PaymentPage() {
 
     setSubmitting(true);
 
-    let referralCreatorId: string | null = null;
-    const normalizedReferralCode = referralCode.trim();
-
-    if (normalizedReferralCode) {
-      const { data: resolvedReferralCreatorId } = await supabase.rpc("resolve_referral_code", {
-        p_referral_code: normalizedReferralCode,
-      });
-
-      if (typeof resolvedReferralCreatorId === "string" && resolvedReferralCreatorId.length > 0) {
-        referralCreatorId = resolvedReferralCreatorId;
-      }
-    }
+    const referralCreatorId = appliedReferral?.creatorId ?? null;
+    const normalizedReferralCode = appliedReferral?.code ?? "";
 
     const { data, error: insertError } = await supabase
       .from("payment_requests")
@@ -231,6 +274,8 @@ export default function PaymentPage() {
     setSenderMobile("");
     setTrxId("");
     setReferralCode("");
+    setAppliedReferral(null);
+    setReferralError(null);
     setNotice("Request submitted. Status: Processing");
   };
 
@@ -278,7 +323,18 @@ export default function PaymentPage() {
 
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <form onSubmit={handleSubmit} className="rounded-2xl border border-cyan-200/20 bg-gradient-to-br from-cyan-300/10 to-[#2f3a44]/92 p-5">
-              <p className="text-sm font-semibold text-slate-100">Payment Amount: <span className="text-emerald-300">৳{amount}</span></p>
+              <div className="flex flex-wrap items-center gap-2">
+                <p className="text-sm font-semibold text-slate-100">Payment Amount:</p>
+                {appliedReferral ? (
+                  <span className="flex items-center gap-2">
+                    <span className="text-lg font-bold text-slate-400 line-through">৳{BASE_AMOUNT}</span>
+                    <span className="text-2xl font-extrabold text-emerald-300">৳{amount}</span>
+                    <span className="rounded-full bg-emerald-400/20 px-2 py-0.5 text-[11px] font-bold text-emerald-200">10% OFF</span>
+                  </span>
+                ) : (
+                  <span className="text-2xl font-extrabold text-emerald-300">৳{BASE_AMOUNT}</span>
+                )}
+              </div>
 
               <div className="mt-4 rounded-xl border border-white/20 bg-white/10 p-3">
                 <p className="mb-3 text-sm font-bold text-slate-100">নির্বাচন করুন</p>
@@ -362,6 +418,48 @@ export default function PaymentPage() {
                 </button>
               </div>
 
+              <label className="mt-4 block text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">Referral / Promo Code <span className="text-slate-500">(optional)</span></label>
+              <div className="mt-2 flex gap-2">
+                <input
+                  value={referralCode}
+                  onChange={(e) => handleReferralChange(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      if (!appliedReferral) void handleApplyReferral();
+                    }
+                  }}
+                  placeholder="VOCAB10"
+                  disabled={Boolean(appliedReferral)}
+                  className="w-full rounded-xl border border-white/25 bg-[#111a2e] px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-cyan-200/60 disabled:opacity-70"
+                />
+                {appliedReferral ? (
+                  <button
+                    type="button"
+                    onClick={handleRemoveReferral}
+                    className="shrink-0 rounded-xl border border-rose-300/40 bg-rose-400/10 px-4 py-3 text-sm font-bold text-rose-200 transition hover:bg-rose-400/20"
+                  >
+                    Remove
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={handleApplyReferral}
+                    disabled={applyingReferral}
+                    className="shrink-0 rounded-xl border border-cyan-200/40 bg-cyan-300/15 px-4 py-3 text-sm font-bold text-cyan-100 transition hover:bg-cyan-300/25 disabled:cursor-not-allowed disabled:opacity-50"
+                  >
+                    {applyingReferral ? "..." : "Apply"}
+                  </button>
+                )}
+              </div>
+              {appliedReferral ? (
+                <p className="mt-2 text-xs font-semibold text-emerald-300">✓ Code applied — ৳{REFERRAL_DISCOUNT} discount! এখন ৳{amount} পাঠান।</p>
+              ) : referralError ? (
+                <p className="mt-2 text-xs text-rose-300">{referralError}</p>
+              ) : (
+                <p className="mt-2 text-xs text-slate-400">Influencer/creator code থাকলে দিয়ে <span className="font-semibold text-cyan-200">Apply</span> চাপুন — ১০% ছাড় পাবেন। না দিলেও payment submit হবে।</p>
+              )}
+
               <label className="mt-4 block text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">Sender Mobile</label>
               <input
                 value={senderMobile}
@@ -377,15 +475,6 @@ export default function PaymentPage() {
                 placeholder="TRX123ABC"
                 className="mt-2 w-full rounded-xl border border-white/25 bg-[#111a2e] px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-cyan-200/60"
               />
-
-              <label className="mt-4 block text-xs font-semibold uppercase tracking-[0.14em] text-slate-300">Referral Code <span className="text-slate-500">(optional)</span></label>
-              <input
-                value={referralCode}
-                onChange={(e) => setReferralCode(e.target.value)}
-                placeholder="VOCAB10"
-                className="mt-2 w-full rounded-xl border border-white/25 bg-[#111a2e] px-4 py-3 text-sm text-slate-100 outline-none placeholder:text-slate-500 focus:border-cyan-200/60"
-              />
-              <p className="mt-2 text-xs text-slate-400">Influencer/creator code থাকলে এখানে দিন। না দিলেও payment submit হবে।</p>
 
               <button
                 type="submit"
