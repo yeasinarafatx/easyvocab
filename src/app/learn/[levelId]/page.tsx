@@ -6,6 +6,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import PremiumLockedNotice from "@/components/PremiumLockedNotice";
 import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 import { useWordData } from "@/lib/useWordData";
+import { playSound } from "@/lib/sounds";
 import CustomKeyboard from "@/components/CustomKeyboard";
 
 interface Word {
@@ -90,7 +91,29 @@ export default function LearnLevelPage() {
   const activeWord = words[currentIndex % Math.max(words.length, 1)];
   const expectedWord = activeWord?.word?.toLowerCase() ?? "";
   const normalizedTyped = typedValue.toLowerCase();
-  const isCorrect = normalizedTyped === expectedWord;
+  // expectedWord non-empty na hole (word pack load howar age) isCorrect false thakbe.
+  // Nahole load-er shomoy "" === "" true hoye mount-eই correct sound baje uthto.
+  const isCorrect = expectedWord.length > 0 && normalizedTyped === expectedWord;
+
+  // Sound effects: play a positive chime the moment a word becomes correct,
+  // and a winner sound when the whole level is completed. Refs track the
+  // previous value so each sound fires once per transition (not every render).
+  const prevCorrectRef = useRef(false);
+  const prevCompletedRef = useRef(false);
+
+  useEffect(() => {
+    if (isCorrect && !prevCorrectRef.current && !isCompleted) {
+      playSound("correct");
+    }
+    prevCorrectRef.current = isCorrect;
+  }, [isCorrect, isCompleted]);
+
+  useEffect(() => {
+    if (isCompleted && !prevCompletedRef.current) {
+      playSound("winner");
+    }
+    prevCompletedRef.current = isCompleted;
+  }, [isCompleted]);
 
   const handleCustomKeyPress = (key: string) => {
     setTypedValue((prev) => (prev + key).slice(0, expectedWord.length));

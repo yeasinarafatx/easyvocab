@@ -5,6 +5,7 @@ import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useRef, useState } from "react";
 import PremiumLockedNotice from "@/components/PremiumLockedNotice";
 import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
+import { playSound } from "@/lib/sounds";
 
 interface Word {
 	word: string;
@@ -174,6 +175,18 @@ export default function SpeakLevelPage() {
 	const totalWords = words.length;
 	const isCompleted = totalWords > 0 && currentIndex >= totalWords;
 	const activeWord = !isCompleted ? words[currentIndex] : undefined;
+
+	// Sound effect: winner sound only when the whole level (20 words) is completed.
+	// Per-answer "correct" sound intentionally omitted in speaking mode.
+	// Ref guards against re-firing on every render — plays once per transition.
+	const prevCompletedRef = useRef(false);
+
+	useEffect(() => {
+		if (isCompleted && !prevCompletedRef.current) {
+			playSound("winner");
+		}
+		prevCompletedRef.current = isCompleted;
+	}, [isCompleted]);
 	const examPassThreshold = Math.min(14, totalWords || 14);
 	const examAccuracyPercent = totalWords > 0 ? Math.round((examCorrectCount / totalWords) * 100) : 0;
 	const examPassed = examCorrectCount >= examPassThreshold;
