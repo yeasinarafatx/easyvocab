@@ -9,6 +9,10 @@ import { trackMetaEvent } from "@/lib/metaPixel";
 type StageName = "beginner" | "intermediate" | "advanced" | "exam" | "spoken";
 type PracticeMode = "typing" | "speaking" | "flashcard";
 
+// Spoken English-e typing mode user-er kach theke hidden. Code/logic thakche —
+// শুধু button ta render hocche na. Wapas on korte hole `true` kore dao.
+const SHOW_TYPING_IN_SPOKEN = false;
+
 const stageConfig: Record<StageName, { bengali: string; totalLevels: number }> = {
   beginner: { bengali: "শুরুর স্তর", totalLevels: 10 },
   intermediate: { bengali: "মধ্যম স্তর", totalLevels: 15 },
@@ -214,20 +218,22 @@ export default function StagePage() {
                         ফ্ল্যাশকার্ড
                       </span>
                     </button>
-                    <button
-                      type="button"
-                      onClick={() => setSelectedMode("typing")}
-                      className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
-                        selectedMode === "typing"
-                          ? "border border-cyan-200/50 bg-cyan-200/30 text-cyan-50"
-                          : "border border-cyan-200/30 bg-cyan-200/12 text-cyan-100 hover:bg-cyan-200/22"
-                      }`}
-                    >
-                      <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
-                        <img src="/icons/premium/pencil-front-premium.svg" alt="Typing" className="h-5 w-5" />
-                        টাইপিং
-                      </span>
-                    </button>
+                    {SHOW_TYPING_IN_SPOKEN ? (
+                      <button
+                        type="button"
+                        onClick={() => setSelectedMode("typing")}
+                        className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                          selectedMode === "typing"
+                            ? "border border-cyan-200/50 bg-cyan-200/30 text-cyan-50"
+                            : "border border-cyan-200/30 bg-cyan-200/12 text-cyan-100 hover:bg-cyan-200/22"
+                        }`}
+                      >
+                        <span className="inline-flex items-center gap-1 font-bold tracking-normal text-white">
+                          <img src="/icons/premium/pencil-front-premium.svg" alt="Typing" className="h-5 w-5" />
+                          টাইপিং
+                        </span>
+                      </button>
+                    ) : null}
                   </>
                 ) : (
                   <>

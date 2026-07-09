@@ -6,6 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 import PremiumLockedNotice from "@/components/PremiumLockedNotice";
 import { fetchPremiumSnapshot, requiresPremium } from "@/lib/premium";
 import { useWordData } from "@/lib/useWordData";
+import { playSound } from "@/lib/sounds";
 
 interface Word {
   word: string;
@@ -326,7 +327,13 @@ export default function FlashcardLevelPage() {
             </div>
           </div>
 
-          <div className="mt-6 cursor-pointer" onClick={() => setIsFlipped((prev) => !prev)}>
+          <div
+            className="mt-6 cursor-pointer"
+            onClick={() => {
+              playSound("swipe");
+              setIsFlipped((prev) => !prev);
+            }}
+          >
             <div className="relative h-72 w-full rounded-3xl border border-emerald-300/35 bg-gradient-to-br from-emerald-300/24 via-[#244a4f]/92 to-cyan-300/22 p-6 shadow-xl shadow-black/20 transition-transform duration-300">
               <div className="flex h-full flex-col items-center justify-center text-center">
                 {!isFlipped ? (
@@ -354,6 +361,7 @@ export default function FlashcardLevelPage() {
               type="button"
               disabled={currentIndex === 0}
               onClick={() => {
+                playSound("swipe");
                 setCurrentIndex((prev) => Math.max(prev - 1, 0));
                 setIsFlipped(false);
               }}
@@ -366,6 +374,7 @@ export default function FlashcardLevelPage() {
               type="button"
               disabled={currentIndex >= totalWords - 1}
               onClick={() => {
+                playSound("correct");
                 setCurrentIndex((prev) => Math.min(prev + 1, totalWords));
                 setIsFlipped(false);
               }}
