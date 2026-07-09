@@ -21,37 +21,39 @@ const stageConfig: Record<StageName, { bengali: string; totalLevels: number }> =
   spoken: { bengali: "Spoken English", totalLevels: 30 },
 };
 
+// Ei labels prottekta Spoken English word pack-er actual content-er sathe milano.
+// Order = level 1..30 (data/spoken/level_01.json .. level_30.json).
 const spokenTopicLabels = [
-  "Meeting New People",
-  "Home",
-  "Supermarket",
-  "Restaurant",
-  "Hospital",
-  "School",
-  "Office",
-  "Travel",
-  "Airport",
-  "Hotel",
-  "Bank",
-  "Market",
-  "Phone Call",
-  "Doctor Visit",
-  "Interview",
-  "Daily Routine",
-  "Family",
-  "Friends",
-  "Weather",
-  "Shopping",
-  "Transport",
-  "Kitchen",
-  "At the Park",
-  "Classroom",
-  "Workplace",
-  "Emergency",
-  "Birthday",
-  "Order Food",
-  "At the Counter",
-  "Asking Directions",
+  "Meeting New People", // L01: greetings, nice to meet you
+  "Supermarket",        // L02: basket, milk, discount, cashier, checkout
+  "Office",             // L03: meeting, email, deadline, mute mic
+  "School",             // L04: open your book, homework, raise hand
+  "Transport",          // L05: bus stop, train ticket, platform, taxi
+  "Hospital",           // L06: fever, headache, ER, prescription
+  "Bank",               // L07: open account, deposit, ATM, PIN
+  "Restaurant",         // L08: table for two, menu, order, bill
+  "Phone Call",         // L09: call me back, network weak, I'll text you
+  "Doctor Appointment", // L10: book appointment, reschedule, consultation
+  "Emergency",          // L11: call police, ambulance, fire, stolen
+  "Daily Routine",      // L12: wake up early, brush teeth, breakfast
+  "Asking Directions",  // L13: go straight, turn left, I'm lost
+  "Hotel",              // L14: check in, room, wifi password, housekeeping
+  "Customer Support",   // L15: my order, refund, wrong item, app not working
+  "Interview",          // L16: here for interview, experience, why hire you
+  "Public Office",      // L17: police station, complaint, document, token
+  "Friends",            // L18: how's your day, long time no see, catch up
+  "Weather",            // L19: hot, cold, raining, umbrella
+  "Home & Family",      // L20: come home early, cooking dinner, good night
+  "Polite Requests",    // L21: could you help, borrow pen, would you mind
+  "Scheduling & Plans", // L22: meeting time, postpone, deadline, punctual
+  "Shopping",           // L23: reduce price, best price, my size, return
+  "Health & Fitness",   // L24: gym, diet, water, lose weight, muscle
+  "Events & Concert",   // L25: event start, venue, entry pass, performance
+  "Problem Solving",    // L26: find a solution, the problem is fixed
+  "Airport",            // L27: passport, boarding, gate, immigration
+  "Pharmacy & Medicine",// L28: migraine, pharmacy, cough syrup, penicillin
+  "Hosting Guests",     // L29: welcome to our home, guest room, feel at home
+  "Technology",         // L30: wifi, battery low, video call, mic muted
 ] as const;
 
 function LockIcon() {
@@ -75,6 +77,10 @@ export default function StagePage() {
 
   const config = stageConfig[stageName] || stageConfig.beginner;
   const showFreeNotice = premiumReady && !isPremium;
+  // Spoken English: premium user-ra jekono word pack open korte parbe (sequential
+  // progression lock bypass). Free user-der jonyo premium lock age-r motoi thakbe,
+  // ar onno stage-e (beginner/intermediate/advanced/exam) kono change nei.
+  const isSpokenStage = stageName === "spoken";
 
   useEffect(() => {
     let mounted = true;
@@ -306,7 +312,11 @@ export default function StagePage() {
                 const isPremiumLocked = !premiumReady
                   ? requiresPremium(levelNumber, false)
                   : !isPremium && requiresPremium(levelNumber, false);
-                const isUnlocked = !isPremiumLocked && unlockedLevelIds.has(levelId);
+                // Spoken: premium user-der jonyo sequential lock bypass (jekono pack
+                // open). Free user-der jonyo premium lock (isPremiumLocked) thakbe.
+                const isUnlocked = isSpokenStage
+                  ? !isPremiumLocked
+                  : !isPremiumLocked && unlockedLevelIds.has(levelId);
                 const isCompleted = completedLevelIds.has(levelId);
                 const cardClassName = isUnlocked
                   ? "group rounded-xl border border-cyan-200/35 bg-gradient-to-br from-cyan-300/16 to-[#2b3442]/95 p-4 shadow-lg shadow-black/20 transition hover:border-cyan-100 hover:from-cyan-300/22 hover:to-[#24384a]"
