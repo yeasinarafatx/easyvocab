@@ -176,10 +176,18 @@ export default function SpeakLevelPage() {
 	const isCompleted = totalWords > 0 && currentIndex >= totalWords;
 	const activeWord = !isCompleted ? words[currentIndex] : undefined;
 
-	// Sound effect: winner sound only when the whole level (20 words) is completed.
-	// Per-answer "correct" sound intentionally omitted in speaking mode.
-	// Ref guards against re-firing on every render — plays once per transition.
+	// Sound effects: swipe sound each time a word is spoken correctly, and the
+	// winner sound when the whole level (20 words) is completed. Refs guard
+	// against re-firing on every render — each plays once per transition.
+	const prevResultRef = useRef<ResultState>("none");
 	const prevCompletedRef = useRef(false);
+
+	useEffect(() => {
+		if (resultState === "correct" && prevResultRef.current !== "correct") {
+			playSound("swipe");
+		}
+		prevResultRef.current = resultState;
+	}, [resultState]);
 
 	useEffect(() => {
 		if (isCompleted && !prevCompletedRef.current) {
